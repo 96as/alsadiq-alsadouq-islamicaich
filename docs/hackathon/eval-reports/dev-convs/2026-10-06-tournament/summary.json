@@ -1,0 +1,422 @@
+{
+ "baseline": [
+  {
+   "commit": "8fd0fd03",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.18,
+     "natural_flow": 4.11,
+     "memory": 3.43,
+     "advice_timing": 4.21,
+     "source_timing": 4.64,
+     "no_lesson_creep": 4.18,
+     "grounding": 3.57,
+     "overall": 4.07
+    },
+    "metrics": {
+     "avg_reply_words": 17.14,
+     "max_reply_words": 31,
+     "avg_questions": 0.48,
+     "multi_question_turns": 0,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 24,
+     "repeated_openers": 1
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 605742,
+    "agent_completion_tokens": 3644,
+    "judge_prompt_tokens": 44533,
+    "judge_completion_tokens": 8953,
+    "mean_latency_s": 1.33,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "8fd0fd03",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.18,
+     "natural_flow": 4.0,
+     "memory": 3.5,
+     "advice_timing": 4.36,
+     "source_timing": 4.64,
+     "no_lesson_creep": 4.25,
+     "grounding": 3.86,
+     "overall": 3.96
+    },
+    "metrics": {
+     "avg_reply_words": 17.19,
+     "max_reply_words": 30,
+     "avg_questions": 0.47,
+     "multi_question_turns": 0,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 29,
+     "repeated_openers": 1
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 595869,
+    "agent_completion_tokens": 3607,
+    "judge_prompt_tokens": 44522,
+    "judge_completion_tokens": 8794,
+    "mean_latency_s": 1.31,
+    "bad_quotes": 0
+   }
+  }
+ ],
+ "A": [
+  {
+   "commit": "4f04ceb8",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.25,
+     "natural_flow": 4.07,
+     "memory": 3.54,
+     "advice_timing": 4.46,
+     "source_timing": 4.64,
+     "no_lesson_creep": 4.36,
+     "grounding": 3.86,
+     "overall": 4.11
+    },
+    "metrics": {
+     "avg_reply_words": 17.29,
+     "max_reply_words": 37,
+     "avg_questions": 0.66,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 19,
+     "repeated_openers": 1
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 622606,
+    "agent_completion_tokens": 3812,
+    "judge_prompt_tokens": 44586,
+    "judge_completion_tokens": 8639,
+    "mean_latency_s": 1.35,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "4f04ceb8",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.32,
+     "natural_flow": 3.96,
+     "memory": 3.54,
+     "advice_timing": 4.39,
+     "source_timing": 4.61,
+     "no_lesson_creep": 4.43,
+     "grounding": 4.0,
+     "overall": 4.04
+    },
+    "metrics": {
+     "avg_reply_words": 17.3,
+     "max_reply_words": 33,
+     "avg_questions": 0.62,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 20,
+     "repeated_openers": 2
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 622499,
+    "agent_completion_tokens": 3842,
+    "judge_prompt_tokens": 44594,
+    "judge_completion_tokens": 8535,
+    "mean_latency_s": 1.33,
+    "bad_quotes": 0
+   }
+  }
+ ],
+ "B": [
+  {
+   "commit": "1a87401f",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.11,
+     "natural_flow": 3.75,
+     "memory": 3.46,
+     "advice_timing": 4.36,
+     "source_timing": 4.57,
+     "no_lesson_creep": 4.36,
+     "grounding": 3.71,
+     "overall": 3.79
+    },
+    "metrics": {
+     "avg_reply_words": 19.31,
+     "max_reply_words": 61,
+     "avg_questions": 0.6,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 24,
+     "repeated_openers": 5
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 465279,
+    "agent_completion_tokens": 4087,
+    "judge_prompt_tokens": 44944,
+    "judge_completion_tokens": 8995,
+    "mean_latency_s": 1.31,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "1a87401f",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 3.96,
+     "natural_flow": 3.61,
+     "memory": 3.57,
+     "advice_timing": 4.21,
+     "source_timing": 4.46,
+     "no_lesson_creep": 4.21,
+     "grounding": 3.71,
+     "overall": 3.75
+    },
+    "metrics": {
+     "avg_reply_words": 20.76,
+     "max_reply_words": 87,
+     "avg_questions": 0.59,
+     "multi_question_turns": 3,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 25,
+     "repeated_openers": 3
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 462063,
+    "agent_completion_tokens": 4273,
+    "judge_prompt_tokens": 45142,
+    "judge_completion_tokens": 9063,
+    "mean_latency_s": 1.28,
+    "bad_quotes": 0
+   }
+  }
+ ],
+ "C": [
+  {
+   "commit": "4694ed24",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.18,
+     "natural_flow": 3.86,
+     "memory": 3.68,
+     "advice_timing": 4.25,
+     "source_timing": 4.61,
+     "no_lesson_creep": 4.43,
+     "grounding": 3.86,
+     "overall": 4.0
+    },
+    "metrics": {
+     "avg_reply_words": 16.3,
+     "max_reply_words": 37,
+     "avg_questions": 0.64,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 20,
+     "repeated_openers": 1
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 591549,
+    "agent_completion_tokens": 3366,
+    "judge_prompt_tokens": 44320,
+    "judge_completion_tokens": 8812,
+    "mean_latency_s": 1.23,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "4694ed24",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.21,
+     "natural_flow": 3.96,
+     "memory": 3.5,
+     "advice_timing": 4.39,
+     "source_timing": 4.5,
+     "no_lesson_creep": 4.32,
+     "grounding": 3.71,
+     "overall": 3.96
+    },
+    "metrics": {
+     "avg_reply_words": 16.99,
+     "max_reply_words": 40,
+     "avg_questions": 0.66,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 17,
+     "repeated_openers": 2
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 611722,
+    "agent_completion_tokens": 3596,
+    "judge_prompt_tokens": 44457,
+    "judge_completion_tokens": 8912,
+    "mean_latency_s": 1.25,
+    "bad_quotes": 0
+   }
+  }
+ ],
+ "P": [
+  {
+   "commit": "a055d22f",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.14,
+     "natural_flow": 3.82,
+     "memory": 3.54,
+     "advice_timing": 4.21,
+     "source_timing": 4.71,
+     "no_lesson_creep": 4.25,
+     "grounding": 4.14,
+     "overall": 3.89
+    },
+    "metrics": {
+     "avg_reply_words": 18.54,
+     "max_reply_words": 38,
+     "avg_questions": 0.5,
+     "multi_question_turns": 1,
+     "source_turns": 6,
+     "unasked_source_mentions": 1,
+     "religious_phrase_in_plain_turns": 24,
+     "repeated_openers": 0
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 597312,
+    "agent_completion_tokens": 3801,
+    "judge_prompt_tokens": 44711,
+    "judge_completion_tokens": 8819,
+    "mean_latency_s": 1.2,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "a055d22f",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.11,
+     "natural_flow": 3.89,
+     "memory": 3.57,
+     "advice_timing": 4.07,
+     "source_timing": 4.68,
+     "no_lesson_creep": 4.14,
+     "grounding": 3.75,
+     "overall": 3.86
+    },
+    "metrics": {
+     "avg_reply_words": 17.4,
+     "max_reply_words": 31,
+     "avg_questions": 0.45,
+     "multi_question_turns": 0,
+     "source_turns": 6,
+     "unasked_source_mentions": 2,
+     "religious_phrase_in_plain_turns": 22,
+     "repeated_openers": 0
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 611981,
+    "agent_completion_tokens": 3739,
+    "judge_prompt_tokens": 44581,
+    "judge_completion_tokens": 8981,
+    "mean_latency_s": 1.08,
+    "bad_quotes": 0
+   }
+  }
+ ],
+ "AP": [
+  {
+   "commit": "da0b5b0b",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.29,
+     "natural_flow": 3.96,
+     "memory": 3.61,
+     "advice_timing": 4.46,
+     "source_timing": 4.79,
+     "no_lesson_creep": 4.57,
+     "grounding": 4.14,
+     "overall": 4.07
+    },
+    "metrics": {
+     "avg_reply_words": 17.48,
+     "max_reply_words": 34,
+     "avg_questions": 0.64,
+     "multi_question_turns": 0,
+     "source_turns": 6,
+     "unasked_source_mentions": 0,
+     "religious_phrase_in_plain_turns": 21,
+     "repeated_openers": 2
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 633415,
+    "agent_completion_tokens": 3921,
+    "judge_prompt_tokens": 44614,
+    "judge_completion_tokens": 8339,
+    "mean_latency_s": 1.29,
+    "bad_quotes": 0
+   }
+  },
+  {
+   "commit": "da0b5b0b",
+   "aggregate": {
+    "conversations": 28,
+    "errors": 0,
+    "scores": {
+     "friendliness": 4.29,
+     "natural_flow": 4.11,
+     "memory": 3.68,
+     "advice_timing": 4.43,
+     "source_timing": 4.71,
+     "no_lesson_creep": 4.43,
+     "grounding": 4.04,
+     "overall": 4.04
+    },
+    "metrics": {
+     "avg_reply_words": 17.9,
+     "max_reply_words": 36,
+     "avg_questions": 0.6,
+     "multi_question_turns": 0,
+     "source_turns": 6,
+     "unasked_source_mentions": 1,
+     "religious_phrase_in_plain_turns": 19,
+     "repeated_openers": 0
+    },
+    "turns": 113,
+    "agent_prompt_tokens": 628496,
+    "agent_completion_tokens": 3895,
+    "judge_prompt_tokens": 44635,
+    "judge_completion_tokens": 8516,
+    "mean_latency_s": 1.31,
+    "bad_quotes": 0
+   }
+  }
+ ]
+}

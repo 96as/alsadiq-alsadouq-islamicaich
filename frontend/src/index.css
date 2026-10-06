@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+/* `dark:` follows the app's own light/dark toggle (ThemePreferenceProvider sets
+   data-color-mode on <html>), not the operating system setting. */
+@custom-variant dark (&:where([data-color-mode=dark], [data-color-mode=dark] *));
+
+/* ============================================
+   Design tokens, ported from mobile/src/theme/tokens.js
+   One system for the web. Child light is the default; the other palettes
+   re-declare the same variables under [data-theme] / [data-color-mode].
+
+   Mobile -> Tailwind mapping (Tailwind default names are NOT overridden):
+     spacing xs/sm/md/lg/xl/xxl (4/8/16/24/32/48) -> p-1 / 2 / 4 / 6 / 8 / 12
+     radii sm/md/lg/xl/pill (12/16/24/32/pill)    -> rounded-xl / 2xl / 3xl / 4xl / full
+     touch.minTarget 56                           -> min-h-target, min-w-target
+   ============================================ */
+
+@theme static {
+  /* Colours (childLight) */
+  --color-bg: #fff8ec;
+  --color-bg-1: #fff8ec;
+  --color-bg-2: #ffeed1;
+  --color-bg-3: #e9f8e3;
+  --color-surface: #ffffff;
+  --color-surface-alt: #fdf1dc;
+  --color-text: #27331f;
+  /* Web-only a11y deviation from mobile #6b7a5e (4.35:1 on bg, below AA). #5f6e55 is 5.17 on bg, 4.78 on bg-2, 4.88 on surface-alt. */
+  --color-text-muted: #5f6e55;
+  --color-primary: #3aa655;
+  --color-primary-soft: #d9f3de;
+  --color-accent: #ffb53e;
+  --color-accent-soft: #ffefd2;
+  --color-danger: #e05858;
+  --color-danger-soft: #fde4e4;
+  --color-info: #4f9cd9;
+  --color-info-soft: #e1f0fb;
+  --color-border: rgba(58, 92, 51, 0.14);
+  --color-shadow: rgba(72, 60, 20, 0.18);
+  --color-celebration: #ffd166;
+
+  /* Accessible pairings. Usage rules:
+     - on-primary / on-accent / on-danger: label colour for text placed on that fill.
+     - Light palettes: white on primary/danger is only 3.1-3.7:1 (AA for LARGE text,
+       so those fills need text-heading size, 19px bold, or larger). Accent always takes dark text.
+     - primary-strong / danger-strong: AA (>=4.5:1) as small text on bg, surface and the -soft fill.
+     - Small primary buttons use bg-primary-strong with text-on-strong; danger uses bg-danger-soft text-danger-strong.
+     - Never put translucent white on a green fill. */
+  --color-on-primary: #ffffff;
+  --color-on-accent: #27331f;
+  --color-on-danger: #ffffff;
+  --color-on-strong: #ffffff;
+  --color-primary-strong: #2a783d;
+  --color-danger-strong: #af4545;
+
+  /* Type scale (mobile typography) */
+  --text-display: 2rem;
+  --text-display--line-height: 1.2;
+  --text-display--font-weight: 800;
+  --text-display--letter-spacing: 0.2px;
+  --text-title: 1.5rem;
+  --text-title--line-height: 1.25;
+  --text-title--font-weight: 700;
+  --text-heading: 1.1875rem;
+  --text-heading--line-height: 1.3;
+  --text-heading--font-weight: 700;
+  --text-body: 1rem;
+  --text-body--line-height: 1.4375rem;
+  --text-body--font-weight: 500;
+  --text-label: 0.875rem;
+  --text-label--line-height: 1.4;
+  --text-label--font-weight: 600;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.4;
+  --text-caption--font-weight: 500;
+
+  /* Child minimum touch target */
+  --spacing-target: 56px;
+
+  /* Fonts */
+  --font-sans: 'Manrope', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-quran: 'Amiri', serif;
+}
+
+/* Parent, light (overrides only what differs from child light) */
+[data-theme="parent"] {
+  --color-bg: #f4f7f3;
+  --color-bg-1: #f4f7f3;
+  --color-bg-2: #e8f1e8;
+  --color-bg-3: #f4f7f3;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef4ec;
+  --color-text: #1c2a20;
+  --color-text-muted: #5c6f60;
+  --color-primary: #15803d;
+  --color-primary-soft: #dcefe2;
+  --color-accent: #b98a2f;
+  --color-accent-soft: #f5ecd7;
+  --color-on-accent: #1c2a20;
+  --color-primary-strong: #147839;
+}
+
+/* Child, dark. Also set on <html> so body and anything outside a themed shell is dark too.
+   Parent dark (0,2,0) wins on parent shells; parent light (0,1,0) still applies in light mode. */
+[data-color-mode="dark"],
+[data-color-mode="dark"] [data-theme="child"] {
+  --color-bg: #13231a;
+  --color-bg-1: #13231a;
+  --color-bg-2: #173425;
+  --color-bg-3: #1d2b16;
+  --color-surface: #1d3326;
+  --color-surface-alt: #234231;
+  --color-text: #f3fbef;
+  --color-text-muted: #a9c2a3;
+  --color-primary: #4cc168;
+  --color-primary-soft: #234c2f;
+  --color-accent: #ffc25e;
+  --color-accent-soft: #4a3a1c;
+  --color-danger: #f37e7e;
+  --color-danger-soft: #4b2424;
+  --color-info: #76b6e8;
+  --color-info-soft: #1d3a52;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-celebration: #ffd166;
+  --color-on-primary: #13231a;
+  --color-on-accent: #13231a;
+  --color-on-danger: #13231a;
+  --color-on-strong: #13231a;
+  --color-primary-strong: #5ac674;
+  --color-danger-strong: #f48686;
+}
+
+/* Parent, dark (childDark with parentDark overrides) */
+[data-color-mode="dark"] [data-theme="parent"],
+[data-color-mode="dark"][data-theme="parent"] {
+  --color-bg: #0f1d15;
+  --color-bg-1: #0f1d15;
+  --color-bg-2: #13261b;
+  --color-bg-3: #0f1d15;
+  --color-surface: #182921;
+  --color-surface-alt: #1f3429;
+  --color-text: #f3fbef;
+  --color-text-muted: #a9c2a3;
+  --color-primary: #2ea05b;
+  --color-primary-soft: #1d3f2a;
+  --color-accent: #ffc25e;
+  --color-accent-soft: #4a3a1c;
+  --color-danger: #f37e7e;
+  --color-danger-soft: #4b2424;
+  --color-info: #76b6e8;
+  --color-info-soft: #1d3a52;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-celebration: #ffd166;
+  --color-on-primary: #0f1d15;
+  --color-on-accent: #0f1d15;
+  --color-on-danger: #0f1d15;
+  --color-on-strong: #0f1d15;
+  --color-primary-strong: #58b37c;
+  --color-danger-strong: #f37e7e;
+}
+
+@layer base {
+  /* Native controls (select menus, scrollbars, date pickers) follow the app theme too. */
+  :root {
+    color-scheme: light;
+  }
+
+  [data-color-mode="dark"] {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 150ms ease;
+  }
+
+  a:hover {
+    color: color-mix(in srgb, var(--color-primary) 85%, black);
+    text-decoration: underline;
+  }
+}

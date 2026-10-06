@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 93,
+    "ayah": 9,
+    "arabic_text": "فَأَمَّا ٱلۡيَتِيمَ فَلَا تَقۡهَرۡ",
+    "arabic_text_search": "فأما اليتيم فلا تقهر",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "So as for the orphan, do not oppress [him].",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/ad-duha/9",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/093009.mp3",
+    "values": [
+      "caring-for-orphans"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية ألّا نقهر اليتيم أو نسيء إليه. كن لطيفا مع الطفل الذي فقد أباه، ولا تسخر من حزنه.",
+    "child_explanation_en": "This verse teaches us never to mistreat an orphan. Be gentle with a child who has lost their father, and never make fun of their sadness.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 2,
+    "ayah": 220,
+    "arabic_text": "فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۗ وَيَسۡـَٔلُونَكَ عَنِ ٱلۡيَتَٰمَىٰۖ قُلۡ إِصۡلَاحٞ لَّهُمۡ خَيۡرٞۖ وَإِن تُخَالِطُوهُمۡ فَإِخۡوَٰنُكُمۡۚ وَٱللَّهُ يَعۡلَمُ ٱلۡمُفۡسِدَ مِنَ ٱلۡمُصۡلِحِۚ وَلَوۡ شَآءَ ٱللَّهُ لَأَعۡنَتَكُمۡۚ إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٞ",
+    "arabic_text_search": "في الدنيا والآخرة ويسألونك عن اليتامى قل إصلاح لهم خير وإن تخالطوهم فإخوانكم والله يعلم المفسد من المصلح ولو شاء الله لأعنتكم إن الله عزيز حكيم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "To this world and the Hereafter. And they ask you about orphans. Say, \"Improvement for them is best. And if you mix your affairs with theirs - they are your brothers. And Allāh knows the corrupter from the amender. And if Allāh had willed, He could have put you in difficulty. Indeed, Allāh is Exalted in Might and Wise.\"",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-baqara/220",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/002220.mp3",
+    "values": [
+      "caring-for-orphans"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نهتم بما يصلح حياة اليتامى وأن نعاملهم كإخوة لنا. يمكنك إشراك طفل في اللعب ومساعدة أسرتك على دعمه باحترام.",
+    "child_explanation_en": "This verse teaches caring for what improves orphans’ lives and treating them as our brothers and sisters. You can include a child in play and help your family support them respectfully.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

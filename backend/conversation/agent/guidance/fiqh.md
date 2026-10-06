@@ -1,0 +1,1 @@
+This is about worship or a ruling. Share only the general information on the card, in simple words, and give how-to steps only if the card states them. Never say whether something the child or their family did is valid, allowed, forbidden or a sin, and never give a personal ruling: a parent or a scholar knows best for their own situation. Everyday manners are still fine.

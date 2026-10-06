@@ -1,0 +1,83 @@
+# Baseline for proxied (Django) responses. header_down replaces the upstream value (a plain `header` before
+# reverse_proxy would be added twice). Django already sends nosniff and X-Frame-Options; this also covers
+# /static. Referrer-Policy is left to Django (same-origin, stricter than the SPA's), so /admin and /api keep it.
+# HSTS stays with Django (SECURE_HSTS_SECONDS), CSP applies to the SPA only (see the last handle below).
+(django_hardening) {
+    header_down X-Content-Type-Options "nosniff"
+    header_down X-Frame-Options "DENY"
+}
+
+{$DOMAIN:localhost} {
+
+    # Backend API (includes /api/health/ for uptime monitors)
+    handle /api/* {
+        reverse_proxy backend:8000 {
+            import django_hardening
+        }
+    }
+
+    # Django admin: default deny. Only the client IPs / CIDR ranges listed in
+    # ADMIN_ALLOWED_IPS (space-separated, set in .env) may reach it. Everyone
+    # else gets a plain 404. Unset = nobody (the default below only matches the
+    # Caddy container's own loopback, never a public visitor).
+    @admin path /admin /admin/*
+    handle @admin {
+        @admin_allowed remote_ip {$ADMIN_ALLOWED_IPS:127.0.0.1/32}
+        handle @admin_allowed {
+            reverse_proxy backend:8000 {
+                import django_hardening
+            }
+        }
+        handle {
+            respond "Not found" 404
+        }
+    }
+
+    # Django static files (admin CSS/JS collected via collectstatic)
+    handle /static/* {
+        reverse_proxy backend:8000 {
+            import django_hardening
+        }
+    }
+
+    # Frontend — React SPA (catch-all, must be last)
+    handle {
+        # Security headers for the SPA only (Django /admin and /static keep their own scripts and styles).
+        # Permissions-Policy: the child voice session needs the microphone for this origin; nothing uses the
+        # camera, location or payment.
+        # CSP is REPORT-ONLY for now: violations show in the browser console and block nothing. Once a full
+        # child + parent + demo run is clean, rename it to Content-Security-Policy to enforce.
+        # Sources: 'wasm-unsafe-eval' = the meshopt decoder (three.js GLB); style 'unsafe-inline' = React style
+        # attributes; fonts.googleapis.com / fonts.gstatic.com = the Google fonts in index.html; media = Quran
+        # recitation (everyayah.com, mp3quran.net) plus the backend's own /static/quran; connect = the API,
+        # LiveKit signalling (LIVEKIT_URL, else any *.livekit.cloud) and blob:/data: for GLB textures.
+        # VITE_API_BASE_URL / LIVEKIT_URL come from .env (the caddy service loads it); unset = empty = ignored.
+        header {
+            X-Content-Type-Options "nosniff"
+            Referrer-Policy "strict-origin-when-cross-origin"
+            X-Frame-Options "DENY"
+            Permissions-Policy "microphone=(self), camera=(), geolocation=(), payment=(), usb=()"
+            Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' blob: {$VITE_API_BASE_URL} https://everyayah.com https://*.everyayah.com https://mp3quran.net https://*.mp3quran.net; connect-src 'self' blob: data: {$VITE_API_BASE_URL} {$LIVEKIT_URL} wss://*.livekit.cloud https://*.livekit.cloud; worker-src 'self' blob:; manifest-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+        }
+
+        # perf: compress the text assets and the avatar GLB (the GLB's morph and animation buffers
+        # shrink about 26% under gzip even though the mesh is already meshopt-packed). Images
+        # (webp, woff2) are already compressed and are left alone. .glb goes out as model/gltf-binary
+        # (caddy:2-alpine today) or application/octet-stream (an image without that MIME entry); both are matched.
+        encode {
+            zstd
+            gzip 6
+            match {
+                header Content-Type text/*
+                header Content-Type application/javascript*
+                header Content-Type application/json*
+                header Content-Type image/svg+xml*
+                header Content-Type model/gltf-binary*
+                header Content-Type application/octet-stream*
+            }
+        }
+        root * /srv/frontend
+        try_files {path} /index.html
+        file_server
+    }
+}

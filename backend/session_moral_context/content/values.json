@@ -1,0 +1,1053 @@
+[
+  {
+    "slug": "prayer",
+    "name_ar": "الصلاة",
+    "name_en": "Prayer",
+    "keywords_ar": [
+      "صلاة",
+      "الصلاة",
+      "اصلي",
+      "أصلي",
+      "صلي",
+      "الصلوات",
+      "فجر",
+      "ما صليت"
+    ],
+    "keywords_en": [
+      "prayer",
+      "salah",
+      "salat",
+      "pray",
+      "praying",
+      "skip prayer",
+      "namaz",
+      "mosque"
+    ],
+    "child_description_ar": "الصلاة عبادة لله نؤديها خمس مرات في اليوم. نصلي في وقتها ونتذكر ربنا ونشعر بالهدوء والقرب منه.",
+    "child_description_en": "Prayer is worship of Allah that we perform five times a day. We pray on time, remember our Lord, and feel calm and close to Him.",
+    "order": 1
+  },
+  {
+    "slug": "honesty",
+    "name_ar": "الصدق",
+    "name_en": "Honesty",
+    "keywords_ar": [
+      "صدق",
+      "الصدق",
+      "صادق",
+      "كذب",
+      "الكذب",
+      "كذاب",
+      "كذبت",
+      "اكذب"
+    ],
+    "keywords_en": [
+      "honest",
+      "honesty",
+      "truth",
+      "tell the truth",
+      "lie",
+      "lying",
+      "liar",
+      "cheat"
+    ],
+    "child_description_ar": "الصدق أن نقول الحقيقة حتى لو كان ذلك صعبا. عندما نصدق يثق بنا الناس ونرتاح نحن أيضا.",
+    "child_description_en": "Honesty means telling the truth even when it is hard. When we are honest, people trust us and we feel at ease too.",
+    "order": 2
+  },
+  {
+    "slug": "trustworthiness",
+    "name_ar": "الأمانة",
+    "name_en": "Trustworthiness",
+    "keywords_ar": [
+      "أمانة",
+      "الأمانة",
+      "امانة",
+      "الامانة",
+      "أمين",
+      "خيانة",
+      "سرقة",
+      "أسرق"
+    ],
+    "keywords_en": [
+      "trustworthy",
+      "amanah",
+      "steal",
+      "stealing",
+      "betray",
+      "return what you borrowed"
+    ],
+    "child_description_ar": "الأمانة أن نحفظ ما يعطيه الناس لنا ونرجعه كما هو، ولا نأخذ ما ليس لنا.",
+    "child_description_en": "Trustworthiness means taking good care of what people give us and returning it, and never taking what is not ours.",
+    "order": 3
+  },
+  {
+    "slug": "honouring-parents",
+    "name_ar": "بر الوالدين",
+    "name_en": "Honouring Parents",
+    "keywords_ar": [
+      "بر الوالدين",
+      "الوالدين",
+      "ماما",
+      "بابا",
+      "عقوق",
+      "اسمع كلام امي",
+      "أمي وأبي"
+    ],
+    "keywords_en": [
+      "parents",
+      "dad",
+      "mother",
+      "father",
+      "obey parents",
+      "respect parents",
+      "talk back",
+      "mommy"
+    ],
+    "child_description_ar": "بر الوالدين أن نطيع أمنا وأبانا ونتكلم معهما بأدب. هما يتعبان من أجلنا فنشكرهما ونسعدهما.",
+    "child_description_en": "Honouring parents means listening to Mom and Dad and speaking to them politely. They work hard for us, so we thank them and make them happy.",
+    "order": 4
+  },
+  {
+    "slug": "mercy",
+    "name_ar": "الرحمة",
+    "name_en": "Mercy",
+    "keywords_ar": [
+      "رحمة",
+      "الرحمة",
+      "رحيم",
+      "ارحم",
+      "حنان",
+      "قسوة",
+      "قاسي",
+      "أضرب"
+    ],
+    "keywords_en": [
+      "mercy",
+      "merciful",
+      "compassion",
+      "pity",
+      "be gentle",
+      "cruel",
+      "harsh"
+    ],
+    "child_description_ar": "الرحمة أن نكون لطفاء مع كل من حولنا ونحزن لحزنهم ونساعدهم.",
+    "child_description_en": "Mercy means being gentle with everyone around us, feeling sad when they are sad, and helping them.",
+    "order": 5
+  },
+  {
+    "slug": "patience",
+    "name_ar": "الصبر",
+    "name_en": "Patience",
+    "keywords_ar": [
+      "صبر",
+      "الصبر",
+      "اصبر",
+      "صابر",
+      "أصبر",
+      "استعجل",
+      "ملل",
+      "زهقت"
+    ],
+    "keywords_en": [
+      "patience",
+      "patient",
+      "wait",
+      "waiting",
+      "be patient",
+      "impatient",
+      "hurry",
+      "give up"
+    ],
+    "child_description_ar": "الصبر أن ننتظر ونتحمل الصعوبات بهدوء ولا نغضب. نكمل ونحاول من جديد ولا نستسلم بسرعة.",
+    "child_description_en": "Patience means waiting and getting through hard times calmly without getting upset. We keep going and try again instead of giving up quickly.",
+    "order": 6
+  },
+  {
+    "slug": "gratitude",
+    "name_ar": "الشكر",
+    "name_en": "Gratitude",
+    "keywords_ar": [
+      "شكر",
+      "الشكر",
+      "شكرا",
+      "الحمد لله",
+      "نعمة",
+      "النعم",
+      "جحود",
+      "ما شكرت"
+    ],
+    "keywords_en": [
+      "thank",
+      "thanks",
+      "thankful",
+      "grateful",
+      "gratitude",
+      "alhamdulillah",
+      "blessings",
+      "ungrateful"
+    ],
+    "child_description_ar": "الشكر أن نقول الحمد لله ونشكر من يساعدنا. نتذكر نعم الله علينا مثل الطعام والبيت والأسرة.",
+    "child_description_en": "Gratitude means saying alhamdulillah and thanking people who help us. We remember Allah's gifts like food, a home and family.",
+    "order": 7
+  },
+  {
+    "slug": "cooperation",
+    "name_ar": "التعاون",
+    "name_en": "Cooperation",
+    "keywords_ar": [
+      "تعاون",
+      "التعاون",
+      "نتعاون",
+      "مع بعض",
+      "فريق",
+      "نشارك العمل",
+      "أنانية",
+      "وحدي"
+    ],
+    "keywords_en": [
+      "cooperate",
+      "cooperation",
+      "teamwork",
+      "work together",
+      "team",
+      "share the work",
+      "selfish",
+      "group"
+    ],
+    "child_description_ar": "التعاون أن نعمل مع غيرنا ونساعدهم على الخير. عندما نتعاون ينتهي العمل أسرع ونفرح جميعا.",
+    "child_description_en": "Cooperation means working with others to do good things. When we work together the job is done faster and we all feel happy.",
+    "order": 8
+  },
+  {
+    "slug": "kindness-to-animals",
+    "name_ar": "الرفق بالحيوان",
+    "name_en": "Kindness to Animals",
+    "keywords_ar": [
+      "حيوان",
+      "الحيوانات",
+      "كلب",
+      "عصفور",
+      "أؤذي الحيوان",
+      "رمي حجر",
+      "القطة",
+      "الرفق بالحيوان"
+    ],
+    "keywords_en": [
+      "animal",
+      "animals",
+      "dog",
+      "bird",
+      "kind to animals",
+      "hurt an animal",
+      "pets",
+      "cats"
+    ],
+    "child_description_ar": "الرفق بالحيوان أن نعطيه الطعام والماء ولا نؤذيه. الحيوانات مخلوقات الله ونحن نعتني بها.",
+    "child_description_en": "Kindness to animals means giving them food and water and never hurting them. Animals are Allah's creatures and we take care of them.",
+    "order": 9
+  },
+  {
+    "slug": "cleanliness",
+    "name_ar": "النظافة",
+    "name_en": "Cleanliness",
+    "keywords_ar": [
+      "نظافة",
+      "النظافة",
+      "نظيف",
+      "وضوء",
+      "استحمام",
+      "أغسل يدي",
+      "وسخ",
+      "قذر",
+      "طهارة",
+      "نجاسة",
+      "رائحة",
+      "ثياب نظيفة"
+    ],
+    "keywords_en": [
+      "clean",
+      "cleanliness",
+      "wash",
+      "wudu",
+      "bath",
+      "wash hands",
+      "dirty",
+      "messy",
+      "purity",
+      "impure",
+      "smell",
+      "clean clothes"
+    ],
+    "child_description_ar": "النظافة أن نغسل أيدينا وأسناننا، ونحافظ على نظافة جسمنا وثيابنا وبيتنا، وعلى طيب رائحتنا، ونتوضأ جيدا للصلاة. والله يحب الذين يحافظون على طهارتهم.",
+    "child_description_en": "Cleanliness means washing our hands and brushing our teeth, keeping our body, clothes, home and smell fresh and clean, and making wudu well for prayer. Allah loves those who keep themselves pure.",
+    "order": 10
+  },
+  {
+    "slug": "modesty",
+    "name_ar": "الحياء",
+    "name_en": "Modesty",
+    "keywords_ar": [
+      "حياء",
+      "الحياء",
+      "استحي",
+      "خجل",
+      "حجاب",
+      "لباس",
+      "عيب"
+    ],
+    "keywords_en": [
+      "modesty",
+      "modest",
+      "shy",
+      "shyness",
+      "shame",
+      "dress properly",
+      "hijab",
+      "embarrassed"
+    ],
+    "child_description_ar": "الحياء أن نستحي من الخطأ ونتأدب في كلامنا ولباسنا. الحياء خلق جميل.",
+    "child_description_en": "Modesty means feeling shy about doing wrong and being polite in how we speak and dress. It is a beautiful trait.",
+    "order": 11
+  },
+  {
+    "slug": "good-character",
+    "name_ar": "حسن الخلق",
+    "name_en": "Good Character",
+    "keywords_ar": [
+      "أخلاق",
+      "اخلاق",
+      "حسن الخلق",
+      "أدب",
+      "ادب",
+      "سوء الأدب",
+      "قليل أدب"
+    ],
+    "keywords_en": [
+      "character",
+      "manners",
+      "good manners",
+      "behaviour",
+      "behavior",
+      "polite",
+      "rude",
+      "bad manners"
+    ],
+    "child_description_ar": "حسن الخلق أن نعامل الناس بأدب ولطف في كل وقت، ونكون صادقين معهم.",
+    "child_description_en": "Good character means treating people politely and kindly all the time, and being truthful with them.",
+    "order": 12
+  },
+  {
+    "slug": "good-neighbour",
+    "name_ar": "الإحسان إلى الجار",
+    "name_en": "Being Good to Neighbours",
+    "keywords_ar": [
+      "الجار",
+      "جيران",
+      "جارنا",
+      "إحسان",
+      "احسان",
+      "إزعاج",
+      "أزعج جاري"
+    ],
+    "keywords_en": [
+      "neighbour",
+      "neighbor",
+      "neighbours",
+      "neighbors",
+      "next door",
+      "be kind to neighbours",
+      "noisy",
+      "annoy neighbours"
+    ],
+    "child_description_ar": "الإحسان إلى الجار أن نسلم عليه ونساعده ولا نزعجه.",
+    "child_description_en": "Being good to neighbours means greeting them, helping them and not disturbing them.",
+    "order": 13
+  },
+  {
+    "slug": "seeking-knowledge",
+    "name_ar": "طلب العلم",
+    "name_en": "Seeking Knowledge",
+    "keywords_ar": [
+      "العلم",
+      "طلب العلم",
+      "مدرسة",
+      "أدرس",
+      "ادرس",
+      "كسل",
+      "الكتب"
+    ],
+    "keywords_en": [
+      "knowledge",
+      "learn",
+      "learning",
+      "study",
+      "school",
+      "homework",
+      "books",
+      "lazy"
+    ],
+    "child_description_ar": "طلب العلم أن نتعلم ونقرأ ونسأل لنعرف أشياء جديدة. نحب المدرسة ونسأل معلمتنا عما لا نفهمه.",
+    "child_description_en": "Seeking knowledge means learning, reading and asking questions so we find out new things. We enjoy school and ask our teacher about what we do not understand.",
+    "order": 14
+  },
+  {
+    "slug": "humility",
+    "name_ar": "التواضع",
+    "name_en": "Humility",
+    "keywords_ar": [
+      "تواضع",
+      "التواضع",
+      "متواضع",
+      "التكبر",
+      "غرور",
+      "أتكبر",
+      "أنا الأحسن"
+    ],
+    "keywords_en": [
+      "humble",
+      "humility",
+      "pride",
+      "proud",
+      "arrogant",
+      "boast",
+      "bragging"
+    ],
+    "child_description_ar": "التواضع أن لا نظن أننا أحسن من غيرنا ونحترم الجميع. المتواضع يحبه الناس.",
+    "child_description_en": "Humility means not thinking we are better than others and respecting everyone. People love a humble person.",
+    "order": 15
+  },
+  {
+    "slug": "justice",
+    "name_ar": "العدل",
+    "name_en": "Justice",
+    "keywords_ar": [
+      "عدل",
+      "العدل",
+      "عادل",
+      "ظلم",
+      "الظلم",
+      "ظالم",
+      "غير عادل",
+      "إنصاف"
+    ],
+    "keywords_en": [
+      "justice",
+      "fair",
+      "fairness",
+      "unfair",
+      "injustice",
+      "bully"
+    ],
+    "child_description_ar": "العدل أن نعطي كل إنسان حقه ولا نظلم أحدا. نكون عادلين حتى مع من لا نحبه.",
+    "child_description_en": "Justice means giving everyone what they deserve and never being unfair. We are fair even to people we do not like.",
+    "order": 16
+  },
+  {
+    "slug": "keeping-promises",
+    "name_ar": "الوفاء بالوعد",
+    "name_en": "Keeping Promises",
+    "keywords_ar": [
+      "الوعد",
+      "وفاء",
+      "أوفي",
+      "اوفي",
+      "أخلف",
+      "خلف الوعد",
+      "وعدتك",
+      "وعدت"
+    ],
+    "keywords_en": [
+      "promise",
+      "promises",
+      "keep your word",
+      "keep a promise",
+      "break a promise",
+      "I promised"
+    ],
+    "child_description_ar": "الوفاء بالوعد أن نفعل ما قلنا أننا سنفعله. من يخلف وعده يحزن الناس ويخسر ثقتهم.",
+    "child_description_en": "Keeping promises means doing what we said we would do. Breaking a promise makes people sad and loses their trust.",
+    "order": 17
+  },
+  {
+    "slug": "generosity",
+    "name_ar": "الكرم",
+    "name_en": "Generosity",
+    "keywords_ar": [
+      "كرم",
+      "الكرم",
+      "كريم",
+      "بخل",
+      "بخيل",
+      "أبخل",
+      "ضيوف"
+    ],
+    "keywords_en": [
+      "generous",
+      "generosity",
+      "guest",
+      "share",
+      "stingy"
+    ],
+    "child_description_ar": "الكرم أن نعطي ونشارك ما عندنا بفرح ونكرم ضيوفنا. الكريم يحبه الناس ويفرح بالعطاء.",
+    "child_description_en": "Generosity means giving and sharing what we have happily and honouring our guests. A generous person is loved by people and enjoys giving.",
+    "order": 18
+  },
+  {
+    "slug": "forgiveness",
+    "name_ar": "العفو",
+    "name_en": "Forgiveness",
+    "keywords_ar": [
+      "عفو",
+      "العفو",
+      "سامح",
+      "أسامح",
+      "اسامح",
+      "مسامحة",
+      "انتقام"
+    ],
+    "keywords_en": [
+      "forgive",
+      "forgiveness",
+      "pardon",
+      "sorry",
+      "apologize",
+      "revenge",
+      "hold a grudge",
+      "get back at"
+    ],
+    "child_description_ar": "العفو أن نسامح من أخطأ في حقنا ولا ننتقم. والذي يعفو يحبه الله ويغفر له.",
+    "child_description_en": "Forgiveness means pardoning someone who wronged us instead of taking revenge. Allah loves those who forgive and forgives them.",
+    "order": 19
+  },
+  {
+    "slug": "kind-words",
+    "name_ar": "الكلمة الطيبة",
+    "name_en": "Kind Words",
+    "keywords_ar": [
+      "كلمة طيبة",
+      "الكلمة الطيبة",
+      "كلام حلو",
+      "كلام طيب",
+      "شتم",
+      "أشتم",
+      "كلام سيء",
+      "سب وشتم"
+    ],
+    "keywords_en": [
+      "kind words",
+      "nice words",
+      "say something nice",
+      "insult",
+      "bad words",
+      "name-calling",
+      "hurtful words"
+    ],
+    "child_description_ar": "الكلمة الطيبة تفرح القلب وتسعد من يسمعها. نختار كلماتنا الجميلة ولا نشتم ولا نسخر.",
+    "child_description_en": "A kind word makes hearts happy and brightens someone's day. We choose nice words and never insult or make fun of anyone.",
+    "order": 20
+  },
+  {
+    "slug": "charity",
+    "name_ar": "الصدقة",
+    "name_en": "Charity",
+    "keywords_ar": [
+      "صدقة",
+      "الصدقة",
+      "أتصدق",
+      "اتصدق",
+      "زكاة",
+      "فقير",
+      "فقراء",
+      "مسكين"
+    ],
+    "keywords_en": [
+      "charity",
+      "sadaqah",
+      "donate",
+      "donation",
+      "zakat",
+      "poor",
+      "needy",
+      "beggar"
+    ],
+    "child_description_ar": "الصدقة أن نعطي المحتاجين من مالنا أو طعامنا لوجه الله. نفرح عندما نساعد من يحتاج.",
+    "child_description_en": "Charity means giving some of our money or food to people in need for Allah's sake. We feel happy when we help someone who needs it.",
+    "order": 21
+  },
+  {
+    "slug": "respecting-elders",
+    "name_ar": "توقير الكبير",
+    "name_en": "Respecting Elders",
+    "keywords_ar": [
+      "كبار السن",
+      "جدي",
+      "جدتي",
+      "توقير",
+      "احترام",
+      "أحترم",
+      "قلة احترام"
+    ],
+    "keywords_en": [
+      "elders",
+      "elderly",
+      "old people",
+      "grandfather",
+      "grandmother",
+      "grandma",
+      "respect",
+      "disrespect"
+    ],
+    "child_description_ar": "توقير الكبير أن نحترم من هو أكبر منا ونتكلم معه بأدب. نساعد كبار السن ولا نقاطعهم.",
+    "child_description_en": "Respecting elders means honouring people older than us and speaking politely to them. We help them and do not interrupt them.",
+    "order": 22
+  },
+  {
+    "slug": "caring-for-orphans",
+    "name_ar": "رعاية اليتيم",
+    "name_en": "Caring for Orphans",
+    "keywords_ar": [
+      "يتيم",
+      "اليتيم",
+      "أيتام",
+      "ايتام",
+      "رعاية",
+      "كفالة",
+      "بدون أب",
+      "بلا أم"
+    ],
+    "keywords_en": [
+      "orphan",
+      "orphans",
+      "care for orphans",
+      "no parents",
+      "sponsor",
+      "lost his father",
+      "lost her mother",
+      "adopt"
+    ],
+    "child_description_ar": "اليتيم طفل فقد أباه أو أمه، ونحن نعطف عليه ونساعده ونكون لطفاء معه.",
+    "child_description_en": "An orphan is a child who has lost a parent, and we are kind and helpful to him or her.",
+    "order": 23
+  },
+  {
+    "slug": "brotherhood",
+    "name_ar": "الأخوة",
+    "name_en": "Brotherhood",
+    "keywords_ar": [
+      "أخوة",
+      "الأخوة",
+      "اخوة",
+      "صديق",
+      "خصام"
+    ],
+    "keywords_en": [
+      "brotherhood",
+      "brother",
+      "sister",
+      "friend",
+      "friendship",
+      "fight",
+      "argue",
+      "quarrel"
+    ],
+    "child_description_ar": "نحن إخوة وأخوات في الإسلام، فنكون لطفاء مع بعضنا. لا نتخاصم ونبقى أصدقاء طيبين.",
+    "child_description_en": "We are brothers and sisters in Islam, so we are kind to one another. We do not quarrel and we stay good friends.",
+    "order": 24
+  },
+  {
+    "slug": "controlling-anger",
+    "name_ar": "كظم الغيظ",
+    "name_en": "Controlling Anger",
+    "keywords_ar": [
+      "غضب",
+      "الغضب",
+      "أغضب",
+      "زعلان",
+      "كظم الغيظ",
+      "عصبي",
+      "صراخ",
+      "أصرخ"
+    ],
+    "keywords_en": [
+      "anger",
+      "angry",
+      "control anger",
+      "calm down",
+      "yell",
+      "shout",
+      "temper",
+      "furious"
+    ],
+    "child_description_ar": "كظم الغيظ أن نمسك أنفسنا عندما نغضب فلا نصرخ ولا نضرب. نسكت ونهدأ.",
+    "child_description_en": "Controlling anger means holding ourselves back when we are angry, without shouting or hitting. We stay quiet and calm down.",
+    "order": 25
+  },
+  {
+    "slug": "remembering-allah",
+    "name_ar": "ذكر الله",
+    "name_en": "Remembering Allah",
+    "keywords_ar": [
+      "ذكر الله",
+      "أذكار",
+      "اذكار",
+      "سبحان الله",
+      "الله أكبر",
+      "أدعية",
+      "دعاء"
+    ],
+    "keywords_en": [
+      "remember allah",
+      "dhikr",
+      "adhkar",
+      "subhanallah",
+      "allahu akbar",
+      "say bismillah",
+      "forget allah",
+      "supplication"
+    ],
+    "child_description_ar": "ذكر الله أن نقول سبحان الله والحمد لله ونتذكره في يومنا. نشعر بالهدوء عندما نتذكر الله.",
+    "child_description_en": "Remembering Allah means saying subhanallah and alhamdulillah and thinking of Him during our day. We feel calm when we remember Him.",
+    "order": 26
+  },
+  {
+    "slug": "trust-in-allah",
+    "name_ar": "التوكل على الله",
+    "name_en": "Trusting in Allah",
+    "keywords_ar": [
+      "توكل",
+      "التوكل",
+      "أتوكل",
+      "اتوكل",
+      "خايف",
+      "قلق"
+    ],
+    "keywords_en": [
+      "trust in allah",
+      "tawakkul",
+      "rely on allah",
+      "worry",
+      "worried",
+      "fear",
+      "anxious"
+    ],
+    "child_description_ar": "التوكل على الله أن نعمل ما نقدر عليه ونترك النتيجة لله. نطمئن لأن الله يرعانا.",
+    "child_description_en": "Trusting in Allah means doing our best and leaving the result to Him. We feel calm because Allah looks after us.",
+    "order": 27
+  },
+  {
+    "slug": "visiting-the-sick",
+    "name_ar": "عيادة المريض",
+    "name_en": "Visiting the Sick",
+    "keywords_ar": [
+      "مريض",
+      "المرضى",
+      "عيادة",
+      "عيادة المريض",
+      "مرض",
+      "مرضت",
+      "شفاء",
+      "تعبان"
+    ],
+    "keywords_en": [
+      "sick",
+      "visit the sick",
+      "get well",
+      "illness",
+      "hospital",
+      "feel better",
+      "pray for the sick",
+      "sick person"
+    ],
+    "child_description_ar": "عيادة المريض أن نزوره ونسأل عنه وندعو له بالشفاء. زيارتنا تفرحه وتخفف عنه.",
+    "child_description_en": "Visiting the sick means going to see them, asking how they are and making dua for their recovery. Our visit cheers them up.",
+    "order": 28
+  },
+  {
+    "slug": "spreading-salam",
+    "name_ar": "إفشاء السلام",
+    "name_en": "Spreading Salam",
+    "keywords_ar": [
+      "السلام عليكم",
+      "ورحمة الله وبركاته",
+      "السلام عليكم ورحمة الله وبركاته",
+      "وعليكم السلام",
+      "تحية الإسلام",
+      "ألقي السلام",
+      "ما سلمت",
+      "رد السلام",
+      "مرحبا"
+    ],
+    "keywords_en": [
+      "salam",
+      "assalamu alaikum",
+      "assalamu alaykum",
+      "salaam",
+      "assalamu alaikum wa rahmatullahi wa barakatuh",
+      "wa alaikum assalam",
+      "islamic greeting",
+      "muslim greeting",
+      "greet",
+      "reply to salam",
+      "return the greeting",
+      "hello",
+      "say hello"
+    ],
+    "child_description_ar": "إفشاء السلام أن نحيّي الناس بتحية الإسلام «السلام عليكم»، والأفضل أن نقول «السلام عليكم ورحمة الله وبركاته». ونرد على من يسلّم علينا بمثلها أو بأحسن منها.",
+    "child_description_en": "Spreading salam means greeting people with the Islamic greeting \"assalamu alaikum\", and the best, complete form is \"assalamu alaikum wa rahmatullahi wa barakatuh\". When someone greets us, we answer with the same greeting or a better one.",
+    "order": 29
+  },
+  {
+    "slug": "table-manners",
+    "name_ar": "آداب الطعام",
+    "name_en": "Table Manners",
+    "keywords_ar": [
+      "أكل",
+      "طعام",
+      "الطعام",
+      "آداب الطعام",
+      "بسم الله",
+      "اليمين",
+      "شبعان",
+      "أسرف"
+    ],
+    "keywords_en": [
+      "eating",
+      "table manners",
+      "bismillah",
+      "right hand",
+      "finish food"
+    ],
+    "child_description_ar": "نقول بسم الله قبل الأكل، ونأكل بهدوء وأدب، ونأخذ من الطعام الذي أمامنا. وبعد الأكل نقول الحمد لله.",
+    "child_description_en": "We say bismillah before eating, eat calmly and politely, and take food from the part in front of us. After eating we say alhamdulillah.",
+    "order": 30
+  },
+  {
+    "slug": "helping-others",
+    "name_ar": "مساعدة الآخرين",
+    "name_en": "Helping Others",
+    "keywords_ar": [
+      "مساعدة",
+      "أساعد",
+      "اساعد",
+      "ساعد",
+      "معروف",
+      "محتاج",
+      "خدمة",
+      "أعاون"
+    ],
+    "keywords_en": [
+      "help",
+      "helping",
+      "help others",
+      "assist",
+      "good deed",
+      "favour",
+      "someone in need",
+      "volunteer"
+    ],
+    "child_description_ar": "مساعدة الآخرين أن نسرع لمعونة من يحتاج إلينا، فيفرح هو ونفرح نحن.",
+    "child_description_en": "Helping others means hurrying to assist anyone who needs us, so they are happy and we are happy too.",
+    "order": 31
+  },
+  {
+    "slug": "avoiding-backbiting",
+    "name_ar": "ترك الغيبة",
+    "name_en": "Avoiding Backbiting",
+    "keywords_ar": [
+      "غيبة",
+      "الغيبة",
+      "نميمة",
+      "النميمة",
+      "أتكلم عن",
+      "وراء ظهره",
+      "أنقل الكلام",
+      "فضيحة"
+    ],
+    "keywords_en": [
+      "backbiting",
+      "gossip",
+      "gossiping",
+      "talk behind",
+      "tell tales",
+      "spread rumours",
+      "badmouth",
+      "tattle"
+    ],
+    "child_description_ar": "الغيبة أن نتكلم عن شخص من وراء ظهره بكلام يحزنه لو سمعه. نتركها ونتكلم عن الناس بالخير أو نسكت.",
+    "child_description_en": "Backbiting is talking about someone behind their back in a way that would upset them if they heard. We avoid it and either say something good or stay quiet.",
+    "order": 32
+  },
+  {
+    "slug": "courage",
+    "name_ar": "الشجاعة",
+    "name_en": "Courage",
+    "keywords_ar": [
+      "شجاعة",
+      "الشجاعة",
+      "شجاع",
+      "جبان",
+      "خوف",
+      "أخاف",
+      "بطل"
+    ],
+    "keywords_en": [
+      "courage",
+      "brave",
+      "courageous",
+      "coward",
+      "scared",
+      "afraid",
+      "stand up",
+      "be strong"
+    ],
+    "child_description_ar": "الشجاعة أن نقول الحق ونفعل الصواب حتى لو كنا خائفين، ونطلب المساعدة عند الحاجة.",
+    "child_description_en": "Courage means saying what is true and doing what is right even when we feel scared, and asking for help when we need it.",
+    "order": 33
+  },
+  {
+    "slug": "not-wasting",
+    "name_ar": "عدم الإسراف",
+    "name_en": "Not Wasting",
+    "keywords_ar": [
+      "إسراف",
+      "اسراف",
+      "الإسراف",
+      "تبذير",
+      "أبذر",
+      "أضيع الأكل",
+      "أرمي الأكل",
+      "توفير"
+    ],
+    "keywords_en": [
+      "waste",
+      "wasting",
+      "wasteful",
+      "not wasting",
+      "throw away food",
+      "too much",
+      "extravagant"
+    ],
+    "child_description_ar": "عدم الإسراف أن نستعمل الطعام والماء والمال بقدر الحاجة. لا نرمي النعمة ولا نأخذ أكثر مما نحتاج.",
+    "child_description_en": "Not wasting means using food, water and money only as much as we need. We do not throw away Allah's gifts or take more than we need.",
+    "order": 34
+  },
+  {
+    "slug": "family-ties",
+    "name_ar": "صلة الرحم",
+    "name_en": "Family Ties",
+    "keywords_ar": [
+      "صلة الرحم",
+      "أقارب",
+      "الأقارب",
+      "عمتي",
+      "خالتي",
+      "قطيعة",
+      "زيارة"
+    ],
+    "keywords_en": [
+      "family",
+      "relatives",
+      "family ties",
+      "visit relatives",
+      "aunt",
+      "uncle",
+      "cut off",
+      "stay in touch"
+    ],
+    "child_description_ar": "صلة الرحم أن نزور أقاربنا ونتصل بهم ونحبهم. لا نقاطعهم بل نسأل عنهم ونحسن إليهم.",
+    "child_description_en": "Keeping family ties means visiting and calling our relatives and loving them. We do not cut them off but ask about them and are kind to them.",
+    "order": 35
+  },
+  {
+    "slug": "love-of-the-prophet",
+    "name_ar": "محبة النبي ﷺ",
+    "name_en": "Love of the Prophet ﷺ",
+    "keywords_ar": [
+      "النبي",
+      "الرسول",
+      "محبة النبي",
+      "الصلاة على النبي",
+      "صلى الله عليه وسلم",
+      "النبي محمد",
+      "سنة النبي",
+      "سيرة النبي"
+    ],
+    "keywords_en": [
+      "prophet",
+      "muhammad",
+      "messenger",
+      "love the prophet",
+      "sunnah",
+      "salawat",
+      "seerah",
+      "peace be upon him"
+    ],
+    "child_description_ar": "نحب النبي محمدا ﷺ ونتعلم من أخلاقه الجميلة ونصلي عليه.",
+    "child_description_en": "We love the Prophet Muhammad ﷺ, learn from his beautiful character and send blessings on him.",
+    "order": 36
+  },
+  {
+    "slug": "sincerity",
+    "name_ar": "الإخلاص",
+    "name_en": "Sincerity",
+    "keywords_ar": [
+      "إخلاص",
+      "اخلاص",
+      "الإخلاص",
+      "النية",
+      "رياء",
+      "أرائي",
+      "لوجه الله"
+    ],
+    "keywords_en": [
+      "sincere",
+      "sincerity",
+      "ikhlas",
+      "intention",
+      "for allah",
+      "show off",
+      "pretend",
+      "to be seen"
+    ],
+    "child_description_ar": "الإخلاص أن نعمل الخير لوجه الله وحده لا ليمدحنا الناس. نفعل الخير لأنه خير.",
+    "child_description_en": "Sincerity means doing good only for Allah's sake, not so people will praise us. We do good because it is good.",
+    "order": 37
+  },
+  {
+    "slug": "contentment",
+    "name_ar": "القناعة",
+    "name_en": "Contentment",
+    "keywords_ar": [
+      "قناعة",
+      "القناعة",
+      "قانع",
+      "راضي",
+      "أرضى",
+      "أريد أكثر",
+      "حسد",
+      "غيرة",
+      "جشع",
+      "طمع",
+      "شكر",
+      "نعمة"
+    ],
+    "keywords_en": [
+      "contentment",
+      "content",
+      "satisfied",
+      "be happy with what you have",
+      "envy",
+      "jealous",
+      "greedy",
+      "want more",
+      "greed",
+      "gratitude",
+      "thankful",
+      "ungrateful"
+    ],
+    "child_description_ar": "القناعة أن نرضى بما أعطانا الله من رزق وطعام وثياب وأهل، ونشكره عليه، ولا نحسد غيرنا ولا نطمع في المزيد دون حد. من يقنع يعش مطمئنا.",
+    "child_description_en": "Contentment means being satisfied with what Allah has given us, such as food, clothes and family, and thanking Him, without envying others or always wanting more. A content person lives at peace.",
+    "order": 38
+  }
+]

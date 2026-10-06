@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Al-Sadiq Al-Sadouq — AI companion helping children develop moral and socio-emotional skills" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Amiri:wght@400;700&family=Amiri+Quran&family=Baloo+Bhaijaan+2:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- The painted meadow is the landing's first picture (its LCP): fetch the right size early. -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+      href="/backgrounds/fantasy-meadow-1600.webp"
+      imagesrcset="/backgrounds/fantasy-meadow-900.webp 900w, /backgrounds/fantasy-meadow-1600.webp 1600w, /backgrounds/fantasy-meadow.webp 2560w"
+      imagesizes="(min-width: 1024px) 560px, 100vw"
+    />
+    <title>Al-Sadiq Al-Sadouq</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

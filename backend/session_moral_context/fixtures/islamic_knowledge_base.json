@@ -1,0 +1,133 @@
+[
+  {
+    "theme": "Honesty",
+    "theme_description": "The importance of truthfulness and sincerity in Islam",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'You must be truthful. Verily, truthfulness leads to righteousness, and righteousness leads to Paradise. A man continues to tell the truth and tries his best to be truthful until he is recorded with Allah as a truthful person. And beware of lying, for lying leads to wickedness, and wickedness leads to Hellfire. A man continues to lie and tries his best to lie until he is recorded with Allah as a liar.'",
+        "source": "Sahih al-Bukhari 6094, Sahih Muslim 2607"
+      },
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'It is obligatory upon a Muslim to be truthful. Guarantee me six things from yourselves and I will guarantee you Paradise: be truthful when you speak, fulfill your promises when you make them, be trustworthy when you are entrusted with something, guard your private parts, lower your gaze, and withhold your hands from harming others.'",
+        "source": "Musnad Ahmad 22757"
+      },
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'The signs of a hypocrite are three: when he speaks he lies, when he makes a promise he breaks it, and when he is trusted he betrays that trust.'",
+        "source": "Sahih al-Bukhari 33, Sahih Muslim 59"
+      },
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'Sell not that which you do not possess.'",
+        "source": "Sunan Abu Dawud 3503, Sunan al-Tirmidhi 1232"
+      },
+      {
+        "type": "quran",
+        "text": "O you who have believed, fear Allah and be with those who are truthful.",
+        "source": "Surah At-Tawbah 9:119"
+      },
+      {
+        "type": "quran",
+        "text": "This is a Day when the truthful will benefit from their truthfulness. For them are gardens beneath which rivers flow, wherein they will abide forever, Allah being pleased with them, and they with Him. That is the great attainment.",
+        "source": "Surah Al-Ma'idah 5:119"
+      },
+      {
+        "type": "quran",
+        "text": "Among the believers are men true to what they promised Allah. Among them is he who has fulfilled his vow [to the death], and among them is he who awaits [his chance]. And they did not alter [the terms of their commitment] by any alteration.",
+        "source": "Surah Al-Ahzab 33:23"
+      }
+    ]
+  },
+  {
+    "theme": "Truthfulness",
+    "theme_description": "Being honest and sincere in all speech and actions",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'A true Muslim is one from whose tongue and hands people are safe, and a true believer is one from whom people's lives and wealth are safe.'",
+        "source": "Sahih al-Bukhari 10, Sahih Muslim 41"
+      },
+      {
+        "type": "quran",
+        "text": "And do not mix the truth with falsehood or conceal the truth while you know [it].",
+        "source": "Surah Al-Baqarah 2:42"
+      }
+    ]
+  },
+  {
+    "theme": "Courage",
+    "theme_description": "Having the bravery to do what is right even when it is difficult",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'The strong person is not the one who can overpower others. Rather, the strong person is the one who controls himself when he is angry.'",
+        "source": "Sahih al-Bukhari 6114, Sahih Muslim 2609"
+      },
+      {
+        "type": "quran",
+        "text": "So do not weaken and do not grieve, and you will be superior if you are [true] believers.",
+        "source": "Surah Ali 'Imran 3:139"
+      }
+    ]
+  },
+  {
+    "theme": "Kindness",
+    "theme_description": "Being gentle and compassionate toward others",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'None of you truly believes until he loves for his brother what he loves for himself.'",
+        "source": "Sahih al-Bukhari 13, Sahih Muslim 45"
+      },
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'The merciful will be shown mercy by the Most Merciful. Be merciful to those on earth and the One in the heavens will have mercy upon you.'",
+        "source": "Sunan Abu Dawud 4941, Sunan al-Tirmidhi 1924"
+      },
+      {
+        "type": "quran",
+        "text": "And speak to people good [words] and establish prayer and give zakah.",
+        "source": "Surah Al-Baqarah 2:83"
+      }
+    ]
+  },
+  {
+    "theme": "Responsibility",
+    "theme_description": "Being accountable for one's actions and duties",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'Each of you is a shepherd and each of you is responsible for his flock. The ruler is a shepherd and is responsible for his flock. The man is the shepherd of his family and is responsible for his flock. The woman is the shepherd in the house of her husband and is responsible for her flock. The servant is the shepherd of the wealth of his master and is responsible for his flock. Each of you is a shepherd and is responsible for his flock.'",
+        "source": "Sahih al-Bukhari 893, Sahih Muslim 1829"
+      },
+      {
+        "type": "quran",
+        "text": "And that there is not for man except that [good] for which he strives.",
+        "source": "Surah An-Najm 53:39"
+      }
+    ]
+  },
+  {
+    "theme": "Patience",
+    "theme_description": "Enduring hardship with faith and perseverance",
+    "references": [
+      {
+        "type": "hadith",
+        "text": "The Prophet Muhammad (peace be upon him) said: 'How wonderful is the affair of the believer, for his affairs are all good, and this applies to no one but the believer. If something good happens to him, he is thankful for it and that is good for him. If something bad happens to him, he bears it with patience and that is good for him.'",
+        "source": "Sahih Muslim 2999"
+      },
+      {
+        "type": "quran",
+        "text": "O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.",
+        "source": "Surah Al-Baqarah 2:153"
+      },
+      {
+        "type": "quran",
+        "text": "Indeed, the patient will be given their reward without account.",
+        "source": "Surah Az-Zumar 39:10"
+      }
+    ]
+  }
+]

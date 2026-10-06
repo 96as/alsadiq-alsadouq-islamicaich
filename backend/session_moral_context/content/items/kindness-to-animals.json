@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 6,
+    "ayah": 38,
+    "arabic_text": "وَمَا مِن دَآبَّةٖ فِي ٱلۡأَرۡضِ وَلَا طَٰٓئِرٖ يَطِيرُ بِجَنَاحَيۡهِ إِلَّآ أُمَمٌ أَمۡثَالُكُمۚ مَّا فَرَّطۡنَا فِي ٱلۡكِتَٰبِ مِن شَيۡءٖۚ ثُمَّ إِلَىٰ رَبِّهِمۡ يُحۡشَرُونَ",
+    "arabic_text_search": "وما من دابة في الأرض ولا طائر يطير بجناحيه إلا أمم أمثالكم ما فرطنا في الكتاب من شيء ثم إلى ربهم يحشرون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And there is no creature on [or within] the earth or bird that flies with its wings except [that they are] communities like you. We have not neglected in the Register a thing. Then unto their Lord they will be gathered.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-anam/38",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/006038.mp3",
+    "values": [
+      "kindness-to-animals"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا هذه الآية أن الحيوانات والطيور جماعات خلقها الله مثلنا، فلها قيمتها. مثلا: نضع الماء للقطة العطشانة ولا نؤذي الطيور.",
+    "child_explanation_en": "This verse teaches that animals and birds are communities created by Allah like us, so they matter. For example, we can put out water for a thirsty cat and never hurt birds.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 27,
+    "ayah": 18,
+    "arabic_text": "حَتَّىٰٓ إِذَآ أَتَوۡاْ عَلَىٰ وَادِ ٱلنَّمۡلِ قَالَتۡ نَمۡلَةٞ يَٰٓأَيُّهَا ٱلنَّمۡلُ ٱدۡخُلُواْ مَسَٰكِنَكُمۡ لَا يَحۡطِمَنَّكُمۡ سُلَيۡمَٰنُ وَجُنُودُهُۥ وَهُمۡ لَا يَشۡعُرُونَ",
+    "arabic_text_search": "حتى إذا أتوا على وادي النمل قالت نملة ياأيها النمل ادخلوا مساكنكم لا يحطمنكم سليمان وجنوده وهم لا يشعرون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Until, when they came upon the valley of the ants, an ant said, \"O ants, enter your dwellings that you not be crushed by Solomon and his soldiers while they perceive not.\"",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-naml/18",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/027018.mp3",
+    "values": [
+      "kindness-to-animals"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "في هذه الآية تحذّر نملة النمل من أن يدوسه سليمان وجنوده وهم لا يشعرون. نتعلّم أن ننتبه ولا نؤذي المخلوقات الصغيرة. مثلا: ننظر إلى الأرض عند المشي حتى لا ندوس النمل.",
+    "child_explanation_en": "In this verse an ant warns the other ants to go into their homes so that Solomon and his soldiers do not crush them without noticing. We learn to be careful not to hurt small creatures. For example, we look where we walk so we do not step on ants.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

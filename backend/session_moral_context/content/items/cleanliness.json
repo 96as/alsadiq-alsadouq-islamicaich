@@ -1,0 +1,50 @@
+[
+  {
+    "type": "verse",
+    "surah": 9,
+    "ayah": 108,
+    "arabic_text": "لَا تَقُمۡ فِيهِ أَبَدٗاۚ لَّمَسۡجِدٌ أُسِّسَ عَلَى ٱلتَّقۡوَىٰ مِنۡ أَوَّلِ يَوۡمٍ أَحَقُّ أَن تَقُومَ فِيهِۚ فِيهِ رِجَالٞ يُحِبُّونَ أَن يَتَطَهَّرُواْۚ وَٱللَّهُ يُحِبُّ ٱلۡمُطَّهِّرِينَ",
+    "arabic_text_search": "لا تقم فيه أبدا لمسجد أسس على التقوى من أول يوم أحق أن تقوم فيه فيه رجال يحبون أن يتطهروا والله يحب المطهرين",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Do not stand [for prayer] within it - ever. A mosque founded on righteousness from the first day is more worthy for you to stand in. Within it are men who love to purify themselves; and Allāh loves those who purify themselves.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/at-tawba/108",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/009108.mp3",
+    "values": [
+      "cleanliness"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا هذه الآية أن الله يحب الذين يتطهّرون ويحافظون على نظافتهم. مثلا: نغسل أيدينا قبل الأكل وبعد اللعب.",
+    "child_explanation_en": "This verse teaches that Allah loves people who keep themselves clean. For example, we wash our hands before eating and after playing.",
+    "child_explanation_older_ar": "تتحدث الآية عن مسجد أُسس على التقوى، وفيه رجال يحبون أن يتطهروا، وتقول إن الله يحب المطهرين. والطهارة في الإسلام تشمل نظافة البدن والثياب والمكان من النجاسة، وتشمل أيضا الوضوء قبل الصلاة، فنحرص على إسباغ الوضوء أي إتمامه. وإن لم تعرف كيف تتطهر من النجاسة أو تتوضأ بشكل صحيح، فاسأل والديك أو معلمك ليعلموك.",
+    "child_explanation_older_en": "The verse speaks about a mosque founded on righteousness, in which there are men who love to purify themselves, and it says that Allah loves those who purify themselves. Purity in Islam includes keeping the body, clothes and place free of impurity (najasah), and it includes wudu before prayer, so we take care to make wudu well and completely. If you do not know how to purify yourself from impurity or how to make wudu properly, ask your parents or teacher to teach you.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 74,
+    "ayah": 4,
+    "arabic_text": "وَثِيَابَكَ فَطَهِّرۡ",
+    "arabic_text_search": "وثيابك فطهر",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And your clothing purify.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-muddaththir/4",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/074004.mp3",
+    "values": [
+      "cleanliness"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تذكّرنا هذه الآية بالطهارة، ومن معانيها أن نحافظ على نظافة ثيابنا. مثلا: نضع ثيابنا المتسخة في سلة الغسيل ونلبس ثيابا نظيفة.",
+    "child_explanation_en": "This verse reminds us about purity, and one meaning is keeping our clothes clean. For example, we put dirty clothes in the laundry basket and wear fresh, clean ones.",
+    "child_explanation_older_ar": "من معاني الآية أن تكون ثيابنا نظيفة وطاهرة من النجاسة، ولهذا نحرص على نظافة ثيابنا وبدننا ومكان صلاتنا. ومن العناية بالنظافة أيضا أن نهتم برائحتنا فنستحم ونلبس ثيابا نظيفة حتى لا نؤذي من حولنا برائحة كريهة. ومن معاني الطهارة كذلك تنقية القلب من الأخلاق السيئة. وإذا لم تعرف ما الذي يتنجس وكيف يطهر، فاسأل والديك أو معلمك.",
+    "child_explanation_older_en": "One meaning of the verse is that our clothes should be clean and free of impurity (najasah), so we take care of our clothes, our bodies and the place where we pray. Looking after cleanliness also means looking after how we smell: we bathe and wear clean clothes so that we do not bother people around us with a bad smell. Purity also has a deeper meaning, cleansing our hearts of bad character. If you are not sure what counts as impure or how to clean it, ask your parents or your teacher.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

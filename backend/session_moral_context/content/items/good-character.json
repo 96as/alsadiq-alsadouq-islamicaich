@@ -1,0 +1,70 @@
+[
+  {
+    "type": "verse",
+    "surah": 68,
+    "ayah": 4,
+    "arabic_text": "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٖ",
+    "arabic_text_search": "وإنك لعلى خلق عظيم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And indeed, you are of a great moral character.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-qalam/4",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/068004.mp3",
+    "values": [
+      "good-character"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن الله مدح نبيّه ﷺ بخلقه العظيم، فالأخلاق الطيبة شيء كبير. مثلًا: تكون لطيفًا وصادقًا مع إخوتك وزملائك كل يوم.",
+    "child_explanation_en": "This verse teaches that Allah praised His Prophet ﷺ for his great character, so kindness and good manners are very important. For example, you try to be gentle and truthful with your siblings and classmates every day.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 41,
+    "ayah": 34,
+    "arabic_text": "وَلَا تَسۡتَوِي ٱلۡحَسَنَةُ وَلَا ٱلسَّيِّئَةُۚ ٱدۡفَعۡ بِٱلَّتِي هِيَ أَحۡسَنُ فَإِذَا ٱلَّذِي بَيۡنَكَ وَبَيۡنَهُۥ عَدَٰوَةٞ كَأَنَّهُۥ وَلِيٌّ حَمِيمٞ",
+    "arabic_text_search": "ولا تستوي الحسنة ولا السيئة ادفع بالتي هي أحسن فإذا الذي بينك وبينه عداوة كأنه ولي حميم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And not equal are the good deed and the bad. Repel [evil] by that [deed] which is better; and thereupon, the one whom between you and him is enmity [will become] as though he was a devoted friend.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/fussilat/34",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/041034.mp3",
+    "values": [
+      "good-character",
+      "controlling-anger"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نقابل الإساءة بالإحسان، فقد يصير من أخطأ علينا صديقًا. مثلًا: إذا أغضبك زميل، تردّ عليه بكلمة طيبة بدل الصراخ.",
+    "child_explanation_en": "This verse teaches us to answer unkindness with kindness, because it can turn someone who upset us into a friend. For example, when a classmate makes you angry, you reply with a kind word instead of shouting.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 17,
+    "ayah": 53,
+    "arabic_text": "وَقُل لِّعِبَادِي يَقُولُواْ ٱلَّتِي هِيَ أَحۡسَنُۚ إِنَّ ٱلشَّيۡطَٰنَ يَنزَغُ بَيۡنَهُمۡۚ إِنَّ ٱلشَّيۡطَٰنَ كَانَ لِلۡإِنسَٰنِ عَدُوّٗا مُّبِينٗا",
+    "arabic_text_search": "وقل لعبادي يقولوا التي هي أحسن إن الشيطان ينزغ بينهم إن الشيطان كان للإنسان عدوا مبينا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And tell My servants to say that which is best. Indeed, Satan induces [dissension] among them. Indeed Satan is ever, to mankind, a clear enemy.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-isra/53",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/017053.mp3",
+    "values": [
+      "good-character",
+      "kind-words"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نختار الكلام الطيب، لأن الكلام الجميل يحفظ المحبة بين الناس. مثلًا: تقول لصديقك كلمة لطيفة بدل أن تسخر منه.",
+    "child_explanation_en": "This verse teaches us to choose kind words, because nice speech keeps love between people. For example, you say something friendly to a friend instead of teasing them.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

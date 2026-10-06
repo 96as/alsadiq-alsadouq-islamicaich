@@ -1,0 +1,40 @@
+{
+ "before": {
+  "replies": 90,
+  "replies_with_verse_served": 32,
+  "replies_naming_a_number": 0,
+  "matching_served": 0,
+  "not_matching_served": 0,
+  "named_ids": [],
+  "named_kinds": {},
+  "bad": []
+ },
+ "after": {
+  "replies": 90,
+  "replies_with_verse_served": 31,
+  "replies_naming_a_number": 4,
+  "matching_served": 4,
+  "not_matching_served": 0,
+  "named_ids": [
+   "heldout-02-ar",
+   "translate-sadaqah-ar",
+   "grounding-gratitude-ar",
+   "grounding-mercy-en"
+  ],
+  "named_kinds": {
+   "heldout-02-ar": [
+    "ar_words"
+   ],
+   "translate-sadaqah-ar": [
+    "pair"
+   ],
+   "grounding-gratitude-ar": [
+    "ar_words"
+   ],
+   "grounding-mercy-en": [
+    "pair"
+   ]
+  },
+  "bad": []
+ }
+}

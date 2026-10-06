@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 3,
+    "ayah": 139,
+    "arabic_text": "وَلَا تَهِنُواْ وَلَا تَحۡزَنُواْ وَأَنتُمُ ٱلۡأَعۡلَوۡنَ إِن كُنتُم مُّؤۡمِنِينَ",
+    "arabic_text_search": "ولا تهنوا ولا تحزنوا وأنتم الأعلون إن كنتم مؤمنين",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "So do not weaken and do not grieve, and you will be superior if you are [true] believers.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/aal-imran/139",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/003139.mp3",
+    "values": [
+      "courage"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تشجّعنا الآية ألّا نضعف ولا نحزن، وأن نبقى أقوياء. مثلا: إذا كان شيء صعبا عليك، جرّب مرة أخرى واطلب المساعدة من شخص كبير.",
+    "child_explanation_en": "This verse encourages us not to feel weak or sad, and to stay strong. For example, when something is hard for you, try again and ask a grown-up to help.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 20,
+    "ayah": 46,
+    "arabic_text": "قَالَ لَا تَخَافَآۖ إِنَّنِي مَعَكُمَآ أَسۡمَعُ وَأَرَىٰ",
+    "arabic_text_search": "قال لا تخافا إنني معكما أسمع وأرى",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "[Allāh] said, \"Fear not. Indeed, I am with you both; I hear and I see.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/ta-ha/46",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/020046.mp3",
+    "values": [
+      "courage"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "في هذه الآية قال الله لموسى وهارون: لا تخافا، فإنه يسمع ويرى. قصتهما تعلّمنا الشجاعة في فعل الصواب، وإذا كان هناك خطر نطلب مساعدة الكبار.",
+    "child_explanation_en": "In this verse Allah told Moses and Aaron not to be afraid, because He hears and sees. Their story teaches us courage in doing what is right, and if there is danger we ask grown-ups for help.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

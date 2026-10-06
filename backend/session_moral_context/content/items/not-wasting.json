@@ -1,0 +1,25 @@
+[
+  {
+    "type": "verse",
+    "surah": 17,
+    "ayah": 26,
+    "arabic_text": "وَءَاتِ ذَا ٱلۡقُرۡبَىٰ حَقَّهُۥ وَٱلۡمِسۡكِينَ وَٱبۡنَ ٱلسَّبِيلِ وَلَا تُبَذِّرۡ تَبۡذِيرًا",
+    "arabic_text_search": "وآت ذا القربى حقه والمسكين وابن السبيل ولا تبذر تبذيرا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And give the relative his right, and [also] the poor and the traveler, and do not spend wastefully.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-isra/26",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/017026.mp3",
+    "values": [
+      "not-wasting",
+      "family-ties"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نعطي الأقارب والمحتاجين حقهم وألّا نبذّر المال. مثلا: بمساعدة أمي وأبي نشارك ما نقدر عليه، ونستعمل الأشياء بعناية.",
+    "child_explanation_en": "This verse teaches us to give relatives and people in need what is due to them and not to waste money. For example, with Mum or Dad's help, we share what we can and use things carefully.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

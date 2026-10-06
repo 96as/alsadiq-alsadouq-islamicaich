@@ -1,0 +1,31 @@
+# Advice probes (hk/13c): run with `run_source_timing --file conversation/eval/source_timing_advice.yaml`.
+# Children's messages only: no scripture. Labels as in source_timing.yaml. a04: the second ask must bring a
+# DIFFERENT item than the first (checked from the report's cards_shown), or "that's all I have".
+
+- id: a01-fight-friend-en
+  lang: en
+  age: 9
+  turns:
+    - due: "I had a fight with my friend, what should I do?"
+    - not_due: "ok, thanks"
+
+- id: a02-lied-mom-en
+  lang: en
+  age: 10
+  turns:
+    - due: "I lied to my mom about finishing my homework"
+    - not_due: "she doesn't know yet"
+
+- id: a03-share-brother-gulf
+  lang: ar
+  age: 8
+  turns:
+    - due: "ما عطيت أخوي الصغير من حلاوتي اليوم"
+    - not_due: "طيب"
+
+- id: a04-another-verse-en
+  lang: en
+  age: 11
+  turns:
+    - ask: "is there a verse about being honest?"
+    - ask: "is there another verse or hadith on the same topic?"

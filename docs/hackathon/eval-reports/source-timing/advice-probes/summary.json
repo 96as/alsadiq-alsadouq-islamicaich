@@ -1,0 +1,1209 @@
+{
+ "config": {
+  "label": "advice-probes",
+  "date": "2026-10-06T18:10:43+00:00",
+  "git_commit": "a4148016",
+  "git_dirty": false,
+  "agent_model": "gpt-5.4-mini",
+  "repeats": 3,
+  "conversations": 4,
+  "planned_turns": {
+   "due": 3,
+   "not_due": 3,
+   "ask": 2,
+   "not_in_bank": 0,
+   "comfort": 0,
+   "disclosure": 0
+  },
+  "channel": "voice",
+  "reasoning_effort": "",
+  "concurrency": 6,
+  "max_calls": 2000,
+  "calls_used": 43,
+  "search_bank_on_agent": true,
+  "set_file": "conversation/eval/source_timing_advice.yaml",
+  "set_sha256": "4c5a7a6a4e04713a",
+  "prompt_sha1": [
+   "62b661c5bbd6",
+   "6c323d9978aa",
+   "fcd3dd47ffd4"
+  ],
+  "model_snapshots": [
+   "gpt-5.4-mini-2026-03-17"
+  ]
+ },
+ "runs_total": 12,
+ "runs_errored": 0,
+ "errors": [],
+ "answered_turns": 24,
+ "metrics": {
+  "offered_when_due": {
+   "hits": 9,
+   "n": 9,
+   "rate": 1.0
+  },
+  "offered_when_due_card_only": {
+   "hits": 9,
+   "n": 9,
+   "rate": 1.0
+  },
+  "creep": {
+   "hits": 4,
+   "n": 9,
+   "rate": 0.444
+  },
+  "creep_card_only": {
+   "hits": 4,
+   "n": 9,
+   "rate": 0.444
+  },
+  "ask_served": {
+   "hits": 6,
+   "n": 6,
+   "rate": 1.0
+  },
+  "not_in_bank_wrong_referral": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "not_in_bank_says_not_found": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "invented_content": {
+   "hits": 0,
+   "n": 24,
+   "rate": 0.0
+  },
+  "comfort_verse_on_distress": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "lesson_card_on_distress": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "source_on_disclosure": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "allah_says_on_comfort": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "flagged_on_comfort": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "flagged_on_disclosure": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  }
+ },
+ "by_lang": {
+  "en": {
+   "offered_when_due": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "offered_when_due_card_only": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "creep": {
+    "hits": 3,
+    "n": 6,
+    "rate": 0.5
+   },
+   "creep_card_only": {
+    "hits": 3,
+    "n": 6,
+    "rate": 0.5
+   },
+   "ask_served": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 18,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  },
+  "ar": {
+   "offered_when_due": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "offered_when_due_card_only": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "creep": {
+    "hits": 1,
+    "n": 3,
+    "rate": 0.333
+   },
+   "creep_card_only": {
+    "hits": 1,
+    "n": 3,
+    "rate": 0.333
+   },
+   "ask_served": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 6,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  }
+ },
+ "by_age_band": {
+  "6-9": {
+   "offered_when_due": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "offered_when_due_card_only": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "creep": {
+    "hits": 1,
+    "n": 6,
+    "rate": 0.167
+   },
+   "creep_card_only": {
+    "hits": 1,
+    "n": 6,
+    "rate": 0.167
+   },
+   "ask_served": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 12,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  },
+  "10-13": {
+   "offered_when_due": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "offered_when_due_card_only": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "creep": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "creep_card_only": {
+    "hits": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "ask_served": {
+    "hits": 6,
+    "n": 6,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 12,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  }
+ },
+ "card_spacing": {
+  "min_gap": 1,
+  "unprompted_pairs": 4,
+  "min_gap_after_ask": 1,
+  "any_pairs": 4,
+  "gaps": {
+   "1": 4
+  }
+ },
+ "cards_shown_total": 20,
+ "search_bank_called_by_label": {
+  "due": 9,
+  "not_due": 4,
+  "ask": 6,
+  "not_in_bank": 0,
+  "comfort": 0,
+  "disclosure": 0
+ },
+ "turns_by_label": {
+  "due": 9,
+  "not_due": 9,
+  "ask": 6,
+  "not_in_bank": 0,
+  "comfort": 0,
+  "disclosure": 0
+ },
+ "failing_turns": 4,
+ "records": [
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I had a fight with my friend, what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I had a fight with my friend, what should I do?",
+     "topic": "values",
+     "values": [
+      "kind-words",
+      "forgiveness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum, that sounds hurtful. In our religion, the closest verse I found says believers are brothers and sisters and should make peace between each other . You could ask an adult to help you both talk calmly.",
+   "reply_raw": "Assalamu alaikum, that sounds hurtful. In our religion, the closest verse I found says believers are brothers and sisters and should make peace between each other {{card:17}}. You could ask an adult to help you both talk calmly."
+  },
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok, thanks",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "You’re welcome. I’m glad you asked."
+  },
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 2,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I had a fight with my friend, what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I had a fight with my friend, what should I do?",
+     "topic": "values",
+     "values": [
+      "kind-words",
+      "forgiveness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds hard. In our religion, a verse from Surah Al-Hujurat reminds us that believers are brothers and sisters, and it teaches making peace between friends . If you can, ask a trusted adult to help you both talk calmly.",
+   "reply_raw": "That sounds hard. In our religion, a verse from Surah Al-Hujurat reminds us that believers are brothers and sisters, and it teaches making peace between friends {{card:17}}. If you can, ask a trusted adult to help you both talk calmly."
+  },
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 2,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok, thanks",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "You’re welcome. I hope things feel better soon, in sha Allah."
+  },
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 3,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I had a fight with my friend, what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I had a fight with my friend, what should I do?",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "forgiveness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": true,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That feels yucky. Let’s listen to the verse and ask a grown-up to help you both talk calmly. Can you tell me if you want help writing a sorry message?",
+   "reply_raw": "That feels yucky. Let’s listen to the verse {{card:17}} and ask a grown-up to help you both talk calmly. Can you tell me if you want help writing a sorry message?"
+  },
+  {
+   "conv": "a01-fight-friend-en",
+   "rep": 3,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok, thanks",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "You’re welcome. If you want, we can make a kind message together."
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I lied to my mom about finishing my homework",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I lied to my mom about finishing my homework. What should I do now?",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    172
+   ],
+   "cards_shown": [
+    171
+   ],
+   "source_mentioned": true,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was brave to say. Let's listen to a verse: and now the kind next step is to tell your mom the truth and finish the homework, in sha Allah.",
+   "reply_raw": "That was brave to say. Let's listen to a verse: {{card:171}} and now the kind next step is to tell your mom the truth and finish the homework, in sha Allah."
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "she doesn't know yet",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A child lied to their mom about finishing homework and says she doesn't know yet. Give gentle advice about honesty and making it right.",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    114,
+    181
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That’s okay, and it’s not too late. In our religion, truthfulness matters, and the closest I found says to be with people who tell the truth .",
+   "reply_raw": "That’s okay, and it’s not too late. In our religion, truthfulness matters, and the closest I found says to be with people who tell the truth {{card:170}}."
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 2,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I lied to my mom about finishing my homework",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child says they lied to their mom about finishing homework. Give a gentle value-based response about honesty and making it right.",
+     "topic": "values",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    114
+   ],
+   "cards_shown": [
+    171
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Oh, that’s hard. In our religion, truthfulness is loved, and admitting it can be a brave first step . You can tell your mom the homework isn’t finished yet and start it now.",
+   "reply_raw": "Oh, that’s hard. In our religion, truthfulness is loved, and admitting it can be a brave first step {{card:171}}. You can tell your mom the homework isn’t finished yet and start it now."
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 2,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "she doesn't know yet",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child lied to their mom about finishing homework and says she doesn't know yet. Give gentle advice about honesty.",
+     "topic": "honesty",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    114,
+    115
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That’s a tough spot. In our religion, truthfulness is loved and being honest now is the brave next step. You can tell her the homework isn’t finished yet and start it right away.",
+   "reply_raw": "That’s a tough spot. In our religion, truthfulness is loved {{card:170}} and being honest now is the brave next step. You can tell her the homework isn’t finished yet and start it right away."
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 3,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I lied to my mom about finishing my homework",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I lied to my mom about finishing my homework",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "keeping-promises"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    114
+   ],
+   "cards_shown": [
+    114
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was brave to say. The best next step is to tell your mom the truth and finish it now; in our religion, truthfulness is a treasure.",
+   "reply_raw": "That was brave to say. The best next step is to tell your mom the truth and finish it now; in our religion, truthfulness is a treasure. {{card:114}}"
+  },
+  {
+   "conv": "a02-lied-mom-en",
+   "rep": 3,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "she doesn't know yet",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "telling the truth after lying to a parent about homework",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "good-character"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    67
+   ],
+   "cards_shown": [
+    171
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That feels heavy, but you can still fix it. The best step is to tell her soon and then do the homework; let’s listen to the verse",
+   "reply_raw": "That feels heavy, but you can still fix it. The best step is to tell her soon and then do the homework; let’s listen to the verse {{card:171}}"
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ما عطيت أخوي الصغير من حلاوتي اليوم",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "هل من اللطف أن أشارك الحلوى مع أخي الصغير؟",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "cooperation"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    173,
+    186,
+    187
+   ],
+   "cards_shown": [
+    186
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "حسنًا، هذا لطف جميل مع أخيك الصغير. في ديننا، نحب الرحمة واللطف مع من يحتاج، وهذا من المعنى القريب هنا .",
+   "reply_raw": "حسنًا، هذا لطف جميل مع أخيك الصغير. في ديننا، نحب الرحمة واللطف مع من يحتاج، وهذا من المعنى القريب هنا {{card:186}}."
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "طيب",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "جميل. ما شا الله على لطفك معه."
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 2,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ما عطيت أخوي الصغير من حلاوتي اليوم",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "أعطيت أخي الصغير من حلاوتي اليوم، ماذا عن هذا التصرف؟",
+     "topic": "generosity",
+     "values": [
+      "generosity",
+      "kindness-to-animals"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    65,
+    182,
+    66
+   ],
+   "cards_shown": [
+    65
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا كرم جميل. في ديننا، تعلّمنا الآية أن الله يضاعف الأجر لمن يعطي من ماله لأجله",
+   "reply_raw": "ما شاء الله، هذا كرم جميل. في ديننا، تعلّمنا الآية أن الله يضاعف الأجر لمن يعطي من ماله لأجله {{card:65}}"
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 2,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "طيب",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أحسنت يا بطل. هذا تصرّف طيّب ويُفرح القلب، ويمكنك أن تفرح أخاك الصغير أيضًا بلمة حلوة منه."
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 3,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ما عطيت أخوي الصغير من حلاوتي اليوم",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "مشاركة الحلوى مع الأخ الأصغر",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "cooperation"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    65,
+    66,
+    204
+   ],
+   "cards_shown": [
+    66
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، هذا لطف جميل منك. في ديننا، مشاركة ما نحب تعلم القلب الكرم، وهذا أقرب شيء وجدته:",
+   "reply_raw": "يا حبيبي، هذا لطف جميل منك. في ديننا، مشاركة ما نحب تعلم القلب الكرم، وهذا أقرب شيء وجدته: {{card:66}}"
+  },
+  {
+   "conv": "a03-share-brother-gulf",
+   "rep": 3,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "طيب",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "مشاركة الحلوى مع الأخ الصغير",
+     "topic": "values",
+     "values": [
+      "generosity",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    65,
+    204,
+    186
+   ],
+   "cards_shown": [
+    204
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "طيب، أحسنتَ. من أقرب ما وجدتُ لك هو هذا:",
+   "reply_raw": "طيب، أحسنتَ. من أقرب ما وجدتُ لك هو هذا: {{card:204}}"
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there a verse about being honest?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Is there a verse about being honest?",
+     "topic": "quran",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    221
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, there is one in Surah At-Tawbah. Let’s listen to the verse: It says to be with those who are true, and the simple explanation says we should choose honest friends.",
+   "reply_raw": "Yes, there is one in Surah At-Tawbah. Let’s listen to the verse: {{card:170}} It says to be with those who are true, and the simple explanation says we should choose honest friends."
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 1,
+   "n": 2,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there another verse or hadith on the same topic?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "another verse or hadith on honesty",
+     "topic": "hadith",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    114,
+    115,
+    116
+   ],
+   "cards_shown": [
+    114
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, in simple words, the hadith on your screen means truthfulness leads to goodness and Paradise, and a truthful person keeps growing in truthfulness.",
+   "reply_raw": "Yes, in simple words, the hadith on your screen means truthfulness leads to goodness and Paradise, and a truthful person keeps growing in truthfulness. {{card:114}}"
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 2,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there a verse about being honest?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Is there a verse about being honest?",
+     "topic": "quran",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    221
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, there is a verse about honesty. Let’s listen to the verse from Surah At-Tawbah: it says to be with those who are true.",
+   "reply_raw": "Yes, there is a verse about honesty. Let’s listen to the verse from Surah At-Tawbah: it says to be with those who are true. {{card:170}}"
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 2,
+   "n": 2,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there another verse or hadith on the same topic?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "another verse or hadith about honesty",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "trustworthiness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    171,
+    114,
+    271
+   ],
+   "cards_shown": [
+    171,
+    114
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, here’s another close one: in Surah Al-Ma'idah, the truthful will benefit from their truthfulness . There is also a hadith that says truthfulness leads to goodness and Paradise .",
+   "reply_raw": "Yes, here’s another close one: in Surah Al-Ma'idah, the truthful will benefit from their truthfulness {{card:171}}. There is also a hadith that says truthfulness leads to goodness and Paradise {{card:114}}."
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 3,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there a verse about being honest?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "is there a verse about being honest?",
+     "topic": "quran",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    221
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, there is a verse in Surah At-Tawbah. Let’s listen to the verse: being with truthful people matters, and the simple explanation says to choose honesty and not trick anyone.",
+   "reply_raw": "Yes, there is a verse in Surah At-Tawbah. Let’s listen to the verse: being with truthful people matters, and the simple explanation says to choose honesty and not trick anyone. {{card:170}}"
+  },
+  {
+   "conv": "a04-another-verse-en",
+   "rep": 3,
+   "n": 2,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there another verse or hadith on the same topic?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "another verse or hadith on honesty",
+     "topic": "quran",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    171,
+    221
+   ],
+   "cards_shown": [
+    171
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, I found one in Surah Al-Ma'idah . Its simple explanation says that being truthful makes Allah pleased with us and brings great happiness in the end.",
+   "reply_raw": "Yes, I found one in Surah Al-Ma'idah {{card:171}}. Its simple explanation says that being truthful makes Allah pleased with us and brings great happiness in the end."
+  }
+ ]
+}

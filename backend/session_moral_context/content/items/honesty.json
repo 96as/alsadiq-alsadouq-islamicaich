@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 9,
+    "ayah": 119,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱتَّقُواْ ٱللَّهَ وَكُونُواْ مَعَ ٱلصَّٰدِقِينَ",
+    "arabic_text_search": "ياأيها الذين آمنوا اتقوا الله وكونوا مع الصادقين",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, fear Allāh and be with those who are true.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/at-tawba/119",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/009119.mp3",
+    "values": [
+      "honesty"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نكون مع الصادقين. مثلا، نصاحب الصديق الذي يقول الحقيقة ولا يخدع أحدا.",
+    "child_explanation_en": "This verse teaches us to be with people who tell the truth. For example, we choose a friend who is honest and never tricks anyone.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 5,
+    "ayah": 119,
+    "arabic_text": "قَالَ ٱللَّهُ هَٰذَا يَوۡمُ يَنفَعُ ٱلصَّٰدِقِينَ صِدۡقُهُمۡۚ لَهُمۡ جَنَّٰتٞ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدٗاۖ رَّضِيَ ٱللَّهُ عَنۡهُمۡ وَرَضُواْ عَنۡهُۚ ذَٰلِكَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
+    "arabic_text_search": "قال الله هذا يوم ينفع الصادقين صدقهم لهم جنات تجري من تحتها الأنهار خالدين فيها أبدا رضي الله عنهم ورضوا عنه ذلك الفوز العظيم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Allāh will say, \"This is the Day when the truthful will benefit from their truthfulness.\" For them are gardens [in Paradise] beneath which rivers flow, wherein they will abide forever, Allāh being pleased with them, and they with Him. That is the great attainment.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-maida/119",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/005119.mp3",
+    "values": [
+      "honesty"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "الصدق يجعل الله راضيا عنا ويفرحنا يوم القيامة. مثلا، حين تعترف بأنك كسرت كوبا بالخطأ فأنت تتعلم أن تكون صادقا.",
+    "child_explanation_en": "Being truthful makes Allah pleased with us and brings us great happiness in the end. For example, when you admit you broke a cup by accident, you are practising honesty.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+  Dev-only: mounts the real Avatar component (drei useGLTF + meshopt). Not part of `vite build`.
+  Query: ?state=idle|listening|thinking|speaking   initial agent state (default idle)
+         ?speaking=1                               old boolean path: isSpeaking=true, no agent state
+         ?level=synthetic|none                     speaking jaw source for the web avatar (fake voice, or the sine fallback)
+         ?walk=1                                   play the walk-in timeline in place (no forest), with a "replay walk" button
+         ?walk=treadmill                           walk forever in place, to judge the gait up close
+         ?walk=hop                                 the fallback: a hop and a wave
+         ?model=<url>                              load another GLB (default: the configured one; see avatarConfig.js)
+  Buttons switch state live. window.__setState(name) does the same for scripts.
+  The clip buttons hold a loop or play a one-shot (Wave, Happy, LookAround, Blink); "speak audition
+  clip" plays a clip from frontend/dev-audio/ (gitignored) and lip-syncs to it. window.__control.current
+  is the avatar's dev handle (animator, bones, play, hold, look, jaw).
+  Preview the reduced-motion behaviour by emulating prefers-reduced-motion in the browser.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- w3: the same fonts index.html loads, so the held web page looks here as it does in the app -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Avatar component preview</title>
+    <style>
+      html, body, #root { margin: 0; height: 100%; background: #b9c9e6; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import { createElement } from 'react';
+      import { createRoot } from 'react-dom/client';
+      import AvatarPreviewApp from './src/features/child/components/avatar/dev/AvatarPreviewApp.jsx';
+
+      window.__errors = [];
+      window.addEventListener('error', (e) => window.__errors.push(String(e.message)));
+      createRoot(document.getElementById('root')).render(createElement(AvatarPreviewApp));
+    </script>
+  </body>
+</html>

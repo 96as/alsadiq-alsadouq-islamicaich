@@ -1,0 +1,3306 @@
+{
+ "args": {
+  "ar|أبي أساعد الأطفال اللي ما عندهم ماما وبابا، شو أسوي؟": {
+   "guard": "none",
+   "question": "أبي أساعد الأطفال اللي ما عندهم ماما وبابا، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "رحمة",
+    "إحسان"
+   ]
+  },
+  "ar|أبي أصير مثل النبي محمد، شو أسوي؟": {
+   "guard": "none",
+   "question": "أبي أصير مثل النبي محمد، شو أسوي؟",
+   "topic": "prophets_story",
+   "values": [
+    "honesty",
+    "mercy"
+   ]
+  },
+  "ar|أحب العلوم وأبي أتعلم أكثر، الإسلام يحب هذا؟": {
+   "guard": "none",
+   "question": "أحب العلوم وأبي أتعلم أكثر، الإسلام يحب هذا؟",
+   "topic": "values",
+   "values": [
+    "العلم",
+    "حب التعلم"
+   ]
+  },
+  "ar|أخاف من الظلام، هذا سيء للمسلم؟": {
+   "guard": "none",
+   "question": "أخاف من الظلام، هذا سيء للمسلم؟",
+   "topic": "word_meaning",
+   "values": [
+    "رحمة",
+    "صبر"
+   ]
+  },
+  "ar|أختي الصغيرة أخذت حلوى أكثر مني، هذا ظلم؟": {
+   "guard": "none",
+   "question": "أختي الصغيرة أخذت حلوى أكثر مني، هذا ظلم؟",
+   "topic": "values",
+   "values": [
+    "العدل",
+    "الصبر"
+   ]
+  },
+  "ar|أخذت لعبة أخوي وما رجعتها له، هذا غلط؟": {
+   "guard": "none",
+   "question": "أخذت لعبة أخوي وما رجعتها له، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|أخوي الصغير ياكل بإيده الشمال، شو يقول الإسلام؟": {
+   "guard": "none",
+   "question": "أخوي الصغير ياكل بإيده الشمال، شو يقول الإسلام؟",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "manners"
+   ]
+  },
+  "ar|أخوي شد ذيل القطة، هذا غلط؟": {
+   "guard": "none",
+   "question": "أخوي شد ذيل القطة، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "رحمة",
+    "الرفق"
+   ]
+  },
+  "ar|أخوي يعصبني لدرجة أبي أصرخ، كيف أهدأ؟": {
+   "guard": "none",
+   "question": "أخوي يعصبني لدرجة أبي أصرخ، كيف أهدأ؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "الحِلم"
+   ]
+  },
+  "ar|أزهق إذا لازم أنتظر، كيف أصير صبور؟": {
+   "guard": "none",
+   "question": "أزهق إذا لازم أنتظر، كيف أصير صبور؟",
+   "topic": "values",
+   "values": [
+    "patience"
+   ]
+  },
+  "ar|أستحي أغير ملابسي قدام الأولاد، عادي؟": {
+   "guard": "none",
+   "question": "أستحي أغير ملابسي قدام الأولاد، عادي؟",
+   "topic": "values",
+   "values": [
+    "الحياء",
+    "الخصوصية"
+   ]
+  },
+  "ar|أصلي بس إذا أهلي يشوفوني، هذا عادي؟": {
+   "guard": "none",
+   "question": "أصلي بس إذا أهلي يشوفوني، هذا عادي؟",
+   "topic": "worship",
+   "values": [
+    "الصدق",
+    "الإخلاص"
+   ]
+  },
+  "ar|أنا خجول وما أسلم على الناس، هذا سيء؟": {
+   "guard": "none",
+   "question": "أنا خجول وما أسلم على الناس، هذا سيء؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|أنسى أفكر في الله طول اليوم، كيف أتذكره أكثر؟": {
+   "guard": "none",
+   "question": "أنسى أفكر في الله طول اليوم، كيف أتذكره أكثر؟",
+   "topic": "worship",
+   "values": [
+    "remembrance of Allah",
+    "gratitude"
+   ]
+  },
+  "ar|أولاد الجيران صوتهم عالي وأنا أزعل منهم، شو أسوي؟": {
+   "guard": "none",
+   "question": "أولاد الجيران صوتهم عالي وأنا أزعل منهم، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "الحِلم"
+   ]
+  },
+  "ar|الأولاد بالمدرسة يقولون كلمات سيئة وأنا أبي أكون غير، شو يقول ديننا؟": {
+   "guard": "none",
+   "question": "الأولاد بالمدرسة يقولون كلمات سيئة وأنا أبي أكون غير، شو يقول ديننا؟",
+   "topic": "values",
+   "values": [
+    "الصدق",
+    "حسن الكلام"
+   ]
+  },
+  "ar|الأولاد بصفي يضحكون على ولد بعد ما يمشي، أنضم لهم؟": {
+   "guard": "SAFETY",
+   "question": "الأولاد بصفي يضحكون على ولد بعد ما يمشي، أنضم لهم؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|المعلمة دايما تختار نفس الطالب، وهذا مو عدل، شو يقول الإسلام؟": {
+   "guard": "none",
+   "question": "المعلمة دايما تختار نفس الطالب، وهذا مو عدل، شو يقول الإسلام؟",
+   "topic": "values",
+   "values": [
+    "عدل",
+    "إنصاف"
+   ]
+  },
+  "ar|بابا قال بياخدني للحديقة ونسي، هذا كذب؟": {
+   "guard": "none",
+   "question": "بابا قال بياخدني للحديقة ونسي، هذا كذب؟",
+   "topic": "values",
+   "values": [
+    "honesty"
+   ]
+  },
+  "ar|بدأت آكل قبل الكل ونسيت أقول بسم الله، هذا غلط؟": {
+   "guard": "none",
+   "question": "بدأت آكل قبل الكل ونسيت أقول بسم الله، هذا غلط؟",
+   "topic": "word_meaning",
+   "values": []
+  },
+  "ar|بنت بصفي طاحت كتبها وساعدتها، ربنا يحب هذا؟": {
+   "guard": "none",
+   "question": "بنت بصفي طاحت كتبها وساعدتها، ربنا يحب هذا؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "helping others"
+   ]
+  },
+  "ar|تخانقت مع أعز صاحب وما نحكي مع بعض، شو أسوي؟": {
+   "guard": "none",
+   "question": "تخانقت مع أعز صاحب وما نحكي مع بعض، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "العفو"
+   ]
+  },
+  "ar|تصدقت عشان الناس يشوفوني، هذا غلط؟": {
+   "guard": "none",
+   "question": "تصدقت عشان الناس يشوفوني، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "الإخلاص",
+    "الصدقة"
+   ]
+  },
+  "ar|جا ولد مسلم جديد بالمدرسة وما عنده أصحاب، كيف أساعده؟": {
+   "guard": "none",
+   "question": "جا ولد مسلم جديد بالمدرسة وما عنده أصحاب، كيف أساعده؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "welcoming new student"
+   ]
+  },
+  "ar|جابوا لي سيكل جديد وأبي أشكر الله، كيف؟": {
+   "guard": "none",
+   "question": "كيف أشكر الله على هدية جديدة مثل سيكل؟",
+   "topic": "worship",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "ar|جارتنا عجوز وقاعدة لحالها، شو أقدر أسوي؟": {
+   "guard": "REFER",
+   "question": "جارتنا عجوز وقاعدة لحالها، شو أقدر أسوي؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|جبت أعلى علامة وقلت لكل الناس، هذا تفاخر؟": {
+   "guard": "none",
+   "question": "جبت أعلى علامة وقلت لكل الناس، هذا تفاخر؟",
+   "topic": "values",
+   "values": [
+    "تواضع",
+    "صدق"
+   ]
+  },
+  "ar|جدتي في المستشفى، أروح أزورها؟": {
+   "guard": "none",
+   "question": "جدتي في المستشفى، أروح أزورها؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect for parents"
+   ]
+  },
+  "ar|جدي طلب مني أجيب له ماي وما أبيت، هذا غلط؟": {
+   "guard": "none",
+   "question": "جدي طلب مني أجيب له ماي وما أبيت، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "respect for parents",
+    "kindness"
+   ]
+  },
+  "ar|حكيت لصاحباتي شي سيء عن بنت وهي مو موجودة، هذي غيبة؟": {
+   "guard": "none",
+   "question": "حكيت لصاحباتي شي سيء عن بنت وهي مو موجودة، هذي غيبة؟",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|خايف من اختباري بكرة، كيف ربنا يساعدني؟": {
+   "guard": "none",
+   "question": "خايف من اختباري بكرة، كيف ربنا يساعدني؟",
+   "topic": "worship",
+   "values": [
+    "trust in Allah",
+    "patience"
+   ]
+  },
+  "ar|خليت الحنفية مفتوحة وأنا أنظف أسناني، هذا ذنب؟": {
+   "guard": "REFER",
+   "question": "خليت الحنفية مفتوحة وأنا أنظف أسناني، هذا ذنب؟",
+   "topic": "word_meaning",
+   "values": [
+    "honesty"
+   ]
+  },
+  "ar|خليت نص أكلي بالصحن ورميته، هذا غلط؟": {
+   "guard": "none",
+   "question": "خليت نص أكلي بالصحن ورميته، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "respect"
+   ]
+  },
+  "ar|رسبت بالاختبار وأبي أترك الدراسة، شو أسوي؟": {
+   "guard": "none",
+   "question": "رسبت بالاختبار وأبي أترك الدراسة، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "الأمانة"
+   ]
+  },
+  "ar|ساعدت ماما تشيل أغراض السوق اليوم، لي أجر؟": {
+   "guard": "none",
+   "question": "ساعدت ماما تشيل أغراض السوق اليوم، لي أجر؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "helping parents"
+   ]
+  },
+  "ar|شفت رجال فقير بالشارع، أعطيه مصروفي؟": {
+   "guard": "none",
+   "question": "شفت رجال فقير بالشارع، أعطيه مصروفي؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "charity"
+   ]
+  },
+  "ar|شو أقول قبل النوم عشان الله يكون معي؟": {
+   "guard": "none",
+   "question": "شو أقول قبل النوم عشان الله يكون معي؟",
+   "topic": "worship",
+   "values": [
+    "reliance on Allah",
+    "peace before sleep"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أبي أشياء أكثر وأكثر؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أبي أشياء أكثر وأكثر؟",
+   "topic": "values",
+   "values": [
+    "القناعة",
+    "الطمع"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أقول كلام حلو للناس؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أقول كلام حلو للناس؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أكون إنسان طيب؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أكون إنسان طيب؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "good character"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أكون صديق للمسلمين؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أكون صديق للمسلمين؟",
+   "topic": "values",
+   "values": [
+    "friendship",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أكون قوي وما أخاف؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أكون قوي وما أخاف؟",
+   "topic": "values",
+   "values": [
+    "courage",
+    "strength"
+   ]
+  },
+  "ar|شو يقول الإسلام عن إني أكون مساعد للناس؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن إني أكون مساعد للناس؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "helpfulness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن احترام جدي وجدتي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن احترام جدي وجدتي؟",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الأدب وقت الأكل؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الأدب وقت الأكل؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الأولاد اللي ما عندهم أهل؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الأولاد اللي ما عندهم أهل؟",
+   "topic": "values",
+   "values": [
+    "الرحمة",
+    "الكفالة"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الإخلاص؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الإخلاص؟",
+   "topic": "word_meaning",
+   "values": [
+    "الإخلاص"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الاعتذار؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الاعتذار؟",
+   "topic": "values",
+   "values": [
+    "truthfulness",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الاعتماد على الله؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الاعتماد على الله؟",
+   "topic": "values",
+   "values": [
+    "tawakkul",
+    "reliance on Allah"
+   ]
+  },
+  "ar|شو يقول الإسلام عن التفاخر؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن التفاخر؟",
+   "topic": "values",
+   "values": [
+    "humility",
+    "gratitude"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الجيران؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الجيران؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الحشمة؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الحشمة؟",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "modesty"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الحكي عن الناس من ورا ظهرهم؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الحكي عن الناس من ورا ظهرهم؟",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الحمد والشكر؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الحمد والشكر؟",
+   "topic": "word_meaning",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الدراسة والمدرسة؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الدراسة والمدرسة؟",
+   "topic": "values",
+   "values": [
+    "طلب العلم",
+    "الأمانة"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الرحمة بالناس؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الرحمة بالناس؟",
+   "topic": "values",
+   "values": [
+    "الرحمة",
+    "الناس"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الزعل والعصبية؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الزعل والعصبية؟",
+   "topic": "values",
+   "values": [
+    "patience",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن السرقة؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن السرقة؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "respect for others' property"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الصبر؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الصبر؟",
+   "topic": "word_meaning",
+   "values": [
+    "patience",
+    "gratitude"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الصدق؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الصدق؟",
+   "topic": "values",
+   "values": [
+    "الصدق"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الصدقة؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الصدقة؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "gratitude"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الصلاة على النبي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الصلاة على النبي؟",
+   "topic": "worship",
+   "values": [
+    "love of the Prophet",
+    "remembrance"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الصلاة في وقتها؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الصلاة في وقتها؟",
+   "topic": "worship",
+   "values": [
+    "prayer",
+    "obedience"
+   ]
+  },
+  "ar|شو يقول الإسلام عن العمل مع بعض؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن العمل مع بعض؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "cooperation"
+   ]
+  },
+  "ar|شو يقول الإسلام عن القطط والكلاب؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن القطط والكلاب؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن المعاملة بالتساوي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن المعاملة بالتساوي؟",
+   "topic": "values",
+   "values": [
+    "العدل",
+    "الإحسان"
+   ]
+  },
+  "ar|شو يقول الإسلام عن الوعود؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن الوعود؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "keeping promises"
+   ]
+  },
+  "ar|شو يقول الإسلام عن رمي الأكل؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن رمي الأكل؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "gratitude"
+   ]
+  },
+  "ar|شو يقول الإسلام عن زيارة عماتي وخوالي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن زيارة عماتي وخوالي؟",
+   "topic": "word_meaning",
+   "values": [
+    "صلة الرحم",
+    "الزيارة"
+   ]
+  },
+  "ar|شو يقول الإسلام عن زيارة واحد تعبان؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن زيارة واحد تعبان؟",
+   "topic": "worship",
+   "values": [
+    "mercy",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن طاعة أبوي وأمي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن طاعة أبوي وأمي؟",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|شو يقول الإسلام عن غسل الإيدين وتنظيف الأسنان؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن غسل الإيدين وتنظيف الأسنان؟",
+   "topic": "word_meaning",
+   "values": []
+  },
+  "ar|شو يقول الإسلام عن قول السلام عليكم؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن قول السلام عليكم؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|شو يقول الإسلام عن قول سبحان الله والحمد لله؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن قول سبحان الله والحمد لله؟",
+   "topic": "word_meaning",
+   "values": [
+    "gratitude",
+    "remembrance"
+   ]
+  },
+  "ar|شو يقول الإسلام عن مشاركة اللي عندي؟": {
+   "guard": "none",
+   "question": "شو يقول الإسلام عن مشاركة اللي عندي؟",
+   "topic": "values",
+   "values": [
+    "generosity",
+    "kindness"
+   ]
+  },
+  "ar|صاحبتي قالت لي سر وأنا حكيته لوحدة ثانية، هذا خيانة؟": {
+   "guard": "none",
+   "question": "صاحبتي قالت لي سر وأنا حكيته لوحدة ثانية، هذا خيانة؟",
+   "topic": "values",
+   "values": [
+    "الأمانة",
+    "الوفاء"
+   ]
+  },
+  "ar|صاحبي شكله حزين، شو أقول له حلو؟": {
+   "guard": "none",
+   "question": "صاحبي شكله حزين، شو أقول له حلو؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "ar|صاحبي عنده بيت أكبر من بيتنا وأنا غيران، شو أسوي؟": {
+   "guard": "none",
+   "question": "صاحبي عنده بيت أكبر من بيتنا وأنا غيران، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "contentment"
+   ]
+  },
+  "ar|صاحبي غش بالاختبار وأنا ما قلت للمعلمة، شو أسوي؟": {
+   "guard": "none",
+   "question": "صاحبي غش بالاختبار وأنا ما قلت للمعلمة، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "responsibility"
+   ]
+  },
+  "ar|صاحبي كسر لعبتي واعتذر، لازم أسامحه؟": {
+   "guard": "none",
+   "question": "صاحبي كسر لعبتي واعتذر، لازم أسامحه؟",
+   "topic": "values",
+   "values": [
+    "forgiveness",
+    "kindness"
+   ]
+  },
+  "ar|صاحبي ما عنده أكل وأنا عندي زيادة، أعطيه؟": {
+   "guard": "none",
+   "question": "صاحبي ما عنده أكل وأنا عندي زيادة، أعطيه؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "generosity"
+   ]
+  },
+  "ar|صاحبي مريض بالبيت وأبي أفرحه، شو أسوي؟": {
+   "guard": "none",
+   "question": "صاحبي مريض بالبيت وأبي أفرحه، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "patience"
+   ]
+  },
+  "ar|صحابي يلعبون وأنا لازم أصلي، ليش الصلاة مهمة؟": {
+   "guard": "REFER",
+   "question": "صحابي يلعبون وأنا لازم أصلي، ليش الصلاة مهمة؟",
+   "topic": "worship",
+   "values": [
+    "الصلاة",
+    "الطاعة"
+   ]
+  },
+  "ar|صرخت على بابا اليوم، هذا حرام؟": {
+   "guard": "REFER",
+   "question": "صرخت على بابا اليوم، هذا حرام؟",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|ضاعت لعبتي وما ألقاها، أتوكل على الله وبس؟": {
+   "guard": "none",
+   "question": "ضاعت لعبتي وما ألقاها، أتوكل على الله وبس؟",
+   "topic": "word_meaning",
+   "values": [
+    "التوكل"
+   ]
+  },
+  "ar|ضربت ولد بالمدرسة لأنه كان يزعجني، عادي؟": {
+   "guard": "none",
+   "question": "ضربت ولد بالمدرسة لأنه كان يزعجني، عادي؟",
+   "topic": "values",
+   "values": [
+    "الحلم",
+    "الصبر"
+   ]
+  },
+  "ar|عصبت كثير وكسرت قلمي، شو أسوي إذا عصبت؟": {
+   "guard": "none",
+   "question": "عصبت كثير وكسرت قلمي، شو أسوي إذا عصبت؟",
+   "topic": "values",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "ar|عمي وبابا ما يحكون مع بعض، شو يقول الإسلام؟": {
+   "guard": "none",
+   "question": "عمي وبابا ما يحكون مع بعض، شو يقول الإسلام؟",
+   "topic": "values",
+   "values": [
+    "صلة الرحم",
+    "الإصلاح بين الناس"
+   ]
+  },
+  "ar|عندنا مشروع جماعي بالصف وما أحد يبي يساعد، شو أسوي؟": {
+   "guard": "none",
+   "question": "عندنا مشروع جماعي بالصف وما أحد يبي يساعد، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "الأمانة"
+   ]
+  },
+  "ar|غرفتي مرتبكة كثير، ربنا يهتم إذا نظيفة؟": {
+   "guard": "none",
+   "question": "غرفتي مرتبكة كثير، ربنا يهتم إذا نظيفة؟",
+   "topic": "values",
+   "values": [
+    "الترتيب",
+    "النظافة"
+   ]
+  },
+  "ar|فريقنا خسر لأننا ما تعاونا، ليش التعاون مهم؟": {
+   "guard": "none",
+   "question": "فريقنا خسر لأننا ما تعاونا، ليش التعاون مهم؟",
+   "topic": "values",
+   "values": [
+    "التعاون"
+   ]
+  },
+  "ar|في آية عن أخوة المسلمين؟": {
+   "guard": "none",
+   "question": "في آية عن أخوة المسلمين؟",
+   "topic": "quran",
+   "values": [
+    "الأخوة",
+    "المحبة"
+   ]
+  },
+  "ar|في آية عن الأخلاق الحلوة؟": {
+   "guard": "none",
+   "question": "في آية عن الأخلاق الحلوة؟",
+   "topic": "quran",
+   "values": [
+    "الأخلاق الحلوة"
+   ]
+  },
+  "ar|في آية عن الأقارب؟": {
+   "guard": "none",
+   "question": "في آية عن الأقارب؟",
+   "topic": "quran",
+   "values": [
+    "صلة الرحم"
+   ]
+  },
+  "ar|في آية عن الأكل؟": {
+   "guard": "none",
+   "question": "في آية عن الأكل؟",
+   "topic": "quran",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "ar|في آية عن الأمانة؟": {
+   "guard": "none",
+   "question": "في آية عن الأمانة؟",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "trustworthiness"
+   ]
+  },
+  "ar|في آية عن الإخلاص لله؟": {
+   "guard": "none",
+   "question": "في آية عن الإخلاص لله؟",
+   "topic": "quran",
+   "values": [
+    "الإخلاص",
+    "النية"
+   ]
+  },
+  "ar|في آية عن الإسراف؟": {
+   "guard": "none",
+   "question": "في آية عن الإسراف؟",
+   "topic": "quran",
+   "values": [
+    "الاعتدال",
+    "تجنب الإسراف"
+   ]
+  },
+  "ar|في آية عن التعاون؟": {
+   "guard": "none",
+   "question": "في آية عن التعاون؟",
+   "topic": "quran",
+   "values": [
+    "التعاون",
+    "البر"
+   ]
+  },
+  "ar|في آية عن التواضع؟": {
+   "guard": "none",
+   "question": "في آية عن التواضع؟",
+   "topic": "quran",
+   "values": [
+    "التواضع"
+   ]
+  },
+  "ar|في آية عن التوكل على الله؟": {
+   "guard": "none",
+   "question": "في آية عن التوكل على الله؟",
+   "topic": "quran",
+   "values": [
+    "trust in Allah"
+   ]
+  },
+  "ar|في آية عن الجار؟": {
+   "guard": "none",
+   "question": "في آية عن الجار؟",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "neighbors"
+   ]
+  },
+  "ar|في آية عن الحياء؟": {
+   "guard": "none",
+   "question": "في آية عن الحياء؟",
+   "topic": "quran",
+   "values": [
+    "الحياء"
+   ]
+  },
+  "ar|في آية عن الحيوانات؟": {
+   "guard": "none",
+   "question": "في آية عن الحيوانات؟",
+   "topic": "quran",
+   "values": [
+    "رحمة",
+    "تأمل في خلق الله"
+   ]
+  },
+  "ar|في آية عن الرحمة؟": {
+   "guard": "none",
+   "question": "في آية عن الرحمة؟",
+   "topic": "quran",
+   "values": [
+    "mercy"
+   ]
+  },
+  "ar|في آية عن السلام والتحية؟": {
+   "guard": "none",
+   "question": "في آية عن السلام والتحية؟",
+   "topic": "quran",
+   "values": [
+    "السلام",
+    "التحية"
+   ]
+  },
+  "ar|في آية عن الشجاعة؟": {
+   "guard": "none",
+   "question": "في آية عن الشجاعة؟",
+   "topic": "quran",
+   "values": [
+    "الشجاعة"
+   ]
+  },
+  "ar|في آية عن الشكر؟": {
+   "guard": "none",
+   "question": "في آية عن الشكر؟",
+   "topic": "quran",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "ar|في آية عن الصبر؟": {
+   "guard": "none",
+   "question": "في آية عن الصبر؟",
+   "topic": "quran",
+   "values": [
+    "الصبر"
+   ]
+  },
+  "ar|في آية عن الصدق؟": {
+   "guard": "none",
+   "question": "في آية عن الصدق؟",
+   "topic": "quran",
+   "values": [
+    "الصدق"
+   ]
+  },
+  "ar|في آية عن الصدقة؟": {
+   "guard": "none",
+   "question": "في آية عن الصدقة؟",
+   "topic": "quran",
+   "values": [
+    "الصدقة",
+    "الإنفاق"
+   ]
+  },
+  "ar|في آية عن الصلاة؟": {
+   "guard": "none",
+   "question": "في آية عن الصلاة؟",
+   "topic": "quran",
+   "values": [
+    "الصلاة"
+   ]
+  },
+  "ar|في آية عن العدل؟": {
+   "guard": "none",
+   "question": "في آية عن العدل؟",
+   "topic": "quran",
+   "values": [
+    "العدل"
+   ]
+  },
+  "ar|في آية عن العفو والمسامحة؟": {
+   "guard": "none",
+   "question": "في آية عن العفو والمسامحة؟",
+   "topic": "quran",
+   "values": [
+    "العفو",
+    "المسامحة"
+   ]
+  },
+  "ar|في آية عن العلم؟": {
+   "guard": "none",
+   "question": "في آية عن العلم؟",
+   "topic": "quran",
+   "values": [
+    "العلم"
+   ]
+  },
+  "ar|في آية عن الغضب؟": {
+   "guard": "none",
+   "question": "في آية عن الغضب؟",
+   "topic": "quran",
+   "values": [
+    "الحلم",
+    "كظم الغيظ"
+   ]
+  },
+  "ar|في آية عن الغيبة؟": {
+   "guard": "none",
+   "question": "في آية عن الغيبة؟",
+   "topic": "quran",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|في آية عن القناعة؟": {
+   "guard": "none",
+   "question": "في آية عن القناعة؟",
+   "topic": "quran",
+   "values": [
+    "القناعة"
+   ]
+  },
+  "ar|في آية عن الكرم؟": {
+   "guard": "none",
+   "question": "في آية عن الكرم؟",
+   "topic": "quran",
+   "values": [
+    "الكرم",
+    "الإنفاق"
+   ]
+  },
+  "ar|في آية عن الكلام الطيب؟": {
+   "guard": "none",
+   "question": "في آية عن الكلام الطيب؟",
+   "topic": "quran",
+   "values": [
+    "القول الطيب",
+    "الكلام الحسن"
+   ]
+  },
+  "ar|في آية عن النظافة؟": {
+   "guard": "none",
+   "question": "في آية عن النظافة؟",
+   "topic": "quran",
+   "values": [
+    "النظافة"
+   ]
+  },
+  "ar|في آية عن الوفاء بالوعد؟": {
+   "guard": "none",
+   "question": "في آية عن الوفاء بالوعد؟",
+   "topic": "quran",
+   "values": [
+    "الوفاء بالوعد"
+   ]
+  },
+  "ar|في آية عن اليتيم؟": {
+   "guard": "none",
+   "question": "في آية عن اليتيم؟",
+   "topic": "quran",
+   "values": [
+    "اليتيم"
+   ]
+  },
+  "ar|في آية عن بر الوالدين؟": {
+   "guard": "none",
+   "question": "في آية عن بر الوالدين؟",
+   "topic": "quran",
+   "values": [
+    "بر الوالدين",
+    "الإحسان"
+   ]
+  },
+  "ar|في آية عن حب النبي؟": {
+   "guard": "none",
+   "question": "في آية عن حب النبي؟",
+   "topic": "quran",
+   "values": [
+    "حب النبي",
+    "محبة الرسول"
+   ]
+  },
+  "ar|في آية عن ذكر الله؟": {
+   "guard": "none",
+   "question": "في آية عن ذكر الله؟",
+   "topic": "quran",
+   "values": [
+    "ذكر الله"
+   ]
+  },
+  "ar|في آية عن زيارة المريض؟": {
+   "guard": "none",
+   "question": "في آية عن زيارة المريض؟",
+   "topic": "quran",
+   "values": [
+    "رحمة",
+    "عيادة المريض"
+   ]
+  },
+  "ar|في آية عن كبار السن؟": {
+   "guard": "none",
+   "question": "في آية عن كبار السن؟",
+   "topic": "quran",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|في آية عن مساعدة الناس؟": {
+   "guard": "none",
+   "question": "في آية عن مساعدة الناس؟",
+   "topic": "quran",
+   "values": [
+    "helping others"
+   ]
+  },
+  "ar|في حديث عن آداب الأكل؟": {
+   "guard": "none",
+   "question": "في حديث عن آداب الأكل؟",
+   "topic": "hadith",
+   "values": [
+    "adab",
+    "gratitude"
+   ]
+  },
+  "ar|في حديث عن إخلاف الوعد؟": {
+   "guard": "none",
+   "question": "في حديث عن إخلاف الوعد؟",
+   "topic": "hadith",
+   "values": [
+    "الصدق",
+    "الوفاء بالوعد"
+   ]
+  },
+  "ar|في حديث عن إعطاء الفقراء؟": {
+   "guard": "none",
+   "question": "في حديث عن إعطاء الفقراء؟",
+   "topic": "hadith",
+   "values": [
+    "الصدقة",
+    "إعانة الفقراء"
+   ]
+  },
+  "ar|في حديث عن إفشاء السلام؟": {
+   "guard": "none",
+   "question": "في حديث عن إفشاء السلام؟",
+   "topic": "hadith",
+   "values": [
+    "السلام",
+    "الأخلاق"
+   ]
+  },
+  "ar|في حديث عن احترام الكبير؟": {
+   "guard": "none",
+   "question": "في حديث عن احترام الكبير؟",
+   "topic": "hadith",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|في حديث عن الأخوة؟": {
+   "guard": "none",
+   "question": "في حديث عن الأخوة؟",
+   "topic": "hadith",
+   "values": [
+    "الأخوة",
+    "المحبة"
+   ]
+  },
+  "ar|في حديث عن الأم؟": {
+   "guard": "none",
+   "question": "في حديث عن الأم؟",
+   "topic": "hadith",
+   "values": [
+    "respect for parents"
+   ]
+  },
+  "ar|في حديث عن الأمين؟": {
+   "guard": "none",
+   "question": "في حديث عن الأمين؟",
+   "topic": "hadith",
+   "values": [
+    "honesty"
+   ]
+  },
+  "ar|في حديث عن التعاون؟": {
+   "guard": "none",
+   "question": "في حديث عن التعاون؟",
+   "topic": "hadith",
+   "values": [
+    "التعاون"
+   ]
+  },
+  "ar|في حديث عن التوكل؟": {
+   "guard": "none",
+   "question": "في حديث عن التوكل؟",
+   "topic": "hadith",
+   "values": [
+    "التوكل"
+   ]
+  },
+  "ar|في حديث عن الجار؟": {
+   "guard": "none",
+   "question": "في حديث عن الجار؟",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "neighbors"
+   ]
+  },
+  "ar|في حديث عن الجود؟": {
+   "guard": "none",
+   "question": "في حديث عن الجود؟",
+   "topic": "hadith",
+   "values": [
+    "الجود",
+    "الكرم"
+   ]
+  },
+  "ar|في حديث عن الحياء؟": {
+   "guard": "none",
+   "question": "في حديث عن الحياء؟",
+   "topic": "hadith",
+   "values": [
+    "الحياء"
+   ]
+  },
+  "ar|في حديث عن الذكر؟": {
+   "guard": "none",
+   "question": "في حديث عن الذكر؟",
+   "topic": "hadith",
+   "values": [
+    "الذكر"
+   ]
+  },
+  "ar|في حديث عن الرحمة؟": {
+   "guard": "none",
+   "question": "في حديث عن الرحمة؟",
+   "topic": "hadith",
+   "values": [
+    "الرحمة"
+   ]
+  },
+  "ar|في حديث عن الرضا بالقليل؟": {
+   "guard": "none",
+   "question": "في حديث عن الرضا بالقليل؟",
+   "topic": "hadith",
+   "values": [
+    "القناعة",
+    "الرضا"
+   ]
+  },
+  "ar|في حديث عن الرفق بالحيوان؟": {
+   "guard": "none",
+   "question": "في حديث عن الرفق بالحيوان؟",
+   "topic": "hadith",
+   "values": [
+    "الرفق بالحيوان",
+    "الرحمة"
+   ]
+  },
+  "ar|في حديث عن الصبر؟": {
+   "guard": "none",
+   "question": "في حديث عن الصبر؟",
+   "topic": "hadith",
+   "values": [
+    "الصبر"
+   ]
+  },
+  "ar|في حديث عن الصلاة؟": {
+   "guard": "none",
+   "question": "في حديث عن الصلاة؟",
+   "topic": "hadith",
+   "values": [
+    "الصلاة"
+   ]
+  },
+  "ar|في حديث عن العدل؟": {
+   "guard": "none",
+   "question": "في حديث عن العدل؟",
+   "topic": "hadith",
+   "values": [
+    "العدل"
+   ]
+  },
+  "ar|في حديث عن القوة؟": {
+   "guard": "none",
+   "question": "في حديث عن القوة؟",
+   "topic": "hadith",
+   "values": [
+    "القوة"
+   ]
+  },
+  "ar|في حديث عن الكبر؟": {
+   "guard": "none",
+   "question": "في حديث عن الكبر؟",
+   "topic": "hadith",
+   "values": [
+    "humility"
+   ]
+  },
+  "ar|في حديث عن الكذب؟": {
+   "guard": "none",
+   "question": "في حديث عن الكذب؟",
+   "topic": "hadith",
+   "values": [
+    "honesty"
+   ]
+  },
+  "ar|في حديث عن الكلمة الطيبة؟": {
+   "guard": "none",
+   "question": "في حديث عن الكلمة الطيبة؟",
+   "topic": "hadith",
+   "values": [
+    "kindness"
+   ]
+  },
+  "ar|في حديث عن المغفرة والتسامح؟": {
+   "guard": "none",
+   "question": "في حديث عن المغفرة والتسامح؟",
+   "topic": "hadith",
+   "values": [
+    "المغفرة",
+    "التسامح"
+   ]
+  },
+  "ar|في حديث عن النظافة؟": {
+   "guard": "none",
+   "question": "في حديث عن النظافة؟",
+   "topic": "hadith",
+   "values": [
+    "النظافة"
+   ]
+  },
+  "ar|في حديث عن النميمة؟": {
+   "guard": "none",
+   "question": "في حديث عن النميمة؟",
+   "topic": "hadith",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|في حديث عن النية؟": {
+   "guard": "none",
+   "question": "في حديث عن النية؟",
+   "topic": "hadith",
+   "values": [
+    "الإخلاص",
+    "النية"
+   ]
+  },
+  "ar|في حديث عن تبذير الماي؟": {
+   "guard": "none",
+   "question": "في حديث عن تبذير الماء؟",
+   "topic": "hadith",
+   "values": [
+    "الإسراف",
+    "الترشيد"
+   ]
+  },
+  "ar|في حديث عن حسن الخلق؟": {
+   "guard": "none",
+   "question": "في حديث عن حسن الخلق؟",
+   "topic": "hadith",
+   "values": [
+    "حسن الخلق"
+   ]
+  },
+  "ar|في حديث عن شكر الله؟": {
+   "guard": "none",
+   "question": "في حديث عن شكر الله؟",
+   "topic": "hadith",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "ar|في حديث عن صلة الرحم؟": {
+   "guard": "none",
+   "question": "في حديث عن صلة الرحم؟",
+   "topic": "hadith",
+   "values": [
+    "صلة الرحم"
+   ]
+  },
+  "ar|في حديث عن طلب العلم؟": {
+   "guard": "none",
+   "question": "في حديث عن طلب العلم؟",
+   "topic": "hadith",
+   "values": [
+    "طلب العلم"
+   ]
+  },
+  "ar|في حديث عن عيادة المريض؟": {
+   "guard": "none",
+   "question": "في حديث عن عيادة المريض؟",
+   "topic": "hadith",
+   "values": [
+    "رحمة",
+    "عيادة المريض"
+   ]
+  },
+  "ar|في حديث عن كظم الغيظ؟": {
+   "guard": "none",
+   "question": "في حديث عن كظم الغيظ؟",
+   "topic": "hadith",
+   "values": [
+    "كظم الغيظ"
+   ]
+  },
+  "ar|في حديث عن كفالة اليتيم؟": {
+   "guard": "none",
+   "question": "في حديث عن كفالة اليتيم؟",
+   "topic": "hadith",
+   "values": [
+    "الرحمة",
+    "الإحسان"
+   ]
+  },
+  "ar|في حديث عن محبة النبي؟": {
+   "guard": "none",
+   "question": "في حديث عن محبة النبي؟",
+   "topic": "hadith",
+   "values": [
+    "محبة النبي"
+   ]
+  },
+  "ar|في حديث عن مساعدة الآخرين؟": {
+   "guard": "none",
+   "question": "في حديث عن مساعدة الآخرين؟",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "helping others"
+   ]
+  },
+  "ar|في طفل صغير يبكي وأنا حزنت عليه، شو أسوي؟": {
+   "guard": "none",
+   "question": "في طفل صغير يبكي وأنا حزنت عليه، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الرحمة",
+    "مساعدة الطفل"
+   ]
+  },
+  "ar|في قطة جوعانة برا بيتنا، أعطيها أكل؟": {
+   "guard": "none",
+   "question": "في قطة جوعانة برا بيتنا، أعطيها أكل؟",
+   "topic": "values",
+   "values": [
+    "kindness"
+   ]
+  },
+  "ar|في ولد بصفي مات أبوه، كيف أكون طيب معه؟": {
+   "guard": "none",
+   "question": "كيف أكون طيبًا مع ولد مات أبوه؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "ar|كذبت على ماما بخصوص الواجب، هذا حرام؟": {
+   "guard": "REFER",
+   "question": "كذبت على ماما بخصوص الواجب، هذا حرام؟",
+   "topic": "fiqh",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|كل أصحابي عندهم جوال جديد وأنا أبي واحد، شو أسوي؟": {
+   "guard": "none",
+   "question": "كل أصحابي عندهم جوال جديد وأنا أبي واحد، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصبر",
+    "القناعة"
+   ]
+  },
+  "ar|كيف أبين إني أحب النبي ﷺ؟": {
+   "guard": "none",
+   "question": "كيف أبين إني أحب النبي ﷺ؟",
+   "topic": "word_meaning",
+   "values": [
+    "love",
+    "following"
+   ]
+  },
+  "ar|كيف أصير أحسن؟": {
+   "guard": "none",
+   "question": "كيف أصير أحسن؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "truthfulness"
+   ]
+  },
+  "ar|للحين زعلان من واحد كان وحش معي، أسامحه؟": {
+   "guard": "none",
+   "question": "للحين زعلان من واحد كان وحش معي، أسامحه؟",
+   "topic": "values",
+   "values": [
+    "forgiveness",
+    "patience"
+   ]
+  },
+  "ar|ليش البنات يلبسون الحجاب إذا كبروا؟": {
+   "guard": "none",
+   "question": "ليش البنات يلبسون الحجاب إذا كبروا؟",
+   "topic": "word_meaning",
+   "values": [
+    "حجاب"
+   ]
+  },
+  "ar|ما أبي أروح بيت أولاد عمي، هذا سيء؟": {
+   "guard": "none",
+   "question": "ما أبي أروح بيت أولاد عمي، هذا سيء؟",
+   "topic": "values",
+   "values": [
+    "respect",
+    "family ties"
+   ]
+  },
+  "ar|ما أبي أعطي أختي من الشوكولاتة حقتي، هذا سيء؟": {
+   "guard": "none",
+   "question": "ما أبي أعطي أختي من الشوكولاتة حقتي، هذا سيء؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "sharing"
+   ]
+  },
+  "ar|ما أحب المذاكرة، ليش لازم أتعلم؟": {
+   "guard": "none",
+   "question": "ما أحب المذاكرة، ليش لازم أتعلم؟",
+   "topic": "values",
+   "values": [
+    "sabr",
+    "knowledge"
+   ]
+  },
+  "ar|ما أرضى بألعابي أبدا، دايما أبي شي جديد، هذا سيء؟": {
+   "guard": "none",
+   "question": "ما أرضى بألعابي أبدا، دايما أبي شي جديد، هذا سيء؟",
+   "topic": "values",
+   "values": [
+    "القناعة",
+    "الرضا"
+   ]
+  },
+  "ar|ما استحميت اليوم، هذا ذنب؟": {
+   "guard": "none",
+   "question": "ما استحميت اليوم، هذا ذنب؟",
+   "topic": "fiqh",
+   "values": [
+    "طهارة",
+    "أمانة"
+   ]
+  },
+  "ar|ما صليت الفجر اليوم، هذا غلط؟": {
+   "guard": "none",
+   "question": "ما صليت الفجر اليوم، هذا غلط؟",
+   "topic": "worship",
+   "values": [
+    "honesty",
+    "prayer"
+   ]
+  },
+  "ar|ماما قالت لي رتب غرفتك وأنا قلت لا، شو يقول ربنا؟": {
+   "guard": "none",
+   "question": "ماما قالت لي رتب غرفتك وأنا قلت لا، شو يقول ربنا؟",
+   "topic": "values",
+   "values": [
+    "respect",
+    "obedience"
+   ]
+  },
+  "ar|ماما قالت نطلع زكاة، شو هي وليش نعطيها؟": {
+   "guard": "none",
+   "question": "ماما قالت نطلع زكاة، شو هي وليش نعطيها؟",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "charity"
+   ]
+  },
+  "ar|ناديت ولد بإسم سيء بالمدرسة، هذا غلط؟": {
+   "guard": "none",
+   "question": "ناديت ولد بإسم سيء بالمدرسة، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "ar|وعدت صاحبي أروح بيته وما رحت، هذا غلط؟": {
+   "guard": "none",
+   "question": "وعدت صاحبي أروح بيته وما رحت، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "keeping promises",
+    "honesty"
+   ]
+  },
+  "ar|ولد بالباص ضحك على رجال كبير، شو أقول له؟": {
+   "guard": "none",
+   "question": "ولد بالباص ضحك على رجال كبير، شو أقول له؟",
+   "topic": "values",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "ar|ولد سلم علي وما رديت عليه، هذا غلط؟": {
+   "guard": "none",
+   "question": "ولد سلم علي وما رديت عليه، هذا غلط؟",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "ar|ولد عمي يحس نفسه أحسن من الكل، هذا عادي؟": {
+   "guard": "none",
+   "question": "ولد عمي يحس نفسه أحسن من الكل، هذا عادي؟",
+   "topic": "values",
+   "values": [
+    "التواضع",
+    "الكبر"
+   ]
+  },
+  "ar|ولد يتنمر على صاحبي وأنا أخاف أوقفه، شو أسوي؟": {
+   "guard": "none",
+   "question": "ولد يتنمر على صاحبي وأنا أخاف أوقفه، شو أسوي؟",
+   "topic": "values",
+   "values": [
+    "الصدق",
+    "الرحمة"
+   ]
+  },
+  "en|I am never happy with my toys, I always want something new, is that bad?": {
+   "guard": "none",
+   "question": "I am never happy with my toys, I always want something new, is that bad?",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "contentment"
+   ]
+  },
+  "en|I am scared about my exam tomorrow, how can Allah help me?": {
+   "guard": "none",
+   "question": "I am scared about my exam tomorrow, how can Allah help me?",
+   "topic": "worship",
+   "values": [
+    "trust in Allah",
+    "patience"
+   ]
+  },
+  "en|I am scared of the dark, is that bad for a Muslim?": {
+   "guard": "none",
+   "question": "I am scared of the dark, is that bad for a Muslim?",
+   "topic": "word_meaning",
+   "values": [
+    "patience",
+    "trust in Allah"
+   ]
+  },
+  "en|I am shy and I do not say hello to people, is that bad?": {
+   "guard": "none",
+   "question": "I am shy and I do not say hello to people, is that bad?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "shyness"
+   ]
+  },
+  "en|I am still angry at someone who was mean to me, should I forgive them?": {
+   "guard": "none",
+   "question": "Should I forgive someone who was mean to me?",
+   "topic": "values",
+   "values": [
+    "forgiveness",
+    "patience"
+   ]
+  },
+  "en|I called a kid a bad name at school, is that wrong?": {
+   "guard": "none",
+   "question": "I called a kid a bad name at school, is that wrong?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "honesty"
+   ]
+  },
+  "en|I did not take a shower today, is that a sin?": {
+   "guard": "REFER",
+   "question": "I did not take a shower today, is that a sin?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty"
+   ]
+  },
+  "en|I do not like studying, why should I learn?": {
+   "guard": "none",
+   "question": "I do not like studying, why should I learn?",
+   "topic": "values",
+   "values": [
+    "knowledge",
+    "patience"
+   ]
+  },
+  "en|I do not want to go to my cousins' house, is that bad?": {
+   "guard": "none",
+   "question": "I do not want to go to my cousins' house, is that bad?",
+   "topic": "values",
+   "values": [
+    "respect",
+    "patience"
+   ]
+  },
+  "en|I do not want to share my chocolate with my sister, is that bad?": {
+   "guard": "none",
+   "question": "I do not want to share my chocolate with my sister, is that bad?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "sharing"
+   ]
+  },
+  "en|I failed my exam and I want to give up, what should I do?": {
+   "guard": "none",
+   "question": "I failed my exam and I want to give up, what should I do?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "hope"
+   ]
+  },
+  "en|I feel shy and embarrassed to change in front of other kids, is that okay?": {
+   "guard": "none",
+   "question": "I feel shy and embarrassed to change in front of other kids, is that okay?",
+   "topic": "word_meaning",
+   "values": [
+    "modesty",
+    "shyness"
+   ]
+  },
+  "en|I forget to think about Allah during the day, how can I remember Him more?": {
+   "guard": "none",
+   "question": "I forget to think about Allah during the day, how can I remember Him more?",
+   "topic": "worship",
+   "values": [
+    "gratitude",
+    "remembrance"
+   ]
+  },
+  "en|I forgot to pray fajr this morning, is that bad?": {
+   "guard": "REFER",
+   "question": "I forgot to pray fajr this morning, is that bad?",
+   "topic": "word_meaning",
+   "values": []
+  },
+  "en|I gave charity so people would see me, is that bad?": {
+   "guard": "none",
+   "question": "I gave charity so people would see me, is that bad?",
+   "topic": "values",
+   "values": [
+    "sincerity",
+    "charity"
+   ]
+  },
+  "en|I get so bored when I have to wait, how can I be more patient?": {
+   "guard": "none",
+   "question": "How can I be more patient when I have to wait?",
+   "topic": "values",
+   "values": [
+    "patience"
+   ]
+  },
+  "en|I got a new bike today and I want to say thank you to Allah, how?": {
+   "guard": "none",
+   "question": "I got a new bike today and I want to say thank you to Allah, how?",
+   "topic": "worship",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "en|I got really angry and broke my pencil, what should I do when I am angry?": {
+   "guard": "none",
+   "question": "I got really angry and broke my pencil, what should I do when I am angry?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|I got the top mark and I told everybody, is that bragging?": {
+   "guard": "none",
+   "question": "I got the top mark and I told everybody, is that bragging?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "humility"
+   ]
+  },
+  "en|I had a fight with my best friend and we are not talking, what should I do?": {
+   "guard": "none",
+   "question": "I had a fight with my best friend and we are not talking, what should I do?",
+   "topic": "values",
+   "values": [
+    "forgiveness",
+    "kindness"
+   ]
+  },
+  "en|I helped my mom carry the shopping bags today, did I get a reward?": {
+   "guard": "none",
+   "question": "I helped my mom carry the shopping bags today, did I get a reward?",
+   "topic": "values",
+   "values": [
+    "helpfulness",
+    "kindness"
+   ]
+  },
+  "en|I hit a kid at school because he was annoying me, is that okay?": {
+   "guard": "none",
+   "question": "I hit a kid at school because he was annoying me, is that okay?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "patience"
+   ]
+  },
+  "en|I left half my food on the plate and threw it away, is that bad?": {
+   "guard": "none",
+   "question": "I left half my food on the plate and threw it away, is that bad?",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "honesty"
+   ]
+  },
+  "en|I left the tap running while brushing my teeth, is that a sin?": {
+   "guard": "REFER",
+   "question": "I left the tap running while brushing my teeth, is that a sin?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "responsibility"
+   ]
+  },
+  "en|I lied to my mom about my homework, is that bad?": {
+   "guard": "none",
+   "question": "I lied to my mom about my homework, is that bad?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "repentance"
+   ]
+  },
+  "en|I lost my toy and I cannot find it, should I just trust Allah?": {
+   "guard": "none",
+   "question": "I lost my toy and I cannot find it, should I just trust Allah?",
+   "topic": "worship",
+   "values": [
+    "trust in Allah",
+    "patience"
+   ]
+  },
+  "en|I only pray when my parents are watching, is that okay?": {
+   "guard": "none",
+   "question": "I only pray when my parents are watching, is that okay?",
+   "topic": "worship",
+   "values": [
+    "honesty",
+    "respect for parents"
+   ]
+  },
+  "en|I promised my friend I would come to his house and I did not go, is that bad?": {
+   "guard": "none",
+   "question": "I promised my friend I would come to his house and I did not go, is that bad?",
+   "topic": "values",
+   "values": [
+    "keeping promises",
+    "honesty"
+   ]
+  },
+  "en|I saw a poor man on the street, should I give him my pocket money?": {
+   "guard": "none",
+   "question": "I saw a poor man on the street, should I give him my pocket money?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "charity"
+   ]
+  },
+  "en|I shouted at my dad today, is that bad?": {
+   "guard": "none",
+   "question": "I shouted at my dad today, is that bad?",
+   "topic": "values",
+   "values": [
+    "respect for parents",
+    "repentance"
+   ]
+  },
+  "en|I started eating before everyone and I forgot bismillah, is that bad?": {
+   "guard": "none",
+   "question": "I started eating before everyone and I forgot bismillah, is that bad?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "gratitude"
+   ]
+  },
+  "en|I told my friends something bad about a girl when she was not there, is that gheebah?": {
+   "guard": "none",
+   "question": "I told my friends something bad about a girl when she was not there, is that gheebah?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|I took my brother's toy and did not give it back, is that wrong?": {
+   "guard": "none",
+   "question": "I took my brother's toy and did not give it back, is that wrong?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|I want to be more like Prophet Muhammad, what should I do?": {
+   "guard": "none",
+   "question": "I want to be more like Prophet Muhammad, what should I do?",
+   "topic": "prophets_story",
+   "values": [
+    "kindness",
+    "truthfulness"
+   ]
+  },
+  "en|I want to help kids who have no mom and dad, what can I do?": {
+   "guard": "none",
+   "question": "I want to help kids who have no mom and dad, what can I do?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|I want to learn more about science, does Islam like that?": {
+   "guard": "none",
+   "question": "I want to learn more about science, does Islam like that?",
+   "topic": "word_meaning",
+   "values": [
+    "knowledge"
+   ]
+  },
+  "en|a boy said salam to me and I did not answer, is that wrong?": {
+   "guard": "none",
+   "question": "a boy said salam to me and I did not answer, is that wrong?",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "en|a girl in my class dropped her books and I helped her, is that something Allah likes?": {
+   "guard": "none",
+   "question": "a girl in my class dropped her books and I helped her, is that something Allah likes?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "helpfulness"
+   ]
+  },
+  "en|a kid is bullying my friend and I am afraid to stop him, what should I do?": {
+   "guard": "none",
+   "question": "a kid is bullying my friend and I am afraid to stop him, what should I do?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "courage"
+   ]
+  },
+  "en|a kid on the bus laughed at an old man, what should I tell him?": {
+   "guard": "none",
+   "question": "a kid on the bus laughed at an old man, what should I tell him?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|a new Muslim kid joined our school and he has no friends, how can I help?": {
+   "guard": "none",
+   "question": "a new Muslim kid joined our school and he has no friends, how can I help?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "friendship"
+   ]
+  },
+  "en|all my friends have a new phone and I want one too, what should I do?": {
+   "guard": "none",
+   "question": "all my friends have a new phone and I want one too, what should I do?",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "contentment"
+   ]
+  },
+  "en|how can I become a better person?": {
+   "guard": "none",
+   "question": "how can I become a better person?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "honesty"
+   ]
+  },
+  "en|how can I show that I love the Prophet ﷺ?": {
+   "guard": "none",
+   "question": "how can I show that I love the Prophet ﷺ?",
+   "topic": "hadith",
+   "values": [
+    "love",
+    "good manners"
+   ]
+  },
+  "en|is there a hadith about a good word?": {
+   "guard": "none",
+   "question": "is there a hadith about a good word?",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "truthfulness"
+   ]
+  },
+  "en|is there a hadith about backbiting?": {
+   "guard": "none",
+   "question": "is there a hadith about backbiting?",
+   "topic": "hadith",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about being kind to animals?": {
+   "guard": "none",
+   "question": "is there a hadith about being kind to animals?",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|is there a hadith about being merciful?": {
+   "guard": "none",
+   "question": "is there a hadith about being merciful?",
+   "topic": "hadith",
+   "values": [
+    "mercy"
+   ]
+  },
+  "en|is there a hadith about being patient?": {
+   "guard": "none",
+   "question": "is there a hadith about being patient?",
+   "topic": "hadith",
+   "values": [
+    "patience"
+   ]
+  },
+  "en|is there a hadith about being trustworthy?": {
+   "guard": "none",
+   "question": "is there a hadith about being trustworthy?",
+   "topic": "hadith",
+   "values": [
+    "trustworthiness"
+   ]
+  },
+  "en|is there a hadith about breaking your word?": {
+   "guard": "none",
+   "question": "is there a hadith about breaking your word?",
+   "topic": "hadith",
+   "values": [
+    "honesty",
+    "keeping promises"
+   ]
+  },
+  "en|is there a hadith about brotherhood?": {
+   "guard": "none",
+   "question": "is there a hadith about brotherhood?",
+   "topic": "hadith",
+   "values": [
+    "brotherhood"
+   ]
+  },
+  "en|is there a hadith about cleanliness?": {
+   "guard": "none",
+   "question": "is there a hadith about cleanliness?",
+   "topic": "hadith",
+   "values": [
+    "cleanliness"
+   ]
+  },
+  "en|is there a hadith about contentment?": {
+   "guard": "none",
+   "question": "is there a hadith about contentment?",
+   "topic": "hadith",
+   "values": [
+    "contentment"
+   ]
+  },
+  "en|is there a hadith about controlling your temper?": {
+   "guard": "none",
+   "question": "is there a hadith about controlling your temper?",
+   "topic": "hadith",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|is there a hadith about cooperation?": {
+   "guard": "none",
+   "question": "is there a hadith about cooperation?",
+   "topic": "hadith",
+   "values": [
+    "cooperation"
+   ]
+  },
+  "en|is there a hadith about courage?": {
+   "guard": "none",
+   "question": "is there a hadith about courage?",
+   "topic": "hadith",
+   "values": [
+    "courage"
+   ]
+  },
+  "en|is there a hadith about dhikr?": {
+   "guard": "none",
+   "question": "is there a hadith about dhikr?",
+   "topic": "hadith",
+   "values": [
+    "remembrance of Allah"
+   ]
+  },
+  "en|is there a hadith about forgiveness?": {
+   "guard": "none",
+   "question": "is there a hadith about forgiveness?",
+   "topic": "hadith",
+   "values": [
+    "forgiveness"
+   ]
+  },
+  "en|is there a hadith about giving to the poor?": {
+   "guard": "none",
+   "question": "is there a hadith about giving to the poor?",
+   "topic": "hadith",
+   "values": [
+    "charity",
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about giving?": {
+   "guard": "none",
+   "question": "is there a hadith about giving?",
+   "topic": "hadith",
+   "values": [
+    "giving",
+    "charity"
+   ]
+  },
+  "en|is there a hadith about having good character?": {
+   "guard": "none",
+   "question": "is there a hadith about having good character?",
+   "topic": "hadith",
+   "values": [
+    "good character"
+   ]
+  },
+  "en|is there a hadith about haya?": {
+   "guard": "none",
+   "question": "is there a hadith about haya?",
+   "topic": "hadith",
+   "values": [
+    "modesty"
+   ]
+  },
+  "en|is there a hadith about helping others?": {
+   "guard": "none",
+   "question": "is there a hadith about helping others?",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "helping others"
+   ]
+  },
+  "en|is there a hadith about how much the Prophet loves us?": {
+   "guard": "none",
+   "question": "is there a hadith about how much the Prophet loves us?",
+   "topic": "hadith",
+   "values": [
+    "love",
+    "mercy"
+   ]
+  },
+  "en|is there a hadith about how to eat?": {
+   "guard": "none",
+   "question": "is there a hadith about how to eat?",
+   "topic": "hadith",
+   "values": [
+    "manners",
+    "gratitude"
+   ]
+  },
+  "en|is there a hadith about intentions?": {
+   "guard": "none",
+   "question": "is there a hadith about intentions?",
+   "topic": "hadith",
+   "values": [
+    "honesty",
+    "sincerity"
+   ]
+  },
+  "en|is there a hadith about justice?": {
+   "guard": "none",
+   "question": "is there a hadith about justice?",
+   "topic": "hadith",
+   "values": [
+    "justice"
+   ]
+  },
+  "en|is there a hadith about keeping family ties?": {
+   "guard": "none",
+   "question": "is there a hadith about keeping family ties?",
+   "topic": "hadith",
+   "values": [
+    "keeping family ties"
+   ]
+  },
+  "en|is there a hadith about lying?": {
+   "guard": "none",
+   "question": "Is there a hadith about lying?",
+   "topic": "hadith",
+   "values": [
+    "honesty"
+   ]
+  },
+  "en|is there a hadith about my mother?": {
+   "guard": "none",
+   "question": "is there a hadith about my mother?",
+   "topic": "hadith",
+   "values": [
+    "kindness to parents"
+   ]
+  },
+  "en|is there a hadith about pride?": {
+   "guard": "none",
+   "question": "is there a hadith about pride?",
+   "topic": "hadith",
+   "values": [
+    "humility"
+   ]
+  },
+  "en|is there a hadith about respecting elders?": {
+   "guard": "none",
+   "question": "is there a hadith about respecting elders?",
+   "topic": "hadith",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about saying salam?": {
+   "guard": "none",
+   "question": "is there a hadith about saying salam?",
+   "topic": "hadith",
+   "values": [
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about seeking knowledge?": {
+   "guard": "none",
+   "question": "is there a hadith about seeking knowledge?",
+   "topic": "hadith",
+   "values": [
+    "seeking knowledge"
+   ]
+  },
+  "en|is there a hadith about taking care of an orphan?": {
+   "guard": "none",
+   "question": "is there a hadith about taking care of an orphan?",
+   "topic": "hadith",
+   "values": [
+    "mercy",
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about tawakkul?": {
+   "guard": "none",
+   "question": "is there a hadith about tawakkul?",
+   "topic": "hadith",
+   "values": [
+    "trust in Allah"
+   ]
+  },
+  "en|is there a hadith about thanking Allah?": {
+   "guard": "none",
+   "question": "is there a hadith about thanking Allah?",
+   "topic": "hadith",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "en|is there a hadith about the neighbour?": {
+   "guard": "none",
+   "question": "is there a hadith about the neighbour?",
+   "topic": "hadith",
+   "values": [
+    "kindness",
+    "neighbors"
+   ]
+  },
+  "en|is there a hadith about visiting the sick?": {
+   "guard": "none",
+   "question": "is there a hadith about visiting the sick?",
+   "topic": "hadith",
+   "values": [
+    "mercy",
+    "kindness"
+   ]
+  },
+  "en|is there a hadith about wasting water?": {
+   "guard": "none",
+   "question": "is there a hadith about wasting water?",
+   "topic": "hadith",
+   "values": [
+    "gratitude",
+    "moderation"
+   ]
+  },
+  "en|is there a hadith about why we pray?": {
+   "guard": "none",
+   "question": "is there a hadith about why we pray?",
+   "topic": "hadith",
+   "values": [
+    "worship"
+   ]
+  },
+  "en|is there a verse about Muslims being brothers?": {
+   "guard": "none",
+   "question": "is there a verse about Muslims being brothers?",
+   "topic": "quran",
+   "values": [
+    "brotherhood",
+    "kindness"
+   ]
+  },
+  "en|is there a verse about anger?": {
+   "guard": "none",
+   "question": "is there a verse about anger?",
+   "topic": "quran",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|is there a verse about animals?": {
+   "guard": "none",
+   "question": "is there a verse about animals?",
+   "topic": "quran",
+   "values": [
+    "gratitude",
+    "reflection"
+   ]
+  },
+  "en|is there a verse about being brave?": {
+   "guard": "none",
+   "question": "is there a verse about being brave?",
+   "topic": "quran",
+   "values": [
+    "bravery"
+   ]
+  },
+  "en|is there a verse about being clean?": {
+   "guard": "none",
+   "question": "is there a verse about being clean?",
+   "topic": "quran",
+   "values": [
+    "cleanliness"
+   ]
+  },
+  "en|is there a verse about being fair?": {
+   "guard": "none",
+   "question": "is there a verse about being fair?",
+   "topic": "quran",
+   "values": [
+    "fairness"
+   ]
+  },
+  "en|is there a verse about being generous?": {
+   "guard": "none",
+   "question": "is there a verse about being generous?",
+   "topic": "quran",
+   "values": [
+    "generosity"
+   ]
+  },
+  "en|is there a verse about being good to my parents?": {
+   "guard": "none",
+   "question": "is there a verse about being good to my parents?",
+   "topic": "quran",
+   "values": [
+    "respect for parents"
+   ]
+  },
+  "en|is there a verse about being happy with what you have?": {
+   "guard": "none",
+   "question": "is there a verse about being happy with what you have?",
+   "topic": "quran",
+   "values": [
+    "contentment"
+   ]
+  },
+  "en|is there a verse about being humble?": {
+   "guard": "none",
+   "question": "is there a verse about being humble?",
+   "topic": "quran",
+   "values": [
+    "humility"
+   ]
+  },
+  "en|is there a verse about being thankful?": {
+   "guard": "none",
+   "question": "is there a verse about being thankful?",
+   "topic": "quran",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "en|is there a verse about doing things only for Allah?": {
+   "guard": "none",
+   "question": "is there a verse about doing things only for Allah?",
+   "topic": "quran",
+   "values": [
+    "sincerity"
+   ]
+  },
+  "en|is there a verse about eating?": {
+   "guard": "none",
+   "question": "is there a verse about eating?",
+   "topic": "quran",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "en|is there a verse about forgiving people?": {
+   "guard": "none",
+   "question": "is there a verse about forgiving people?",
+   "topic": "quran",
+   "values": [
+    "forgiveness",
+    "mercy"
+   ]
+  },
+  "en|is there a verse about good manners?": {
+   "guard": "none",
+   "question": "is there a verse about good manners?",
+   "topic": "quran",
+   "values": [
+    "good manners"
+   ]
+  },
+  "en|is there a verse about gossip?": {
+   "guard": "none",
+   "question": "is there a verse about gossip?",
+   "topic": "quran",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|is there a verse about greeting people?": {
+   "guard": "none",
+   "question": "is there a verse about greeting people?",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|is there a verse about helping people?": {
+   "guard": "none",
+   "question": "is there a verse about helping people?",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "helping others"
+   ]
+  },
+  "en|is there a verse about keeping a promise?": {
+   "guard": "none",
+   "question": "is there a verse about keeping a promise?",
+   "topic": "quran",
+   "values": [
+    "keeping promises"
+   ]
+  },
+  "en|is there a verse about keeping an amanah?": {
+   "guard": "none",
+   "question": "is there a verse about keeping an amanah?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "trustworthiness"
+   ]
+  },
+  "en|is there a verse about learning?": {
+   "guard": "none",
+   "question": "is there a verse about learning?",
+   "topic": "quran",
+   "values": [
+    "knowledge",
+    "learning"
+   ]
+  },
+  "en|is there a verse about loving the Prophet?": {
+   "guard": "none",
+   "question": "is there a verse about loving the Prophet?",
+   "topic": "quran",
+   "values": [
+    "love",
+    "obedience"
+   ]
+  },
+  "en|is there a verse about mercy?": {
+   "guard": "none",
+   "question": "is there a verse about mercy?",
+   "topic": "quran",
+   "values": [
+    "mercy"
+   ]
+  },
+  "en|is there a verse about modesty?": {
+   "guard": "none",
+   "question": "is there a verse about modesty?",
+   "topic": "quran",
+   "values": [
+    "modesty"
+   ]
+  },
+  "en|is there a verse about neighbours?": {
+   "guard": "none",
+   "question": "is there a verse about neighbours?",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|is there a verse about old people?": {
+   "guard": "none",
+   "question": "is there a verse about old people?",
+   "topic": "quran",
+   "values": [
+    "mercy",
+    "respect"
+   ]
+  },
+  "en|is there a verse about orphans?": {
+   "guard": "none",
+   "question": "is there a verse about orphans?",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|is there a verse about patience?": {
+   "guard": "none",
+   "question": "is there a verse about patience?",
+   "topic": "quran",
+   "values": [
+    "patience"
+   ]
+  },
+  "en|is there a verse about praying five times a day?": {
+   "guard": "none",
+   "question": "is there a verse about praying five times a day?",
+   "topic": "quran",
+   "values": [
+    "prayer"
+   ]
+  },
+  "en|is there a verse about relatives?": {
+   "guard": "none",
+   "question": "is there a verse about relatives?",
+   "topic": "quran",
+   "values": [
+    "family",
+    "kindness"
+   ]
+  },
+  "en|is there a verse about remembering Allah?": {
+   "guard": "none",
+   "question": "is there a verse about remembering Allah?",
+   "topic": "quran",
+   "values": [
+    "remembering Allah"
+   ]
+  },
+  "en|is there a verse about sadaqah?": {
+   "guard": "none",
+   "question": "is there a verse about sadaqah?",
+   "topic": "quran",
+   "values": [
+    "charity"
+   ]
+  },
+  "en|is there a verse about speaking nicely?": {
+   "guard": "none",
+   "question": "is there a verse about speaking nicely?",
+   "topic": "quran",
+   "values": [
+    "kindness",
+    "good speech"
+   ]
+  },
+  "en|is there a verse about telling the truth?": {
+   "guard": "none",
+   "question": "is there a verse about telling the truth?",
+   "topic": "quran",
+   "values": [
+    "honesty"
+   ]
+  },
+  "en|is there a verse about trusting Allah?": {
+   "guard": "none",
+   "question": "is there a verse about trusting Allah?",
+   "topic": "quran",
+   "values": [
+    "trust in Allah"
+   ]
+  },
+  "en|is there a verse about visiting sick people?": {
+   "guard": "none",
+   "question": "is there a verse about visiting sick people?",
+   "topic": "quran",
+   "values": [
+    "mercy",
+    "kindness"
+   ]
+  },
+  "en|is there a verse about wasting things?": {
+   "guard": "none",
+   "question": "is there a verse about wasting things?",
+   "topic": "quran",
+   "values": [
+    "gratitude",
+    "moderation"
+   ]
+  },
+  "en|is there a verse about working together?": {
+   "guard": "none",
+   "question": "is there a verse about working together?",
+   "topic": "quran",
+   "values": [
+    "cooperation",
+    "kindness"
+   ]
+  },
+  "en|kids at school say bad words and I want to be different, what does Islam say?": {
+   "guard": "none",
+   "question": "kids at school say bad words and I want to be different, what does Islam say?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|kids in my class laugh about another kid when he leaves, should I join them?": {
+   "guard": "none",
+   "question": "kids in my class laugh about another kid when he leaves, should I join them?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|my brother makes me so mad that I want to scream, how do I calm down?": {
+   "guard": "none",
+   "question": "my brother makes me so mad that I want to scream, how do I calm down?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|my brother pulled the tail of our cat, is that wrong?": {
+   "guard": "none",
+   "question": "my brother pulled the tail of our cat, is that wrong?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|my cousin thinks he is better than everyone, is that okay?": {
+   "guard": "none",
+   "question": "my cousin thinks he is better than everyone, is that okay?",
+   "topic": "values",
+   "values": [
+    "humility",
+    "respect"
+   ]
+  },
+  "en|my dad said he would take me to the park and he forgot, is that a lie?": {
+   "guard": "none",
+   "question": "my dad said he would take me to the park and he forgot, is that a lie?",
+   "topic": "values",
+   "values": [
+    "honesty"
+   ]
+  },
+  "en|my friend broke my toy and said sorry, do I have to forgive him?": {
+   "guard": "none",
+   "question": "my friend broke my toy and said sorry, do I have to forgive him?",
+   "topic": "values",
+   "values": [
+    "forgiveness",
+    "kindness"
+   ]
+  },
+  "en|my friend cheated on the test and I did not tell the teacher, what should I do?": {
+   "guard": "none",
+   "question": "my friend cheated on the test and I did not tell the teacher, what should I do?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|my friend has a bigger house than me and I feel jealous, what should I do?": {
+   "guard": "none",
+   "question": "my friend has a bigger house than me and I feel jealous, what should I do?",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "contentment"
+   ]
+  },
+  "en|my friend has no lunch and I have extra, should I give him some?": {
+   "guard": "none",
+   "question": "my friend has no lunch and I have extra, should I give him some?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "generosity"
+   ]
+  },
+  "en|my friend is sick at home and I want to cheer him up, what can I do?": {
+   "guard": "none",
+   "question": "my friend is sick at home and I want to cheer him up, what can I do?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|my friend looks sad, what nice thing can I say to him?": {
+   "guard": "none",
+   "question": "my friend looks sad, what nice thing can I say to him?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "comfort"
+   ]
+  },
+  "en|my friend told me a secret and I told someone else, was that bad?": {
+   "guard": "none",
+   "question": "my friend told me a secret and I told someone else, was that bad?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "trust"
+   ]
+  },
+  "en|my friends are playing and I have to go pray, why is prayer so important?": {
+   "guard": "REFER",
+   "question": "my friends are playing and I have to go pray, why is prayer so important?",
+   "topic": "worship",
+   "values": [
+    "respect",
+    "patience"
+   ]
+  },
+  "en|my grandma is in the hospital, should I go and see her?": {
+   "guard": "none",
+   "question": "my grandma is in the hospital, should I go and see her?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|my grandpa asked me to bring him water and I did not want to, is that wrong?": {
+   "guard": "none",
+   "question": "my grandpa asked me to bring him water and I did not want to, is that wrong?",
+   "topic": "values",
+   "values": [
+    "respect for parents",
+    "kindness"
+   ]
+  },
+  "en|my little brother eats with his left hand, what does Islam say?": {
+   "guard": "none",
+   "question": "my little brother eats with his left hand, what does Islam say?",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "manners"
+   ]
+  },
+  "en|my little sister got more candy than me, is that unfair?": {
+   "guard": "none",
+   "question": "my little sister got more candy than me, is that unfair?",
+   "topic": "values",
+   "values": [
+    "fairness",
+    "patience"
+   ]
+  },
+  "en|my mom asked me to clean my room and I said no, what does Allah say?": {
+   "guard": "none",
+   "question": "my mom asked me to clean my room and I said no, what does Allah say?",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "obedience"
+   ]
+  },
+  "en|my mom said we give zakat, what is it and why do we give it?": {
+   "guard": "none",
+   "question": "my mom said we give zakat, what is it and why do we give it?",
+   "topic": "word_meaning",
+   "values": [
+    "giving",
+    "gratitude"
+   ]
+  },
+  "en|my room is very messy, does Allah care if it is clean?": {
+   "guard": "none",
+   "question": "Does Allah care if a room is clean?",
+   "topic": "word_meaning",
+   "values": [
+    "cleanliness"
+   ]
+  },
+  "en|my teacher always picks the same kid, that is not fair, what does Islam say?": {
+   "guard": "none",
+   "question": "my teacher always picks the same kid, that is not fair, what does Islam say?",
+   "topic": "values",
+   "values": [
+    "fairness",
+    "patience"
+   ]
+  },
+  "en|my team lost the match because we did not work together, why does that matter?": {
+   "guard": "none",
+   "question": "my team lost the match because we did not work together, why does that matter?",
+   "topic": "values",
+   "values": [
+    "teamwork",
+    "patience"
+   ]
+  },
+  "en|my uncle and my dad are not talking to each other, what does Islam say?": {
+   "guard": "none",
+   "question": "my uncle and my dad are not talking to each other, what does Islam say?",
+   "topic": "values",
+   "values": [
+    "keeping ties of kinship",
+    "forgiveness"
+   ]
+  },
+  "en|our class has a group project and nobody wants to help, what should I do?": {
+   "guard": "none",
+   "question": "our class has a group project and nobody wants to help, what should I do?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "cooperation"
+   ]
+  },
+  "en|our neighbour is an old lady and she is alone, what can I do?": {
+   "guard": "none",
+   "question": "our neighbour is an old lady and she is alone, what can I do?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect for elders"
+   ]
+  },
+  "en|the kids next door are noisy and I get angry at them, what should I do?": {
+   "guard": "none",
+   "question": "the kids next door are noisy and I get angry at them, what should I do?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "kindness"
+   ]
+  },
+  "en|there is a boy in my class whose dad died, how can I be nice to him?": {
+   "guard": "none",
+   "question": "there is a boy in my class whose dad died, how can I be nice to him?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|there is a hungry stray cat outside our house, should I feed it?": {
+   "guard": "none",
+   "question": "there is a hungry stray cat outside our house, should I feed it?",
+   "topic": "values",
+   "values": [
+    "kindness"
+   ]
+  },
+  "en|there is a little kid crying and I feel sorry for him, what should I do?": {
+   "guard": "none",
+   "question": "there is a little kid crying and I feel sorry for him, what should I do?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|what can I say before I sleep so Allah is with me?": {
+   "guard": "none",
+   "question": "what can I say before I sleep so Allah is with me?",
+   "topic": "worship",
+   "values": [
+    "trust in Allah",
+    "peace"
+   ]
+  },
+  "en|what does Islam say about being a good person?": {
+   "guard": "none",
+   "question": "what does Islam say about being a good person?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "honesty"
+   ]
+  },
+  "en|what does Islam say about being friends with other Muslims?": {
+   "guard": "none",
+   "question": "what does Islam say about being friends with other Muslims?",
+   "topic": "values",
+   "values": [
+    "friendship",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about being gentle with people?": {
+   "guard": "none",
+   "question": "what does Islam say about being gentle with people?",
+   "topic": "values",
+   "values": [
+    "gentleness",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about being good to the people next door?": {
+   "guard": "none",
+   "question": "what does Islam say about being good to the people next door?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "good neighbor"
+   ]
+  },
+  "en|what does Islam say about being grateful?": {
+   "guard": "none",
+   "question": "what does Islam say about being grateful?",
+   "topic": "values",
+   "values": [
+    "gratitude"
+   ]
+  },
+  "en|what does Islam say about being helpful?": {
+   "guard": "none",
+   "question": "what does Islam say about being helpful?",
+   "topic": "values",
+   "values": [
+    "helpfulness",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about being honest?": {
+   "guard": "none",
+   "question": "what does Islam say about being honest?",
+   "topic": "values",
+   "values": [
+    "honesty"
+   ]
+  },
+  "en|what does Islam say about being shy and modest?": {
+   "guard": "none",
+   "question": "what does Islam say about being shy and modest?",
+   "topic": "word_meaning",
+   "values": [
+    "modesty",
+    "shyness"
+   ]
+  },
+  "en|what does Islam say about being strong and not afraid?": {
+   "guard": "none",
+   "question": "what does Islam say about being strong and not afraid?",
+   "topic": "values",
+   "values": [
+    "strength",
+    "courage"
+   ]
+  },
+  "en|what does Islam say about cats and dogs?": {
+   "guard": "none",
+   "question": "what does Islam say about cats and dogs?",
+   "topic": "word_meaning",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|what does Islam say about charity?": {
+   "guard": "none",
+   "question": "what does Islam say about charity?",
+   "topic": "word_meaning",
+   "values": [
+    "charity"
+   ]
+  },
+  "en|what does Islam say about getting angry?": {
+   "guard": "none",
+   "question": "what does Islam say about getting angry?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|what does Islam say about going to school and studying?": {
+   "guard": "none",
+   "question": "what does Islam say about going to school and studying?",
+   "topic": "word_meaning",
+   "values": [
+    "knowledge",
+    "patience"
+   ]
+  },
+  "en|what does Islam say about going to see someone who is ill?": {
+   "guard": "none",
+   "question": "what does Islam say about going to see someone who is ill?",
+   "topic": "worship",
+   "values": [
+    "kindness",
+    "mercy"
+   ]
+  },
+  "en|what does Islam say about kids who have no parents?": {
+   "guard": "none",
+   "question": "what does Islam say about kids who have no parents?",
+   "topic": "word_meaning",
+   "values": [
+    "mercy",
+    "care"
+   ]
+  },
+  "en|what does Islam say about manners when we eat?": {
+   "guard": "none",
+   "question": "what does Islam say about manners when we eat?",
+   "topic": "word_meaning",
+   "values": [
+    "manners"
+   ]
+  },
+  "en|what does Islam say about obeying my parents?": {
+   "guard": "none",
+   "question": "what does Islam say about obeying my parents?",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about praying on time?": {
+   "guard": "none",
+   "question": "what does Islam say about praying on time?",
+   "topic": "worship",
+   "values": [
+    "prayer",
+    "keeping promises"
+   ]
+  },
+  "en|what does Islam say about promises?": {
+   "guard": "none",
+   "question": "what does Islam say about promises?",
+   "topic": "values",
+   "values": [
+    "keeping promises"
+   ]
+  },
+  "en|what does Islam say about relying on Allah?": {
+   "guard": "none",
+   "question": "what does Islam say about relying on Allah?",
+   "topic": "word_meaning",
+   "values": [
+    "trust in Allah"
+   ]
+  },
+  "en|what does Islam say about respecting my grandparents?": {
+   "guard": "none",
+   "question": "what does Islam say about respecting my grandparents?",
+   "topic": "word_meaning",
+   "values": [
+    "respect",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about saying SubhanAllah and Alhamdulillah?": {
+   "guard": "none",
+   "question": "what does Islam say about saying SubhanAllah and Alhamdulillah?",
+   "topic": "word_meaning",
+   "values": [
+    "gratitude",
+    "remembrance"
+   ]
+  },
+  "en|what does Islam say about saying assalamu alaykum?": {
+   "guard": "none",
+   "question": "what does Islam say about saying assalamu alaykum?",
+   "topic": "word_meaning",
+   "values": [
+    "salam",
+    "respect"
+   ]
+  },
+  "en|what does Islam say about saying nice things to people?": {
+   "guard": "none",
+   "question": "what does Islam say about saying nice things to people?",
+   "topic": "values",
+   "values": [
+    "kindness",
+    "respect"
+   ]
+  },
+  "en|what does Islam say about saying sorry?": {
+   "guard": "none",
+   "question": "what does Islam say about saying sorry?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about sending salawat on the Prophet?": {
+   "guard": "none",
+   "question": "what does Islam say about sending salawat on the Prophet?",
+   "topic": "word_meaning",
+   "values": [
+    "gratitude",
+    "love"
+   ]
+  },
+  "en|what does Islam say about sharing what I have?": {
+   "guard": "none",
+   "question": "what does Islam say about sharing what I have?",
+   "topic": "values",
+   "values": [
+    "generosity",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about showing off?": {
+   "guard": "none",
+   "question": "what does Islam say about showing off?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "sincerity"
+   ]
+  },
+  "en|what does Islam say about sincerity?": {
+   "guard": "none",
+   "question": "what does Islam say about sincerity?",
+   "topic": "word_meaning",
+   "values": [
+    "sincerity"
+   ]
+  },
+  "en|what does Islam say about stealing?": {
+   "guard": "none",
+   "question": "what does Islam say about stealing?",
+   "topic": "values",
+   "values": [
+    "honesty",
+    "respect for property"
+   ]
+  },
+  "en|what does Islam say about talking about people behind their back?": {
+   "guard": "none",
+   "question": "what does Islam say about talking about people behind their back?",
+   "topic": "word_meaning",
+   "values": [
+    "honesty",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about teamwork?": {
+   "guard": "none",
+   "question": "what does Islam say about teamwork?",
+   "topic": "values",
+   "values": [
+    "teamwork"
+   ]
+  },
+  "en|what does Islam say about throwing away food?": {
+   "guard": "none",
+   "question": "what does Islam say about throwing away food?",
+   "topic": "values",
+   "values": [
+    "gratitude",
+    "avoid waste"
+   ]
+  },
+  "en|what does Islam say about treating everyone equally?": {
+   "guard": "none",
+   "question": "what does Islam say about treating everyone equally?",
+   "topic": "values",
+   "values": [
+    "fairness",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about visiting my aunts and uncles?": {
+   "guard": "none",
+   "question": "what does Islam say about visiting my aunts and uncles?",
+   "topic": "worship",
+   "values": [
+    "family ties",
+    "kindness"
+   ]
+  },
+  "en|what does Islam say about waiting and not rushing?": {
+   "guard": "none",
+   "question": "what does Islam say about waiting and not rushing?",
+   "topic": "values",
+   "values": [
+    "patience",
+    "self-control"
+   ]
+  },
+  "en|what does Islam say about wanting more and more things?": {
+   "guard": "none",
+   "question": "what does Islam say about wanting more and more things?",
+   "topic": "values",
+   "values": [
+    "contentment",
+    "gratitude"
+   ]
+  },
+  "en|what does Islam say about washing our hands and brushing teeth?": {
+   "guard": "none",
+   "question": "what does Islam say about washing our hands and brushing teeth?",
+   "topic": "worship",
+   "values": [
+    "cleanliness",
+    "good manners"
+   ]
+  },
+  "en|why should girls wear the hijab when they get older?": {
+   "guard": "none",
+   "question": "why should girls wear the hijab when they get older?",
+   "topic": "word_meaning",
+   "values": [
+    "modesty"
+   ]
+  }
+ },
+ "effort": "none",
+ "model": "gpt-5.4-mini"
+}

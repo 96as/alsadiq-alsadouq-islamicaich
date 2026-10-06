@@ -1,0 +1,102 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - POSTGRES_HOST=db
+      - REDIS_HOST=redis
+      # Production is DEBUG-off unless .env explicitly sets DEBUG=1.
+      - DEBUG=${DEBUG:-0}
+      # One proxy (Caddy) sits in front: DRF throttles trust only its X-Forwarded-For entry.
+      - DRF_NUM_PROXIES=${DRF_NUM_PROXIES:-1}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    expose:
+      - "8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+        # "1" turns the forest scene / demo mode on in the built frontend.
+        VITE_FOREST_SCENE: ${VITE_FOREST_SCENE:-0}
+        VITE_DEMO_MODE: ${VITE_DEMO_MODE:-0}
+    volumes:
+      - frontend_dist:/srv/frontend
+
+  livekit_agent:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.agent
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - POSTGRES_HOST=db
+      # Same Redis as the backend: the agent reads the per-session voice decision (kill
+      # switch, text-only after the ElevenLabs budget) and counts ElevenLabs characters there.
+      - REDIS_HOST=redis
+      - LIVEKIT_URL=${LIVEKIT_URL}
+      - DEBUG=${DEBUG:-0}
+      # Warm job processes kept ready (each preloads Django + VAD). 1 saves RAM.
+      - AGENT_NUM_IDLE_PROCESSES=${AGENT_NUM_IDLE_PROCESSES:-1}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      # Override the host ports (HTTP_PORT / HTTPS_PORT) only for a local smoke test.
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - frontend_dist:/srv/frontend:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  postgres_data:
+  redis_data:
+  frontend_dist:
+  caddy_data:
+  caddy_config:

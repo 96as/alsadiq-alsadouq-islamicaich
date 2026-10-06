@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 49,
+    "ayah": 12,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱجۡتَنِبُواْ كَثِيرٗا مِّنَ ٱلظَّنِّ إِنَّ بَعۡضَ ٱلظَّنِّ إِثۡمٞۖ وَلَا تَجَسَّسُواْ وَلَا يَغۡتَب بَّعۡضُكُم بَعۡضًاۚ أَيُحِبُّ أَحَدُكُمۡ أَن يَأۡكُلَ لَحۡمَ أَخِيهِ مَيۡتٗا فَكَرِهۡتُمُوهُۚ وَٱتَّقُواْ ٱللَّهَۚ إِنَّ ٱللَّهَ تَوَّابٞ رَّحِيمٞ",
+    "arabic_text_search": "ياأيها الذين آمنوا اجتنبوا كثيرا من الظن إن بعض الظن إثم ولا تجسسوا ولا يغتب بعضكم بعضا أيحب أحدكم أن يأكل لحم أخيه ميتا فكرهتموه واتقوا الله إن الله تواب رحيم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, avoid much [negative] assumption. Indeed, some assumption is sin. And do not spy or backbite each other. Would one of you like to eat the flesh of his brother when dead? You would detest it. And fear Allāh; indeed, Allāh is Accepting of Repentance and Merciful.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-hujurat/12",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/049012.mp3",
+    "values": [
+      "avoiding-backbiting"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تنهانا الآية عن سوء الظن والتجسس والغيبة وتستخدم صورة قوية للتنفير من الغيبة. احفظ خصوصية الآخرين، لكن أخبر شخصا بالغا تثق به إذا وقع أذى أو احتجت حماية.",
+    "child_explanation_en": "This verse warns against suspicion, spying, and backbiting, using a strong image to show how harmful backbiting is. Respect others’ privacy, but tell a trusted adult if someone is being hurt or you need protection.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 104,
+    "ayah": 1,
+    "arabic_text": "وَيۡلٞ لِّكُلِّ هُمَزَةٖ لُّمَزَةٍ",
+    "arabic_text_search": "ويل لكل همزة لمزة",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Woe to every scorner and mocker",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-humaza/1",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/104001.mp3",
+    "values": [
+      "avoiding-backbiting"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تحذّر الآية من إيذاء الناس بالسخرية والطعن فيهم. اختر كلاما يحفظ كرامة الآخرين، ولا تتكلم عنهم بقصد الإهانة.",
+    "child_explanation_en": "This verse warns against hurting people through mockery and insulting speech. Choose words that respect others, and do not talk about them to humiliate them.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

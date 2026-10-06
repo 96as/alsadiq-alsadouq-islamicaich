@@ -1,0 +1,190 @@
+services:
+  # ============================================
+  # Backend Layer (Profile: back)
+  # ============================================
+
+  db:
+    profiles: [ "back", "all" ]
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-alsadiq_db}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    # we add it to all when it is connected
+    # profiles: [ "back", "all" ]
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    profiles: [ "back", "all" ]
+    build: ./backend
+    command: >
+      sh -c "pip install -r requirements.txt && python manage.py migrate && python manage.py migrate --check && python manage.py seed_admin && python manage.py seed_content && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      DEBUG: ${DEBUG:-1}
+      # Browsers cannot resolve Docker hostname "livekit"; keep this host-reachable unless you use a tunnel
+      LIVEKIT_PUBLIC_URL: ${LIVEKIT_PUBLIC_URL:-ws://localhost:7880}
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # ============================================
+  # Frontend Layer (Profile: front)
+  # ============================================
+
+  frontend:
+    profiles: [ "front", "all" ]
+    build:
+      context: ./frontend
+      # Dev uses the node:20-slim "build" stage (has npm + vite dev server).
+      # The default final stage is busybox (prod static export) and has no npm.
+      target: build
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+      - VITE_DEMO_MODE=${VITE_DEMO_MODE:-}
+      # Windows/macOS bind mounts send no file events; poll so edits reach the dev server.
+      - VITE_WATCH_POLL=1
+    volumes:
+      - ./frontend:/web
+      - /web/node_modules
+    # Bind-mount overwrites image node_modules; refresh deps when package.json changes.
+    command: sh -c "npm install --no-package-lock && npm run dev -- --host 0.0.0.0"
+
+  # ============================================
+  # Async Services (Profile: async)
+  # ============================================
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    profiles: [ "async" ]
+    # we add it to all when it is connected
+    # profiles: [ "async", "all" ]
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER:-rabbitmq}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS:-rabbitmq}
+    ports:
+      - "127.0.0.1:5672:5672" # AMQP
+      - "127.0.0.1:15672:15672" # Management UI
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: [ "CMD", "rabbitmq-diagnostics", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  celery_worker:
+    build: ./backend
+    profiles: [ "async" ]
+    # we add it to all when it is connected
+    # profiles: [ "async", "all" ]
+    command: celery -A config worker -l info
+    env_file:
+      - .env
+    environment:
+      DEBUG: ${DEBUG:-1}
+    volumes:
+      - ./backend:/app
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+
+  # ============================================
+  # LiveKit Service (Profile: livekit)
+  # ============================================
+
+  livekit:
+    image: livekit/livekit-server:latest
+    profiles: [ "livekit", "all" ]
+    command: --config /etc/livekit.yaml
+    ports:
+      - "7880:7880" # HTTP / signalling
+      - "7881:7881" # WebRTC TCP
+      - "7882:7882/udp" # TURN/UDP
+      - "50000-50100:50000-50100/udp" # ICE/RTP media
+    volumes:
+      - ./infra/livekit/livekit.yaml:/etc/livekit.yaml
+    environment:
+      LIVEKIT_API_KEY: ${LIVEKIT_API_KEY:-APIKeyDevKey}
+      # Must be >= 32 chars; must match infra/livekit/livekit.yaml keys and backend token signing
+      LIVEKIT_API_SECRET: ${LIVEKIT_API_SECRET:-dev_livekit_api_secret_minimum_32_chars_x}
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  livekit_agent:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.agent
+    profiles: [ "livekit", "all" ]
+    env_file:
+      - .env
+    environment:
+      - DEBUG=${DEBUG:-1}
+      - LIVEKIT_URL=ws://livekit:7880
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - livekit
+      - db
+      - redis
+    restart: on-failure
+
+  # ============================================
+  # Nginx Proxy (Profile: proxy)
+  # ============================================
+
+  nginx:
+    image: nginx:alpine
+    profiles: [ "proxy" ]
+    # we add it to all when it is connected
+    # profiles: [ "proxy", "all" ]
+    ports:
+      - "80:80"
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend
+      - frontend
+
+# ============================================
+# Named Volumes
+# ============================================
+
+volumes:
+  postgres_data:
+  redis_data:
+  rabbitmq_data:

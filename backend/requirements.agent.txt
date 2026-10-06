@@ -1,0 +1,8 @@
+-r requirements.txt
+# Keep agents + plugins on the SAME version (release together).
+# openai 3.x dropped httpx for httpx2, but livekit-agents 1.5.1 still imports httpx
+# (it only got it through openai). Stay on openai 2.x or the agent fails to import.
+openai>=2,<3
+livekit-agents[silero]==1.5.1
+livekit-plugins-openai==1.5.1
+livekit-plugins-elevenlabs==1.5.1

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "verse",
+    "surah": 17,
+    "ayah": 34,
+    "arabic_text": "وَلَا تَقۡرَبُواْ مَالَ ٱلۡيَتِيمِ إِلَّا بِٱلَّتِي هِيَ أَحۡسَنُ حَتَّىٰ يَبۡلُغَ أَشُدَّهُۥۚ وَأَوۡفُواْ بِٱلۡعَهۡدِۖ إِنَّ ٱلۡعَهۡدَ كَانَ مَسۡـُٔولٗا",
+    "arabic_text_search": "ولا تقربوا مال اليتيم إلا بالتي هي أحسن حتى يبلغ أشده وأوفوا بالعهد إن العهد كان مسئولا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And do not approach the property of an orphan, except in the way that is best, until he reaches maturity. And fulfill [every] commitment. Indeed, the commitment is ever [that about which one will be] questioned.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-isra/34",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/017034.mp3",
+    "values": [
+      "keeping-promises",
+      "caring-for-orphans"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تذكّرنا الآية بأمرين: أن نتعامل مع مال اليتيم بالطريقة الأحسن له حتى يكبر، وأن نوفي بما التزمنا به. مثلا: إذا وعدت صديقك بإرجاع لعبته، أرجعها له في الوقت الذي اتفقتما عليه.",
+    "child_explanation_en": "This verse reminds us of two things: to deal with an orphan's property only in the best way until he grows up, and to keep our commitments. For example, if you promise a friend to return their toy, bring it back at the time you agreed.",
+    "child_explanation_older_ar": "تختم الآية بأن العهد مسؤول، أي أن الله يسأل عنه، فالوعد مسؤولية وليس كلمة تُقال وتُنسى. وكذلك اليتيم نحفظ له ماله، ولا نتصرف فيه إلا بما هو أحسن له، حتى يكبر ويحسن التصرف فيه بنفسه.",
+    "child_explanation_older_en": "The verse ends by saying that a commitment will be asked about, so a promise is a responsibility, not a word we say and forget. In the same way, we look after an orphan's property and handle it only in the way that is best for him, until he grows up and can manage it himself.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

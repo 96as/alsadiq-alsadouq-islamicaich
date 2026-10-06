@@ -1,0 +1,70 @@
+[
+  {
+    "type": "verse",
+    "surah": 4,
+    "ayah": 58,
+    "arabic_text": "۞ إِنَّ ٱللَّهَ يَأۡمُرُكُمۡ أَن تُؤَدُّواْ ٱلۡأَمَٰنَٰتِ إِلَىٰٓ أَهۡلِهَا وَإِذَا حَكَمۡتُم بَيۡنَ ٱلنَّاسِ أَن تَحۡكُمُواْ بِٱلۡعَدۡلِۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓۗ إِنَّ ٱللَّهَ كَانَ سَمِيعَۢا بَصِيرٗا",
+    "arabic_text_search": "إن الله يأمركم أن تؤدوا الأمانات إلى أهلها وإذا حكمتم بين الناس أن تحكموا بالعدل إن الله نعما يعظكم به إن الله كان سميعا بصيرا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Indeed, Allāh commands you to render trusts to whom they are due and when you judge between people to judge with justice. Excellent is that which Allāh instructs you. Indeed, Allāh is ever Hearing and Seeing.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-nisa/58",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/004058.mp3",
+    "values": [
+      "trustworthiness",
+      "justice"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "الأمانة أن نعيد الأشياء إلى أصحابها كما أخذناها، وأن نكون عادلين مع الناس. مثلا، إذا استعرت كتابا من صديقك فأعده إليه سليما في وقته.",
+    "child_explanation_en": "Trustworthiness means giving things back to their owners just as we received them, and being fair to people. For example, if you borrow a book from a friend, you return it safely and on time.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 23,
+    "ayah": 8,
+    "arabic_text": "وَٱلَّذِينَ هُمۡ لِأَمَٰنَٰتِهِمۡ وَعَهۡدِهِمۡ رَٰعُونَ",
+    "arabic_text_search": "والذين هم لأماناتهم وعهدهم راعون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And they who are to their trusts and their promises attentive",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-muminun/8",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/023008.mp3",
+    "values": [
+      "trustworthiness",
+      "keeping-promises"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "المؤمنون الطيبون يحافظون على الأمانات التي عندهم ويوفون بوعودهم. مثلا، إذا أعطتك المعلمة ورقة لتوصلها إلى البيت، توصلها كما هي.",
+    "child_explanation_en": "Good believers take care of whatever has been entrusted to them and keep their promises. For example, if your teacher gives you a note to take home, you deliver it just as it is.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 28,
+    "ayah": 26,
+    "arabic_text": "قَالَتۡ إِحۡدَىٰهُمَا يَٰٓأَبَتِ ٱسۡتَـٔۡجِرۡهُۖ إِنَّ خَيۡرَ مَنِ ٱسۡتَـٔۡجَرۡتَ ٱلۡقَوِيُّ ٱلۡأَمِينُ",
+    "arabic_text_search": "قالت إحداهما ياأبت استأجره إن خير من استأجرت القوي الأمين",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "One of the women said, \"O my father, hire him. Indeed, the best one you can hire is the strong and the trustworthy.\"",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-qasas/26",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/028026.mp3",
+    "values": [
+      "trustworthiness"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "الإنسان القوي الأمين يستحق أن يثق به الناس. مثلا، حين تهتم بالمال الذي أعطتك أمك لتشتري به الخبز وتعيد لها الباقي، يثق بك أهلك أكثر.",
+    "child_explanation_en": "A person who is both capable and trustworthy is someone others can rely on. For example, when you bring back the change after shopping for your mum, your family trusts you even more.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

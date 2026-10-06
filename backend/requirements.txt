@@ -1,0 +1,20 @@
+asgiref==3.8.1
+Django==5.2.17
+django-cors-headers==4.6.0
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.5.1
+PyJWT==2.15.0
+pytz==2024.2
+sqlparse==0.6.0
+psycopg2-binary==2.9.10
+python-dotenv==1.0.1
+redis==5.2.1
+celery==5.4.0
+livekit-api==1.1.0
+# livekit-agents 1.5.1 imports httpx without declaring it; newer openai moved to httpx2,
+# so an unpinned openai broke the agent image build. Bump together with livekit-agents.
+openai==2.41.1
+httpx==0.28.1
+gunicorn==23.0.0
+whitenoise==6.9.0
+PyYAML==6.0.1

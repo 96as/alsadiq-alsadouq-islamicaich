@@ -1,0 +1,24 @@
+[
+  {
+    "type": "verse",
+    "surah": 4,
+    "ayah": 36,
+    "arabic_text": "۞ وَٱعۡبُدُواْ ٱللَّهَ وَلَا تُشۡرِكُواْ بِهِۦ شَيۡـٔٗاۖ وَبِٱلۡوَٰلِدَيۡنِ إِحۡسَٰنٗا وَبِذِي ٱلۡقُرۡبَىٰ وَٱلۡيَتَٰمَىٰ وَٱلۡمَسَٰكِينِ وَٱلۡجَارِ ذِي ٱلۡقُرۡبَىٰ وَٱلۡجَارِ ٱلۡجُنُبِ وَٱلصَّاحِبِ بِٱلۡجَنۢبِ وَٱبۡنِ ٱلسَّبِيلِ وَمَا مَلَكَتۡ أَيۡمَٰنُكُمۡۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخۡتَالٗا فَخُورًا",
+    "arabic_text_search": "واعبدوا الله ولا تشركوا به شيئا وبالوالدين إحسانا وبذي القربى واليتامى والمساكين والجار ذي القربى والجار الجنب والصاحب بالجنب وابن السبيل وما ملكت أيمانكم إن الله لا يحب من كان مختالا فخورا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Worship Allāh and associate nothing with Him, and to parents do good, and to relatives, orphans, the needy, the near neighbor, the neighbor farther away, the companion at your side, the traveler, and those whom your right hands possess. Indeed, Allāh does not like those who are self-deluding and boastful,",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-nisa/36",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/004036.mp3",
+    "values": [
+      "good-neighbour"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تذكّرنا الآية بأن نحسن إلى الناس من حولنا، ومنهم الجار. مثلًا: تلقي السلام على جارك وتساعده في حمل أغراضه.",
+    "child_explanation_en": "This verse reminds us to be kind to the people around us, including our neighbours. For example, you greet your neighbour and help carry their shopping bags.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

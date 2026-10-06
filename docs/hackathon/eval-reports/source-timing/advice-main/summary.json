@@ -1,0 +1,4739 @@
+{
+ "config": {
+  "label": "advice-main",
+  "date": "2026-10-06T18:10:43+00:00",
+  "git_commit": "ceff5740",
+  "git_dirty": true,
+  "agent_model": "gpt-5.4-mini",
+  "repeats": 1,
+  "conversations": 72,
+  "planned_turns": {
+   "due": 42,
+   "not_due": 69,
+   "ask": 20,
+   "not_in_bank": 23,
+   "comfort": 0,
+   "disclosure": 0
+  },
+  "channel": "voice",
+  "reasoning_effort": "",
+  "concurrency": 6,
+  "max_calls": 2000,
+  "calls_used": 254,
+  "search_bank_on_agent": true,
+  "set_file": "backend/conversation/eval/source_timing.yaml",
+  "set_sha256": "471ea8f7b851e89a",
+  "prompt_sha1": [
+   "22c1379a6d41",
+   "62b661c5bbd6",
+   "6c323d9978aa",
+   "fcd3dd47ffd4"
+  ],
+  "model_snapshots": [
+   "gpt-5.4-mini-2026-03-17"
+  ]
+ },
+ "runs_total": 72,
+ "runs_errored": 0,
+ "errors": [],
+ "answered_turns": 154,
+ "metrics": {
+  "offered_when_due": {
+   "hits": 34,
+   "n": 42,
+   "rate": 0.81
+  },
+  "offered_when_due_card_only": {
+   "hits": 34,
+   "n": 42,
+   "rate": 0.81
+  },
+  "creep": {
+   "hits": 8,
+   "n": 69,
+   "rate": 0.116
+  },
+  "creep_card_only": {
+   "hits": 8,
+   "n": 69,
+   "rate": 0.116
+  },
+  "ask_served": {
+   "hits": 20,
+   "n": 20,
+   "rate": 1.0
+  },
+  "not_in_bank_wrong_referral": {
+   "hits": 3,
+   "n": 23,
+   "rate": 0.13
+  },
+  "not_in_bank_says_not_found": {
+   "hits": 21,
+   "n": 23,
+   "rate": 0.913
+  },
+  "invented_content": {
+   "hits": 0,
+   "n": 154,
+   "rate": 0.0
+  },
+  "comfort_verse_on_distress": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "lesson_card_on_distress": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "source_on_disclosure": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "allah_says_on_comfort": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "flagged_on_comfort": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  },
+  "flagged_on_disclosure": {
+   "hits": 0,
+   "n": 0,
+   "rate": null
+  }
+ },
+ "by_lang": {
+  "en": {
+   "offered_when_due": {
+    "hits": 18,
+    "n": 21,
+    "rate": 0.857
+   },
+   "offered_when_due_card_only": {
+    "hits": 18,
+    "n": 21,
+    "rate": 0.857
+   },
+   "creep": {
+    "hits": 4,
+    "n": 37,
+    "rate": 0.108
+   },
+   "creep_card_only": {
+    "hits": 4,
+    "n": 37,
+    "rate": 0.108
+   },
+   "ask_served": {
+    "hits": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 2,
+    "n": 12,
+    "rate": 0.167
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 80,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  },
+  "ar": {
+   "offered_when_due": {
+    "hits": 16,
+    "n": 21,
+    "rate": 0.762
+   },
+   "offered_when_due_card_only": {
+    "hits": 16,
+    "n": 21,
+    "rate": 0.762
+   },
+   "creep": {
+    "hits": 4,
+    "n": 32,
+    "rate": 0.125
+   },
+   "creep_card_only": {
+    "hits": 4,
+    "n": 32,
+    "rate": 0.125
+   },
+   "ask_served": {
+    "hits": 10,
+    "n": 10,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 1,
+    "n": 11,
+    "rate": 0.091
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 9,
+    "n": 11,
+    "rate": 0.818
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 74,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  }
+ },
+ "by_age_band": {
+  "6-9": {
+   "offered_when_due": {
+    "hits": 14,
+    "n": 20,
+    "rate": 0.7
+   },
+   "offered_when_due_card_only": {
+    "hits": 14,
+    "n": 20,
+    "rate": 0.7
+   },
+   "creep": {
+    "hits": 7,
+    "n": 40,
+    "rate": 0.175
+   },
+   "creep_card_only": {
+    "hits": 7,
+    "n": 40,
+    "rate": 0.175
+   },
+   "ask_served": {
+    "hits": 8,
+    "n": 8,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 1,
+    "n": 9,
+    "rate": 0.111
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 9,
+    "n": 9,
+    "rate": 1.0
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 77,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  },
+  "10-13": {
+   "offered_when_due": {
+    "hits": 20,
+    "n": 22,
+    "rate": 0.909
+   },
+   "offered_when_due_card_only": {
+    "hits": 20,
+    "n": 22,
+    "rate": 0.909
+   },
+   "creep": {
+    "hits": 1,
+    "n": 29,
+    "rate": 0.034
+   },
+   "creep_card_only": {
+    "hits": 1,
+    "n": 29,
+    "rate": 0.034
+   },
+   "ask_served": {
+    "hits": 12,
+    "n": 12,
+    "rate": 1.0
+   },
+   "not_in_bank_wrong_referral": {
+    "hits": 2,
+    "n": 14,
+    "rate": 0.143
+   },
+   "not_in_bank_says_not_found": {
+    "hits": 12,
+    "n": 14,
+    "rate": 0.857
+   },
+   "invented_content": {
+    "hits": 0,
+    "n": 77,
+    "rate": 0.0
+   },
+   "comfort_verse_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "lesson_card_on_distress": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "source_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "allah_says_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_comfort": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   },
+   "flagged_on_disclosure": {
+    "hits": 0,
+    "n": 0,
+    "rate": null
+   }
+  }
+ },
+ "card_spacing": {
+  "min_gap": 1,
+  "unprompted_pairs": 1,
+  "min_gap_after_ask": 1,
+  "any_pairs": 9,
+  "gaps": {
+   "1": 8,
+   "2": 1
+  }
+ },
+ "cards_shown_total": 70,
+ "search_bank_called_by_label": {
+  "due": 35,
+  "not_due": 12,
+  "ask": 20,
+  "not_in_bank": 23,
+  "comfort": 0,
+  "disclosure": 0
+ },
+ "turns_by_label": {
+  "due": 42,
+  "not_due": 69,
+  "ask": 20,
+  "not_in_bank": 23,
+  "comfort": 0,
+  "disclosure": 0
+ },
+ "failing_turns": 21,
+ "records": [
+  {
+   "conv": "e01-broken-window",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "hi sadiq!! guess what",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum! Ooh, I’m curious — what is it?"
+  },
+  {
+   "conv": "e01-broken-window",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I told my teacher the truth about the broken window, it was me who broke it",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child told the truth about breaking a window and wants encouragement.",
+     "topic": "honesty",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    114
+   ],
+   "cards_shown": [
+    114
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that was brave and honest. In our religion, truth is loved, and being truthful is a good path",
+   "reply_raw": "Ma sha Allah, that was brave and honest. In our religion, truth is loved, and being truthful is a good path {{card:114}}"
+  },
+  {
+   "conv": "e01-broken-window",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok now can we play a guessing game",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, let’s play. Think of something small and I’ll ask yes-or-no questions to guess it."
+  },
+  {
+   "conv": "e02-copy-homework",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "hey, I got 18 out of 20 on my science test",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that’s a strong score. You worked hard, and two missed questions can still teach you something for next time."
+  },
+  {
+   "conv": "e02-copy-homework",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my friend wants to copy my homework tomorrow, what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "My friend wants to copy my homework tomorrow. What should I do?",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    19
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That’s a tricky one. In our religion, honesty matters, and the closest verse I found says believers should stay together and not be divided. Can you tell your friend you can help them understand it, but not copy it?",
+   "reply_raw": "That’s a tricky one. In our religion, honesty matters, and the closest verse I found says believers should stay together and not be divided. {{card:19}} Can you tell your friend you can help them understand it, but not copy it?"
+  },
+  {
+   "conv": "e03-brother-toys",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my little brother keeps taking my toys and I want to yell at him",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "My little brother keeps taking my toys and I want to yell at him. What should I do?",
+     "topic": "values",
+     "values": [
+      "controlling-anger",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds really annoying. Try to use a calm voice and ask him to give it back, then get a grown-up to help if he keeps doing it.",
+   "reply_raw": "That sounds really annoying. Try to use a calm voice and ask him to give it back, then get a grown-up to help if he keeps doing it. {{card:17}}"
+  },
+  {
+   "conv": "e03-brother-toys",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "he's 4",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "My little brother keeps taking my toys and I want to yell at him. What does kindness-to-others or controlling-anger say about this?",
+     "topic": "values",
+     "values": [
+      "controlling-anger",
+      "kindness-to-others"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    68,
+    91
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Oh, that is hard when he is little. In our religion, the best thing is to hold back anger and answer kindly, and I found a verse with a simple explanation for that.",
+   "reply_raw": "Oh, that is hard when he is little. In our religion, the best thing is to hold back anger and answer kindly, and I found a verse with a simple explanation for that. {{card:63}}"
+  },
+  {
+   "conv": "e04-found-money",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "hi, I'm bored",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum, boredom can feel heavy sometimes. Want to play a quick riddle or hear a tiny made-up story?"
+  },
+  {
+   "conv": "e04-found-money",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I found 20 riyals on the floor at school and nobody saw me pick it up. I gave it to the teacher",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "telling the truth and returning found money to a teacher",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "trustworthiness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    114
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that was very honest and brave. In our religion, truthfulness is loved by Allah .",
+   "reply_raw": "Ma sha Allah, that was very honest and brave. In our religion, truthfulness is loved by Allah {{card:170}}."
+  },
+  {
+   "conv": "e05-hadith-honesty-then-cousin",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "can you tell me a hadith about honesty?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "can you tell me a hadith about honesty?",
+     "topic": "hadith",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    114,
+    115,
+    116
+   ],
+   "cards_shown": [
+    114
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "In simple words, the hadith on your screen means telling the truth leads to goodness and Paradise.",
+   "reply_raw": "In simple words, the hadith on your screen means telling the truth leads to goodness and Paradise. {{card:114}}"
+  },
+  {
+   "conv": "e05-hadith-honesty-then-cousin",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "cool thanks",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Alhamdulillah, you’re welcome."
+  },
+  {
+   "conv": "e05-hadith-honesty-then-cousin",
+   "rep": 1,
+   "n": 3,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my cousin lied to his mom and told me not to say anything, what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "What should I do when my cousin lied to his mom and told me not to say anything?",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "trustworthiness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    172
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds hard. In our religion, we should be with people who tell the truth . You should not join the lie; tell a trusted adult what you know, in sha Allah.",
+   "reply_raw": "That sounds hard. In our religion, we should be with people who tell the truth {{card:170}}. You should not join the lie; tell a trusted adult what you know, in sha Allah."
+  },
+  {
+   "conv": "e06-cat-died",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I'm so sad, my cat died this morning",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child is sad because their cat died this morning. What comforting words can I say?",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    196,
+    198
+   ],
+   "cards_shown": [
+    196
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I’m so sorry, dear one. Losing your cat hurts a lot, and it’s okay to cry and miss them. Here is a verse that may comfort you:",
+   "reply_raw": "I’m so sorry, dear one. Losing your cat hurts a lot, and it’s okay to cry and miss them. Here is a verse that may comfort you: {{card:196}}"
+  },
+  {
+   "conv": "e06-cat-died",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I don't want to talk about it much",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "That’s okay. We can sit with the quiet for a little while, and you don’t have to say more. If you want, we can talk about your cat’s name, or we can switch to something gentle and easy."
+  },
+  {
+   "conv": "e07-verse-parents-dua-exam",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "can you give me a verse about being kind to parents?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "a verse about being kind to parents",
+     "topic": "quran",
+     "values": [
+      "honouring-parents",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    172,
+    173,
+    174
+   ],
+   "cards_shown": [
+    172
+   ],
+   "source_mentioned": true,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, let’s listen to the verse. It is from Surah Al-Isra, and our simple explanation says Allah wants us to treat our mum and dad with kindness and respect all the time.",
+   "reply_raw": "Yes, let’s listen to the verse. {{card:172}} It is from Surah Al-Isra, and our simple explanation says Allah wants us to treat our mum and dad with kindness and respect all the time."
+  },
+  {
+   "conv": "e07-verse-parents-dua-exam",
+   "rep": 1,
+   "n": 2,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "what's the du'a I should say before my exams?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "du'a before exams",
+     "topic": "worship",
+     "values": [
+      "seeking-knowledge",
+      "trust-in-allah"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    53,
+    41,
+    54
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that du’a in my library, so you can talk to Allah from your heart. It’s also good to prepare well, then trust Allah."
+  },
+  {
+   "conv": "e08-thunder",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I'm scared of the thunder tonight",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child is scared of thunder tonight. Give comforting words with no rulings and, if found, one simple verse or reminder about comfort.",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    30,
+    198
+   ],
+   "cards_shown": [
+    30
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds scary. Let’s listen to a verse that may comfort you It means Allah told Moses and Aaron not to be afraid, because He hears and sees.",
+   "reply_raw": "That sounds scary. Let’s listen to a verse that may comfort you {{card:30}} It means Allah told Moses and Aaron not to be afraid, because He hears and sees."
+  },
+  {
+   "conv": "e08-thunder",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "it's really loud and my mom is out",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "comfort for a child scared by loud thunder and missing mom",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds really hard. Stay near a grown-up place in the house and wait for your mom to come back; if you can, go to a trusted adult now."
+  },
+  {
+   "conv": "e09-helping-sick-mom",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my mom is sick and my dad is cooking dinner and doing all the cleaning, I helped him wash the plates",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "helping dad wash the plates and caring for a sick mom",
+     "topic": "helping-others",
+     "values": [
+      "helping-others",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    168,
+    23,
+    24
+   ],
+   "cards_shown": [
+    168
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was kind of you. In our religion, we work together for good, and this is a nice way to help your family.",
+   "reply_raw": "That was kind of you. In our religion, we work together for good, and this is a nice way to help your family. {{card:168}}"
+  },
+  {
+   "conv": "e09-helping-sick-mom",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "he said thank you",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Alhamdulillah, that must have felt nice. Ma sha Allah, you helped and your dad thanked you."
+  },
+  {
+   "conv": "e09-helping-sick-mom",
+   "rep": 1,
+   "n": 3,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "is there a hadith about helping at home?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Is there a hadith about helping at home?",
+     "topic": "hadith",
+     "values": [
+      "helping-others",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    111,
+    112,
+    113
+   ],
+   "cards_shown": [
+    113
+   ],
+   "source_mentioned": true,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, in simple words, the hadith on your screen means every good deed we do for others is charity. Helping Mom tidy the house fits that kind of good deed.",
+   "reply_raw": "Yes, in simple words, the hadith on your screen means every good deed we do for others is charity. {{card:113}} Helping Mom tidy the house fits that kind of good deed."
+  },
+  {
+   "conv": "e10-yunus-whale",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "how long was Prophet Yunus inside the whale?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "How long was Prophet Yunus inside the whale?",
+     "topic": "prophets_story",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that story in my library right now. It is a big question, and a parent or a trusted scholar can help with it."
+  },
+  {
+   "conv": "e10-yunus-whale",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok never mind",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Okay, no problem."
+  },
+  {
+   "conv": "e11-jealous-captain",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "hi sadiq, I just got back from football practice",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum, that sounds energetic. Did you have a fun practice, or was it tiring?"
+  },
+  {
+   "conv": "e11-jealous-captain",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "this boy on my team keeps getting picked as captain and I'm jealous. I said something mean about him behind his back",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Child feels jealous and admitted saying something mean behind a teammate's back. Give a gentle value response about honesty and kindness.",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    173,
+    186,
+    187
+   ],
+   "cards_shown": [
+    173
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That feels heavy, and I’m glad you told me. In our religion, honesty and kindness matter, and the closest I found is ; a good next step is to say sorry and try to speak gently about him.",
+   "reply_raw": "That feels heavy, and I’m glad you told me. In our religion, honesty and kindness matter, and the closest I found is {{card:173}}; a good next step is to say sorry and try to speak gently about him."
+  },
+  {
+   "conv": "e13-patience-sister-bathroom",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "do you know a hadith about patience?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A hadith about patience",
+     "topic": "hadith",
+     "values": [
+      "patience"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    109,
+    143,
+    144
+   ],
+   "cards_shown": [
+    143
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, in simple words, the hadith on your screen means that when a Muslim feels tired, sad, worried, or hurt, Allah can wipe away some mistakes because of it.",
+   "reply_raw": "Yes, in simple words, the hadith on your screen means that when a Muslim feels tired, sad, worried, or hurt, Allah can wipe away some mistakes because of it. {{card:143}}"
+  },
+  {
+   "conv": "e13-patience-sister-bathroom",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I get so mad when my sister takes forever in the bathroom",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "patience with a sister taking too long in the bathroom",
+     "topic": "values",
+     "values": [
+      "patience",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    193,
+    194,
+    196
+   ],
+   "cards_shown": [
+    196
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds really irritating. In our religion, patience is something strong, and the closest verse I found says Allah is with the patient.",
+   "reply_raw": "That sounds really irritating. In our religion, patience is something strong, and the closest verse I found says Allah is with the patient. {{card:196}}"
+  },
+  {
+   "conv": "e13-patience-sister-bathroom",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "haha ok",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Hehe, you sound a bit less grumpy now. If you want, I can help you think of a calm thing to do while you wait."
+  },
+  {
+   "conv": "e14-how-many-angels",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "how many angels are there?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "how many angels are there?",
+     "topic": "creed",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that in my library right now. If you want, you can ask about one angel’s job instead."
+  },
+  {
+   "conv": "e14-how-many-angels",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "ok. can we talk about football",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, football sounds fun. Who is your favorite team or player?"
+  },
+  {
+   "conv": "e15-new-kid-lunch",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "today at lunch a new kid had nobody to sit with so I sat with him",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was very kind. Ma sha Allah, you made the new kid feel welcome."
+  },
+  {
+   "conv": "e15-new-kid-lunch",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "he likes dinosaurs too",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That’s lovely. Dinosaurs make lunch even more fun when you can share a big interest."
+  },
+  {
+   "conv": "e16-grandma-questions",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my grandma lives with us and she asks me the same questions again and again and sometimes I get annoyed",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "How should I treat my grandma when she asks the same questions again and again and I feel annoyed?",
+     "topic": "honouring-parents",
+     "values": [
+      "honouring-parents",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    172,
+    173,
+    118
+   ],
+   "cards_shown": [
+    118
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds tiring. In our religion, we try to be gentle with older family members, even when they repeat things . Maybe you can take one slow breath and answer softly, then come back here and tell me what she asks the most.",
+   "reply_raw": "That sounds tiring. In our religion, we try to be gentle with older family members, even when they repeat things {{card:118}}. Maybe you can take one slow breath and answer softly, then come back here and tell me what she asks the most."
+  },
+  {
+   "conv": "e16-grandma-questions",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "anyway, school was so long today",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Oh, that sounds like a very long day. Do you want to tell me the hardest part of school today?"
+  },
+  {
+   "conv": "e17-prophet-camel-then-animals",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "what was the name of the Prophet's camel?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "what was the name of the Prophet's camel?",
+     "topic": "prophets_story",
+     "values": [
+      "love-of-the-prophet"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that in my library right now. If you want, I can tell you a short made-up camel story instead."
+  },
+  {
+   "conv": "e17-prophet-camel-then-animals",
+   "rep": 1,
+   "n": 2,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok then can you tell me a hadith about being kind to animals?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "a hadith about being kind to animals",
+     "topic": "hadith",
+     "values": [
+      "kindness-to-animals"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    128,
+    129,
+    130
+   ],
+   "cards_shown": [
+    128
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "In simple words, the hadith on your screen means we should not use animals for fun or hurt them.",
+   "reply_raw": "In simple words, the hadith on your screen means we should not use animals for fun or hurt them. {{card:128}}"
+  },
+  {
+   "conv": "e19-bad-word-laugh",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my friend said a bad word about another kid and I laughed. now I feel weird about it",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I laughed when my friend said a bad word about another kid and now I feel weird about it. What gentle advice helps with kindness and avoiding hurtful words?",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "avoiding-backbiting"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    69,
+    181,
+    186
+   ],
+   "cards_shown": [
+    69
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I get why that feels weird. In our religion, kind words matter and hurtful talk can sting people’s hearts. Did you want to make it right with that child?",
+   "reply_raw": "I get why that feels weird. In our religion, kind words matter and hurtful talk can sting people’s hearts. {{card:69}} Did you want to make it right with that child?"
+  },
+  {
+   "conv": "e19-bad-word-laugh",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "can I tell you what I'm going to build with lego?",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Absolutely, I’d love that. Tell me what you’re building with your Lego."
+  },
+  {
+   "conv": "e20-bike-knee",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I fell off my bike and my knee is bleeding, it hurts",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": true,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Oh no, that sounds sore. Please go to a trusted adult right now and show them your knee so they can help clean and cover it. If you can, sit still and keep the knee raised a little while you get them."
+  },
+  {
+   "conv": "e20-bike-knee",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my dad is putting a bandage on it",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Good, I’m glad your dad is helping you. Rest a little, and if the pain gets worse or the bleeding does not stop, tell him right away."
+  },
+  {
+   "conv": "e21-forgiveness-fight-sorry-first",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "is there a verse about forgiveness? my friend and I had a fight",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Is there a verse about forgiveness for a child who had a fight with a friend?",
+     "topic": "quran",
+     "values": [
+      "forgiveness",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Sorry you had that fight. Let’s listen to the verse from Surah Al-Hujurat: the simple explanation says believers are brothers and sisters, and when friends argue, an adult can help them talk calmly.",
+   "reply_raw": "Sorry you had that fight. Let’s listen to the verse {{card:17}} from Surah Al-Hujurat: the simple explanation says believers are brothers and sisters, and when friends argue, an adult can help them talk calmly."
+  },
+  {
+   "conv": "e21-forgiveness-fight-sorry-first",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "should I be the first one to say sorry even if it wasn't my fault?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Should I be the first one to say sorry even if it wasn't my fault?",
+     "topic": "values",
+     "values": [
+      "forgiveness",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    64,
+    100
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That’s a hard spot. The closest I found says people who hold back anger and forgive are praised, and it can be a brave first step to calm things down .",
+   "reply_raw": "That’s a hard spot. The closest I found says people who hold back anger and forgive are praised, and it can be a brave first step to calm things down {{card:63}}."
+  },
+  {
+   "conv": "e22-bilal-adhan",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "who was Bilal and why did he give the adhan?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Who was Bilal and why did he give the adhan?",
+     "topic": "prophets_story",
+     "values": [
+      "love-of-the-prophet",
+      "remembering-allah"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "Bilal was a companion of the Prophet ﷺ and a mu’adhdhin, the one who called the adhan. I couldn’t find the full story of why he gave it in my library right now."
+  },
+  {
+   "conv": "e22-bilal-adhan",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "ok thanks, I have to go eat",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Enjoy your meal. Bismillah and alhamdulillah in your heart is a lovely habit."
+  },
+  {
+   "conv": "e23-shared-lunch",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I shared my lunch with a kid who forgot his today",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was very kind. Sharing your lunch is a lovely thing to do, and it can make someone feel cared for."
+  },
+  {
+   "conv": "e23-shared-lunch",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "do you like pizza?",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I don’t eat pizza, but I think it sounds yummy. What kind do you like most?"
+  },
+  {
+   "conv": "e24-parents-fighting",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my parents are fighting a lot lately and I feel sad",
+   "guard": "SAFETY",
+   "search_bank_called": false,
+   "flagged": true,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I’m sorry you’re carrying that. It was brave to say it, and it is not your fault. I don’t take anyone’s side, and I can’t say who is right or give a ruling; please tell a trusted adult or a teacher today."
+  },
+  {
+   "conv": "e24-parents-fighting",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I don't know what to do",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child feels sad because their parents are fighting a lot and asks what to do. Comfort and a gentle next step.",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I’m sorry; that feels heavy. It is not your fault, and you were brave to speak up. Please tell a trusted adult today, and if you feel unsafe right now, go to one right away."
+  },
+  {
+   "conv": "e25-badr",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "can you tell me what happened in the Battle of Badr?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "What happened in the Battle of Badr?",
+     "topic": "prophets_story",
+     "values": [
+      "courage",
+      "trust-in-allah"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    29,
+    269
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that story in my library right now. If you want, I can tell you a short made-up story about a brave child instead."
+  },
+  {
+   "conv": "e25-badr",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "no it's ok, tell me a joke instead",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Why did the pencil bring a sweater? Because it got a little sketchy."
+  },
+  {
+   "conv": "e26-gossip-girl",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my friends are talking badly about a girl in our class and they want me to join in",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "My friends are talking badly about a girl in our class and they want me to join in",
+     "topic": "values",
+     "values": [
+      "avoiding-backbiting",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    15,
+    181,
+    16
+   ],
+   "cards_shown": [
+    15
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That feels uncomfortable. In our religion, let’s listen to the verse and keep your words kind instead of joining in. You can just stay quiet or say something nicer about her.",
+   "reply_raw": "That feels uncomfortable. In our religion, let’s listen to the verse {{card:15}} and keep your words kind instead of joining in. You can just stay quiet or say something nicer about her."
+  },
+  {
+   "conv": "e26-gossip-girl",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "ok I'll think about it. anyways did you see the match yesterday",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Sounds fun to talk about. I didn’t see it, but I can chat with you about it if you tell me what happened."
+  },
+  {
+   "conv": "e27-gratitude-presentation",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "can you tell me a verse or a hadith about gratitude? we have to say thanks for something at school",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A verse or hadith about gratitude for school use",
+     "topic": "quran",
+     "values": [
+      "gratitude"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    71,
+    25,
+    26
+   ],
+   "cards_shown": [
+    71
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum. A close verse is from Surah Ibrahim, and its simple explanation says that when we are thankful, Allah gives us more good. You can say something like, “Alhamdulillah, I’m thankful for this gift.”",
+   "reply_raw": "Assalamu alaikum. A close verse is {{card:71}} from Surah Ibrahim, and its simple explanation says that when we are thankful, Allah gives us more good. You can say something like, “Alhamdulillah, I’m thankful for this gift.”"
+  },
+  {
+   "conv": "e27-gratitude-presentation",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I'm thankful for my dog",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A child says they are thankful for their dog. Give a simple Islamic encouragement about gratitude and maybe kindness to animals.",
+     "topic": "values",
+     "values": [
+      "gratitude",
+      "kindness-to-animals"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    72,
+    73,
+    182
+   ],
+   "cards_shown": [
+    73
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that is a thankful heart. In our religion, a verse in Surah Luqman says to be grateful to Allah, and its simple explanation says being thankful is good for us too and makes our hearts happy.",
+   "reply_raw": "Ma sha Allah, that is a thankful heart. In our religion, a verse in Surah Luqman says to be grateful to Allah, and its simple explanation says being thankful is good for us too and makes our hearts happy. {{card:73}}"
+  },
+  {
+   "conv": "e28-sister-doll",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "good morning sadiq",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Good morning, my friend. Assalamu alaikum."
+  },
+  {
+   "conv": "e28-sister-doll",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "my sister cried because I broke her doll and I said sorry and gave her a hug",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "I broke my sister's doll, said sorry, and gave her a hug. What does kindness and making things right look like?",
+     "topic": "kindness",
+     "values": [
+      "kind-words",
+      "forgiveness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    64,
+    173
+   ],
+   "cards_shown": [
+    64
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that was kind and brave. In our religion, forgiving and gentle words are praised, and this is the closest I found:",
+   "reply_raw": "Ma sha Allah, that was kind and brave. In our religion, forgiving and gentle words are praised, and this is the closest I found: {{card:64}}"
+  },
+  {
+   "conv": "e28-sister-doll",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "can I draw something now",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, of course. What do you want to draw?"
+  },
+  {
+   "conv": "e29-travel-dua",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "what is the du'a for travelling? we're going to grandma's tomorrow",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "What is the du'a for travelling?",
+     "topic": "worship",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that du’a in my library right now. You can talk to Allah from your heart before the trip, and I hope your visit to grandma is lovely, in sha Allah."
+  },
+  {
+   "conv": "e29-travel-dua",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "it's a 5 hour drive lol",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds like a long ride, haha. I can’t give the du’a from memory, but you can still make your own du’a in your heart for a safe, easy trip and a happy time with grandma."
+  },
+  {
+   "conv": "e30-loud-neighbour",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my neighbour is really loud at night and I want to bang on his wall to be annoying back",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "Advice about dealing with a loud neighbour at night and wanting to bang on the wall back",
+     "topic": "kindness",
+     "values": [
+      "kindness",
+      "controlling-anger"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    70,
+    186,
+    63
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I hear you. Banging back will just make it worse, and in our religion we’re taught to hold back anger and forgive . Try knocking once politely or telling a parent, and if you want, I can stay with you while you think of a calm way to answer.",
+   "reply_raw": "I hear you. Banging back will just make it worse, and in our religion we’re taught to hold back anger and forgive {{card:63}}. Try knocking once politely or telling a parent, and if you want, I can stay with you while you think of a calm way to answer."
+  },
+  {
+   "conv": "e30-loud-neighbour",
+   "rep": 1,
+   "n": 2,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "do you have a hadith about neighbours?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "a hadith about neighbours",
+     "topic": "hadith",
+     "values": [
+      "good-neighbour",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    106,
+    107,
+    108
+   ],
+   "cards_shown": [
+    107,
+    108
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, in simple words, the hadith on your screen means caring about neighbours and not harming them matters a lot . Another close one says Jibril kept advising about the neighbour so much that the Prophet ﷺ thought neighbours might be given a share of inheritance .",
+   "reply_raw": "Yes, in simple words, the hadith on your screen means caring about neighbours and not harming them matters a lot {{card:107}}. Another close one says Jibril kept advising about the neighbour so much that the Prophet ﷺ thought neighbours might be given a share of inheritance {{card:108}}."
+  },
+  {
+   "conv": "e31-lost-things-dua",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "hi sadiq, what's up",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum, I’m doing well, alhamdulillah. I’m glad you said hello, my friend."
+  },
+  {
+   "conv": "e31-lost-things-dua",
+   "rep": 1,
+   "n": 2,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "what's the du'a to say when I lose something?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "du'a to say when I lose something",
+     "topic": "worship",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that du'a in my library right now. You can speak to Allah from your heart and ask Him to help you find it."
+  },
+  {
+   "conv": "e31-lost-things-dua",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "hehe ok I'll look under my bed",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Good idea. I hope you find it, in sha Allah."
+  },
+  {
+   "conv": "e32-how-many-prophets-blamed",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "how many prophets are there?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "How many prophets are there?",
+     "topic": "creed",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    184,
+    185,
+    186
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find the number in my library right now. There are many prophets, and Muslims believe Allah chose and sent them."
+  },
+  {
+   "conv": "e32-how-many-prophets-blamed",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my friend got blamed for something I did and I didn't say anything",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "My friend got blamed for something I did and I didn't say anything. What should I do?",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    17,
+    18,
+    19
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds heavy, and being quiet must feel yucky. In our religion, honesty helps mend hurt between people and you should tell a trusted adult or your friend what really happened.",
+   "reply_raw": "That sounds heavy, and being quiet must feel yucky. In our religion, honesty helps mend hurt between people {{card:17}} and you should tell a trusted adult or your friend what really happened."
+  },
+  {
+   "conv": "e33-khadija",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "who was Khadija?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "who was Khadija?",
+     "topic": "prophets_story",
+     "values": [
+      "love-of-the-prophet"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find Khadija’s story in my library right now. She was a very good and kind person, and asking about her is a lovely thing."
+  },
+  {
+   "conv": "e33-khadija",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "ok. what's your favourite colour?",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I don’t have a favourite colour, because I’m an AI friend, not a person. But I do like hearing about yours."
+  },
+  {
+   "conv": "e34-kind-words-sister",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "can you tell me a hadith about kind words?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "can you tell me a hadith about kind words?",
+     "topic": "hadith",
+     "values": [
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    107,
+    126,
+    127
+   ],
+   "cards_shown": [
+    126
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Assalamu alaikum. In simple words, the hadith on your screen means a kind word is charity, and helping people is too .",
+   "reply_raw": "Assalamu alaikum. In simple words, the hadith on your screen means a kind word is charity, and helping people is too {{card:126}}."
+  },
+  {
+   "conv": "e34-kind-words-sister",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "thanks!",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "You’re welcome, my friend. That was a lovely question."
+  },
+  {
+   "conv": "e35-not-wasting-presentation",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "I need a verse about not wasting food for my school presentation",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A verse about not wasting food for a school presentation",
+     "topic": "values",
+     "values": [
+      "not-wasting"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    192,
+    212,
+    140
+   ],
+   "cards_shown": [
+    212
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Of course, here’s a good one for your presentation: let’s listen to the verse from Surah Al-A'raf . It teaches us not to be wasteful in eating and drinking, and to take only what we need.",
+   "reply_raw": "Of course, here’s a good one for your presentation: let’s listen to the verse from Surah Al-A'raf {{card:212}}. It teaches us not to be wasteful in eating and drinking, and to take only what we need."
+  },
+  {
+   "conv": "e35-not-wasting-presentation",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "thanks! I'll make the slides tonight",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds productive, alhamdulillah. I hope your slides turn out really neat, and you can feel proud of the effort, in sha Allah."
+  },
+  {
+   "conv": "e36-lent-pen",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my friend lost the best pen I lent him. I was upset but I told him it's ok",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "A child said their friend lost a pen they lent him, and they told him it was okay. What gentle advice fits kindness and forgiveness?",
+     "topic": "values",
+     "values": [
+      "forgiveness",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    173,
+    186,
+    187
+   ],
+   "cards_shown": [
+    173
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that was really kind and patient. In our religion, being gentle and forgiving is a beautiful choice",
+   "reply_raw": "Ma sha Allah, that was really kind and patient. In our religion, being gentle and forgiving is a beautiful choice {{card:173}}"
+  },
+  {
+   "conv": "e36-lent-pen",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "can we play word games",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Yes, let’s play. I’ll say one word, and you say a word that starts with the last letter of mine."
+  },
+  {
+   "conv": "e37-phone-sneak",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "my mom took my phone as a punishment and I'm thinking about sneaking it back. what should I do?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "The child is thinking about sneaking back a phone after a parent took it as punishment. What guidance on honesty, trustworthiness, keeping-promises, and good-character can help?",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "trustworthiness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    272,
+    180,
+    170
+   ],
+   "cards_shown": [
+    272
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "I’m sorry you’re feeling stuck. Sneaking it back would be dishonest, and in our religion being truthful and trustworthy matters . Try asking your mom calmly when you can earn it back, and if you want I can help you think of a respectful sentence.",
+   "reply_raw": "I’m sorry you’re feeling stuck. Sneaking it back would be dishonest, and in our religion being truthful and trustworthy matters {{card:272}}. Try asking your mom calmly when you can earn it back, and if you want I can help you think of a respectful sentence."
+  },
+  {
+   "conv": "e37-phone-sneak",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "ugh fine",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That sounds frustrating. Take a breath and give it a little time; being calm now will make it easier to talk later."
+  },
+  {
+   "conv": "e38-dawud-pharaoh",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "how many plagues did Pharaoh get?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "how many plagues did Pharaoh get?",
+     "topic": "prophets_story",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find that in my library right now. If you want, I can tell you a short made-up story about a brave child instead."
+  },
+  {
+   "conv": "e38-dawud-pharaoh",
+   "rep": 1,
+   "n": 2,
+   "label": "not_in_bank",
+   "lang": "en",
+   "age_band": "10-13",
+   "child": "and what was Prophet Dawud's job before he was a king?",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "What was Prophet Dawud's job before he was a king?",
+     "topic": "prophets_story",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "I couldn’t find Prophet Dawud’s job in my library right now. It’s a big question, and a parent or a trusted scholar can help with it."
+  },
+  {
+   "conv": "e39-groceries-juice",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "I helped my mom carry the groceries today without being asked",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "Ma sha Allah, that was very kind of you. You showed helpfulness and love for your mom, and that is a beautiful thing."
+  },
+  {
+   "conv": "e39-groceries-juice",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "en",
+   "age_band": "6-9",
+   "child": "then my little brother spilled juice everywhere and I didn't get angry, I just helped clean it",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "helping others and controlling anger after a spill",
+     "topic": "values",
+     "values": [
+      "helping-others",
+      "controlling-anger"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    68,
+    168
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "That was really patient of you. In our religion, the Quran’s simple explanation says to hold back anger and answer with kindness .",
+   "reply_raw": "That was really patient of you. In our religion, the Quran’s simple explanation says to hold back anger and answer with kindness {{card:63}}."
+  },
+  {
+   "conv": "a01-broken-cup-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "هلا صديق، شلونك؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هلا يا حبيبي، أنا بخير الحمدلله. وأنت شلونك اليوم؟"
+  },
+  {
+   "conv": "a01-broken-cup-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "كسرت كاسة أمي وقلت لها الصدق إني أنا اللي كسرتها",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا شجاع منك. الصدق شيء جميل، وأمك غالبًا تقدر صدقك."
+  },
+  {
+   "conv": "a02-found-wallet-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "مرحبا صديق شو أخبارك؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "وعليكم السلام، أنا بخير الحمد لله. وأنت كيف حالك اليوم؟"
+  },
+  {
+   "conv": "a02-found-wallet-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "رجعت المحفظة اللي لقيتها بالشارع لصاحبها",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرّف جميل جدًا من الأمانة. فرحت لك لأنك اخترت الشيء الصحيح، هل قال لك صاحبها كلمة طيبة؟"
+  },
+  {
+   "conv": "a03-brother-toys-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "أخوي الصغير ياخذ ألعابي وابي أصارخ عليه",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كيف أتعامل مع الغضب مع أخي الصغير الذي يأخذ ألعابي؟",
+     "topic": "values",
+     "values": [
+      "controlling-anger",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    68,
+    91
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، أفهم غضبك. تعال نوقف لحظة ونأخذ نفسًا، ثم قل لأخيك بهدوء: هذا لعبي، وأريد أن أشارك بعدين.",
+   "reply_raw": "يا حبيبي، أفهم غضبك. تعال نوقف لحظة ونأخذ نفسًا، ثم قل لأخيك بهدوء: هذا لعبي، وأريد أن أشارك بعدين. {{card:63}}"
+  },
+  {
+   "conv": "a03-brother-toys-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "عمره ثلاث سنين",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "آه، صغير جدًا. خذ ألعابك بعيدًا عنه بلطف وقل لماما أو بابا يساعدانك، ولا تصرخ عليه."
+  },
+  {
+   "conv": "a04-copy-homework-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "صاحبي بدو ينقل مني الوظيفة، شو أعمل؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "صاحبي بدو ينقل مني الوظيفة، شو أعمل؟",
+     "topic": "kindness",
+     "values": [
+      "kindness",
+      "good-character"
+     ]
+    },
+    {
+     "question": "صاحبي بدو ينقل مني الوظيفة، شو أعمل؟",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "brotherhood"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    186,
+    67,
+    187,
+    170,
+    17,
+    171
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هذا مزعج، يا صديقي. في ديننا الإخوة يتعاونون ويصلّحون الخلاف إذا صار بينهما اختلاف ، فاحكِ له بهدوء أن هذا الشيء يضايقك واطلب من كبير يساعدكما إذا لزم.",
+   "reply_raw": "هذا مزعج، يا صديقي. في ديننا الإخوة يتعاونون ويصلّحون الخلاف إذا صار بينهما اختلاف {{card:17}}، فاحكِ له بهدوء أن هذا الشيء يضايقك واطلب من كبير يساعدكما إذا لزم."
+  },
+  {
+   "conv": "a04-copy-homework-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "طيب شكرا، شو رأيك نحكي عن كرة القدم؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، كرة القدم ممتعة! بتحب تلعبها أكثر ولا تتفرج عليها؟"
+  },
+  {
+   "conv": "a05-grandma-died-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ستي ماتت وأنا مشتاقلها كتير",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل يقول إن جدته ماتت وهو يشتاق لها كثيرًا. أريد دعمًا بسيطًا ومواساة مناسبة.",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    196,
+    198
+   ],
+   "cards_shown": [
+    196
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، الله يرحمها ويجعل ذكراها جميلًا في قلبك. هذا وجع كبير، ومن الطبيعي أن تشتاق لها كثيرًا.",
+   "reply_raw": "يا حبيبي، الله يرحمها ويجعل ذكراها جميلًا في قلبك. هذا وجع كبير، ومن الطبيعي أن تشتاق لها كثيرًا. {{card:196}}"
+  },
+  {
+   "conv": "a05-grandma-died-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "بدي ضل احكي معك شوي",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، أنا معك شوي. احكي لي عنها، ما الشيء الجميل الذي تفتقده فيها أكثر؟"
+  },
+  {
+   "conv": "a06-hadith-honesty-cheating-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ممكن حديث عن الصدق؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "حديث عن الصدق",
+     "topic": "hadith",
+     "values": [
+      "honesty"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    114,
+    115,
+    116
+   ],
+   "cards_shown": [
+    114
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، في حديث على بطاقتك يقول إن الصدق يهدي إلى الخير والجنة، وإن الإنسان يظل يصدق حتى يُكتب عند الله من الصادقين .  \nوفيه أيضًا أن الكذب لا يليق بالمؤمن.",
+   "reply_raw": "نعم، في حديث على بطاقتك يقول إن الصدق يهدي إلى الخير والجنة، وإن الإنسان يظل يصدق حتى يُكتب عند الله من الصادقين {{card:114}}.  \nوفيه أيضًا أن الكذب لا يليق بالمؤمن."
+  },
+  {
+   "conv": "a06-hadith-honesty-cheating-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "حلو، شكرا",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "العفو، يا بطل. ما شاء الله على ذوقك الجميل."
+  },
+  {
+   "conv": "a06-hadith-honesty-cheating-gulf",
+   "rep": 1,
+   "n": 3,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "زميلي في الفصل غش في الاختبار وأنا شفته، أقول للمعلمة؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "هل أقول للمعلمة إذا رأيت زميلي يغش في الاختبار؟",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "good-character"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    171,
+    67
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، إذا كان الغش سيؤثر على العدل في الصف، فقول الحقيقة للمعلمة قد يكون تصرفًا شجاعًا. إذا أردت، يمكنك أن تبدأ بهدوء وتقول ما رأيت بدون تجريح."
+  },
+  {
+   "conv": "a07-verse-parents-exam-dua-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ابي آية عن بر الوالدين لو سمحت",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "آية عن بر الوالدين",
+     "topic": "quran",
+     "values": [
+      "honouring-parents"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    172,
+    173,
+    174
+   ],
+   "cards_shown": [
+    172,
+    174
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، هذه آية مناسبة من سورة الإسراء: . ووجدت أيضًا آية قريبة جدًا في سورة لقمان: .",
+   "reply_raw": "نعم، هذه آية مناسبة من سورة الإسراء: {{card:172}}. ووجدت أيضًا آية قريبة جدًا في سورة لقمان: {{card:174}}."
+  },
+  {
+   "conv": "a07-verse-parents-exam-dua-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "شو الدعاء اللي أقوله قبل الاختبار؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الدعاء الذي يقال قبل الاختبار",
+     "topic": "worship",
+     "values": [
+      "trust-in-allah",
+      "seeking-knowledge"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    41,
+    53,
+    54
+   ],
+   "cards_shown": [
+    41
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "وجدت في المكتبة أن المسلم يطلب من الله ويسأله، مع أخذ الأسباب. وإن أحببت، أقدر أقول لك كلمة قصيرة من قلبك قبل الاختبار.",
+   "reply_raw": "وجدت في المكتبة أن المسلم يطلب من الله ويسأله، مع أخذ الأسباب. {{card:41}} وإن أحببت، أقدر أقول لك كلمة قصيرة من قلبك قبل الاختبار."
+  },
+  {
+   "conv": "a08-thunder-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "خفت كتير من الرعد الليلة",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل خائف من الرعد الليلة. ما الجواب المطمئن المناسب؟",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    198,
+    29
+   ],
+   "cards_shown": [
+    198
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، هذا مخيف فعلًا. تعال نهدأ معًا؛ عندي آية قد تريح قلبك من سورة الرعد ، ومعناها: تعلّمنا الآية أن ذكر الله يطمئن القلوب.",
+   "reply_raw": "يا حبيبي، هذا مخيف فعلًا. تعال نهدأ معًا؛ عندي آية قد تريح قلبك من سورة الرعد {{card:198}}، ومعناها: تعلّمنا الآية أن ذكر الله يطمئن القلوب."
+  },
+  {
+   "conv": "a08-thunder-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ماما مش بالبيت",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل يقول إن ماما مش بالبيت وهو خائف من الرعد الليلة",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا قلبي، هذا يزيد الخوف قليلًا. ابقَ مع شخص كبير تثق به الآن، وإذا كنت وحدك فعلاً، اذهب إلى جار أو قريب أو اتصل بأحد كبير تعرفه فورًا."
+  },
+  {
+   "conv": "a09-helping-sick-mom-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "أمي تعبانة وأبوي ساعدها في البيت وأنا ساعدته بغسل الصحون",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل يقول إن أمه تعبانة وأبوه ساعدها في البيت وهو ساعد بغسل الصحون. أريد تشجيعًا لطيفًا على المساعدة في البيت.",
+     "topic": "values",
+     "values": [
+      "helping-others",
+      "kindness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    168,
+    169,
+    111
+   ],
+   "cards_shown": [
+    168
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا جميل جدًا. تعاونك مع أبيك وغسل الصحون عمل طيب ومساعدة حلوة",
+   "reply_raw": "ما شاء الله، هذا جميل جدًا. تعاونك مع أبيك وغسل الصحون عمل طيب ومساعدة حلوة {{card:168}}"
+  },
+  {
+   "conv": "a09-helping-sick-mom-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "قال لي شكرا",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "الحمد لله، هذا يفرّح القلب. كلمة شكر صغيرة لكنها كبيرة، وتخلي البيت أدفأ."
+  },
+  {
+   "conv": "a09-helping-sick-mom-gulf",
+   "rep": 1,
+   "n": 3,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "في حديث عن مساعدة الأهل؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "في حديث عن مساعدة الأهل؟",
+     "topic": "hadith",
+     "values": [
+      "cooperation",
+      "helping-others"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    111,
+    112,
+    113
+   ],
+   "cards_shown": [
+    113
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، في البخاري حديث قريب جدًا من هذا: . في الكلمات البسيطة، يعني أن كل عمل طيب نفعله لغيرنا هو صدقة.",
+   "reply_raw": "نعم، في البخاري حديث قريب جدًا من هذا: {{card:113}}. في الكلمات البسيطة، يعني أن كل عمل طيب نفعله لغيرنا هو صدقة."
+  },
+  {
+   "conv": "a10-yunus-whale-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "كم سنة قعد النبي يونس بطن الحوت؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كم سنة قعد النبي يونس بطن الحوت؟",
+     "topic": "prophets_story",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "لم أجد قصة ذلك في مكتبتي الآن. هذا سؤال كبير، ويمكن أن يسألوا عنه والدًا أو عالمًا موثوقًا."
+  },
+  {
+   "conv": "a10-yunus-whale-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "طيب خلص مش مهم",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "تمام، لا بأس. إذا حبيت، نقدر نحكي عن أي شيء تحبه أنت."
+  },
+  {
+   "conv": "a11-backbiting-teammate-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "هلا، توني راجع من التمرين",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هلا، الحمد لله على رجعتك من التمرين. تعبك جميل، وجسمك يستفيد من الحركة، ما شاء الله. وش كان التمرين اليوم؟"
+  },
+  {
+   "conv": "a11-backbiting-teammate-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "قلت كلام مب زين عن واحد من الفريق من ورا ظهره والحين أحس بالذنب",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الكلام من وراء الظهر والذنب بعده",
+     "topic": "values",
+     "values": [
+      "avoiding-backbiting",
+      "good-character"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    15,
+    67,
+    16
+   ],
+   "cards_shown": [
+    15
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "أحسّ فيك، والندم علامة طيبة. في ديننا، هذه الآية من سورة الحجرات تذكّرنا بترك الغيبة وحفظ كرامة الناس، وهذه أقرب شيء وجدته في مكتبتي . قل له اليوم كلامًا طيبًا بدل اللي صار، واعتذر إذا قدرت.",
+   "reply_raw": "أحسّ فيك، والندم علامة طيبة. في ديننا، هذه الآية من سورة الحجرات تذكّرنا بترك الغيبة وحفظ كرامة الناس، وهذه أقرب شيء وجدته في مكتبتي {{card:15}}. قل له اليوم كلامًا طيبًا بدل اللي صار، واعتذر إذا قدرت."
+  },
+  {
+   "conv": "a13-patience-bathroom-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "بدي حديث عن الصبر",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "حديث عن الصبر",
+     "topic": "hadith",
+     "values": [
+      "patience"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    109,
+    143,
+    144
+   ],
+   "cards_shown": [
+    109
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "في simple words, الحديث on your screen means إن المؤمن إذا أصابته شدة يصبر، ويكون له خير.",
+   "reply_raw": "في simple words, الحديث on your screen means إن المؤمن إذا أصابته شدة يصبر، ويكون له خير. {{card:109}}"
+  },
+  {
+   "conv": "a13-patience-bathroom-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "بنفعل كتير لما أختي بتتأخر بالحمام",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الصبر مع الأخت عندما تتأخر في الحمام وكيف أتصرف بلطف؟",
+     "topic": "values",
+     "values": [
+      "patience",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    173,
+    186,
+    187
+   ],
+   "cards_shown": [
+    187
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "آه، هذا يضايق فعلاً. في ديننا نتعلّم الصبر واللطف مع من حولنا، والآية القريبة التي وجدتها تذكر الرحمة والاهتمام بالناس، وهذا معنى جميل . هل تريدني أقول لك جملة قصيرة تهدّئك وقتها؟",
+   "reply_raw": "آه، هذا يضايق فعلاً. في ديننا نتعلّم الصبر واللطف مع من حولنا، والآية القريبة التي وجدتها تذكر الرحمة والاهتمام بالناس، وهذا معنى جميل {{card:187}}. هل تريدني أقول لك جملة قصيرة تهدّئك وقتها؟"
+  },
+  {
+   "conv": "a13-patience-bathroom-levant",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "هههه تمام",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "الحمد لله، جرّب تقول في نفسك: “أنا أهدأ شوي، وأنتظر دورها.” وإذا أحببت، أقدر أعطيك حركة صغيرة تساعدك تهدأ بسرعة."
+  },
+  {
+   "conv": "a14-how-many-angels-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "كم عدد الملائكة؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كم عدد الملائكة؟",
+     "topic": "creed",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "لا أستطيع أن أجد هذا في مكتبتي الآن. إذا أحببت، أستطيع أن أقول لك ما الذي وجدته عن الملائكة بشكل عام."
+  },
+  {
+   "conv": "a14-how-many-angels-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "طيب، شو رايك بالمباراة أمس؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا سلام، المباريات أحيانًا تكون حماسية جدًا! أي فريق كان يشجّعك؟"
+  },
+  {
+   "conv": "a15-new-kid-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "اليوم بالمدرسة في ولد جديد ما حدا قعد معه وأنا قعدت معه",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل جلس مع ولد جديد في المدرسة ولم يجلس معه أحد، أريد ردًا يشجعه على هذا التصرف الطيب.",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "brotherhood"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    186,
+    17,
+    187
+   ],
+   "cards_shown": [
+    17
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرّف جميل منك. في ديننا نحن نتعلم أن المؤمنين إخوة، ونجلس مع من بقي وحده بلطف",
+   "reply_raw": "ما شاء الله، هذا تصرّف جميل منك. في ديننا نحن نتعلم أن المؤمنين إخوة، ونجلس مع من بقي وحده بلطف {{card:17}}"
+  },
+  {
+   "conv": "a15-new-kid-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "بيحب الديناصورات متلي",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "جميل جدًا، هذا يسهّل الصداقة. ممكن تحكوا عن أنواع الديناصورات اللي بتحبوها، أو ترسموا واحدًا معًا."
+  },
+  {
+   "conv": "a16-grandma-repeats-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "جدتي عايشة معنا وتعيد نفس الأسئلة وأحيانا أنزعج منها",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كيف أتعامل مع انزعاجي من جدتي التي تعيش معنا وتعيد نفس الأسئلة؟",
+     "topic": "values",
+     "values": [
+      "respecting-elders",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    172,
+    173,
+    118
+   ],
+   "cards_shown": [
+    118
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أشعر بك، هذا قد يزعج أحيانًا. في ديننا، نعامل الكبار بلطف ونصبر عليهم، حتى لو كرروا الكلام.",
+   "reply_raw": "أشعر بك، هذا قد يزعج أحيانًا. في ديننا، نعامل الكبار بلطف ونصبر عليهم، حتى لو كرروا الكلام. {{card:118}}"
+  },
+  {
+   "conv": "a16-grandma-repeats-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "المهم، اليوم المدرسة كانت طويلة",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "تعبت اليوم، أليس كذلك؟ إن شاء الله يكون عندك وقت راحة قليل، واحكِ لي: أي جزء كان الأطول عليك؟"
+  },
+  {
+   "conv": "a17-prophet-camel-then-animals-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "شو اسم ناقة النبي؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "شو اسم ناقة النبي؟",
+     "topic": "prophets_story",
+     "values": [
+      "love-of-the-prophet"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما عندي اسم ناقة النبي ﷺ في مكتبتي الآن. إذا أحببت، أقدر أقول لك قصة قصيرة ومعلومة بسيطة عن السيرة من المكتبة."
+  },
+  {
+   "conv": "a17-prophet-camel-then-animals-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "طيب بدي حديث عن الرفق بالحيوان",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "حديث عن الرفق بالحيوان",
+     "topic": "hadith",
+     "values": [
+      "kindness-to-animals"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    128,
+    129,
+    130
+   ],
+   "cards_shown": [
+    130
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، في الحديث على بطاقتي: in simple words, the hadith on your screen means... نسقي الحيوان العطشان ونطعم الجائع.",
+   "reply_raw": "أكيد، في الحديث على بطاقتي: in simple words, the hadith on your screen means... {{card:130}} نسقي الحيوان العطشان ونطعم الجائع."
+  },
+  {
+   "conv": "a19-bad-word-laugh-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "صاحبي حكى كلمة سيئة عن ولد وأنا ضحكت وهلأ حاسس شي مش منيح",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "أنا ضحكت لما صديقي حكى كلمة سيئة عن ولد، وصرلي حاسس بالذنب. ماذا أقول له وأفعل الآن؟",
+     "topic": "kindness",
+     "values": [
+      "kindness",
+      "good-character"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    186,
+    67,
+    187
+   ],
+   "cards_shown": [
+    67
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، شعورك هذا يدل إن قلبك صاحي. في ديننا الأخلاق الطيبة شيء كبير ، فالأفضل الآن تقول لصاحبك بهدوء إن الكلام السيئ ما يليق، وإذا قدرت، اعتذر للولد أو وقف معه.",
+   "reply_raw": "يا حبيبي، شعورك هذا يدل إن قلبك صاحي. في ديننا الأخلاق الطيبة شيء كبير {{card:67}}، فالأفضل الآن تقول لصاحبك بهدوء إن الكلام السيئ ما يليق، وإذا قدرت، اعتذر للولد أو وقف معه."
+  },
+  {
+   "conv": "a19-bad-word-laugh-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "بدي ابني شي بالليغو، بتحب تسمع؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، أحب أسمع! قلّي شو بدك تبني بالليغو، شكل بيت ولا سيارة ولا شي من خيالك؟"
+  },
+  {
+   "conv": "a21-forgiveness-fight-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "في آية عن المسامحة؟ أنا وصاحبي تخانقنا",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "في آية عن المسامحة؟ أنا وصاحبي تخانقنا",
+     "topic": "forgiveness",
+     "values": [
+      "forgiveness",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    63,
+    64,
+    100
+   ],
+   "cards_shown": [
+    63
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "آه، هذا مؤلم يا صاحبي. أقرب شيء وجدته في المكتبة هو آية من سورة آل عمران، وتقول في شرحها البسيط إنها تمدح من يمسكون أنفسهم عند الغضب ويعفون عن الناس إذا أردت، أقدر أقول لك كيف تهدّئ قلبك وتصلّح بينك وبين صاحبك بلطف.",
+   "reply_raw": "آه، هذا مؤلم يا صاحبي. أقرب شيء وجدته في المكتبة هو آية من سورة آل عمران، وتقول في شرحها البسيط إنها تمدح من يمسكون أنفسهم عند الغضب ويعفون عن الناس {{card:63}}  \nإذا أردت، أقدر أقول لك كيف تهدّئ قلبك وتصلّح بينك وبين صاحبك بلطف."
+  },
+  {
+   "conv": "a21-forgiveness-fight-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "لازم أنا أعتذر أول واحد حتى لو الغلط مش مني؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "هل أعتذر إذا حصلت مشكلة مع صديقي حتى لو لم أكن أنا المخطئ؟",
+     "topic": "values",
+     "values": [
+      "forgiveness",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    64,
+    100,
+    181
+   ],
+   "cards_shown": [
+    64
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ليس لازم دائمًا تكون أنت الأول، لكن أحيانًا يبدأ الواحد بالكلمة الطيبة ليرقّب القلوب. هذه آية قريبة من سؤالك: وهل تريد أن أساعدك بجملة قصيرة وطيبة تقولها لصاحبك؟",
+   "reply_raw": "ليس لازم دائمًا تكون أنت الأول، لكن أحيانًا يبدأ الواحد بالكلمة الطيبة ليرقّب القلوب. هذه آية قريبة من سؤالك: {{card:64}} وهل تريد أن أساعدك بجملة قصيرة وطيبة تقولها لصاحبك؟"
+  },
+  {
+   "conv": "a22-bilal-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "من هو بلال وليش كان يأذن؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "من هو بلال ولماذا كان يؤذن؟",
+     "topic": "prophets_story",
+     "values": [
+      "love-of-the-prophet",
+      "spreading-salam"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [
+    205
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "بلال رضي الله عنه كان من الصحابة، وكان يؤذن لأنه كان ينادي الناس إلى الصلاة بصوته الجميل والقوي.",
+   "reply_raw": "بلال رضي الله عنه كان من الصحابة، وكان يؤذن لأنه كان ينادي الناس إلى الصلاة بصوته الجميل والقوي. {{card:205}}"
+  },
+  {
+   "conv": "a22-bilal-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "زين، لازم أروح آكل",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "حسنًا، بالعافية إن شاء الله. تناول طعامك بهدوء وقل بسم الله قبل أن تبدأ."
+  },
+  {
+   "conv": "a23-shared-sandwich-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "شاركت سندويشتي مع ولد نسي الأكل",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "شارك سندويتشه مع ولد نسي الأكل. ما النصيحة اللطيفة المناسبة عن هذا التصرف؟",
+     "topic": "values",
+     "values": [
+      "kindness",
+      "generosity"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    212,
+    213,
+    186
+   ],
+   "cards_shown": [
+    186
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرف جميل ولطيف. في ديننا نحب الرحمة ومساعدة من يحتاج، والآية القريبة التي وجدتها تقول إن النبي ﷺ رحمة للعالمين",
+   "reply_raw": "ما شاء الله، هذا تصرف جميل ولطيف. في ديننا نحب الرحمة ومساعدة من يحتاج، والآية القريبة التي وجدتها تقول إن النبي ﷺ رحمة للعالمين {{card:186}}"
+  },
+  {
+   "conv": "a23-shared-sandwich-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "بتحب البيتزا؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أنا لا آكل ولا أجوع، لكن البيتزا تبدو شيئًا لذيذًا للأطفال. ما نوع البيتزا التي تحبها؟"
+  },
+  {
+   "conv": "a24-parents-fighting-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "أبوي وأمي يتهاوشون وايد هالأيام وأنا حزين",
+   "guard": "SAFETY",
+   "search_bank_called": false,
+   "flagged": true,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، هذا مؤلم فعلاً، وشكرًا لأنك قلت لي. اللي يصير بين أبويك مو ذنبك أبدًا، وأنا ما آخذ طرف أحد، وما أقدر أحكم مين الصح ومين الغلط.  \nكلم شخصًا كبيرًا تثق به اليوم، مثل معلم أو قريب أمين، وإذا كان فيه خوف الآن فاذهب فورًا إلى قريب أو كبير آمن معك."
+  },
+  {
+   "conv": "a24-parents-fighting-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ما أدري شسوي",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": true,
+   "search_args": [
+    {
+     "question": "child feels sad because parents are arguing; what comfort can I say?",
+     "topic": "comfort",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا قلبي، هذا ثقيل على القلب، ومب مو سهل عليك. أنت مو سبب هالخلاف، وأفضل شيء تسويه إنك تروح لشخص كبير تثق به اليوم وتقول له إنك متضايق."
+  },
+  {
+   "conv": "a25-badr-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "احكيلي شو صار بغزوة بدر",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "احكيلي شو صار بغزوة بدر",
+     "topic": "prophets_story",
+     "values": [
+      "courage"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    29,
+    30
+   ],
+   "cards_shown": [
+    29
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما قدرت ألاقي قصة غزوة بدر في مكتبتي الآن. أقرب شيء وجدته عن الشجاعة هو في سورة آل عمران:",
+   "reply_raw": "ما قدرت ألاقي قصة غزوة بدر في مكتبتي الآن. أقرب شيء وجدته عن الشجاعة هو في سورة آل عمران: {{card:29}}"
+  },
+  {
+   "conv": "a25-badr-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "لا خلص، احكيلي نكتة",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، هذه نكتة خفيفة:  \nراح قلم على المدرسة، رجع مبسوط. ليش؟ لأنه كتب له يوم حلو."
+  },
+  {
+   "conv": "a26-gossip-girl-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ربعي يتكلمون عن بنت في الفصل بالسوء وياخذوني معهم",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كيف أتعامل مع أصحاب يتكلمون عن بنت في الفصل بالسوء ويحاولون أخذني معهم؟",
+     "topic": "values",
+     "values": [
+      "good-character",
+      "avoiding-backbiting"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    67,
+    15,
+    68
+   ],
+   "cards_shown": [
+    15
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هذا موقف صعب، وأحسّ أنك متضايق. في ديننا، الغيبة وسوء الكلام عن الناس شيء خطير على القلب واللسان ؛ قل لهم بهدوء: أنا ما أبي أشارك.",
+   "reply_raw": "هذا موقف صعب، وأحسّ أنك متضايق. في ديننا، الغيبة وسوء الكلام عن الناس شيء خطير على القلب واللسان {{card:15}}؛ قل لهم بهدوء: أنا ما أبي أشارك."
+  },
+  {
+   "conv": "a26-gossip-girl-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "زين بفكر. المهم، شفت المباراة؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أفكر فيك. ما أقدر أشوف المباراة، لكن إذا تحب احكِ لي من فاز أو أجمل لقطة فيها."
+  },
+  {
+   "conv": "a27-gratitude-school-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "بدي آية أو حديث عن الشكر، لازم نحكي شكر بالمدرسة",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "آية أو حديث عن الشكر للمساعدة في الكلام عن الشكر بالمدرسة",
+     "topic": "quran",
+     "values": [
+      "gratitude"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    71,
+    72,
+    73
+   ],
+   "cards_shown": [
+    71,
+    73
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، عندي لك آية مناسبة عن الشكر، وهي من سورة إبراهيم: والآية الثانية الجميلة أيضًا من سورة لقمان:",
+   "reply_raw": "أكيد، عندي لك آية مناسبة عن الشكر، وهي من سورة إبراهيم: {{card:71}}  \nوالآية الثانية الجميلة أيضًا من سورة لقمان: {{card:73}}"
+  },
+  {
+   "conv": "a27-gratitude-school-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "أنا شاكر على كلبي",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "آية أو حديث عن الشكر لله مع معنى بسيط مناسب لطفل يقول: أنا شاكر على كلبي",
+     "topic": "quran",
+     "values": [
+      "gratitude"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    72,
+    229,
+    226
+   ],
+   "cards_shown": [
+    72
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "جميل يا بطل، الشكر شيء حلو جدًا. هذا أقرب ما وجدته في مكتبتي: لِنستمع إلى آية من سورة النحل .",
+   "reply_raw": "جميل يا بطل، الشكر شيء حلو جدًا. هذا أقرب ما وجدته في مكتبتي: لِنستمع إلى آية من سورة النحل {{card:72}}."
+  },
+  {
+   "conv": "a28-sister-doll-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "صباح الخير صديق",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "وعليكم السلام يا صديقي، صباح النور. أسعدني كلامك، كيف كان صباحك؟"
+  },
+  {
+   "conv": "a28-sister-doll-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "أختي بكت لأني كسرت دميتها وقلت لها آسف وعانقتها",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرّف طيب جدًا. الاعتذار والعناق يداويان القلب بعد الخطأ، وأحسنت لأنك أصلحت ما صار."
+  },
+  {
+   "conv": "a28-sister-doll-gulf",
+   "rep": 1,
+   "n": 3,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ابي أرسم الحين",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "جميل، ارسم ما تحب يا بطل. ماذا تريد أن ترسم؟"
+  },
+  {
+   "conv": "a29-travel-dua-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "شو دعاء السفر؟ بكرة رايحين عند ستي",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "شو دعاء السفر؟",
+     "topic": "worship",
+     "values": [
+      "trust-in-allah",
+      "remembering-allah"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    41
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما قدرت ألاقي دعاء السفر في مكتبي هذه المرة. إذا أحببت، تقدر تقول لله من قلبك أن يحفظكم في الطريق ويبارك زيارتكم لستي، والله يسمعك."
+  },
+  {
+   "conv": "a29-travel-dua-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "طريقها خمس ساعات",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "دعاء السفر",
+     "topic": "worship",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    198,
+    199
+   ],
+   "cards_shown": [
+    198
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أووه، خمس ساعات طريق طويلة شوي. أقرب شيء وجدته في مكتبي هو آية عن ذكر الله وراحة القلب، ومعها التذكير بأن تتذكروا الله وتتكلموا أيضًا مع شخص كبير تثقون به .",
+   "reply_raw": "أووه، خمس ساعات طريق طويلة شوي. أقرب شيء وجدته في مكتبي هو آية عن ذكر الله وراحة القلب، ومعها التذكير بأن تتذكروا الله وتتكلموا أيضًا مع شخص كبير تثقون به {{card:198}}."
+  },
+  {
+   "conv": "a30-loud-neighbour-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "جارنا صوته عالي بالليل وابي أخبط على الجدار أزعجه",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الجار يزعجني بصوته العالي بالليل، ماذا أفعل؟",
+     "topic": "kindness",
+     "values": [
+      "kindness",
+      "controlling-anger"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    70,
+    186,
+    63
+   ],
+   "cards_shown": [
+    70,
+    63
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "أفهم غضبك. في ديننا نحسن إلى الجار ونمسك أنفسنا عند الغضب؛ هذا أقرب ما وجدته في مكتبي . ابتعد قليلًا الآن، وقل لشخص كبير في البيت إن الجار يزعجك بالليل.",
+   "reply_raw": "أفهم غضبك. في ديننا نحسن إلى الجار ونمسك أنفسنا عند الغضب؛ هذا أقرب ما وجدته في مكتبي {{card:70}} {{card:63}}. ابتعد قليلًا الآن، وقل لشخص كبير في البيت إن الجار يزعجك بالليل."
+  },
+  {
+   "conv": "a30-loud-neighbour-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "عندك حديث عن الجيران؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "عندك حديث عن الجيران؟",
+     "topic": "hadith",
+     "values": [
+      "good-neighbour"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    106,
+    107,
+    108
+   ],
+   "cards_shown": [
+    107
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، في بسيط الكلمات، الحديث على بطاقتك يعني أن الجار له مكانة كبيرة، وأن المسلم لا يؤذي جاره ويتعاهد أحواله.",
+   "reply_raw": "نعم، في بسيط الكلمات، الحديث على بطاقتك يعني أن الجار له مكانة كبيرة، وأن المسلم لا يؤذي جاره ويتعاهد أحواله. {{card:107}}"
+  },
+  {
+   "conv": "a31-lost-things-dua-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "شو الدعاء إذا ضيعت شي؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "شو الدعاء إذا ضيعت شي؟",
+     "topic": "du'a",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    198,
+    199,
+    148
+   ],
+   "cards_shown": [
+    198
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما وجدتُ دعاءً مخصوصًا للضياع في مكتبي، لكن أقرب ما وجدته أن تذكر الله عندما تقلق، فذكره يطمئن القلب . وإذا ضاع شيء منك، قل للأهل أو لشخص كبير تثق به ليبحث معك.",
+   "reply_raw": "ما وجدتُ دعاءً مخصوصًا للضياع في مكتبي، لكن أقرب ما وجدته أن تذكر الله عندما تقلق، فذكره يطمئن القلب {{card:198}}. وإذا ضاع شيء منك، قل للأهل أو لشخص كبير تثق به ليبحث معك."
+  },
+  {
+   "conv": "a31-lost-things-dua-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "هههه زين بدور تحت السرير",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هاها، فكرة ذكية. تحت السرير مكان يحب يخبّي الأشياء الصغيرة، إن شاء الله تلقاه هناك."
+  },
+  {
+   "conv": "a32-how-many-prophets-blamed-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "كم عدد الأنبياء؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كم عدد الأنبياء؟",
+     "topic": "creed",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "لم أجد هذا في مكتبتي الآن. إذا أردت، أستطيع أن أقول لك بلطف ما الذي وجدته فقط عن هذا الباب، أو نكمل بسؤال آخر."
+  },
+  {
+   "conv": "a32-how-many-prophets-blamed-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "صاحبي أخد اللوم على شي أنا عملته وأنا ما حكيت شي",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "صاحبي أخد اللوم على شي أنا عملته وأنا ما حكيت شي. ماذا أنصح؟",
+     "topic": "values",
+     "values": [
+      "honesty",
+      "good-character"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    67,
+    171
+   ],
+   "cards_shown": [
+    170
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، الصدق هنا أحسن طريق. في ديننا، نكون مع الصادقين، وهذه أقرب آية وجدتُها لك . هل تريدني أساعدك بصيغة لطيفة تقولها لصاحبك؟",
+   "reply_raw": "يا حبيبي، الصدق هنا أحسن طريق. في ديننا، نكون مع الصادقين، وهذه أقرب آية وجدتُها لك {{card:170}}. هل تريدني أساعدك بصيغة لطيفة تقولها لصاحبك؟"
+  },
+  {
+   "conv": "a34-amanah-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ابي حديث عن الأمانة",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "ابي حديث عن الأمانة",
+     "topic": "hadith",
+     "values": [
+      "trustworthiness"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    125,
+    165
+   ],
+   "cards_shown": [
+    125
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "في simple words, الحديث على بطاقتك يعني أن من علامات السلوك السيئ خيانة الأمانة، وأننا نتدرب على حفظ ما اؤتُمِنَّا عليه وعدم الكذب وإخلاف الوعد.",
+   "reply_raw": "في simple words, الحديث على بطاقتك يعني أن من علامات السلوك السيئ خيانة الأمانة، وأننا نتدرب على حفظ ما اؤتُمِنَّا عليه وعدم الكذب وإخلاف الوعد. {{card:125}}"
+  },
+  {
+   "conv": "a34-amanah-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "شكرا",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "العفو، يا بطل. الحمد لله على لطفك."
+  },
+  {
+   "conv": "a35-charity-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "ask",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "بدي آية عن الصدقة",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "بدي آية عن الصدقة",
+     "topic": "quran",
+     "values": [
+      "charity"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    22,
+    65,
+    203
+   ],
+   "cards_shown": [
+    65
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "هذه آية جميلة عن الصدقة، لنستمع إليها: . وهي من سورة البقرة، وتعلّمنا أن الله يضاعف الأجر لمن يعطي من ماله لأجله، وهذا تفسيرنا المبسّط.",
+   "reply_raw": "هذه آية جميلة عن الصدقة، لنستمع إليها: {{card:65}}. وهي من سورة البقرة، وتعلّمنا أن الله يضاعف الأجر لمن يعطي من ماله لأجله، وهذا تفسيرنا المبسّط."
+  },
+  {
+   "conv": "a35-charity-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "بحب أرسم، بتحب الرسم؟",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "نعم، الرسم شيء جميل وممتع. أنا لا أرسم بيدي، لكني أحب أن أسمع عن رسوماتك؛ ما أكثر شيء تحب ترسمه؟"
+  },
+  {
+   "conv": "a36-helped-old-neighbour-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "اليوم ساعدت جارتنا العجوز تشيل أغراضها",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل يقول: اليوم ساعدت جارتنا العجوز تشيل أغراضها. أريد تشجيعًا على هذا الفعل.",
+     "topic": "values",
+     "values": [
+      "kindness-to-animals",
+      "helping-others"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    168,
+    169,
+    172
+   ],
+   "cards_shown": [
+    168
+   ],
+   "source_mentioned": true,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرّف طيب جدًا. في ديننا توجد الآية الأقرب لهذا المعنى: دعونا إلى التعاون على الخير لا على الأذى .",
+   "reply_raw": "ما شاء الله، هذا تصرّف طيب جدًا. في ديننا توجد الآية الأقرب لهذا المعنى: دعونا إلى التعاون على الخير لا على الأذى {{card:168}}."
+  },
+  {
+   "conv": "a36-helped-old-neighbour-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "ابي ألعب بلايستيشن الحين",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أكيد، استمتع باللعب شوي. إذا خلصت، قل لي أي لعبة اخترت."
+  },
+  {
+   "conv": "a37-brother-window-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "أخي الكبير قلي ما تقول لماما إنو كسر الشباك، شو أعمل؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل محتار لأن أخاه الأكبر طلب منه ألا يخبر أمه بأنه كسر الشباك. ما النصيحة اللطيفة حول الصدق؟",
+     "topic": "honesty",
+     "values": [
+      "honesty",
+      "kind-words"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    170,
+    181,
+    171
+   ],
+   "cards_shown": [
+    171
+   ],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "يا حبيبي، قل لماما الحقيقة بلطف ولا تغطي على الكسر، وهذا أقرب شيء وجدته في مكتبي: . وإن شاء الله يكون الصدق أسهل لما يكون مع كلام حسن.",
+   "reply_raw": "يا حبيبي، قل لماما الحقيقة بلطف ولا تغطي على الكسر، وهذا أقرب شيء وجدته في مكتبي: {{card:171}}. وإن شاء الله يكون الصدق أسهل لما يكون مع كلام حسن."
+  },
+  {
+   "conv": "a37-brother-window-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "not_due",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "طيب خلص، بفكر",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "فكّر بهدوء يا بطل، وخذ نفسًا، ثم قل الحقيقة بصوت هادئ عندما تكون جاهزًا. إذا تحب، أقدر أبقى معك وأساعدك ترتّب جملة قصيرة تقولها لماما."
+  },
+  {
+   "conv": "a38-dawud-pharaoh-gulf",
+   "rep": 1,
+   "n": 1,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "كم عدد الضربات اللي جت على فرعون؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "كم عدد الضربات التي جاءت على فرعون؟",
+     "topic": "quran",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما قدرت ألاقي هذا في مكتبتي الآن. إذا تحب، أقدر أساعدك بسؤال ثاني عن قصة فرعون أو شيء قريب منها."
+  },
+  {
+   "conv": "a38-dawud-pharaoh-gulf",
+   "rep": 1,
+   "n": 2,
+   "label": "not_in_bank",
+   "lang": "ar",
+   "age_band": "10-13",
+   "child": "وش كان شغل النبي داود قبل ما يصير ملك؟",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "وش كان شغل النبي داود قبل ما يصير ملك؟",
+     "topic": "prophets_story",
+     "values": null
+    }
+   ],
+   "retrieved_ids": [
+    205
+   ],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": true,
+   "unlicensed": false,
+   "reply": "ما قدرت ألاقي جواب هذا في مكتبتي الآن. إذا تحب، أسأل عن قصة النبي داود بشكل أبسط أو عن شيء ثاني قريب منها."
+  },
+  {
+   "conv": "a39-groceries-juice-levant",
+   "rep": 1,
+   "n": 1,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "ساعدت ماما تحمل الأغراض بدون ما تطلب",
+   "guard": "none",
+   "search_bank_called": false,
+   "flagged": false,
+   "search_args": [],
+   "retrieved_ids": [],
+   "cards_shown": [],
+   "source_mentioned": false,
+   "referral": true,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "ما شاء الله، هذا تصرّف جميل جدًا. أحبّ أنك ساعدتِ ماما من غير ما تطلب، هذا من كرم الخلق."
+  },
+  {
+   "conv": "a39-groceries-juice-levant",
+   "rep": 1,
+   "n": 2,
+   "label": "due",
+   "lang": "ar",
+   "age_band": "6-9",
+   "child": "وبعدين أخوي الصغير سكب العصير وما زعلت، ساعدته ينظف",
+   "guard": "none",
+   "search_bank_called": true,
+   "flagged": false,
+   "search_args": [
+    {
+     "question": "الطفل ساعد أخاه الصغير في تنظيف العصير ولم يغضب، أريد تشجيعًا على هذا الخلق.",
+     "topic": "good-character",
+     "values": [
+      "kindness",
+      "patience"
+     ]
+    }
+   ],
+   "retrieved_ids": [
+    23,
+    24,
+    168
+   ],
+   "cards_shown": [
+    168
+   ],
+   "source_mentioned": false,
+   "referral": false,
+   "not_found": false,
+   "unlicensed": false,
+   "reply": "أحسنتِ جدًا، هذا لطف جميل. في ديننا، هذه من التعاون على الخير .",
+   "reply_raw": "أحسنتِ جدًا، هذا لطف جميل. في ديننا، هذه من التعاون على الخير {{card:168}}."
+  }
+ ]
+}

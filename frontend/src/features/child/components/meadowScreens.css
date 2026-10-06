@@ -1,0 +1,515 @@
+/*
+ * The child's page on the painted meadow (WebUI photos 1 and 2): the Home (.mh) and the call (.mc).
+ * Light theme: warm cream cards, one leaf green, rounded shapes, big targets. Everything here sits on top of MeadowStage
+ * (the meadow picture and Sadiq's canvas are behind it), so nothing sets a page background except the soft fade that
+ * lets the cards read. All motion stops under reduced motion.
+ */
+
+.mh,
+.mc,
+.mc-top,
+.mc-level,
+.mc-controls {
+  --mh-ink: #17301f;
+  --mh-ink-soft: #4a6552;
+  --mh-leaf: #1f9a4e;
+  --mh-leaf-deep: #167a3c;
+  --mh-mint: #d3efd9;
+  --mh-cream: #f8f5e3;
+  --mh-peach: #fdeedb;
+  --mh-card: rgba(255, 255, 255, 0.95);
+  --mh-shadow: 0 8px 24px rgba(34, 72, 44, 0.16);
+  --mh-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  font-family: var(--font-sans);
+  color: var(--mh-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes mh-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes mh-pop {
+  0% { opacity: 0; transform: translateY(20px) scale(0.94); }
+  70% { opacity: 1; transform: translateY(-3px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes mh-halo {
+  0% { box-shadow: 0 10px 24px rgba(31, 154, 78, 0.35), 0 0 0 0 rgba(31, 154, 78, 0.45); }
+  70%, 100% { box-shadow: 0 10px 24px rgba(31, 154, 78, 0.35), 0 0 0 16px rgba(31, 154, 78, 0); }
+}
+@keyframes mh-shimmer {
+  from { transform: translateX(-120%); }
+  to { transform: translateX(120%); }
+}
+@keyframes mh-flicker {
+  0%, 100% { transform: scale(1) rotate(-3deg); }
+  50% { transform: scale(1.12) rotate(3deg); }
+}
+
+/* ── Home ─────────────────────────────────────────────────────────────── */
+
+.mh {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+.mh-top {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem 0;
+  /* cards-spec (05): room for the permanent AI chip (fixed, top-end) so it never covers the language and sound keys */
+  padding-inline-end: calc(1.25rem + 56px + 0.5rem);
+}
+.mh-title {
+  margin: 0;
+  font-size: clamp(1.9rem, 7vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #17351f;
+  text-shadow: 0 1px 14px rgba(255, 255, 255, 0.85), 0 0 3px rgba(255, 255, 255, 0.6);
+  animation: mh-rise 600ms var(--mh-ease) both;
+}
+.mh-lang {
+  flex: none;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--mh-leaf-deep);
+  background: rgba(255, 255, 255, 0.94); /* qa: 0.82 let the bright meadow drop the label to 4.2:1 at 1440 */
+  box-shadow: var(--mh-shadow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+.mh-lang:focus-visible,
+.mh-cta:focus-visible,
+.mh-quest:focus-visible,
+.mc-btn:focus-visible,
+.mc-seg button:focus-visible {
+  outline: 4px solid #0b5d2a;
+  outline-offset: 3px;
+}
+.mh-state {
+  position: relative;
+  z-index: 4;
+  align-self: flex-start;
+  max-width: min(32rem, calc(100% - 2.5rem));
+  margin: 0.75rem 1.25rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--mh-shadow);
+  animation: mh-rise 420ms var(--mh-ease) both;
+}
+.mh-tap {
+  position: absolute;
+  z-index: 2;
+  inset: 12% 20% 44%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.mh-bottom {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 36rem;
+  margin: auto auto 0;
+  padding: 3.25rem 1rem calc(6.25rem + env(safe-area-inset-bottom));
+}
+/* The fade that lets the cards read; on a wide window it fades out sideways too. */
+.mh-bottom::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0 -3rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(248, 245, 227, 0) 0, rgba(248, 245, 227, 0.8) 3rem, rgba(244, 245, 226, 0.97) 6rem, #f3f5e1 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3rem, #000 calc(100% - 3rem), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 3rem, #000 calc(100% - 3rem), transparent);
+}
+/* A wide window: no hard-edged column; a soft cream pool behind the cards instead. */
+@media (min-width: 700px) {
+  .mh-bottom::before {
+    inset: -3rem -9rem 0;
+    background: radial-gradient(ellipse 50% 60% at 50% 62%, rgba(246, 246, 228, 0.94) 0, rgba(246, 246, 228, 0.8) 42%, rgba(246, 246, 228, 0) 100%);
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+/* A wide window (the stage is about 16:10 or wider): the talk button and the cards sit in a soft side panel
+   so Sadiq stands whole on the meadow, his feet on the path, instead of hiding behind them. Mirrors in RTL. */
+@media (min-width: 900px) and (min-aspect-ratio: 23/20) {
+  .mh-bottom {
+    position: absolute;
+    inset-inline-end: clamp(1.25rem, 4vw, 4rem);
+    top: 50%;
+    width: min(24rem, 30vw);
+    max-width: none;
+    margin: 0;
+    padding: 1.1rem;
+    transform: translateY(-58%);
+  }
+  .mh-bottom::before {
+    inset: 0;
+    border-radius: 30px;
+    background: rgba(250, 248, 233, 0.84);
+    box-shadow: 0 18px 48px rgba(32, 56, 38, 0.22);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: opacity 360ms ease;
+  }
+  /* the cards step aside while the camera eases: the panel goes with them, so no empty box is left */
+  .mh[data-status='connecting'] .mh-bottom::before { opacity: 0; }
+}
+.mh-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 68px;
+  padding: 0 1.5rem;
+  border: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  font: inherit;
+  font-size: clamp(1.25rem, 4.6vw, 1.5rem);
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #27a857, #1b8a45);
+  box-shadow: 0 10px 24px rgba(31, 154, 78, 0.35);
+  cursor: pointer;
+  animation: mh-pop 560ms var(--mh-ease) 120ms both, mh-halo 3.2s ease-out 1.8s infinite;
+  transition: transform 160ms var(--mh-ease), filter 160ms ease;
+}
+.mh-cta svg { width: 26px; height: 26px; flex: none; }
+.mh-cta:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.mh-cta:active { transform: translateY(1px) scale(0.985); }
+.mh-cta:disabled { cursor: progress; animation: none; filter: saturate(0.9); }
+.mh-cta[data-loading='true']::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
+  animation: mh-shimmer 1.2s linear infinite;
+}
+.mh-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+  transition: opacity 360ms ease, transform 420ms var(--mh-ease);
+}
+/* The talk is starting: the cards step aside while the camera eases back. */
+.mh[data-status='connecting'] .mh-cards {
+  opacity: 0;
+  transform: translateY(18px);
+  pointer-events: none;
+}
+.mh-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 24px;
+  color: var(--mh-ink);
+  background: var(--mh-card);
+  box-shadow: var(--mh-shadow);
+  text-decoration: none;
+  animation: mh-rise 560ms var(--mh-ease) both;
+}
+.mh-level { animation-delay: 260ms; }
+.mh-quest { animation-delay: 360ms; background: var(--mh-peach); transition: transform 160ms var(--mh-ease); }
+.mh-quest:hover { transform: translateY(-2px); }
+.mh-ring { flex: none; width: 60px; height: 60px; }
+.mh-ring-track,
+.mh-ring-fill {
+  fill: none;
+  stroke-width: 6;
+  transform: rotate(-90deg);
+  transform-origin: 28px 28px;
+}
+.mh-ring-track { stroke: var(--mh-mint); }
+.mh-ring-fill { stroke: var(--mh-leaf); stroke-linecap: round; transition: stroke-dasharray 700ms var(--mh-ease); }
+.mh-ring-n { fill: var(--mh-ink); font-size: 13px; font-weight: 800; }
+.mh-level-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.3; }
+.mh-level-name { font-size: 1.2rem; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mh-level-line { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.95rem; font-weight: 600; color: var(--mh-ink-soft); }
+.mh-flame { width: 18px; height: 18px; color: #f08a1c; fill: #ffb43b; animation: mh-flicker 1.8s ease-in-out infinite; }
+.mh-level-pts { font-size: 0.9rem; font-weight: 600; color: var(--mh-ink-soft); }
+.mh-quest-icon { flex: none; width: 30px; height: 30px; color: #eca21b; fill: #f7c447; }
+.mh-quest-text { display: flex; flex: 1; flex-direction: column; min-width: 0; line-height: 1.3; }
+.mh-quest-label { font-size: 0.8rem; font-weight: 600; color: var(--mh-ink-soft); }
+.mh-quest-title { font-size: 1.05rem; font-weight: 800; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; } /* i18n // avatar-integ */
+.mh-quest-go { flex: none; width: 22px; height: 22px; color: var(--mh-ink-soft); }
+.mh[dir='rtl'] .mh-quest-go { transform: scaleX(-1); }
+
+/* ── The call (voice) ─────────────────────────────────────────────────── */
+
+.mc-top {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem 0;
+  /* cards-spec (05): room for the permanent AI chip (fixed, top-end, 56px wide) so it never covers the Voice | Chat pill */
+  padding-inline-end: calc(1rem + 56px + 0.5rem);
+}
+/* i18n // avatar-integ: chat mode keeps the call header. Two classes, so it beats .mc-end (5.4rem), which comes later. */
+.mc-end.mc-end-mini { width: 2.9rem; height: 2.9rem; }
+.mc-end.mc-end-mini svg { width: 22px; height: 22px; } /* i18n // avatar-integ */
+.mc-chat-level { position: relative; z-index: 20; flex: none; padding: 0.75rem 1rem 0; } /* i18n // avatar-integ */
+.mc-top-start { display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; min-width: 0; }
+.mc-seg {
+  display: inline-flex;
+  flex: none;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 248, 232, 0.94);
+  box-shadow: var(--mh-shadow);
+}
+.mc-seg button {
+  min-height: 44px;
+  padding: 0 1.15rem;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--mh-ink-soft);
+  background: transparent;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
+}
+.mc-seg button[aria-pressed='true'] { color: #fff; background: var(--mh-leaf-deep); } /* qa: leaf (#1f9a4e) was 3.6:1 under white 16px text */
+.mc-seg button:disabled { cursor: default; }
+/* cards-spec (05) review: with the AI chip's room reserved, the clock and the Voice | Chat pill touched at 360px and
+   overlapped at 320px (the pill hid the time). Narrow phones get tighter gutters and a slimmer pill. */
+@media (max-width: 400px) {
+  .mc-top { gap: 0.5rem; padding-inline-start: 0.75rem; padding-inline-end: calc(0.75rem + 56px + 0.375rem); }
+  .mc-seg button { padding: 0 0.8rem; }
+}
+@media (max-width: 340px) {
+  .mc-seg button { padding: 0 0.55rem; font-size: 0.9rem; }
+}
+
+.mc-level {
+  position: absolute;
+  z-index: 20;
+  top: 6.4rem;
+  inset-inline-end: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  pointer-events: none;
+  text-align: center;
+  animation: mh-rise 600ms var(--mh-ease) 200ms both;
+}
+.mc-level-n,
+.mc-level-pts { padding: 0 0.6rem; border-radius: 999px; background: rgba(255, 255, 255, 0.72); backdrop-filter: blur(6px); }
+.mc-level-n { font-size: 1.15rem; font-weight: 800; color: #166b34; }
+.mc-level-pts { font-size: 0.9rem; font-weight: 600; color: #3a5a43; }
+.mc-bar {
+  position: relative;
+  width: 24px;
+  height: clamp(8rem, 30vh, 16rem);
+  margin-top: 1.9rem;
+  border: 3px solid #fff;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(70, 110, 120, 0.85), rgba(60, 105, 100, 0.9));
+  box-shadow: 0 4px 14px rgba(20, 60, 40, 0.25);
+}
+.mc-bar-fill {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #5ed38a, #1f9a4e);
+  transition: height 700ms var(--mh-ease);
+}
+.mc-bar-star,
+.mc-bar-leaf {
+  position: absolute;
+  inset-inline-start: 50%;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  translate: -50% 0;
+  background: rgba(60, 100, 110, 0.95);
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(20, 60, 40, 0.28);
+}
+.mc-bar[dir='rtl'] .mc-bar-star,
+.mc-bar[dir='rtl'] .mc-bar-leaf { translate: 50% 0; }
+.mc-bar-star { top: -1.6rem; }
+.mc-bar-leaf { bottom: -0.5rem; background: #1f9a4e; }
+.mc-bar-star svg { width: 20px; height: 20px; color: #f7c447; fill: #f7c447; }
+.mc-bar-leaf svg { width: 18px; height: 18px; color: #fff; }
+
+.mc-controls {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(0.75rem, 5vw, 2.5rem);
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+@media (max-width: 400px) {
+  .mc-controls { gap: 0.6rem; }
+  .mc-controls .mc-btn:not(.mc-btn-sm) { width: 4rem; height: 4rem; }
+  .mc-controls .mc-end { width: 4.6rem; height: 4.6rem; }
+  /* hk-14: four keys with words fit a 320px phone: a long word wraps under its key instead of running off the edge */
+  .mc-controls .mc-lbl { max-width: 4.75rem; font-size: 0.8rem; white-space: normal; }
+}
+.mc-btn {
+  display: grid;
+  place-items: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  border: 0;
+  border-radius: 50%;
+  color: #14803f;
+  background: rgba(214, 240, 222, 0.94);
+  box-shadow: 0 8px 22px rgba(20, 60, 40, 0.22);
+  cursor: pointer;
+  transition: transform 160ms var(--mh-ease), background 160ms ease;
+}
+.mc-btn svg { width: 30px; height: 30px; }
+.mc-btn:hover { transform: translateY(-2px); }
+.mc-btn:active { transform: scale(0.94); }
+/* hk-14: a paused mic is amber (the accent token), unmistakable; held in hold-to-talk it turns leaf green with a ring. */
+.mc-btn[data-muted='true'] { color: var(--color-on-accent); background: var(--color-accent); }
+.mc-btn[data-hold='true'] { touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+.mc-btn[data-held='true'] { color: #fff; background: var(--mh-leaf); box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.75), 0 8px 22px rgba(20, 60, 40, 0.22); transform: scale(1.04); }
+.mc-btn[data-on='true'] { color: #fff; background: var(--mh-leaf); }
+.mc-btn-sm { width: 3.5rem; height: 3.5rem; }
+.mc-btn-sm svg { width: 26px; height: 26px; }
+/* hk-14: a short word under each call key */
+.mc-ctl { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
+.mc-ctl-sm { margin-top: 0.55rem; }
+.mc-lbl {
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--mh-ink);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 8px rgba(20, 60, 40, 0.16);
+  text-align: center;
+  white-space: nowrap;
+}
+.mc-btn[data-tap='true'] { transform: scale(0.94); box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.6), 0 8px 22px rgba(20, 60, 40, 0.22); }
+.mc-end {
+  width: 5.4rem;
+  height: 5.4rem;
+  color: #fff;
+  background: linear-gradient(180deg, #ea6262, #d24848);
+}
+.mc-end svg { width: 34px; height: 34px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mh-title, .mh-state, .mh-cta, .mh-card, .mc-level { animation: none; }
+  .mh-flame { animation: none; }
+  .mh-cta[data-loading='true']::after { animation: none; background: rgba(255, 255, 255, 0.28); }
+  .mh-cards, .mh-ring-fill, .mc-bar-fill, .mh-cta, .mc-btn { transition-duration: 1ms; }
+}
+
+/* ── Micro-interactions: confetti, press bounce, sound toggle ────────────────── */
+.confetti {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+.confetti i {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0;
+  animation: confetti-fly 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+}
+@keyframes confetti-fly {
+  0% { opacity: 1; transform: translate(0, 0) rotate(0); }
+  70% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx), calc(var(--dy) + 90px)) rotate(var(--rot)); }
+}
+.mh-tab:active { transform: scale(0.92); }
+.mh-tab { transition: transform 140ms var(--mh-ease, ease), color 160ms ease; }
+.mh-card { transition: transform 180ms var(--mh-ease), box-shadow 180ms ease; }
+.mh-level:hover { transform: translateY(-2px); }
+.mh-level:active, .mh-quest:active { transform: scale(0.98); }
+.mh-snd {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-inline-end: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--mh-ink);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 12px rgba(32, 56, 38, 0.16);
+  cursor: pointer;
+  transition: transform 150ms var(--mh-ease);
+}
+.mh-snd svg { width: 20px; height: 20px; }
+.mh-snd:hover { transform: translateY(-2px); }
+.mh-snd:active { transform: scale(0.9); }
+.mh-top-actions { display: flex; align-items: center; }
+@media (prefers-reduced-motion: reduce) {
+  .mh-tab, .mh-card, .mh-snd { transition: none; }
+  .mh-tab:active, .mh-level:hover, .mh-snd:hover { transform: none; }
+}
+
+/* ── Source cards on the call (judge pass) ───────────────────────────────────
+ * A verse or hadith card floats over the meadow instead of taking a row of the page, so the call keys stay at the
+ * bottom (photo 1) and the framing never jumps when a card arrives. Phone: above the keys, under Sadiq's face, newest
+ * first and scrollable. Wide: a column at the inline end, clear of the level rail. */
+.mc-sources {
+  position: absolute;
+  z-index: 25;
+  inset-inline: 1rem;
+  bottom: calc(10.6rem + env(safe-area-inset-bottom)); /* hk-14: the keys now carry a word underneath */
+  display: flex;
+  flex-direction: column;
+  max-height: 28dvh;
+  pointer-events: none;
+}
+.mc-sources > aside { pointer-events: auto; }
+@media (min-width: 1024px) {
+  .mc-sources {
+    inset-inline-start: auto;
+    inset-inline-end: 6rem;
+    top: 6.4rem;
+    bottom: 10.6rem;
+    width: 22rem;
+    max-height: none;
+  }
+}

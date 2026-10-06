@@ -1,0 +1,105 @@
+<!doctype html>
+<!--
+  Avatar model preview (`npm run dev` at /avatar-preview.html; also an entry of the showcase
+  build). Renders one GLB with the same lights and camera as Avatar.jsx. The default is the animated
+  avatar, posed on the first frame of its Idle clip; a GLB without clips (avatar-web.glb) gets the
+  old hand-set arm pose instead. The default model URL honours the base path (--base /page/).
+  Query: ?model=/models/avatar/avatar-animated.glb&view=front|three|face&jaw=0.18
+  Results land on window.__preview = { ready, ms, triangles, bytes }.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- w3: the same fonts index.html loads, so the held web page looks here as it does in the app -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Avatar preview</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #b9c9e6; overflow: hidden; }
+      canvas { display: block; width: 100vw; height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import * as THREE from 'three';
+      import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+      import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+
+      const q = new URLSearchParams(location.search);
+      const model = q.get('model') || `${import.meta.env.BASE_URL}models/avatar/avatar-animated.glb?v=anim2`;
+      const view = q.get('view') || 'front';
+      const jaw = Number(q.get('jaw') || 0);
+      window.__preview = { ready: false };
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+      renderer.setPixelRatio(1);
+      renderer.setSize(innerWidth, innerHeight);
+      renderer.toneMappingExposure = 1.12;
+      document.body.appendChild(renderer.domElement);
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color('#b9c9e6');
+      scene.add(new THREE.AmbientLight('#fff4e8', 0.45));
+      scene.add(new THREE.HemisphereLight('#dcefff', '#75512f', 0.65));
+      const d1 = new THREE.DirectionalLight('#ffd9a3', 1.35); d1.position.set(-2, 3, 2); scene.add(d1);
+      const d2 = new THREE.DirectionalLight('#9fc4ff', 0.65); d2.position.set(3, 2, -2); scene.add(d2);
+      const d3 = new THREE.DirectionalLight('#fff6e8', 0.25); d3.position.set(0, 1, 4); scene.add(d3);
+
+      const camera = new THREE.PerspectiveCamera(32, innerWidth / innerHeight, 0.1, 50);
+      if (view === 'three') {
+        camera.position.set(1.6, 0.95, 2.8); camera.lookAt(0, 0.7, 0);
+      } else if (view === 'face') {
+        camera.position.set(0.5, 1.05, 1.5); camera.lookAt(0, 0.95, 0);
+      } else {
+        camera.position.set(0, 0.9, 3.2); camera.lookAt(0, 0.7, 0);
+      }
+
+      const loader = new GLTFLoader();
+      loader.setMeshoptDecoder(MeshoptDecoder);
+      const t0 = performance.now();
+      const res = await fetch(model);
+      const buf = await res.arrayBuffer();
+      const tFetch = performance.now() - t0;
+      const gltf = await new Promise((ok, fail) => loader.parse(buf, '', ok, fail));
+      const ms = performance.now() - t0;
+
+      let triangles = 0;
+      gltf.scene.traverse((o) => {
+        if (o.isMesh) {
+          triangles += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count) / 3;
+          if (o.material?.name === 'BackdropMat') o.visible = false;
+        }
+      });
+
+      const idle = gltf.animations.find((c) => c.name === 'Idle');
+      if (idle) {
+        // Animated avatar: the bind pose is a T-pose, so show the first frame of Idle instead.
+        const mixer = new THREE.AnimationMixer(gltf.scene);
+        mixer.clipAction(idle).play();
+        mixer.update(0);
+        gltf.scene.traverse((o) => { if (o.isMesh) o.frustumCulled = false; });
+      } else {
+        const deg = THREE.MathUtils.degToRad;
+        const pose = { 'pec.l': -28, 'pec.l.001': 28, 'arm.l': -34, 'arm.r': 34 };
+        for (const [name, z] of Object.entries(pose)) {
+          // GLTFLoader strips dots from node names (arm.l -> arml), as Avatar.jsx handles.
+          const b = gltf.scene.getObjectByName(name.replaceAll('.', ''));
+          if (b) b.rotation.z += deg(z);
+        }
+      }
+      const jawBone = gltf.scene.getObjectByName('jaw');
+      if (jawBone) jawBone.rotation.x += jaw;
+
+      const group = new THREE.Group();
+      group.position.x = -0.13;
+      if (idle) group.scale.setScalar(0.87); // MODEL_SCALE in avatarConfig.js: the height of the old avatar
+      group.add(gltf.scene);
+      scene.add(group);
+      renderer.render(scene, camera);
+      renderer.render(scene, camera);
+      window.__preview = { ready: true, ms: Math.round(ms), fetchMs: Math.round(tFetch), triangles: Math.round(triangles), bytes: buf.byteLength };
+    </script>
+  </body>
+</html>

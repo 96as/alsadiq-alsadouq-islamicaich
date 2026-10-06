@@ -1,0 +1,475 @@
+/*
+ * The child's voice screen: idle card, status cards (refusals, resting voice, goodbye),
+ * the session clock chip, notices and the text chat extras.
+ *
+ * Same family as the landing (features/demo/demo.css): leaf green and mint, ONE sun accent,
+ * pills for things you press (56px at least), 28px for containers, a physical key for the
+ * main action. Motion answers the child (cards pop in, badges float, the clock breathes when
+ * time is short). All of it stops under reduced motion.
+ */
+
+.vu {
+  --vu-ink: #0f2d1c;
+  --vu-ink-soft: #35503f;
+  --vu-leaf: #14532d;
+  --vu-leaf-2: #1d6b3c;
+  --vu-mist: #e8f6ec;
+  --vu-meadow: #86efac;
+  --vu-sun: #f7b929;
+  --vu-sun-deep: #c98208;
+  --vu-sun-soft: #fff1c2;
+  --vu-radius: 28px;
+  --vu-font-display: 'Baloo Bhaijaan 2', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --vu-font-body: 'IBM Plex Sans Arabic', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--vu-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+.vu :where(h1, h2, h3) { font-family: var(--vu-font-display); }
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+
+@keyframes vu-pop {
+  0%   { opacity: 0; transform: translateY(22px) scale(0.9); }
+  65%  { opacity: 1; transform: translateY(-4px) scale(1.02); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes vu-rise {
+  from { opacity: 0; transform: translateY(0.6em); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes vu-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-7px) rotate(2deg); }
+}
+@keyframes vu-halo {
+  0%   { transform: scale(0.92); opacity: 0.55; }
+  100% { transform: scale(1.5);  opacity: 0; }
+}
+@keyframes vu-twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.7) rotate(0deg); }
+  50%      { opacity: 1;    transform: scale(1.1) rotate(25deg); }
+}
+@keyframes vu-bounce-dot {
+  0%, 80%, 100% { transform: translateY(0) scale(0.85); opacity: 0.55; }
+  40%           { transform: translateY(-12px) scale(1.1); opacity: 1; }
+}
+@keyframes vu-breathe {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+@keyframes vu-toast-in {
+  0%   { opacity: 0; transform: translateY(-14px) scale(0.92); }
+  70%  { opacity: 1; transform: translateY(2px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes vu-wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(16deg); }
+  30% { transform: rotate(-10deg); }
+  45% { transform: rotate(14deg); }
+}
+@keyframes vu-confetti {
+  0%   { transform: translate(0, 0) rotate(0deg) scale(0.4); opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(1); opacity: 0; }
+}
+@keyframes vu-spin { to { transform: rotate(360deg); } }
+
+.vu-pop   { animation: vu-pop 560ms cubic-bezier(0.34, 1.4, 0.64, 1) both; }
+.vu-rise  { animation: vu-rise 520ms cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(240ms + var(--i, 0) * 70ms); }
+
+/* ── Cards ───────────────────────────────────────────────────────────────── */
+
+.vu-card {
+  position: relative;
+  width: 100%;
+  max-width: 21rem;
+  margin-inline: auto;
+  padding: 2.25rem 1.5rem 1.5rem;
+  border-radius: var(--vu-radius);
+  text-align: center;
+  color: var(--vu-ink);
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgba(134, 239, 172, 0.35), transparent 55%),
+    rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 30px 50px -26px rgba(15, 45, 28, 0.7),
+    0 0 0 6px rgba(255, 255, 255, 0.28);
+}
+.vu-card h2 {
+  margin: 0;
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.vu-card p {
+  margin: 0.5rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--vu-ink-soft);
+}
+.vu-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Round badge with the mood icon: floats, with a halo that keeps growing away. */
+.vu-badge {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: -3.75rem auto 1rem;
+  border-radius: 999px;
+  color: var(--vu-leaf);
+  background: linear-gradient(160deg, #fff8dc 0%, var(--vu-sun-soft) 100%);
+  border: 4px solid #fff;
+  box-shadow: 0 14px 24px -10px rgba(201, 130, 8, 0.6);
+  animation: vu-float 3.6s ease-in-out infinite;
+}
+.vu-badge[data-tone='leaf'] {
+  background: linear-gradient(160deg, #f1fbf4 0%, #cdeed7 100%);
+  box-shadow: 0 14px 24px -10px rgba(20, 83, 45, 0.55);
+}
+.vu-badge::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 3px solid var(--vu-sun);
+  animation: vu-halo 2.6s ease-out infinite;
+  pointer-events: none;
+}
+.vu-badge[data-tone='leaf']::before { border-color: var(--vu-meadow); }
+.vu-badge svg { width: 2.6rem; height: 2.6rem; }
+.vu-badge[data-wave='true'] svg { transform-origin: 70% 80%; animation: vu-wave 2.8s ease-in-out 600ms infinite; }
+
+/* A few sparkles around the card: they twinkle, nothing more. */
+.vu-spark {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--vu-sun);
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+  animation: vu-twinkle 2.4s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+  pointer-events: none;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+
+.vu-key {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 60px;
+  padding: 0 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--vu-font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #3b2600;
+  background: linear-gradient(180deg, #ffd35c 0%, var(--vu-sun) 55%, #eea812 100%);
+  box-shadow:
+    0 6px 0 var(--vu-sun-deep),
+    0 16px 26px -8px rgba(201, 130, 8, 0.55),
+    inset 0 2px 0 rgba(255, 255, 255, 0.65);
+  transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 140ms ease, filter 160ms ease;
+}
+.vu-key:hover { filter: saturate(1.08) brightness(1.03); }
+.vu-key:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 var(--vu-sun-deep), 0 8px 14px -6px rgba(201, 130, 8, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.5);
+}
+.vu-key:focus-visible { outline: 4px solid var(--vu-ink); outline-offset: 4px; }
+.vu-key:disabled { cursor: not-allowed; filter: grayscale(0.5) opacity(0.7); }
+.vu-key svg { width: 1.4rem; height: 1.4rem; }
+
+.vu-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 56px;
+  padding: 0 1.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--vu-ink);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(20, 83, 45, 0.22);
+  transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1), background 160ms ease, box-shadow 160ms ease;
+}
+.vu-pill:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(15, 45, 28, 0.5); }
+.vu-pill:active { transform: translateY(1px) scale(0.98); }
+.vu-pill:focus-visible { outline: 3px solid var(--vu-ink); outline-offset: 3px; }
+.vu-pill:disabled { cursor: not-allowed; opacity: 0.6; transform: none; box-shadow: none; }
+.vu-pill[data-inline='true'] { width: auto; }
+
+/* ── Starting: three bouncing dots ───────────────────────────────────────── */
+
+.vu-dots { display: flex; justify-content: center; gap: 0.7rem; height: 2.4rem; align-items: flex-end; }
+.vu-dots span {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 999px;
+  background: var(--vu-sun);
+  box-shadow: 0 3px 0 var(--vu-sun-deep);
+  animation: vu-bounce-dot 1.1s ease-in-out infinite;
+}
+.vu-dots span:nth-child(2) { animation-delay: 0.16s; background: var(--vu-meadow); box-shadow: 0 3px 0 #3fae6b; }
+.vu-dots span:nth-child(3) { animation-delay: 0.32s; }
+.vu-starting {
+  display: inline-block;
+  padding: 0.7rem 1.4rem 0.8rem;
+  border-radius: 999px;
+  color: var(--vu-ink);
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 24px -12px rgba(15, 45, 28, 0.7);
+}
+
+/* ── The session clock chip ──────────────────────────────────────────────── */
+
+.vu-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 44px;
+  padding: 0.25rem 1rem 0.25rem 0.35rem;
+  padding-inline: 0.35rem 1rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--vu-ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 22px -10px rgba(15, 45, 28, 0.7);
+  transition: background 400ms ease, color 400ms ease;
+}
+.vu-chip-ring { width: 36px; height: 36px; flex: none; transform: rotate(-90deg); }
+.vu-chip[dir='rtl'] .vu-chip-ring { transform: rotate(-90deg) scaleY(-1); }
+.vu-chip-ring circle { fill: none; stroke-width: 4; }
+.vu-chip-ring .track { stroke: rgba(20, 83, 45, 0.15); }
+.vu-chip-ring .fill {
+  stroke: var(--vu-leaf-2);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear, stroke 400ms ease;
+}
+.vu-chip[data-phase='warn'], .vu-chip[data-phase='ending'] {
+  background: var(--vu-sun-soft);
+  color: #4a2e00;
+  border-color: var(--vu-sun);
+}
+.vu-chip[data-phase='warn'] .fill, .vu-chip[data-phase='ending'] .fill { stroke: var(--vu-sun-deep); }
+.vu-chip[data-phase='ending'] { animation: vu-breathe 1.4s ease-in-out infinite; }
+.vu-chip[data-phase='warn'] { animation: vu-breathe 2.4s ease-in-out infinite; }
+.vu-chip-time { font-family: var(--vu-font-display); font-size: 1.15rem; line-height: 1; padding-top: 2px; }
+.vu-chip-note { font-size: 0.85rem; font-weight: 700; }
+
+/* ── Toast and notice ────────────────────────────────────────────────────── */
+
+.vu-toast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 22rem;
+  padding: 0.85rem 1rem;
+  border-radius: 24px;
+  color: var(--vu-ink);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 30px -14px rgba(15, 45, 28, 0.7);
+  animation: vu-toast-in 480ms cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+.vu-toast-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  color: var(--vu-leaf);
+  background: var(--vu-sun-soft);
+}
+.vu-toast-icon[data-tone='leaf'] { background: #d6f0de; }
+.vu-toast-icon svg { width: 1.45rem; height: 1.45rem; }
+.vu-toast-close {
+  flex: none;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-block: -0.85rem;
+  margin-inline: -0.5rem -0.6rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--vu-ink-soft);
+}
+.vu-toast-close span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(20, 83, 45, 0.08);
+  transition: background 140ms ease, transform 140ms ease;
+}
+.vu-toast-close:hover span { background: rgba(20, 83, 45, 0.16); }
+.vu-toast-close:active span { transform: scale(0.92); }
+.vu-toast-close:focus-visible { outline: 3px solid var(--vu-ink); outline-offset: -4px; border-radius: 999px; }
+.vu-toast-close svg { width: 1.1rem; height: 1.1rem; }
+
+/* ── Text chat extras ────────────────────────────────────────────────────── */
+
+.vu-ideas { display: flex; flex-direction: column; gap: 0.6rem; width: 100%; max-width: 22rem; }
+.vu-idea {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 56px;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-align: start;
+  font-family: var(--vu-font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vu-ink);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px -12px rgba(15, 45, 28, 0.7);
+  transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 160ms ease;
+}
+.vu-idea svg { flex: none; width: 1.2rem; height: 1.2rem; color: var(--vu-sun-deep); }
+.vu-idea:hover { transform: translateY(-2px); box-shadow: 0 14px 24px -12px rgba(15, 45, 28, 0.7); }
+.vu-idea:active { transform: scale(0.98); }
+.vu-idea:focus-visible { outline: 3px solid var(--vu-sun); outline-offset: 3px; }
+
+.vu-send {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.vu-send span {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: #3b2600;
+  background: linear-gradient(180deg, #ffd35c, var(--vu-sun));
+  box-shadow: 0 3px 0 var(--vu-sun-deep);
+  transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 140ms ease, opacity 140ms ease;
+}
+.vu-send:active:not(:disabled) span { transform: translateY(2px); box-shadow: 0 1px 0 var(--vu-sun-deep); }
+.vu-send:disabled { cursor: not-allowed; }
+.vu-send:disabled span { opacity: 0.4; box-shadow: none; }
+.vu-send:focus-visible { outline: 3px solid #fff; outline-offset: -4px; border-radius: 999px; }
+.vu-send svg { width: 1.3rem; height: 1.3rem; }
+[dir='rtl'] .vu-send svg { transform: scaleX(-1); }
+
+/* ── Goodbye: confetti from behind the card ──────────────────────────────── */
+
+.vu-confetti { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.vu-confetti i {
+  position: absolute;
+  top: 0.5rem;
+  inset-inline-start: 50%;
+  width: 10px;
+  height: 14px;
+  border-radius: 3px;
+  background: var(--c, var(--vu-sun));
+  opacity: 0;
+  animation: vu-confetti 2.2s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: calc(500ms + var(--n) * 38ms);
+}
+
+/* ── Language pill on the idle card ──────────────────────────────────────── */
+
+.vu-lang {
+  position: absolute;
+  top: 0.6rem;
+  inset-inline-end: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  min-height: 56px;
+  padding: 0 0.25rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: var(--vu-ink);
+}
+.vu-lang span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 36px;
+  padding: 0 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: rgba(20, 83, 45, 0.08);
+  border: 1px solid rgba(20, 83, 45, 0.15);
+  transition: background 140ms ease;
+}
+.vu-lang:hover span { background: rgba(20, 83, 45, 0.16); }
+.vu-lang:focus-visible { outline: 3px solid var(--vu-ink); outline-offset: -4px; border-radius: 999px; }
+.vu-lang svg { width: 1rem; height: 1rem; }
+
+/* Scrim behind a card that sits on top of a running chat */
+.vu-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1.25rem 1.25rem;
+  background: rgba(15, 45, 28, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* ── Reduced motion: everything is where it ends up, nothing moves ───────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .vu-pop, .vu-rise, .vu-toast { animation: none !important; }
+  .vu-badge, .vu-badge svg, .vu-chip { animation: none !important; }
+  .vu-badge::before { animation: none !important; opacity: 0; }
+  .vu-spark { animation: none !important; opacity: 0.8; }
+  .vu-dots span { animation: none !important; opacity: 1; }
+  .vu-confetti { display: none; }
+  .vu-key, .vu-pill, .vu-idea, .vu-chip, .vu-send span, .vu-chip-ring .fill { transition: none; }
+}

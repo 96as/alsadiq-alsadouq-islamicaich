@@ -1,0 +1,13 @@
+# Used only by Dockerfile.agent (BuildKit reads <Dockerfile>.dockerignore).
+# The agent never opens the recitation clips: it passes the audio_url string from the DB
+# through to the client, and the backend image serves /static/quran/ itself.
+# The backend image must keep these files, so backend/.dockerignore does not list them.
+session_moral_context/static/quran/
+# BuildKit uses this file INSTEAD of .dockerignore for Dockerfile.agent, so the shared
+# exclusions are repeated here. Keep both files in step.
+.env
+.env.*
+staticfiles/
+db.sqlite3
+**/__pycache__/
+**/*.pyc

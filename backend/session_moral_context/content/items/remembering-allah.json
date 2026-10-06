@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 13,
+    "ayah": 28,
+    "arabic_text": "ٱلَّذِينَ ءَامَنُواْ وَتَطۡمَئِنُّ قُلُوبُهُم بِذِكۡرِ ٱللَّهِۗ أَلَا بِذِكۡرِ ٱللَّهِ تَطۡمَئِنُّ ٱلۡقُلُوبُ",
+    "arabic_text_search": "الذين آمنوا وتطمئن قلوبهم بذكر الله ألا بذكر الله تطمئن القلوب",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Those who have believed and whose hearts are assured by the remembrance of Allāh. Unquestionably, by the remembrance of Allāh hearts are assured.\"",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/ar-rad/28",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/013028.mp3",
+    "values": [
+      "remembering-allah"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن ذكر الله يطمئن القلوب. عندما تقلق، تذكّر الله وتحدّث أيضا مع شخص كبير تثق به.",
+    "child_explanation_en": "This verse teaches that remembering Allah calms hearts. When you feel worried, remember Allah and also talk with a grown-up you trust.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 33,
+    "ayah": 41,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱذۡكُرُواْ ٱللَّهَ ذِكۡرٗا كَثِيرٗا",
+    "arabic_text_search": "ياأيها الذين آمنوا اذكروا الله ذكرا كثيرا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, remember Allāh with much remembrance",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-ahzab/41",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/033041.mp3",
+    "values": [
+      "remembering-allah"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تدعونا الآية إلى الإكثار من ذكر الله. اجعل في يومك وقتا هادئا تتذكر فيه الله وتشكره.",
+    "child_explanation_en": "This verse calls us to remember Allah often. Make a quiet moment in your day to remember Him and thank Him.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]
