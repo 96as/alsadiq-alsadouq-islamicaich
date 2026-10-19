@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 4,
+    "ayah": 135,
+    "arabic_text": "۞ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ كُونُواْ قَوَّٰمِينَ بِٱلۡقِسۡطِ شُهَدَآءَ لِلَّهِ وَلَوۡ عَلَىٰٓ أَنفُسِكُمۡ أَوِ ٱلۡوَٰلِدَيۡنِ وَٱلۡأَقۡرَبِينَۚ إِن يَكُنۡ غَنِيًّا أَوۡ فَقِيرٗا فَٱللَّهُ أَوۡلَىٰ بِهِمَاۖ فَلَا تَتَّبِعُواْ ٱلۡهَوَىٰٓ أَن تَعۡدِلُواْۚ وَإِن تَلۡوُۥٓاْ أَوۡ تُعۡرِضُواْ فَإِنَّ ٱللَّهَ كَانَ بِمَا تَعۡمَلُونَ خَبِيرٗا",
+    "arabic_text_search": "ياأيها الذين آمنوا كونوا قوامين بالقسط شهداء لله ولو على أنفسكم أو الوالدين والأقربين إن يكن غنيا أو فقيرا فالله أولى بهما فلا تتبعوا الهوى أن تعدلوا وإن تلووا أو تعرضوا فإن الله كان بما تعملون خبيرا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, be persistently standing firm in justice, witnesses for Allāh, even if it be against yourselves or parents and relatives. Whether one is rich or poor, Allāh is more worthy of both. So follow not [personal] inclination, lest you not be just. And if you distort [your testimony] or refuse [to give it], then indeed Allāh is ever, of what you do, Aware.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-nisa/135",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/004135.mp3",
+    "values": [
+      "justice"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نقول الحقيقة ونكون عادلين، حتى لو كان الأمر عن أنفسنا أو أقاربنا. مثلا: إذا أخطأت في لعبة، قل «أنا أخطأت» ولا تلُم غيرك.",
+    "child_explanation_en": "This verse teaches us to tell the truth and be fair, even when it is about ourselves or our relatives. For example, if you make a mistake in a game, say \"I made a mistake\" and do not blame someone else.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 5,
+    "ayah": 8,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ كُونُواْ قَوَّٰمِينَ لِلَّهِ شُهَدَآءَ بِٱلۡقِسۡطِۖ وَلَا يَجۡرِمَنَّكُمۡ شَنَـَٔانُ قَوۡمٍ عَلَىٰٓ أَلَّا تَعۡدِلُواْۚ ٱعۡدِلُواْ هُوَ أَقۡرَبُ لِلتَّقۡوَىٰۖ وَٱتَّقُواْ ٱللَّهَۚ إِنَّ ٱللَّهَ خَبِيرُۢ بِمَا تَعۡمَلُونَ",
+    "arabic_text_search": "ياأيها الذين آمنوا كونوا قوامين لله شهداء بالقسط ولا يجرمنكم شنآن قوم على ألا تعدلوا اعدلوا هو أقرب للتقوى واتقوا الله إن الله خبير بما تعملون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, be persistently standing firm for Allāh, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness. And fear Allāh; indeed, Allāh is [fully] Aware of what you do.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-maida/8",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/005008.mp3",
+    "values": [
+      "justice"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نعدل حتى مع من لا نحبه. أعطِ كل لاعب دوره، ولو كنت مختلفا معه.",
+    "child_explanation_en": "This verse teaches us to be fair even to people we dislike. Give every player a turn, including someone you disagree with.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

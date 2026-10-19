@@ -1,0 +1,538 @@
+# search_recall_phrasings.yaml (task 13): 5 child phrasings per value per language, 38 values x 10 = 380.
+# Used by conversation/eval_support/search_recall.py (manage.py search_recall) to measure whether the
+# search_bank lookup finds the value. Children's questions only: no scripture, no du'a wording.
+# Each entry is [shape, text]. shape: verse (asks for a verse), hadith (asks for a hadith),
+# say ("what does Islam say about ..."), sit (a situation the child is in).
+# Arabic mixes Gulf and Levantine.
+
+prayer:
+  en:
+    - [verse, "is there a verse about praying five times a day?"]
+    - [hadith, "is there a hadith about why we pray?"]
+    - [say, "what does Islam say about praying on time?"]
+    - [sit, "I forgot to pray fajr this morning, is that bad?"]
+    - [sit, "my friends are playing and I have to go pray, why is prayer so important?"]
+  ar:
+    - [verse, "في آية عن الصلاة؟"]
+    - [hadith, "في حديث عن الصلاة؟"]
+    - [say, "شو يقول الإسلام عن الصلاة في وقتها؟"]
+    - [sit, "ما صليت الفجر اليوم، هذا غلط؟"]
+    - [sit, "صحابي يلعبون وأنا لازم أصلي، ليش الصلاة مهمة؟"]
+
+honesty:
+  en:
+    - [verse, "is there a verse about telling the truth?"]
+    - [hadith, "is there a hadith about lying?"]
+    - [say, "what does Islam say about being honest?"]
+    - [sit, "I lied to my mom about my homework, is that bad?"]
+    - [sit, "my friend cheated on the test and I did not tell the teacher, what should I do?"]
+  ar:
+    - [verse, "في آية عن الصدق؟"]
+    - [hadith, "في حديث عن الكذب؟"]
+    - [say, "شو يقول الإسلام عن الصدق؟"]
+    - [sit, "كذبت على ماما بخصوص الواجب، هذا حرام؟"]
+    - [sit, "صاحبي غش بالاختبار وأنا ما قلت للمعلمة، شو أسوي؟"]
+
+trustworthiness:
+  en:
+    - [verse, "is there a verse about keeping an amanah?"]
+    - [hadith, "is there a hadith about being trustworthy?"]
+    - [say, "what does Islam say about stealing?"]
+    - [sit, "I took my brother's toy and did not give it back, is that wrong?"]
+    - [sit, "my friend told me a secret and I told someone else, was that bad?"]
+  ar:
+    - [verse, "في آية عن الأمانة؟"]
+    - [hadith, "في حديث عن الأمين؟"]
+    - [say, "شو يقول الإسلام عن السرقة؟"]
+    - [sit, "أخذت لعبة أخوي وما رجعتها له، هذا غلط؟"]
+    - [sit, "صاحبتي قالت لي سر وأنا حكيته لوحدة ثانية، هذا خيانة؟"]
+
+honouring-parents:
+  en:
+    - [verse, "is there a verse about being good to my parents?"]
+    - [hadith, "is there a hadith about my mother?"]
+    - [say, "what does Islam say about obeying my parents?"]
+    - [sit, "I shouted at my dad today, is that bad?"]
+    - [sit, "my mom asked me to clean my room and I said no, what does Allah say?"]
+  ar:
+    - [verse, "في آية عن بر الوالدين؟"]
+    - [hadith, "في حديث عن الأم؟"]
+    - [say, "شو يقول الإسلام عن طاعة أبوي وأمي؟"]
+    - [sit, "صرخت على بابا اليوم، هذا حرام؟"]
+    - [sit, "ماما قالت لي رتب غرفتك وأنا قلت لا، شو يقول ربنا؟"]
+
+mercy:
+  en:
+    - [verse, "is there a verse about mercy?"]
+    - [hadith, "is there a hadith about being merciful?"]
+    - [say, "what does Islam say about being gentle with people?"]
+    - [sit, "I hit a kid at school because he was annoying me, is that okay?"]
+    - [sit, "there is a little kid crying and I feel sorry for him, what should I do?"]
+  ar:
+    - [verse, "في آية عن الرحمة؟"]
+    - [hadith, "في حديث عن الرحمة؟"]
+    - [say, "شو يقول الإسلام عن الرحمة بالناس؟"]
+    - [sit, "ضربت ولد بالمدرسة لأنه كان يزعجني، عادي؟"]
+    - [sit, "في طفل صغير يبكي وأنا حزنت عليه، شو أسوي؟"]
+
+patience:
+  en:
+    - [verse, "is there a verse about patience?"]
+    - [hadith, "is there a hadith about being patient?"]
+    - [say, "what does Islam say about waiting and not rushing?"]
+    - [sit, "I get so bored when I have to wait, how can I be more patient?"]
+    - [sit, "I failed my exam and I want to give up, what should I do?"]
+  ar:
+    - [verse, "في آية عن الصبر؟"]
+    - [hadith, "في حديث عن الصبر؟"]
+    - [say, "شو يقول الإسلام عن الصبر؟"]
+    - [sit, "أزهق إذا لازم أنتظر، كيف أصير صبور؟"]
+    - [sit, "رسبت بالاختبار وأبي أترك الدراسة، شو أسوي؟"]
+
+gratitude:
+  en:
+    - [verse, "is there a verse about being thankful?"]
+    - [hadith, "is there a hadith about thanking Allah?"]
+    - [say, "what does Islam say about being grateful?"]
+    - [sit, "my friend has a bigger house than me and I feel jealous, what should I do?"]
+    - [sit, "I got a new bike today and I want to say thank you to Allah, how?"]
+  ar:
+    - [verse, "في آية عن الشكر؟"]
+    - [hadith, "في حديث عن شكر الله؟"]
+    - [say, "شو يقول الإسلام عن الحمد والشكر؟"]
+    - [sit, "صاحبي عنده بيت أكبر من بيتنا وأنا غيران، شو أسوي؟"]
+    - [sit, "جابوا لي سيكل جديد وأبي أشكر الله، كيف؟"]
+
+cooperation:
+  en:
+    - [verse, "is there a verse about working together?"]
+    - [hadith, "is there a hadith about cooperation?"]
+    - [say, "what does Islam say about teamwork?"]
+    - [sit, "our class has a group project and nobody wants to help, what should I do?"]
+    - [sit, "my team lost the match because we did not work together, why does that matter?"]
+  ar:
+    - [verse, "في آية عن التعاون؟"]
+    - [hadith, "في حديث عن التعاون؟"]
+    - [say, "شو يقول الإسلام عن العمل مع بعض؟"]
+    - [sit, "عندنا مشروع جماعي بالصف وما أحد يبي يساعد، شو أسوي؟"]
+    - [sit, "فريقنا خسر لأننا ما تعاونا، ليش التعاون مهم؟"]
+
+kindness-to-animals:
+  en:
+    - [verse, "is there a verse about animals?"]
+    - [hadith, "is there a hadith about being kind to animals?"]
+    - [say, "what does Islam say about cats and dogs?"]
+    - [sit, "there is a hungry stray cat outside our house, should I feed it?"]
+    - [sit, "my brother pulled the tail of our cat, is that wrong?"]
+  ar:
+    - [verse, "في آية عن الحيوانات؟"]
+    - [hadith, "في حديث عن الرفق بالحيوان؟"]
+    - [say, "شو يقول الإسلام عن القطط والكلاب؟"]
+    - [sit, "في قطة جوعانة برا بيتنا، أعطيها أكل؟"]
+    - [sit, "أخوي شد ذيل القطة، هذا غلط؟"]
+
+cleanliness:
+  en:
+    - [verse, "is there a verse about being clean?"]
+    - [hadith, "is there a hadith about cleanliness?"]
+    - [say, "what does Islam say about washing our hands and brushing teeth?"]
+    - [sit, "I did not take a shower today, is that a sin?"]
+    - [sit, "my room is very messy, does Allah care if it is clean?"]
+  ar:
+    - [verse, "في آية عن النظافة؟"]
+    - [hadith, "في حديث عن النظافة؟"]
+    - [say, "شو يقول الإسلام عن غسل الإيدين وتنظيف الأسنان؟"]
+    - [sit, "ما استحميت اليوم، هذا ذنب؟"]
+    - [sit, "غرفتي مرتبكة كثير، ربنا يهتم إذا نظيفة؟"]
+
+modesty:
+  en:
+    - [verse, "is there a verse about modesty?"]
+    - [hadith, "is there a hadith about haya?"]
+    - [say, "what does Islam say about being shy and modest?"]
+    - [sit, "I feel shy and embarrassed to change in front of other kids, is that okay?"]
+    - [sit, "why should girls wear the hijab when they get older?"]
+  ar:
+    - [verse, "في آية عن الحياء؟"]
+    - [hadith, "في حديث عن الحياء؟"]
+    - [say, "شو يقول الإسلام عن الحشمة؟"]
+    - [sit, "أستحي أغير ملابسي قدام الأولاد، عادي؟"]
+    - [sit, "ليش البنات يلبسون الحجاب إذا كبروا؟"]
+
+good-character:
+  en:
+    - [verse, "is there a verse about good manners?"]
+    - [hadith, "is there a hadith about having good character?"]
+    - [say, "what does Islam say about being a good person?"]
+    - [sit, "how can I become a better person?"]
+    - [sit, "kids at school say bad words and I want to be different, what does Islam say?"]
+  ar:
+    - [verse, "في آية عن الأخلاق الحلوة؟"]
+    - [hadith, "في حديث عن حسن الخلق؟"]
+    - [say, "شو يقول الإسلام عن إني أكون إنسان طيب؟"]
+    - [sit, "كيف أصير أحسن؟"]
+    - [sit, "الأولاد بالمدرسة يقولون كلمات سيئة وأنا أبي أكون غير، شو يقول ديننا؟"]
+
+good-neighbour:
+  en:
+    - [verse, "is there a verse about neighbours?"]
+    - [hadith, "is there a hadith about the neighbour?"]
+    - [say, "what does Islam say about being good to the people next door?"]
+    - [sit, "our neighbour is an old lady and she is alone, what can I do?"]
+    - [sit, "the kids next door are noisy and I get angry at them, what should I do?"]
+  ar:
+    - [verse, "في آية عن الجار؟"]
+    - [hadith, "في حديث عن الجار؟"]
+    - [say, "شو يقول الإسلام عن الجيران؟"]
+    - [sit, "جارتنا عجوز وقاعدة لحالها، شو أقدر أسوي؟"]
+    - [sit, "أولاد الجيران صوتهم عالي وأنا أزعل منهم، شو أسوي؟"]
+
+seeking-knowledge:
+  en:
+    - [verse, "is there a verse about learning?"]
+    - [hadith, "is there a hadith about seeking knowledge?"]
+    - [say, "what does Islam say about going to school and studying?"]
+    - [sit, "I do not like studying, why should I learn?"]
+    - [sit, "I want to learn more about science, does Islam like that?"]
+  ar:
+    - [verse, "في آية عن العلم؟"]
+    - [hadith, "في حديث عن طلب العلم؟"]
+    - [say, "شو يقول الإسلام عن الدراسة والمدرسة؟"]
+    - [sit, "ما أحب المذاكرة، ليش لازم أتعلم؟"]
+    - [sit, "أحب العلوم وأبي أتعلم أكثر، الإسلام يحب هذا؟"]
+
+humility:
+  en:
+    - [verse, "is there a verse about being humble?"]
+    - [hadith, "is there a hadith about pride?"]
+    - [say, "what does Islam say about showing off?"]
+    - [sit, "I got the top mark and I told everybody, is that bragging?"]
+    - [sit, "my cousin thinks he is better than everyone, is that okay?"]
+  ar:
+    - [verse, "في آية عن التواضع؟"]
+    - [hadith, "في حديث عن الكبر؟"]
+    - [say, "شو يقول الإسلام عن التفاخر؟"]
+    - [sit, "جبت أعلى علامة وقلت لكل الناس، هذا تفاخر؟"]
+    - [sit, "ولد عمي يحس نفسه أحسن من الكل، هذا عادي؟"]
+
+justice:
+  en:
+    - [verse, "is there a verse about being fair?"]
+    - [hadith, "is there a hadith about justice?"]
+    - [say, "what does Islam say about treating everyone equally?"]
+    - [sit, "my teacher always picks the same kid, that is not fair, what does Islam say?"]
+    - [sit, "my little sister got more candy than me, is that unfair?"]
+  ar:
+    - [verse, "في آية عن العدل؟"]
+    - [hadith, "في حديث عن العدل؟"]
+    - [say, "شو يقول الإسلام عن المعاملة بالتساوي؟"]
+    - [sit, "المعلمة دايما تختار نفس الطالب، وهذا مو عدل، شو يقول الإسلام؟"]
+    - [sit, "أختي الصغيرة أخذت حلوى أكثر مني، هذا ظلم؟"]
+
+keeping-promises:
+  en:
+    - [verse, "is there a verse about keeping a promise?"]
+    - [hadith, "is there a hadith about breaking your word?"]
+    - [say, "what does Islam say about promises?"]
+    - [sit, "I promised my friend I would come to his house and I did not go, is that bad?"]
+    - [sit, "my dad said he would take me to the park and he forgot, is that a lie?"]
+  ar:
+    - [verse, "في آية عن الوفاء بالوعد؟"]
+    - [hadith, "في حديث عن إخلاف الوعد؟"]
+    - [say, "شو يقول الإسلام عن الوعود؟"]
+    - [sit, "وعدت صاحبي أروح بيته وما رحت، هذا غلط؟"]
+    - [sit, "بابا قال بياخدني للحديقة ونسي، هذا كذب؟"]
+
+generosity:
+  en:
+    - [verse, "is there a verse about being generous?"]
+    - [hadith, "is there a hadith about giving?"]
+    - [say, "what does Islam say about sharing what I have?"]
+    - [sit, "I do not want to share my chocolate with my sister, is that bad?"]
+    - [sit, "my friend has no lunch and I have extra, should I give him some?"]
+  ar:
+    - [verse, "في آية عن الكرم؟"]
+    - [hadith, "في حديث عن الجود؟"]
+    - [say, "شو يقول الإسلام عن مشاركة اللي عندي؟"]
+    - [sit, "ما أبي أعطي أختي من الشوكولاتة حقتي، هذا سيء؟"]
+    - [sit, "صاحبي ما عنده أكل وأنا عندي زيادة، أعطيه؟"]
+
+forgiveness:
+  en:
+    - [verse, "is there a verse about forgiving people?"]
+    - [hadith, "is there a hadith about forgiveness?"]
+    - [say, "what does Islam say about saying sorry?"]
+    - [sit, "my friend broke my toy and said sorry, do I have to forgive him?"]
+    - [sit, "I am still angry at someone who was mean to me, should I forgive them?"]
+  ar:
+    - [verse, "في آية عن العفو والمسامحة؟"]
+    - [hadith, "في حديث عن المغفرة والتسامح؟"]
+    - [say, "شو يقول الإسلام عن الاعتذار؟"]
+    - [sit, "صاحبي كسر لعبتي واعتذر، لازم أسامحه؟"]
+    - [sit, "للحين زعلان من واحد كان وحش معي، أسامحه؟"]
+
+kind-words:
+  en:
+    - [verse, "is there a verse about speaking nicely?"]
+    - [hadith, "is there a hadith about a good word?"]
+    - [say, "what does Islam say about saying nice things to people?"]
+    - [sit, "I called a kid a bad name at school, is that wrong?"]
+    - [sit, "my friend looks sad, what nice thing can I say to him?"]
+  ar:
+    - [verse, "في آية عن الكلام الطيب؟"]
+    - [hadith, "في حديث عن الكلمة الطيبة؟"]
+    - [say, "شو يقول الإسلام عن إني أقول كلام حلو للناس؟"]
+    - [sit, "ناديت ولد بإسم سيء بالمدرسة، هذا غلط؟"]
+    - [sit, "صاحبي شكله حزين، شو أقول له حلو؟"]
+
+charity:
+  en:
+    - [verse, "is there a verse about sadaqah?"]
+    - [hadith, "is there a hadith about giving to the poor?"]
+    - [say, "what does Islam say about charity?"]
+    - [sit, "I saw a poor man on the street, should I give him my pocket money?"]
+    - [sit, "my mom said we give zakat, what is it and why do we give it?"]
+  ar:
+    - [verse, "في آية عن الصدقة؟"]
+    - [hadith, "في حديث عن إعطاء الفقراء؟"]
+    - [say, "شو يقول الإسلام عن الصدقة؟"]
+    - [sit, "شفت رجال فقير بالشارع، أعطيه مصروفي؟"]
+    - [sit, "ماما قالت نطلع زكاة، شو هي وليش نعطيها؟"]
+
+respecting-elders:
+  en:
+    - [verse, "is there a verse about old people?"]
+    - [hadith, "is there a hadith about respecting elders?"]
+    - [say, "what does Islam say about respecting my grandparents?"]
+    - [sit, "my grandpa asked me to bring him water and I did not want to, is that wrong?"]
+    - [sit, "a kid on the bus laughed at an old man, what should I tell him?"]
+  ar:
+    - [verse, "في آية عن كبار السن؟"]
+    - [hadith, "في حديث عن احترام الكبير؟"]
+    - [say, "شو يقول الإسلام عن احترام جدي وجدتي؟"]
+    - [sit, "جدي طلب مني أجيب له ماي وما أبيت، هذا غلط؟"]
+    - [sit, "ولد بالباص ضحك على رجال كبير، شو أقول له؟"]
+
+caring-for-orphans:
+  en:
+    - [verse, "is there a verse about orphans?"]
+    - [hadith, "is there a hadith about taking care of an orphan?"]
+    - [say, "what does Islam say about kids who have no parents?"]
+    - [sit, "there is a boy in my class whose dad died, how can I be nice to him?"]
+    - [sit, "I want to help kids who have no mom and dad, what can I do?"]
+  ar:
+    - [verse, "في آية عن اليتيم؟"]
+    - [hadith, "في حديث عن كفالة اليتيم؟"]
+    - [say, "شو يقول الإسلام عن الأولاد اللي ما عندهم أهل؟"]
+    - [sit, "في ولد بصفي مات أبوه، كيف أكون طيب معه؟"]
+    - [sit, "أبي أساعد الأطفال اللي ما عندهم ماما وبابا، شو أسوي؟"]
+
+brotherhood:
+  en:
+    - [verse, "is there a verse about Muslims being brothers?"]
+    - [hadith, "is there a hadith about brotherhood?"]
+    - [say, "what does Islam say about being friends with other Muslims?"]
+    - [sit, "I had a fight with my best friend and we are not talking, what should I do?"]
+    - [sit, "a new Muslim kid joined our school and he has no friends, how can I help?"]
+  ar:
+    - [verse, "في آية عن أخوة المسلمين؟"]
+    - [hadith, "في حديث عن الأخوة؟"]
+    - [say, "شو يقول الإسلام عن إني أكون صديق للمسلمين؟"]
+    - [sit, "تخانقت مع أعز صاحب وما نحكي مع بعض، شو أسوي؟"]
+    - [sit, "جا ولد مسلم جديد بالمدرسة وما عنده أصحاب، كيف أساعده؟"]
+
+controlling-anger:
+  en:
+    - [verse, "is there a verse about anger?"]
+    - [hadith, "is there a hadith about controlling your temper?"]
+    - [say, "what does Islam say about getting angry?"]
+    - [sit, "I got really angry and broke my pencil, what should I do when I am angry?"]
+    - [sit, "my brother makes me so mad that I want to scream, how do I calm down?"]
+  ar:
+    - [verse, "في آية عن الغضب؟"]
+    - [hadith, "في حديث عن كظم الغيظ؟"]
+    - [say, "شو يقول الإسلام عن الزعل والعصبية؟"]
+    - [sit, "عصبت كثير وكسرت قلمي، شو أسوي إذا عصبت؟"]
+    - [sit, "أخوي يعصبني لدرجة أبي أصرخ، كيف أهدأ؟"]
+
+remembering-allah:
+  en:
+    - [verse, "is there a verse about remembering Allah?"]
+    - [hadith, "is there a hadith about dhikr?"]
+    - [say, "what does Islam say about saying SubhanAllah and Alhamdulillah?"]
+    - [sit, "I forget to think about Allah during the day, how can I remember Him more?"]
+    - [sit, "what can I say before I sleep so Allah is with me?"]
+  ar:
+    - [verse, "في آية عن ذكر الله؟"]
+    - [hadith, "في حديث عن الذكر؟"]
+    - [say, "شو يقول الإسلام عن قول سبحان الله والحمد لله؟"]
+    - [sit, "أنسى أفكر في الله طول اليوم، كيف أتذكره أكثر؟"]
+    - [sit, "شو أقول قبل النوم عشان الله يكون معي؟"]
+
+trust-in-allah:
+  en:
+    - [verse, "is there a verse about trusting Allah?"]
+    - [hadith, "is there a hadith about tawakkul?"]
+    - [say, "what does Islam say about relying on Allah?"]
+    - [sit, "I am scared about my exam tomorrow, how can Allah help me?"]
+    - [sit, "I lost my toy and I cannot find it, should I just trust Allah?"]
+  ar:
+    - [verse, "في آية عن التوكل على الله؟"]
+    - [hadith, "في حديث عن التوكل؟"]
+    - [say, "شو يقول الإسلام عن الاعتماد على الله؟"]
+    - [sit, "خايف من اختباري بكرة، كيف ربنا يساعدني؟"]
+    - [sit, "ضاعت لعبتي وما ألقاها، أتوكل على الله وبس؟"]
+
+visiting-the-sick:
+  en:
+    - [verse, "is there a verse about visiting sick people?"]
+    - [hadith, "is there a hadith about visiting the sick?"]
+    - [say, "what does Islam say about going to see someone who is ill?"]
+    - [sit, "my grandma is in the hospital, should I go and see her?"]
+    - [sit, "my friend is sick at home and I want to cheer him up, what can I do?"]
+  ar:
+    - [verse, "في آية عن زيارة المريض؟"]
+    - [hadith, "في حديث عن عيادة المريض؟"]
+    - [say, "شو يقول الإسلام عن زيارة واحد تعبان؟"]
+    - [sit, "جدتي في المستشفى، أروح أزورها؟"]
+    - [sit, "صاحبي مريض بالبيت وأبي أفرحه، شو أسوي؟"]
+
+spreading-salam:
+  en:
+    - [verse, "is there a verse about greeting people?"]
+    - [hadith, "is there a hadith about saying salam?"]
+    - [say, "what does Islam say about saying assalamu alaykum?"]
+    - [sit, "I am shy and I do not say hello to people, is that bad?"]
+    - [sit, "a boy said salam to me and I did not answer, is that wrong?"]
+  ar:
+    - [verse, "في آية عن السلام والتحية؟"]
+    - [hadith, "في حديث عن إفشاء السلام؟"]
+    - [say, "شو يقول الإسلام عن قول السلام عليكم؟"]
+    - [sit, "أنا خجول وما أسلم على الناس، هذا سيء؟"]
+    - [sit, "ولد سلم علي وما رديت عليه، هذا غلط؟"]
+
+table-manners:
+  en:
+    - [verse, "is there a verse about eating?"]
+    - [hadith, "is there a hadith about how to eat?"]
+    - [say, "what does Islam say about manners when we eat?"]
+    - [sit, "I started eating before everyone and I forgot bismillah, is that bad?"]
+    - [sit, "my little brother eats with his left hand, what does Islam say?"]
+  ar:
+    - [verse, "في آية عن الأكل؟"]
+    - [hadith, "في حديث عن آداب الأكل؟"]
+    - [say, "شو يقول الإسلام عن الأدب وقت الأكل؟"]
+    - [sit, "بدأت آكل قبل الكل ونسيت أقول بسم الله، هذا غلط؟"]
+    - [sit, "أخوي الصغير ياكل بإيده الشمال، شو يقول الإسلام؟"]
+
+helping-others:
+  en:
+    - [verse, "is there a verse about helping people?"]
+    - [hadith, "is there a hadith about helping others?"]
+    - [say, "what does Islam say about being helpful?"]
+    - [sit, "I helped my mom carry the shopping bags today, did I get a reward?"]
+    - [sit, "a girl in my class dropped her books and I helped her, is that something Allah likes?"]
+  ar:
+    - [verse, "في آية عن مساعدة الناس؟"]
+    - [hadith, "في حديث عن مساعدة الآخرين؟"]
+    - [say, "شو يقول الإسلام عن إني أكون مساعد للناس؟"]
+    - [sit, "ساعدت ماما تشيل أغراض السوق اليوم، لي أجر؟"]
+    - [sit, "بنت بصفي طاحت كتبها وساعدتها، ربنا يحب هذا؟"]
+
+avoiding-backbiting:
+  en:
+    - [verse, "is there a verse about gossip?"]
+    - [hadith, "is there a hadith about backbiting?"]
+    - [say, "what does Islam say about talking about people behind their back?"]
+    - [sit, "I told my friends something bad about a girl when she was not there, is that gheebah?"]
+    - [sit, "kids in my class laugh about another kid when he leaves, should I join them?"]
+  ar:
+    - [verse, "في آية عن الغيبة؟"]
+    - [hadith, "في حديث عن النميمة؟"]
+    - [say, "شو يقول الإسلام عن الحكي عن الناس من ورا ظهرهم؟"]
+    - [sit, "حكيت لصاحباتي شي سيء عن بنت وهي مو موجودة، هذي غيبة؟"]
+    - [sit, "الأولاد بصفي يضحكون على ولد بعد ما يمشي، أنضم لهم؟"]
+
+courage:
+  en:
+    - [verse, "is there a verse about being brave?"]
+    - [hadith, "is there a hadith about courage?"]
+    - [say, "what does Islam say about being strong and not afraid?"]
+    - [sit, "I am scared of the dark, is that bad for a Muslim?"]
+    - [sit, "a kid is bullying my friend and I am afraid to stop him, what should I do?"]
+  ar:
+    - [verse, "في آية عن الشجاعة؟"]
+    - [hadith, "في حديث عن القوة؟"]
+    - [say, "شو يقول الإسلام عن إني أكون قوي وما أخاف؟"]
+    - [sit, "أخاف من الظلام، هذا سيء للمسلم؟"]
+    - [sit, "ولد يتنمر على صاحبي وأنا أخاف أوقفه، شو أسوي؟"]
+
+not-wasting:
+  en:
+    - [verse, "is there a verse about wasting things?"]
+    - [hadith, "is there a hadith about wasting water?"]
+    - [say, "what does Islam say about throwing away food?"]
+    - [sit, "I left half my food on the plate and threw it away, is that bad?"]
+    - [sit, "I left the tap running while brushing my teeth, is that a sin?"]
+  ar:
+    - [verse, "في آية عن الإسراف؟"]
+    - [hadith, "في حديث عن تبذير الماي؟"]
+    - [say, "شو يقول الإسلام عن رمي الأكل؟"]
+    - [sit, "خليت نص أكلي بالصحن ورميته، هذا غلط؟"]
+    - [sit, "خليت الحنفية مفتوحة وأنا أنظف أسناني، هذا ذنب؟"]
+
+family-ties:
+  en:
+    - [verse, "is there a verse about relatives?"]
+    - [hadith, "is there a hadith about keeping family ties?"]
+    - [say, "what does Islam say about visiting my aunts and uncles?"]
+    - [sit, "I do not want to go to my cousins' house, is that bad?"]
+    - [sit, "my uncle and my dad are not talking to each other, what does Islam say?"]
+  ar:
+    - [verse, "في آية عن الأقارب؟"]
+    - [hadith, "في حديث عن صلة الرحم؟"]
+    - [say, "شو يقول الإسلام عن زيارة عماتي وخوالي؟"]
+    - [sit, "ما أبي أروح بيت أولاد عمي، هذا سيء؟"]
+    - [sit, "عمي وبابا ما يحكون مع بعض، شو يقول الإسلام؟"]
+
+love-of-the-prophet:
+  en:
+    - [verse, "is there a verse about loving the Prophet?"]
+    - [hadith, "is there a hadith about how much the Prophet loves us?"]
+    - [say, "what does Islam say about sending salawat on the Prophet?"]
+    - [sit, "how can I show that I love the Prophet ﷺ?"]
+    - [sit, "I want to be more like Prophet Muhammad, what should I do?"]
+  ar:
+    - [verse, "في آية عن حب النبي؟"]
+    - [hadith, "في حديث عن محبة النبي؟"]
+    - [say, "شو يقول الإسلام عن الصلاة على النبي؟"]
+    - [sit, "كيف أبين إني أحب النبي ﷺ؟"]
+    - [sit, "أبي أصير مثل النبي محمد، شو أسوي؟"]
+
+sincerity:
+  en:
+    - [verse, "is there a verse about doing things only for Allah?"]
+    - [hadith, "is there a hadith about intentions?"]
+    - [say, "what does Islam say about sincerity?"]
+    - [sit, "I gave charity so people would see me, is that bad?"]
+    - [sit, "I only pray when my parents are watching, is that okay?"]
+  ar:
+    - [verse, "في آية عن الإخلاص لله؟"]
+    - [hadith, "في حديث عن النية؟"]
+    - [say, "شو يقول الإسلام عن الإخلاص؟"]
+    - [sit, "تصدقت عشان الناس يشوفوني، هذا غلط؟"]
+    - [sit, "أصلي بس إذا أهلي يشوفوني، هذا عادي؟"]
+
+contentment:
+  en:
+    - [verse, "is there a verse about being happy with what you have?"]
+    - [hadith, "is there a hadith about contentment?"]
+    - [say, "what does Islam say about wanting more and more things?"]
+    - [sit, "all my friends have a new phone and I want one too, what should I do?"]
+    - [sit, "I am never happy with my toys, I always want something new, is that bad?"]
+  ar:
+    - [verse, "في آية عن القناعة؟"]
+    - [hadith, "في حديث عن الرضا بالقليل؟"]
+    - [say, "شو يقول الإسلام عن إني أبي أشياء أكثر وأكثر؟"]
+    - [sit, "كل أصحابي عندهم جوال جديد وأنا أبي واحد، شو أسوي؟"]
+    - [sit, "ما أرضى بألعابي أبدا، دايما أبي شي جديد، هذا سيء؟"]

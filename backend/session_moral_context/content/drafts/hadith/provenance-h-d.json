@@ -1,0 +1,302 @@
+{
+  "hadith:Sahih Muslim:102": {
+    "dorar_file": "h-mnIM7GSX.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "3df3bbe0fe8e39ca6617ac23117347153fbba14f11f7f6133e7ee02ecddbccd1",
+    "dorar_source_url": "https://dorar.net/h/mnIM7GSX"
+  },
+  "hadith:Sahih Muslim:1631": {
+    "dorar_file": "h-j8bVoD7A.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "244dadc941cd554a0b626096610b5b01505c7325b0830fb353a23a8688167a36",
+    "dorar_source_url": "https://dorar.net/h/j8bVoD7A"
+  },
+  "hadith:Sahih Muslim:1827": {
+    "dorar_file": "h-uAnC2Wo9.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "bb55e82380ef02b8bce93a654edb5a72bf73b8748c4c713031c213a89c09930b",
+    "dorar_source_url": "https://dorar.net/h/uAnC2Wo9"
+  },
+  "hadith:Sahih Muslim:1956": {
+    "dorar_file": "h-AsyXNDQH.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "9b8c0dfe9e6b3cd5cd0677c974cef0af783da1f27abf05e6d5926ff2d47fd9c4",
+    "dorar_source_url": "https://dorar.net/h/AsyXNDQH"
+  },
+  "hadith:Sahih Muslim:1958": {
+    "dorar_file": "h-YOxNxl0L.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "fd1975fdb231c319ee7587a99da2e2f0897fa97da73e7049347b5342428a8235",
+    "dorar_source_url": "https://dorar.net/h/YOxNxl0L"
+  },
+  "hadith:Sahih Muslim:223": {
+    "dorar_file": "h-TvSSnRwa.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "ea54baa56f1cfe3cd7d6f09219dcceaec354a3a64db81316132658fc3a2be585",
+    "dorar_source_url": "https://dorar.net/h/TvSSnRwa"
+  },
+  "hadith:Sahih Muslim:2317": {
+    "dorar_file": "h-A4Xe6w8B.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "2a9abecdb50eb9239975dc38ed31d389b6ab2f8ff3723d551a8a6f6b255ea946",
+    "dorar_source_url": "https://dorar.net/h/A4Xe6w8B"
+  },
+  "hadith:Sahih Muslim:2319": {
+    "dorar_file": "h-thHIyA8S.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "b22faf56b47466468b58ed63336cac1d8b771ddd112da64f038f5886d9c2b34b",
+    "dorar_source_url": "https://dorar.net/h/thHIyA8S"
+  },
+  "hadith:Sahih Muslim:233": {
+    "dorar_file": "h-LsHTdt24.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "20a5451245c4fcc0fe2d8ae634d5ca1d8760434459db65ef9d16e2eab6227e54",
+    "dorar_source_url": "https://dorar.net/h/LsHTdt24"
+  },
+  "hadith:Sahih Muslim:2551": {
+    "dorar_file": "h-bK5vX0fu.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "d3702b98ab43954850facf2f43cf5c16e6f896a26f787eaaac5a1ee4e2251f23",
+    "dorar_source_url": "https://dorar.net/h/bK5vX0fu"
+  },
+  "hadith:Sahih Muslim:2553": {
+    "dorar_file": "h-bq8mtkbl.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "9cb2e7ac0796692d0ae183aadbbea77afce735f96fb59c6e6a290176747b8f67",
+    "dorar_source_url": "https://dorar.net/h/bq8mtkbl"
+  },
+  "hadith:Sahih Muslim:2586": {
+    "dorar_file": "h-uji2RLBR.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "4267faf55ced202a42e2a51dfd79bfd3eea4caa03be65b99fe1eb9be9faf34c4",
+    "dorar_source_url": "https://dorar.net/h/uji2RLBR"
+  },
+  "hadith:Sahih Muslim:2588": {
+    "dorar_file": "h-5ny4Eh57.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "08d16544caf1ec518b819fd659e6d523a6b348281527de0cd9de34990d33d6cf",
+    "dorar_source_url": "https://dorar.net/h/5ny4Eh57"
+  },
+  "hadith:Sahih Muslim:2625": {
+    "dorar_file": "h-G0t9hpEt.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "e1ff1432725f0b70f7b1ed243bd01a5071b60b8e3d224b917ab1ef8ed1a4cda5",
+    "dorar_source_url": "https://dorar.net/h/G0t9hpEt"
+  },
+  "hadith:Sahih Muslim:2626": {
+    "dorar_file": "h-J6s2MSMp.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "879052b3035473cc1291533018118929e106f6fad75dc745e432c665de827142",
+    "dorar_source_url": "https://dorar.net/h/J6s2MSMp"
+  },
+  "hadith:Sahih Muslim:2703": {
+    "dorar_file": "h-tSYxEddJ.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "3235e29f390799bc7e571aba7f93dc679314e5c437c53595ee5da742b4893566",
+    "dorar_source_url": "https://dorar.net/h/tSYxEddJ"
+  },
+  "hadith:Sahih Muslim:2734": {
+    "dorar_file": "h-oOabSoIV.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "d273b39a8abfe2eb8862abd92b582202d63e60a47164cda6a5ee0f59713b8c38",
+    "dorar_source_url": "https://dorar.net/h/oOabSoIV"
+  },
+  "hadith:Sahih Muslim:2759": {
+    "dorar_file": "h-wMnHnCDm.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "6861df2ed813ea502368c2a929aa96243054048163b82b3e1bcf6fcec2fdb2ff",
+    "dorar_source_url": "https://dorar.net/h/wMnHnCDm"
+  },
+  "hadith:Sahih Muslim:2963": {
+    "dorar_file": "h-h30CzibE.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "5a7f55382a8ead8a91d700f3f178c39dd60eafa38dad3a972d205f8c1490cf04",
+    "dorar_source_url": "https://dorar.net/h/h30CzibE"
+  },
+  "hadith:Sahih Muslim:2999": {
+    "dorar_file": "h-NNRH8eQT.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "0b1d0d2698a70e24ebd97bf59a5ae555f8d55b18c733210d96cc307c1846ad37",
+    "dorar_source_url": "https://dorar.net/h/NNRH8eQT"
+  },
+  "hadith:Sahih Muslim:91": {
+    "dorar_file": "h-AT9RQqKI.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "90c209522f61ca6ab172e1ab934cc68e0e7a8b989cff85e2c244ae3f1c60f2e7",
+    "dorar_source_url": "https://dorar.net/h/AT9RQqKI"
+  },
+  "hadith:Sahih al-Bukhari:1438": {
+    "dorar_file": "h-0hJBFzKa.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "0da2ea298b1872ec2029037e27c967bae2b05f876eb1c20105f05e9d79e0ef9c",
+    "dorar_source_url": "https://dorar.net/h/0hJBFzKa"
+  },
+  "hadith:Sahih al-Bukhari:1442": {
+    "dorar_file": "h-JEeFXYSO.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "f02e96e490a1e171136858e543006eeffd07c33c2baeb2e533f6830ea2217999",
+    "dorar_source_url": "https://dorar.net/h/JEeFXYSO"
+  },
+  "hadith:Sahih al-Bukhari:2078": {
+    "dorar_file": "h-VIBpFCEP.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "eabefc429d2c7cd878f0d324651e9b0b02da4ec2cd59e2489eddd052ffd3540c",
+    "dorar_source_url": "https://dorar.net/h/VIBpFCEP"
+  },
+  "hadith:Sahih al-Bukhari:24": {
+    "dorar_file": "h-9TKrxdvC.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "cc7aac568332cd88c5e853c534fa832c44a2a04e458a49e7fb9c8eade3b90fae",
+    "dorar_source_url": "https://dorar.net/h/9TKrxdvC"
+  },
+  "hadith:Sahih al-Bukhari:2444": {
+    "dorar_file": "h-eFUZdEAq.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "50bd6f00c83648aaa8dbc06910badb7b77d354ab15d7ca504d0eb23e1c0acb2e",
+    "dorar_source_url": "https://dorar.net/h/eFUZdEAq"
+  },
+  "hadith:Sahih al-Bukhari:245": {
+    "dorar_file": "h-7pUKaPVO.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "d05e3d8474d57f71e9ccb71ce961dc3b280bcdffafa400757376b8f96d2f34b0",
+    "dorar_source_url": "https://dorar.net/h/7pUKaPVO"
+  },
+  "hadith:Sahih al-Bukhari:2568": {
+    "dorar_file": "h-X2IMEeZk.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "0607b25ccd4346db9e5da9615e4b6f846332cb5af2eb0b4056d55ef867022c62",
+    "dorar_source_url": "https://dorar.net/h/X2IMEeZk"
+  },
+  "hadith:Sahih al-Bukhari:33": {
+    "dorar_file": "h-oKBHqVCn.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "130ab8bd80178a5736af56d03c1882c4a90416bb0d9711a5a9cc27aa2de5f81b",
+    "dorar_source_url": "https://dorar.net/h/oKBHqVCn"
+  },
+  "hadith:Sahih al-Bukhari:34": {
+    "dorar_file": "h-NgdFWh3P.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "61a556f3a0a16d350612c3979f8fb75eab07979935ddd09207cce5f3b9fb080b",
+    "dorar_source_url": "https://dorar.net/h/NgdFWh3P"
+  },
+  "hadith:Sahih al-Bukhari:3472": {
+    "dorar_file": "h-wq3kzaeQ.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "4892c977c794aef0f2aa152ce39a24a439d7270e78c08c1053dc85471d61bf03",
+    "dorar_source_url": "https://dorar.net/h/wq3kzaeQ"
+  },
+  "hadith:Sahih al-Bukhari:3559": {
+    "dorar_file": "h-ToIF2N8R.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "ff253feb522e7d6137877d45c230ade8bc0de8e78ad0cda52e33406b78f3cc14",
+    "dorar_source_url": "https://dorar.net/h/ToIF2N8R"
+  },
+  "hadith:Sahih al-Bukhari:481": {
+    "dorar_file": "h-GB3iI1RH.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "fbf7dd65a83e0c278baf31768463ee3bbaa10aa19935c65c1a77071c33b101c7",
+    "dorar_source_url": "https://dorar.net/h/GB3iI1RH"
+  },
+  "hadith:Sahih al-Bukhari:5027": {
+    "dorar_file": "h-ymYWjzdb.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "25dbfd0841f0740b29450d68c5eca9700785580a1667cafed49d495add88b170",
+    "dorar_source_url": "https://dorar.net/h/ymYWjzdb"
+  },
+  "hadith:Sahih al-Bukhari:528": {
+    "dorar_file": "h-NCSBYdvR.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "eeb7ea4810a6bbd3841e64b5f38497805f9876d9dbe7f1557aadaa5661c2fffd",
+    "dorar_source_url": "https://dorar.net/h/NCSBYdvR"
+  },
+  "hadith:Sahih al-Bukhari:5641": {
+    "dorar_file": "h-9WLN0py9.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "8b3c17512efbfbcff98e7d530352adf10190cff1a4e432e219d658f72bf17aaa",
+    "dorar_source_url": "https://dorar.net/h/9WLN0py9"
+  },
+  "hadith:Sahih al-Bukhari:5653": {
+    "dorar_file": "h-GQUvjJKf.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "14c2973da9d51a0ea4aa05948a119677142256de962f001a0b543af9a2f1e038",
+    "dorar_source_url": "https://dorar.net/h/GQUvjJKf"
+  },
+  "hadith:Sahih al-Bukhari:5664": {
+    "dorar_file": "h-jTFsxG7j.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "022bb08e7e3eb2d8e9ee74ebcbfd49da49695803da52efe5f38b96499bfb353c",
+    "dorar_source_url": "https://dorar.net/h/jTFsxG7j"
+  },
+  "hadith:Sahih al-Bukhari:574": {
+    "dorar_file": "h-iMRMNM3G.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "e0e4ec224c5cba7177059ce1279ce007238dc269f901e24fdc4aa721641c6af0",
+    "dorar_source_url": "https://dorar.net/h/iMRMNM3G"
+  },
+  "hadith:Sahih al-Bukhari:5971": {
+    "dorar_file": "h-EV8mxnMk.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "b19a4295864293566d80a0ea4b114c41274b41facd7f6f44f0cad628c4af2cc2",
+    "dorar_source_url": "https://dorar.net/h/EV8mxnMk"
+  },
+  "hadith:Sahih al-Bukhari:5997": {
+    "dorar_file": "h-bZm4TbgY.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "161fc0f88889f26befca3657c7aaa35cc564396df81290e80d5e9c7c36dd2fdb",
+    "dorar_source_url": "https://dorar.net/h/bZm4TbgY"
+  },
+  "hadith:Sahih al-Bukhari:6": {
+    "dorar_file": "h-PlvayWEi.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "2ddb854fc4c7ffb0c18e1c22b6c3e4d735edc8a3d74bf897b537c42a4cf26798",
+    "dorar_source_url": "https://dorar.net/h/PlvayWEi"
+  },
+  "hadith:Sahih al-Bukhari:6009": {
+    "dorar_file": "h-aXFm3htt.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "6aa1c48e709636d302d054b27ee96077aac54d8f484f717054df503a2261aa27",
+    "dorar_source_url": "https://dorar.net/h/aXFm3htt"
+  },
+  "hadith:Sahih al-Bukhari:6014": {
+    "dorar_file": "h-QgsAIngd.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "5650fd55336e0fb600dabf5aeed0ceb54f0380c826479e71d4744586e2ff64c5",
+    "dorar_source_url": "https://dorar.net/h/QgsAIngd"
+  },
+  "hadith:Sahih al-Bukhari:6018": {
+    "dorar_file": "h-HXe5YKJL.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "b4c1e238b89e45c67d0ec601b23e9d91cfe81ee2843e9d815e00dc2c768e3663",
+    "dorar_source_url": "https://dorar.net/h/HXe5YKJL"
+  },
+  "hadith:Sahih al-Bukhari:6094": {
+    "dorar_file": "h-aOxeIC09.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "05c0eb348a896a0d2332ef6ca440dadac499b8dc9430faa2d8a2ceab59aecc4f",
+    "dorar_source_url": "https://dorar.net/h/aOxeIC09"
+  },
+  "hadith:Sahih al-Bukhari:6117": {
+    "dorar_file": "h-zULWpkPt.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "dee1915900ba117a25d9207646cc14ed06cdc3f2af0b2fa9cd7f8f888f0654aa",
+    "dorar_source_url": "https://dorar.net/h/zULWpkPt"
+  },
+  "hadith:Sahih al-Bukhari:71": {
+    "dorar_file": "h-dmrsq583.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "7dec2363497950269ff898b15692f86567d40402e10bdc7fc09f9d6afe538a46",
+    "dorar_source_url": "https://dorar.net/h/dmrsq583"
+  },
+  "hadith:Sahih al-Bukhari:887": {
+    "dorar_file": "h-Kl7q5SLn.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "c5b349793b93c84b16b09168a642e1308c7e3d7fa634450f4eccaf42c00a907b",
+    "dorar_source_url": "https://dorar.net/h/Kl7q5SLn"
+  },
+  "hadith:Sahih al-Bukhari:9": {
+    "dorar_file": "h-Ki7jDJqM.txt",
+    "dorar_retrieved": "2026-10-05",
+    "dorar_sha256": "626e689d7df75c15e7c30e1d615a9bbe879892b2d68f5553b9438b7da5fa146b",
+    "dorar_source_url": "https://dorar.net/h/Ki7jDJqM"
+  }
+}

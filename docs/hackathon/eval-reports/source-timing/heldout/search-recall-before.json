@@ -1,0 +1,3493 @@
+{
+ "meta": {
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "date": "2026-10-06 11:44 UTC",
+  "values": 38,
+  "commit": "c466f5de"
+ },
+ "summary": {
+  "cases": 76,
+  "a": {
+   "n": 76,
+   "not_found": 0.4605,
+   "no_primary": 0.4605,
+   "right_value": 0.4079,
+   "by_lang": {
+    "en": {
+     "n": 38,
+     "not_found": 0.3684,
+     "no_primary": 0.3684,
+     "right_value": 0.4474
+    },
+    "ar": {
+     "n": 38,
+     "not_found": 0.5526,
+     "no_primary": 0.5526,
+     "right_value": 0.3684
+    }
+   },
+   "by_shape": {
+    "verse": {
+     "n": 9,
+     "not_found": 0.3333,
+     "no_primary": 0.3333,
+     "right_value": 0.6667
+    },
+    "hadith": {
+     "n": 14,
+     "not_found": 0.8571,
+     "no_primary": 0.8571,
+     "right_value": 0.1429
+    },
+    "say": {
+     "n": 14,
+     "not_found": 0.3571,
+     "no_primary": 0.3571,
+     "right_value": 0.6429
+    },
+    "sit": {
+     "n": 39,
+     "not_found": 0.3846,
+     "no_primary": 0.3846,
+     "right_value": 0.359
+    }
+   },
+   "miss_classes": {
+    "no_keyword": 38,
+    "topic_filter": 7
+   },
+   "per_value": {
+    "prayer": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "honesty": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "trustworthiness": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "honouring-parents": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "mercy": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "patience": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "gratitude": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "cooperation": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "kindness-to-animals": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "cleanliness": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "modesty": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "good-character": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "good-neighbour": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "seeking-knowledge": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "humility": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "justice": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "keeping-promises": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "generosity": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "forgiveness": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "kind-words": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "charity": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "respecting-elders": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "caring-for-orphans": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "brotherhood": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "controlling-anger": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "remembering-allah": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "trust-in-allah": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "visiting-the-sick": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "spreading-salam": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "table-manners": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "helping-others": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "avoiding-backbiting": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "courage": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "not-wasting": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "family-ties": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "love-of-the-prophet": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "sincerity": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "contentment": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    }
+   }
+  },
+  "b": {
+   "n": 76,
+   "not_found": 0.1711,
+   "no_primary": 0.1711,
+   "right_value": 0.5263,
+   "by_lang": {
+    "en": {
+     "n": 38,
+     "not_found": 0.0789,
+     "no_primary": 0.0789,
+     "right_value": 0.5
+    },
+    "ar": {
+     "n": 38,
+     "not_found": 0.2632,
+     "no_primary": 0.2632,
+     "right_value": 0.5526
+    }
+   },
+   "by_shape": {
+    "verse": {
+     "n": 9,
+     "not_found": 0.1111,
+     "no_primary": 0.1111,
+     "right_value": 0.7778
+    },
+    "hadith": {
+     "n": 14,
+     "not_found": 0.1429,
+     "no_primary": 0.1429,
+     "right_value": 0.7143
+    },
+    "say": {
+     "n": 14,
+     "not_found": 0.3571,
+     "no_primary": 0.3571,
+     "right_value": 0.4286
+    },
+    "sit": {
+     "n": 39,
+     "not_found": 0.1282,
+     "no_primary": 0.1282,
+     "right_value": 0.4359
+    }
+   },
+   "miss_classes": {
+    "topic_filter": 12,
+    "other_value": 8,
+    "value_name_unmatched": 11,
+    "ranked_out": 5
+   },
+   "per_value": {
+    "prayer": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "honesty": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "trustworthiness": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "honouring-parents": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "mercy": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "patience": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "gratitude": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "cooperation": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "kindness-to-animals": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "cleanliness": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "modesty": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "good-character": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "good-neighbour": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "seeking-knowledge": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "humility": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "justice": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "keeping-promises": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "generosity": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "forgiveness": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.0
+    },
+    "kind-words": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "charity": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "respecting-elders": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "caring-for-orphans": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "brotherhood": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "controlling-anger": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "remembering-allah": {
+     "n": 2,
+     "not_found": 1.0,
+     "no_primary": 1.0,
+     "right_value": 0.0
+    },
+    "trust-in-allah": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "visiting-the-sick": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.0
+    },
+    "spreading-salam": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "table-manners": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "helping-others": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 1.0
+    },
+    "avoiding-backbiting": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "courage": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "not-wasting": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.5
+    },
+    "family-ties": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "love-of-the-prophet": {
+     "n": 2,
+     "not_found": 0.5,
+     "no_primary": 0.5,
+     "right_value": 0.0
+    },
+    "sincerity": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    },
+    "contentment": {
+     "n": 2,
+     "not_found": 0.0,
+     "no_primary": 0.0,
+     "right_value": 0.5
+    }
+   }
+  }
+ },
+ "top_misses": [
+  {
+   "value": "avoiding-backbiting",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الحكي عن الناس؟",
+   "args": {
+    "question": "في حديث عن الحكي عن الناس؟",
+    "topic": "hadith",
+    "values": [
+     "اللسان",
+     "الغيبة"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "cleanliness",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الطهارة؟",
+   "args": {
+    "question": "في حديث عن الطهارة؟",
+    "topic": "hadith",
+    "values": [
+     "الطهارة"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "generosity",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my cousin never lets anyone play with his new toys, is that okay?",
+   "args": {
+    "question": "my cousin never lets anyone play with his new toys, is that okay?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "sharing"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "gratitude",
+   "lang": "en",
+   "shape": "say",
+   "text": "why do we say alhamdulillah after eating?",
+   "args": {
+    "question": "why do we say alhamdulillah after eating?",
+    "topic": "word_meaning",
+    "values": [
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "love-of-the-prophet",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أحب النبي كثير، كيف أتعلم عن حياته؟",
+   "args": {
+    "question": "أحب النبي كثير، كيف أتعلم عن حياته؟",
+    "topic": "prophets_story",
+    "values": [
+     "محبة النبي",
+     "التعلم"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "modesty",
+   "lang": "ar",
+   "shape": "say",
+   "text": "ليش لازم نلبس ملابس محتشمة؟",
+   "args": {
+    "question": "ليش لازم نلبس ملابس محتشمة؟",
+    "topic": "word_meaning",
+    "values": [
+     "حياء",
+     "احترام"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "not-wasting",
+   "lang": "ar",
+   "shape": "say",
+   "text": "هل ينفع أسيب الماي مفتوح وأنا أتوضأ؟",
+   "args": {
+    "question": "هل ينفع أسيب الماي مفتوح وأنا أتوضأ؟",
+    "topic": "worship",
+    "values": [
+     "الأمانة",
+     "الاعتدال"
+    ],
+    "guard": "REFER"
+   },
+   "returned": 0,
+   "class": "other_value"
+  },
+  {
+   "value": "remembering-allah",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أبي أحفظ أذكار الصباح، من وين أبدأ؟",
+   "args": {
+    "question": "أبي أحفظ أذكار الصباح، من وين أبدأ؟",
+    "topic": "worship",
+    "values": [
+     "التعلم",
+     "المداومة"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "remembering-allah",
+   "lang": "en",
+   "shape": "say",
+   "text": "what are some things I can say to remember Allah during the day?",
+   "args": {
+    "question": "what are some things I can say to remember Allah during the day?",
+    "topic": "word_meaning",
+    "values": [
+     "remembrance",
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "respecting-elders",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "قمت لجدتي من مكاني في المجلس، هذا حلو؟",
+   "args": {
+    "question": "قمت لجدتي من مكاني في المجلس، هذا حلو؟",
+    "topic": "values",
+    "values": [
+     "respect",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "seeking-knowledge",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أبي أصير دكتور، الإسلام يشجع على التعلم؟",
+   "args": {
+    "question": "أبي أصير دكتور، الإسلام يشجع على التعلم؟",
+    "topic": "values",
+    "values": [
+     "التعلم",
+     "الطموح"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "spreading-salam",
+   "lang": "ar",
+   "shape": "say",
+   "text": "ليش نقول السلام عليكم لما ندخل البيت؟",
+   "args": {
+    "question": "ليش نقول السلام عليكم لما ندخل البيت؟",
+    "topic": "word_meaning",
+    "values": [
+     "kindness",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "topic_filter"
+  },
+  {
+   "value": "trust-in-allah",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن الاعتماد على ربنا؟",
+   "args": {
+    "question": "في آية عن الاعتماد على ربنا؟",
+    "topic": "quran",
+    "values": [
+     "التوكل"
+    ],
+    "guard": "none"
+   },
+   "returned": 0,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "avoiding-backbiting",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my classmates were speaking badly about our teacher when she was out of the room, what should I do?",
+   "args": {
+    "question": "my classmates were speaking badly about our teacher when she was out of the room, what should I do?",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "other_value"
+  },
+  {
+   "value": "brotherhood",
+   "lang": "en",
+   "shape": "sit",
+   "text": "a boy from another school is being left out and I think we should include him, what does Islam say?",
+   "args": {
+    "question": "a boy from another school is being left out and I think we should include him, what does Islam say?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "inclusion"
+    ],
+    "guard": "none"
+   },
+   "returned": 2,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "caring-for-orphans",
+   "lang": "en",
+   "shape": "verse",
+   "text": "is there a verse about looking after kids who lost their parents?",
+   "args": {
+    "question": "is there a verse about looking after kids who lost their parents?",
+    "topic": "quran",
+    "values": [
+     "kindness",
+     "mercy"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "other_value"
+  },
+  {
+   "value": "contentment",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my sister has a nicer room than me and I keep thinking about it, what can I do?",
+   "args": {
+    "question": "my sister has a nicer room than me and I keep thinking about it, what can I do?",
+    "topic": "values",
+    "values": [
+     "gratitude",
+     "contentment"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "ranked_out"
+  },
+  {
+   "value": "courage",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أخاف أقول رأيي قدام الكل بالصف، شو أسوي؟",
+   "args": {
+    "question": "أخاف أقول رأيي قدام الكل بالصف، شو أسوي؟",
+    "topic": "values",
+    "values": [
+     "bravery",
+     "patience"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "other_value"
+  },
+  {
+   "value": "family-ties",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I have not talked to my grandma's sister for months, should I call her?",
+   "args": {
+    "question": "Should I call my grandma's sister after months without talking?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "keeping ties"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "value_name_unmatched"
+  },
+  {
+   "value": "forgiveness",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أختي كسرت جوالي وتعتذر، لازم أرضى عنها؟",
+   "args": {
+    "question": "أختي كسرت جوالي وتعتذر، لازم أرضى عنها؟",
+    "topic": "values",
+    "values": [
+     "forgiveness",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "returned": 3,
+   "class": "ranked_out"
+  }
+ ],
+ "rows": [
+  {
+   "value": "prayer",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my dad wakes me up for fajr and I am so sleepy, do I really have to?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my dad wakes me up for fajr and I am so sleepy, do I really have to?",
+    "topic": "worship",
+    "values": [
+     "patience"
+    ],
+    "guard": "REFER"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     59,
+     41
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "prayer",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية تقول متى نصلي؟",
+   "topic": "quran",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في آية تقول متى نصلي؟",
+    "topic": "quran",
+    "values": [
+     "الصلاة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     195,
+     196,
+     197
+    ]
+   }
+  },
+  {
+   "value": "honesty",
+   "lang": "en",
+   "shape": "say",
+   "text": "is it ever okay to tell a small lie?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     170,
+     171,
+     114
+    ]
+   },
+   "args": {
+    "question": "is it ever okay to tell a small lie?",
+    "topic": "values",
+    "values": [
+     "honesty"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     170,
+     171,
+     114
+    ]
+   }
+  },
+  {
+   "value": "honesty",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "قلت لأمي إني خلصت واجبي وما خلصته، شو أسوي؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "قلت لأمي إني خلصت واجبي وما خلصته، شو أسوي؟",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "respect for parents"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     170,
+     171,
+     114
+    ]
+   }
+  },
+  {
+   "value": "trustworthiness",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my friend lent me his pen and I lost it, what should I do?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my friend lent me his pen and I lost it, what should I do?",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "trustworthiness",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن حفظ الأمانة؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن حفظ الأمانة؟",
+    "topic": "hadith",
+    "values": [
+     "الأمانة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     165,
+     125
+    ]
+   }
+  },
+  {
+   "value": "honouring-parents",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my mum is always telling me what to do and it makes me cross, is it bad to feel that?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my mum is always telling me what to do and it makes me cross, is it bad to feel that?",
+    "topic": "values",
+    "values": [
+     "patience",
+     "respect for parents"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     193,
+     194,
+     196
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "honouring-parents",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "رديت على أبوي بصوت عالي، هذا عقوق؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     172,
+     173,
+     174
+    ]
+   },
+   "args": {
+    "question": "رديت على أبوي بصوت عالي، هذا عقوق؟",
+    "topic": "values",
+    "values": [
+     "respect for parents",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     172,
+     173,
+     174
+    ]
+   }
+  },
+  {
+   "value": "mercy",
+   "lang": "en",
+   "shape": "verse",
+   "text": "is there a verse about Allah being merciful?",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     173,
+     186,
+     187
+    ]
+   },
+   "args": {
+    "question": "is there a verse about Allah being merciful?",
+    "topic": "quran",
+    "values": [
+     "mercy"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     173,
+     186,
+     187
+    ]
+   }
+  },
+  {
+   "value": "mercy",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "شفت ولد يضرب قطة وحسيت بالقهر، شو أسوي؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     182,
+     183,
+     128
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "شفت ولد يضرب قطة وحسيت بالقهر، شو أسوي؟",
+    "topic": "values",
+    "values": [
+     "رحمة",
+     "حماية الضعيف"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     182,
+     183,
+     128
+    ],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "patience",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I have been practicing the piano for ages and I still cannot play, should I quit?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I have been practicing the piano for ages and I still cannot play, should I quit?",
+    "topic": "values",
+    "values": [
+     "patience",
+     "perseverance"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     193,
+     194,
+     196
+    ]
+   }
+  },
+  {
+   "value": "patience",
+   "lang": "ar",
+   "shape": "say",
+   "text": "كيف أتحمل لما أبي شي وما أحصل عليه؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "كيف أتحمل لما أبي شي وما أحصل عليه؟",
+    "topic": "values",
+    "values": [
+     "الصبر",
+     "الرضا"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     193,
+     194,
+     196
+    ]
+   }
+  },
+  {
+   "value": "gratitude",
+   "lang": "en",
+   "shape": "say",
+   "text": "why do we say alhamdulillah after eating?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     71,
+     72,
+     73
+    ]
+   },
+   "args": {
+    "question": "why do we say alhamdulillah after eating?",
+    "topic": "word_meaning",
+    "values": [
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "gratitude",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "ما عجبني الأكل اليوم وقلت إنه سيء، هذا ما يصير؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "ما عجبني الأكل اليوم وقلت إنه سيء، هذا ما يصير؟",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     170,
+     171,
+     114
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "cooperation",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my group at school argues all the time and nothing gets done, what does Islam say?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     27,
+     28
+    ]
+   },
+   "args": {
+    "question": "my group at school argues all the time and nothing gets done, what does Islam say?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "patience"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     27,
+     28,
+     193
+    ]
+   }
+  },
+  {
+   "value": "cooperation",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن العمل الجماعي؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في حديث عن العمل الجماعي؟",
+    "topic": "hadith",
+    "values": [
+     "التعاون"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     94,
+     95
+    ]
+   }
+  },
+  {
+   "value": "kindness-to-animals",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I found a bird with a hurt wing in the garden, what should I do?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     182,
+     183,
+     128
+    ]
+   },
+   "args": {
+    "question": "I found a bird with a hurt wing in the garden, what should I do?",
+    "topic": "values",
+    "values": [
+     "mercy",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     182,
+     183,
+     186
+    ]
+   }
+  },
+  {
+   "value": "kindness-to-animals",
+   "lang": "ar",
+   "shape": "say",
+   "text": "شو يقول الإسلام عن الحيوانات الأليفة؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     182,
+     183
+    ]
+   },
+   "args": {
+    "question": "شو يقول الإسلام عن الحيوانات الأليفة؟",
+    "topic": "word_meaning",
+    "values": [
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     246
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "cleanliness",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I forgot to wash my hands before dinner, does Allah mind?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     23,
+     24,
+     85
+    ]
+   },
+   "args": {
+    "question": "I forgot to wash my hands before dinner, does Allah mind?",
+    "topic": "worship",
+    "values": [
+     "gratitude",
+     "cleanliness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     34,
+     57,
+     58
+    ]
+   }
+  },
+  {
+   "value": "cleanliness",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الطهارة؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن الطهارة؟",
+    "topic": "hadith",
+    "values": [
+     "الطهارة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "modesty",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I do not like it when people stare at me, is feeling shy a good thing?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     189,
+     190,
+     191
+    ]
+   },
+   "args": {
+    "question": "I do not like it when people stare at me, is feeling shy a good thing?",
+    "topic": "values",
+    "values": [
+     "modesty",
+     "patience"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     189,
+     190,
+     191
+    ]
+   }
+  },
+  {
+   "value": "modesty",
+   "lang": "ar",
+   "shape": "say",
+   "text": "ليش لازم نلبس ملابس محتشمة؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "ليش لازم نلبس ملابس محتشمة؟",
+    "topic": "word_meaning",
+    "values": [
+     "حياء",
+     "احترام"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "good-character",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my teacher said I have to behave better in class, how does Islam teach good behaviour?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     67,
+     68
+    ]
+   },
+   "args": {
+    "question": "my teacher said I have to behave better in class, how does Islam teach good behaviour?",
+    "topic": "values",
+    "values": [
+     "good manners",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     67,
+     68
+    ]
+   }
+  },
+  {
+   "value": "good-character",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الأخلاق؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن الأخلاق؟",
+    "topic": "hadith",
+    "values": [
+     "الأخلاق",
+     "الصدق"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     114,
+     115,
+     116
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "good-neighbour",
+   "lang": "en",
+   "shape": "sit",
+   "text": "the family next door just moved in, how can we welcome them?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     70,
+     106,
+     107
+    ]
+   },
+   "args": {
+    "question": "the family next door just moved in, how can we welcome them?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "neighborly manners"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     70,
+     106,
+     107
+    ]
+   }
+  },
+  {
+   "value": "good-neighbour",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن حق الجار؟",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     70
+    ]
+   },
+   "args": {
+    "question": "في آية عن حق الجار؟",
+    "topic": "quran",
+    "values": [
+     "kindness",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     70
+    ]
+   }
+  },
+  {
+   "value": "seeking-knowledge",
+   "lang": "en",
+   "shape": "verse",
+   "text": "is there a verse that tells us to read and learn?",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     200,
+     201,
+     202
+    ]
+   },
+   "args": {
+    "question": "is there a verse that tells us to read and learn?",
+    "topic": "quran",
+    "values": [
+     "knowledge",
+     "reading"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     200,
+     201,
+     202
+    ]
+   }
+  },
+  {
+   "value": "seeking-knowledge",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أبي أصير دكتور، الإسلام يشجع على التعلم؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "أبي أصير دكتور، الإسلام يشجع على التعلم؟",
+    "topic": "values",
+    "values": [
+     "التعلم",
+     "الطموح"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "humility",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I won the race and I feel like I am better than the others, is that wrong?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I won the race and I feel like I am better than the others, is that wrong?",
+    "topic": "values",
+    "values": [
+     "humility",
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     71,
+     72,
+     73
+    ],
+    "miss": "ranked_out"
+   }
+  },
+  {
+   "value": "humility",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الغرور؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن الغرور؟",
+    "topic": "hadith",
+    "values": [
+     "التواضع",
+     "الغرور"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     119,
+     120,
+     121
+    ]
+   }
+  },
+  {
+   "value": "justice",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my brother always gets blamed even when it is not his fault, what does Islam say?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my brother always gets blamed even when it is not his fault, what does Islam say?",
+    "topic": "values",
+    "values": [
+     "justice",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     17,
+     18,
+     178
+    ]
+   }
+  },
+  {
+   "value": "justice",
+   "lang": "ar",
+   "shape": "say",
+   "text": "كيف أكون عادل مع كل أصحابي؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     178,
+     179,
+     271
+    ]
+   },
+   "args": {
+    "question": "كيف أكون عادل مع كل أصحابي؟",
+    "topic": "values",
+    "values": [
+     "العدل",
+     "الإنصاف"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     178,
+     179,
+     271
+    ]
+   }
+  },
+  {
+   "value": "keeping-promises",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I said I would help my friend move his things and then I did not show up, was that wrong?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I said I would help my friend move his things and then I did not show up, was that wrong?",
+    "topic": "values",
+    "values": [
+     "keeping promises",
+     "honesty"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "ranked_out"
+   }
+  },
+  {
+   "value": "keeping-promises",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن الوعد؟",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     180,
+     272
+    ]
+   },
+   "args": {
+    "question": "في آية عن الوعد؟",
+    "topic": "quran",
+    "values": [
+     "الوفاء بالوعد"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     180,
+     272
+    ]
+   }
+  },
+  {
+   "value": "generosity",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my cousin never lets anyone play with his new toys, is that okay?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my cousin never lets anyone play with his new toys, is that okay?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "sharing"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "generosity",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الكريم؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن الكريم؟",
+    "topic": "hadith",
+    "values": [
+     "الكرم"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     103,
+     82,
+     83
+    ]
+   }
+  },
+  {
+   "value": "forgiveness",
+   "lang": "en",
+   "shape": "say",
+   "text": "what does Islam say about pardoning someone who hurt you?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "what does Islam say about pardoning someone who hurt you?",
+    "topic": "values",
+    "values": [
+     "forgiveness",
+     "mercy"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     186,
+     187,
+     188
+    ],
+    "miss": "ranked_out"
+   }
+  },
+  {
+   "value": "forgiveness",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أختي كسرت جوالي وتعتذر، لازم أرضى عنها؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "أختي كسرت جوالي وتعتذر، لازم أرضى عنها؟",
+    "topic": "values",
+    "values": [
+     "forgiveness",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "ranked_out"
+   }
+  },
+  {
+   "value": "kind-words",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I said something mean to my friend and now she is crying, what should I do?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     67,
+     68,
+     69
+    ]
+   },
+   "args": {
+    "question": "I said something mean to my friend and now she is crying, what should I do?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "apology"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     67,
+     68,
+     69
+    ]
+   }
+  },
+  {
+   "value": "kind-words",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الكلام الحلو؟",
+   "topic": "hadith",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     107
+    ]
+   },
+   "args": {
+    "question": "في حديث عن الكلام الحلو؟",
+    "topic": "hadith",
+    "values": [
+     "الطيبة",
+     "القول الحسن"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     107
+    ]
+   }
+  },
+  {
+   "value": "charity",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I want to give some of my savings to people who need it, is that good?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I want to give some of my savings to people who need it, is that good?",
+    "topic": "values",
+    "values": [
+     "charity",
+     "generosity"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     65,
+     66,
+     204
+    ]
+   }
+  },
+  {
+   "value": "charity",
+   "lang": "ar",
+   "shape": "say",
+   "text": "ليش نطلع زكاة من فلوسنا؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     22,
+     65
+    ]
+   },
+   "args": {
+    "question": "ليش نطلع زكاة من فلوسنا؟",
+    "topic": "word_meaning",
+    "values": [
+     "gratitude",
+     "charity"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     268,
+     238
+    ]
+   }
+  },
+  {
+   "value": "respecting-elders",
+   "lang": "en",
+   "shape": "hadith",
+   "text": "is there a hadith about being polite to old people?",
+   "topic": "hadith",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     118
+    ]
+   },
+   "args": {
+    "question": "is there a hadith about being polite to old people?",
+    "topic": "hadith",
+    "values": [
+     "respect",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     118
+    ]
+   }
+  },
+  {
+   "value": "respecting-elders",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "قمت لجدتي من مكاني في المجلس، هذا حلو؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "قمت لجدتي من مكاني في المجلس، هذا حلو؟",
+    "topic": "values",
+    "values": [
+     "respect",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "caring-for-orphans",
+   "lang": "en",
+   "shape": "verse",
+   "text": "is there a verse about looking after kids who lost their parents?",
+   "topic": "quran",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "is there a verse about looking after kids who lost their parents?",
+    "topic": "quran",
+    "values": [
+     "kindness",
+     "mercy"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     186,
+     187,
+     188
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "caring-for-orphans",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أبي أتبرع لدار أيتام، شو أسوي؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     20,
+     21,
+     180
+    ]
+   },
+   "args": {
+    "question": "أبي أتبرع لدار أيتام، شو أسوي؟",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "helping"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     20,
+     21,
+     180
+    ]
+   }
+  },
+  {
+   "value": "brotherhood",
+   "lang": "en",
+   "shape": "sit",
+   "text": "a boy from another school is being left out and I think we should include him, what does Islam say?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     200,
+     201
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "a boy from another school is being left out and I think we should include him, what does Islam say?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "inclusion"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     200,
+     201
+    ],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "brotherhood",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن إننا إخوان؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في حديث عن إننا إخوان؟",
+    "topic": "hadith",
+    "values": [
+     "الأخوة",
+     "المحبة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     77,
+     78,
+     79
+    ]
+   }
+  },
+  {
+   "value": "controlling-anger",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I lose my temper when I lose at games, how can I stop?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     63,
+     68,
+     91
+    ]
+   },
+   "args": {
+    "question": "I lose my temper when I lose at games, how can I stop?",
+    "topic": "values",
+    "values": [
+     "patience",
+     "self-control"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     63,
+     68,
+     193
+    ]
+   }
+  },
+  {
+   "value": "controlling-anger",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الغضب؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن الغضب؟",
+    "topic": "hadith",
+    "values": [
+     "الحلم",
+     "كظم الغيظ"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     91,
+     92,
+     93
+    ]
+   }
+  },
+  {
+   "value": "remembering-allah",
+   "lang": "en",
+   "shape": "say",
+   "text": "what are some things I can say to remember Allah during the day?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     198,
+     199,
+     148
+    ]
+   },
+   "args": {
+    "question": "what are some things I can say to remember Allah during the day?",
+    "topic": "word_meaning",
+    "values": [
+     "remembrance",
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "remembering-allah",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أبي أحفظ أذكار الصباح، من وين أبدأ؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     198,
+     199
+    ]
+   },
+   "args": {
+    "question": "أبي أحفظ أذكار الصباح، من وين أبدأ؟",
+    "topic": "worship",
+    "values": [
+     "التعلم",
+     "المداومة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "trust-in-allah",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I did everything I could for my test, now what do I do about the result?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I did everything I could for my test, now what do I do about the result?",
+    "topic": "values",
+    "values": [
+     "patience",
+     "trust"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     193,
+     194,
+     196
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "trust-in-allah",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن الاعتماد على ربنا؟",
+   "topic": "quran",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في آية عن الاعتماد على ربنا؟",
+    "topic": "quran",
+    "values": [
+     "التوكل"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "visiting-the-sick",
+   "lang": "en",
+   "shape": "hadith",
+   "text": "is there a hadith about going to see a person who is not well?",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "is there a hadith about going to see a person who is not well?",
+    "topic": "hadith",
+    "values": [
+     "mercy",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     134,
+     135,
+     136
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "visiting-the-sick",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "جاري عنده حمى، أروح أسلم عليه؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     70,
+     106,
+     107
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "جاري عنده حمى، أروح أسلم عليه؟",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     70,
+     106,
+     107
+    ],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "spreading-salam",
+   "lang": "en",
+   "shape": "sit",
+   "text": "should I greet people I do not know on the street?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     210,
+     211,
+     157
+    ]
+   },
+   "args": {
+    "question": "should I greet people I do not know on the street?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     210,
+     211,
+     157
+    ]
+   }
+  },
+  {
+   "value": "spreading-salam",
+   "lang": "ar",
+   "shape": "say",
+   "text": "ليش نقول السلام عليكم لما ندخل البيت؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     210,
+     211,
+     157
+    ]
+   },
+   "args": {
+    "question": "ليش نقول السلام عليكم لما ندخل البيت؟",
+    "topic": "word_meaning",
+    "values": [
+     "kindness",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "table-manners",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I was talking with food in my mouth at dinner, is that rude?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     67,
+     68,
+     69
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I was talking with food in my mouth at dinner, is that rude?",
+    "topic": "values",
+    "values": [
+     "respect",
+     "good manners"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     67,
+     68,
+     69
+    ],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "table-manners",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن آداب الجلوس على السفرة؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في حديث عن آداب الجلوس على السفرة؟",
+    "topic": "hadith",
+    "values": [
+     "adab",
+     "gratitude"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     109,
+     110,
+     88
+    ]
+   }
+  },
+  {
+   "value": "helping-others",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my neighbour could not carry her bags upstairs and I carried them, did Allah like that?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     70,
+     106,
+     107
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my neighbour could not carry her bags upstairs and I carried them, did Allah like that?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "helping others"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     70,
+     169,
+     168
+    ]
+   }
+  },
+  {
+   "value": "helping-others",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن مساعدة الآخرين؟",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     168,
+     169
+    ]
+   },
+   "args": {
+    "question": "في آية عن مساعدة الآخرين؟",
+    "topic": "quran",
+    "values": [
+     "helping others"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     168,
+     169,
+     219
+    ]
+   }
+  },
+  {
+   "value": "avoiding-backbiting",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my classmates were speaking badly about our teacher when she was out of the room, what should I do?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my classmates were speaking badly about our teacher when she was out of the room, what should I do?",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "respect"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     170,
+     171,
+     114
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "avoiding-backbiting",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن الحكي عن الناس؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "في حديث عن الحكي عن الناس؟",
+    "topic": "hadith",
+    "values": [
+     "اللسان",
+     "الغيبة"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "courage",
+   "lang": "en",
+   "shape": "say",
+   "text": "what does Islam say about standing up for what is right even when it is scary?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "what does Islam say about standing up for what is right even when it is scary?",
+    "topic": "values",
+    "values": [
+     "courage",
+     "truthfulness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     29,
+     30,
+     96
+    ]
+   }
+  },
+  {
+   "value": "courage",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أخاف أقول رأيي قدام الكل بالصف، شو أسوي؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "أخاف أقول رأيي قدام الكل بالصف، شو أسوي؟",
+    "topic": "values",
+    "values": [
+     "bravery",
+     "patience"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     193,
+     194,
+     196
+    ],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "not-wasting",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I always take too much food and then I cannot finish it, is that a problem?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     192,
+     212,
+     140
+    ]
+   },
+   "args": {
+    "question": "I always take too much food and then I cannot finish it, is that a problem?",
+    "topic": "values",
+    "values": [
+     "gratitude",
+     "moderation"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     192,
+     212,
+     71
+    ]
+   }
+  },
+  {
+   "value": "not-wasting",
+   "lang": "ar",
+   "shape": "say",
+   "text": "هل ينفع أسيب الماي مفتوح وأنا أتوضأ؟",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "هل ينفع أسيب الماي مفتوح وأنا أتوضأ؟",
+    "topic": "worship",
+    "values": [
+     "الأمانة",
+     "الاعتدال"
+    ],
+    "guard": "REFER"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "other_value"
+   }
+  },
+  {
+   "value": "family-ties",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I have not talked to my grandma's sister for months, should I call her?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "Should I call my grandma's sister after months without talking?",
+    "topic": "values",
+    "values": [
+     "kindness",
+     "keeping ties"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     17,
+     18,
+     19
+    ],
+    "miss": "value_name_unmatched"
+   }
+  },
+  {
+   "value": "family-ties",
+   "lang": "ar",
+   "shape": "hadith",
+   "text": "في حديث عن زيارة الأهل؟",
+   "topic": "hadith",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   },
+   "args": {
+    "question": "في حديث عن زيارة الأهل؟",
+    "topic": "hadith",
+    "values": [
+     "صلة الرحم"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     97,
+     98,
+     99
+    ]
+   }
+  },
+  {
+   "value": "love-of-the-prophet",
+   "lang": "en",
+   "shape": "say",
+   "text": "how did the Prophet treat children?",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     184,
+     185
+    ]
+   },
+   "args": {
+    "question": "how did the Prophet treat children?",
+    "topic": "hadith",
+    "values": [
+     "mercy",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     134,
+     135,
+     136
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "love-of-the-prophet",
+   "lang": "ar",
+   "shape": "sit",
+   "text": "أحب النبي كثير، كيف أتعلم عن حياته؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     184,
+     185
+    ]
+   },
+   "args": {
+    "question": "أحب النبي كثير، كيف أتعلم عن حياته؟",
+    "topic": "prophets_story",
+    "values": [
+     "محبة النبي",
+     "التعلم"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "sincerity",
+   "lang": "en",
+   "shape": "sit",
+   "text": "I helped someone only because I wanted a reward from my parents, is that okay?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "I helped someone only because I wanted a reward from my parents, is that okay?",
+    "topic": "values",
+    "values": [
+     "honesty",
+     "kindness"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     170,
+     171,
+     114
+    ],
+    "miss": "topic_filter"
+   }
+  },
+  {
+   "value": "sincerity",
+   "lang": "ar",
+   "shape": "verse",
+   "text": "في آية عن النية الصافية؟",
+   "topic": "quran",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     203,
+     204
+    ]
+   },
+   "args": {
+    "question": "في آية عن النية الصافية؟",
+    "topic": "quran",
+    "values": [
+     "الإخلاص",
+     "النية"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     203,
+     204,
+     221
+    ]
+   }
+  },
+  {
+   "value": "contentment",
+   "lang": "en",
+   "shape": "sit",
+   "text": "my sister has a nicer room than me and I keep thinking about it, what can I do?",
+   "topic": "values",
+   "a": {
+    "found": false,
+    "related": false,
+    "right": false,
+    "ids": [],
+    "miss": "no_keyword"
+   },
+   "args": {
+    "question": "my sister has a nicer room than me and I keep thinking about it, what can I do?",
+    "topic": "values",
+    "values": [
+     "gratitude",
+     "contentment"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": false,
+    "ids": [
+     71,
+     72,
+     73
+    ],
+    "miss": "ranked_out"
+   }
+  },
+  {
+   "value": "contentment",
+   "lang": "ar",
+   "shape": "say",
+   "text": "كيف أكون راضي بالشي اللي عندي؟",
+   "topic": "values",
+   "a": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     25,
+     26,
+     88
+    ]
+   },
+   "args": {
+    "question": "كيف أكون راضي بالشي اللي عندي؟",
+    "topic": "values",
+    "values": [
+     "gratitude",
+     "contentment"
+    ],
+    "guard": "none"
+   },
+   "b": {
+    "found": true,
+    "related": false,
+    "right": true,
+    "ids": [
+     25,
+     26,
+     71
+    ]
+   }
+  }
+ ]
+}

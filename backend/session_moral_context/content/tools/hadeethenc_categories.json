@@ -1,0 +1,514 @@
+{
+  "_comment": [
+    "Value slug -> HadeethEnc category ids (hadeethenc.com/api/v1), from docs/hackathon/research/r1-hadeethenc-quranenc-mcp.md Appendix B.",
+    "categories: every hadith in the category (the list endpoint includes sub-categories) is a candidate (relevance: category).",
+    "keyword_only_categories: a hadith only counts if its Arabic title/matn contains one of the value's keywords_ar (relevance: ar_keyword), or its English title/text contains a word starting with one of keywords_en (relevance: en_keyword). Arabic is compared after normalisation (no tashkeel, alef/ya/ta-marbuta folded), so records without English still match.",
+    "keywords_ar (optional): specific Arabic keywords for the value. Without it the child-voice keywords_ar in content/values.json are used (weaker). Used only to rank and to gate keyword_only_categories.",
+    "Some values have no HadeethEnc category of their own (justice, caring for orphans, not wasting): they are found by keyword inside the broad categories that hold the good hadith (for example Bukhari 6005 sits in 511, Muslim 1827 in 282).",
+    "deny_list: r1 section 2.6. A hadith in ANY of these categories (or a sub-category, or listed under them) is never a candidate; it needs a human age check. 324 (Paradise and Hell descriptions) was unblocked by the lead (hope first): its hadith are candidates and draft_from_page.py age-screens graphic ones to 10-13.",
+    "Ids come from a 26 Sep 2026 third-party snapshot and a Postman sample; confirm the titles after the first pull (categories.en.json in the cache)."
+  ],
+  "category_titles": {
+    "457": "Virtue of Prayer",
+    "282": "Praiseworthy Morals",
+    "283": "Blameworthy Morals",
+    "273": "Dutiful to Parents",
+    "274": "Kinship Ties",
+    "654": "Prophet's Mercy",
+    "314": "Acts of Heart",
+    "280": "Heart Acts",
+    "316": "Asceticism and Piety",
+    "319": "(heart-softener category, title to confirm)",
+    "341": "Animal Rights in Islam",
+    "436": "Natural Cleanliness Practices",
+    "649": "Prophet's Modesty",
+    "646": "Moral Attributes",
+    "150": "Neighbourhood Rulings",
+    "270": "Excellence of Knowledge",
+    "284": "Manners of Scholars and Learners",
+    "650": "Prophet's Humility",
+    "661": "Prophet's Justice",
+    "648": "Prophet's Generosity",
+    "511": "Voluntary Charity",
+    "653": "Prophet's Forgiveness",
+    "321": "Repentance",
+    "287": "Speaking and Keeping Silent",
+    "636": "Tongue Evils",
+    "277": "Merits of Good Deeds",
+    "204": "Muslim Society",
+    "278": "Remembering Allah",
+    "299": "Dhikr",
+    "300": "Dhikr",
+    "301": "Morning and Evening",
+    "302": "Dhikr",
+    "297": "Visiting the Sick",
+    "286": "Greeting",
+    "290": "Eating and Drinking",
+    "651": "Prophet's Courage",
+    "81": "Our Prophet Muhammad"
+  },
+  "deny_list": {
+    "139": "Jihad",
+    "128": "Prescribed Punishments",
+    "127": "Crimes",
+    "124": "Marriage",
+    "191": "Marriage",
+    "581": "Marital Relations",
+    "205": "Relations between men and women",
+    "607": "Relations between men and women",
+    "63": "Portents of the Hour",
+    "84": "Portents of the Hour",
+    "323": "Terrors of the Graves",
+    "83": "Barzakh",
+    "65": "Sects and disbelief",
+    "71": "Sects and disbelief"
+  },
+  "values": {
+    "prayer": {
+      "categories": [
+        457
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "honesty": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283
+      ],
+      "keywords_en": [
+        "truth",
+        "honest",
+        "lie",
+        "lying",
+        "liar",
+        "deceit",
+        "cheat"
+      ]
+    },
+    "trustworthiness": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283
+      ],
+      "keywords_en": [
+        "trust",
+        "entrust",
+        "betray",
+        "treachery"
+      ]
+    },
+    "keeping-promises": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283
+      ],
+      "keywords_en": [
+        "promise",
+        "pledge",
+        "covenant",
+        "fulfil",
+        "fulfill",
+        "breach"
+      ]
+    },
+    "honouring-parents": {
+      "categories": [
+        273
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "respecting-elders": {
+      "categories": [
+        273
+      ],
+      "keyword_only_categories": [
+        282
+      ],
+      "keywords_en": [
+        "elder",
+        "older",
+        "aged",
+        "senior"
+      ]
+    },
+    "family-ties": {
+      "categories": [
+        274
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "mercy": {
+      "categories": [
+        654
+      ],
+      "keyword_only_categories": [
+        282
+      ],
+      "keywords_en": [
+        "mercy",
+        "merciful",
+        "compassion",
+        "kind"
+      ]
+    },
+    "patience": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "patien",
+        "endur",
+        "persever"
+      ]
+    },
+    "gratitude": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "grateful",
+        "gratitude",
+        "thank"
+      ]
+    },
+    "contentment": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "content",
+        "satisf",
+        "sufficien"
+      ]
+    },
+    "controlling-anger": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "anger",
+        "angry",
+        "wrath"
+      ]
+    },
+    "sincerity": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "sincer",
+        "intention",
+        "show off",
+        "ostentation"
+      ]
+    },
+    "trust-in-allah": {
+      "categories": [],
+      "keyword_only_categories": [
+        282,
+        283,
+        314,
+        280,
+        316,
+        319
+      ],
+      "keywords_en": [
+        "rely",
+        "reliance",
+        "trust in allah",
+        "tawakkul"
+      ]
+    },
+    "kindness-to-animals": {
+      "categories": [
+        341
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "cleanliness": {
+      "categories": [
+        436
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "modesty": {
+      "categories": [
+        649
+      ],
+      "keyword_only_categories": [
+        282
+      ],
+      "keywords_en": [
+        "modest",
+        "shy",
+        "bashful"
+      ]
+    },
+    "good-character": {
+      "categories": [
+        282,
+        646
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "good-neighbour": {
+      "categories": [
+        150
+      ],
+      "keyword_only_categories": [
+        282
+      ],
+      "keywords_en": [
+        "neighbo"
+      ]
+    },
+    "seeking-knowledge": {
+      "categories": [
+        270,
+        284
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "humility": {
+      "categories": [
+        650
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "justice": {
+      "categories": [
+        661
+      ],
+      "keyword_only_categories": [
+        282,
+        283
+      ],
+      "keywords_en": [
+        "justice",
+        "justly",
+        "unjust",
+        "injustice"
+      ],
+      "keywords_ar": [
+        "المقسطين",
+        "العدل",
+        "عدل",
+        "الظلم"
+      ]
+    },
+    "generosity": {
+      "categories": [
+        648,
+        511
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "charity": {
+      "categories": [
+        648,
+        511
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "forgiveness": {
+      "categories": [
+        653,
+        321
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "kind-words": {
+      "categories": [
+        287,
+        636
+      ],
+      "keyword_only_categories": [
+        283
+      ],
+      "keywords_en": [
+        "kind word",
+        "good word",
+        "speak",
+        "words"
+      ]
+    },
+    "avoiding-backbiting": {
+      "categories": [
+        287,
+        636
+      ],
+      "keyword_only_categories": [
+        283
+      ],
+      "keywords_en": [
+        "backbit",
+        "gossip",
+        "slander",
+        "tongue",
+        "speak ill"
+      ]
+    },
+    "caring-for-orphans": {
+      "categories": [],
+      "keyword_only_categories": [
+        277,
+        204,
+        511
+      ],
+      "keywords_en": [
+        "orphan"
+      ],
+      "keywords_ar": [
+        "يتيم",
+        "اليتيم",
+        "أيتام",
+        "الأيتام"
+      ]
+    },
+    "helping-others": {
+      "categories": [
+        277,
+        204
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "cooperation": {
+      "categories": [
+        277,
+        204
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "brotherhood": {
+      "categories": [
+        204
+      ],
+      "keyword_only_categories": [
+        282
+      ],
+      "keywords_en": [
+        "brother",
+        "believer",
+        "muslim"
+      ]
+    },
+    "remembering-allah": {
+      "categories": [
+        278,
+        299,
+        300,
+        301,
+        302
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "visiting-the-sick": {
+      "categories": [
+        297
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "spreading-salam": {
+      "categories": [
+        286
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "table-manners": {
+      "categories": [
+        290
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    },
+    "courage": {
+      "categories": [
+        651
+      ],
+      "keyword_only_categories": [
+        646
+      ],
+      "keywords_en": [
+        "brave",
+        "courage"
+      ]
+    },
+    "not-wasting": {
+      "categories": [],
+      "keyword_only_categories": [
+        283,
+        290,
+        282,
+        316,
+        511
+      ],
+      "keywords_en": [
+        "waste",
+        "wasteful",
+        "extravagan",
+        "squander"
+      ],
+      "keywords_ar": [
+        "إسراف",
+        "الإسراف",
+        "تبذير"
+      ]
+    },
+    "love-of-the-prophet": {
+      "categories": [
+        81
+      ],
+      "keyword_only_categories": [],
+      "keywords_en": []
+    }
+  }
+}

@@ -1,0 +1,10 @@
+FROM debian:bookworm-slim
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      libreoffice-impress poppler-utils fonts-noto-core fontconfig \
+    && rm -rf /var/lib/apt/lists/*
+COPY fonts/ReadexPro-Light.ttf fonts/ReadexPro-Regular.ttf fonts/ReadexPro-Medium.ttf \
+     fonts/ReadexPro-SemiBold.ttf fonts/ReadexPro-Bold.ttf \
+     fonts/Amiri-Regular.ttf fonts/Amiri-Bold.ttf /usr/share/fonts/truetype/deck/
+RUN fc-cache -f && fc-list | grep -i -E "readex|amiri"
+WORKDIR /work

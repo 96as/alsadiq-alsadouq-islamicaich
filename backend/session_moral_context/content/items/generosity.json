@@ -1,0 +1,47 @@
+[
+  {
+    "type": "verse",
+    "surah": 2,
+    "ayah": 261,
+    "arabic_text": "مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمۡوَٰلَهُمۡ فِي سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتۡ سَبۡعَ سَنَابِلَ فِي كُلِّ سُنۢبُلَةٖ مِّاْئَةُ حَبَّةٖۗ وَٱللَّهُ يُضَٰعِفُ لِمَن يَشَآءُۚ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ",
+    "arabic_text_search": "مثل الذين ينفقون أموالهم في سبيل الله كمثل حبة أنبتت سبع سنابل في كل سنبلة مائة حبة والله يضاعف لمن يشاء والله واسع عليم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "The example of those who spend their wealth in the way of Allāh is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. And Allāh multiplies [His reward] for whom He wills. And Allāh is all-Encompassing and Knowing.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-baqara/261",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/002261.mp3",
+    "values": [
+      "generosity",
+      "charity"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن الله يضاعف الأجر لمن يعطي من ماله لأجله. مثلا: بمساعدة أمي وأبي، نعطي بعض مالنا للمحتاجين.",
+    "child_explanation_en": "This verse teaches that Allah gives a much bigger reward to those who give their money for His sake. For example, with Mum or Dad's help, we can give a little of our money to people in need.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 76,
+    "ayah": 8,
+    "arabic_text": "وَيُطۡعِمُونَ ٱلطَّعَامَ عَلَىٰ حُبِّهِۦ مِسۡكِينٗا وَيَتِيمٗا وَأَسِيرًا",
+    "arabic_text_search": "ويطعمون الطعام على حبه مسكينا ويتيما وأسيرا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And they give food in spite of love for it to the needy, the orphan, and the captive,",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-insan/8",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/076008.mp3",
+    "values": [
+      "generosity"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تذكر الآية ناسا يعطون الطعام للمحتاجين واليتامى مع أنهم يحبّونه. مثلا: بمساعدة شخص كبير، تعطي من الطعام الذي تحبه لمن يحتاج إليه.",
+    "child_explanation_en": "This verse describes people who give food to the needy and to orphans even though they love it themselves. For example, with a grown-up's help, you can share some food you like with someone who needs it.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

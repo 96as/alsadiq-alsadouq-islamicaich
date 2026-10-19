@@ -1,0 +1,1233 @@
+{
+ "file": "avatar-animated.glb",
+ "built_by": "WP1 studio merge (R2 rig + knees, studio walk and transitions, WP2 gestures, WP5 mouth mesh)",
+ "date": "2026-10-05",
+ "clip_meta_version": 2,
+ "bytes": 2480896,
+ "sha256": "ce266e8f088bb2c7894a80bd6f36d1cfc5b25895e51c104c40e55099d3737d67",
+ "triangles": 93335,
+ "vertices": 59483,
+ "joints": 32,
+ "max_influences_per_vertex": 4,
+ "morph_targets": [
+  "sil",
+  "PP",
+  "FF",
+  "DD",
+  "kk",
+  "CH",
+  "SS",
+  "nn",
+  "RR",
+  "aa",
+  "E",
+  "I",
+  "O",
+  "U",
+  "browUp",
+  "browInnerUp",
+  "browDown",
+  "cheekPuff",
+  "mouthSmile",
+  "PP_jaw"
+ ],
+ "morph_animation_in_clips": false,
+ "viseme_mesh_gain": {
+  "applied": {},
+  "meaning": "No gain is baked into this mesh. The R2 baked x1.5 on E, I, kk, DD and nn is NOT applied: WP5 replaced those shape keys. Use the V2 gains and caps (the runtime picks them from the browUp morph): closures PP FF SS cap 1.0, aa O U gain 1.0 cap 1.0, E I DD kk CH RR gain 1.0 cap 1.2, nn gain 1.0 cap 1.2 (WP5 fix round 2). Viseme weights must sum to at most 1.0. V1 web gains (E 1.8, I 1.5, kk 1.5, DD 1.5, nn 2.0) would over-drive this mesh.",
+  "viseme_set_version_note": "viseme_set_version 2 (WP5). Ship rule: this GLB ships only with a runtime that has the V2 gain switch (hk/06-mouth-acting)."
+ },
+ "compression": {
+  "geometry": "KHR_mesh_quantization + EXT_meshopt_compression (level high)",
+  "textures": "EXT_texture_webp (required)"
+ },
+ "textures": {
+  "basecolor_graded": {
+   "size": [
+    2048,
+    2048
+   ],
+   "mime": "image/webp",
+   "bytes": 520224
+  },
+  "normal": {
+   "size": [
+    2048,
+    2048
+   ],
+   "mime": "image/webp",
+   "bytes": 328664
+  },
+  "orm_ao_rough_metal": {
+   "size": [
+    1024,
+    1024
+   ],
+   "mime": "image/webp",
+   "bytes": 98172
+  }
+ },
+ "materials": 1,
+ "up_axis": "Y",
+ "facing": "+Z (glTF)",
+ "units": "metres",
+ "height_m": 0.977,
+ "skeleton": [
+  "root",
+  "Bone",
+  "pec.l",
+  "arm.l",
+  "forearm_L",
+  "hand.l",
+  "prop_L",
+  "pec.l.001",
+  "arm.r",
+  "forearm_R",
+  "hand.r",
+  "neck",
+  "head",
+  "Bone.008",
+  "jaw",
+  "ear_L",
+  "ear_R",
+  "eyelid_L",
+  "eyelid_R",
+  "chest",
+  "Bone.005",
+  "leg.r",
+  "shin_R",
+  "Bone.013",
+  "Bone.006",
+  "leg.l",
+  "shin_L",
+  "Bone.014",
+  "neutral_bone",
+  "tail_01",
+  "tail_02",
+  "tail_03"
+ ],
+ "sockets": {
+  "prop_L": {
+   "parent": "hand.l",
+   "offset_m": [
+    -0.08396,
+    0.02184,
+    0.00576
+   ],
+   "offset_space": "local space of the parent joint node, metres",
+   "purpose": "hologram anchor; reusable for held props",
+   "animated": false,
+   "deform": false,
+   "design_offset_m_from_palm_centre": 0.05,
+   "palm_up_note": "with the forearm supinated palm-up (CONTACTS palm_up) the socket sits 5 cm above the palm centre"
+  }
+ },
+ "forearms": {
+  "joints": [
+   "forearm_L",
+   "forearm_R"
+  ],
+  "elbow_flex": "rz on the forearm node; left negative, right positive, 0..120 degrees; forearm swings forward",
+  "supination": "rx on forearm and hand"
+ },
+ "clips": [
+  {
+   "name": "Idle",
+   "duration_s": 8,
+   "frames": 240,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "I'm here, calm and alive.",
+   "variant_of": null,
+   "note": "constant offset so that f0 == legacy R2 Idle f0 (see p2_rehome_idle.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 1.28,
+    "peak_speed_deg_s": 55.8,
+    "peak_speed_who": "ear_R t=3.30",
+    "peak_acc_deg_s2": 916
+   }
+  },
+  {
+   "name": "LookAround",
+   "duration_s": 6,
+   "frames": 180,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "turnL": {
+     "frame": 14,
+     "s": 0.4667
+    },
+    "turnR": {
+     "frame": 58,
+     "s": 1.9333
+    },
+    "home": {
+     "frame": 116,
+     "s": 3.8667
+    }
+   },
+   "meaning": "Looking at the world.",
+   "variant_of": null,
+   "note": "constant offset so that f0 == legacy R2 Idle f0 (see p2_rehome_idle.py)",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 25.89,
+    "peak_speed_deg_s": 196,
+    "peak_speed_who": "ear_L t=0.67",
+    "peak_acc_deg_s2": 2944
+   },
+   "marker_aliases": {
+    "turn1": "turnL",
+    "turn2": "turnR",
+    "return": "home"
+   },
+   "marker_note": "P2 names (turn1 14, turn2 58, return 106) are canonical; the R2 names (turnL 14, turnR 59, home 126) stay as aliases so v1 callers keep working. The aliases point to the P2 frames."
+  },
+  {
+   "name": "Walk",
+   "duration_s": 0.533333,
+   "frames": 16,
+   "fps": 30,
+   "audit": {
+    "closure_value": 3.42e-06,
+    "closure_velocity_deg_s": 181.34,
+    "peak_speed_deg_s": 552.6,
+    "peak_speed_who": "Bone.014 t=0.17",
+    "peak_acc_deg_s2": 12308
+   },
+   "loop": true,
+   "kind": "loop",
+   "home": "Walk",
+   "entry_s": 0.0,
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "markers": {
+    "heelStrikeR": {
+     "frame": 0,
+     "s": 0.0
+    },
+    "heelStrikeL": {
+     "frame": 8,
+     "s": 0.2667
+    }
+   },
+   "meaning": "In-place studio walk with knees, 16 frames, rolling planted feet, 0.28 m per cycle (two steps). Travel by moving the avatar at 0.525 m/s while it plays.",
+   "variant_of": null,
+   "home_note": "a loop; Walk_Stop_R / Walk_Stop_L bring it back to Idle",
+   "source": "P1"
+  },
+  {
+   "name": "Walk_Start",
+   "duration_s": 0.5,
+   "frames": 15,
+   "fps": 30,
+   "audit": {
+    "closure_value": 25,
+    "closure_velocity_deg_s": 273.23,
+    "peak_speed_deg_s": 539.6,
+    "peak_speed_who": "shin_R t=0.13",
+    "peak_acc_deg_s2": 15070
+   },
+   "loop": false,
+   "kind": "transition",
+   "home": "Walk",
+   "start_home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "liftoff": {
+     "frame": 4,
+     "s": 0.1333
+    },
+    "heelstrike": {
+     "frame": 15,
+     "s": 0.5
+    }
+   },
+   "meaning": "Idle to Walk: lean, the right foot lifts at f4, the root accelerates, ends on Walk f0 (right heel strike). Starts on Idle f0.",
+   "variant_of": null,
+   "root_speed_m_s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.00203,
+    0.01478,
+    0.04055,
+    0.07935,
+    0.13117,
+    0.19601,
+    0.27388,
+    0.36478,
+    0.4687,
+    0.525
+   ],
+   "root_speed_note": "N+1 entries, m/s over interval i (f_i to f_i+1), the last entry (0.525) is the Walk speed it hands over to. Integrate with dt 1/30 for the travel.",
+   "start_frame_in_walk": null,
+   "source": "P1"
+  },
+  {
+   "name": "Walk_Stop_R",
+   "duration_s": 0.7,
+   "frames": 21,
+   "fps": 30,
+   "audit": {
+    "closure_value": 25,
+    "closure_velocity_deg_s": 362.44,
+    "peak_speed_deg_s": 549,
+    "peak_speed_who": "shin_R t=0.13",
+    "peak_acc_deg_s2": 11993
+   },
+   "loop": false,
+   "kind": "transition",
+   "home": "Idle",
+   "start_home": "Walk",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Walk to Idle from a right heel strike (Walk f0, f16): decelerates, the feet close, settles to Idle f0.",
+   "variant_of": null,
+   "root_speed_m_s": [
+    0.48801,
+    0.41504,
+    0.34371,
+    0.27427,
+    0.20709,
+    0.14268,
+    0.082,
+    0.02734,
+    0.00019,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "root_speed_note": "N+1 entries, m/s per interval; first entry about 0.488 (Walk speed on entry), last 0 (Idle).",
+   "start_frame_in_walk": 0,
+   "source": "P1"
+  },
+  {
+   "name": "Walk_Stop_L",
+   "duration_s": 0.7,
+   "frames": 21,
+   "fps": 30,
+   "audit": {
+    "closure_value": 37.5,
+    "closure_velocity_deg_s": 290.35,
+    "peak_speed_deg_s": 543.7,
+    "peak_speed_who": "shin_R t=0.10",
+    "peak_acc_deg_s2": 14553
+   },
+   "loop": false,
+   "kind": "transition",
+   "home": "Idle",
+   "start_home": "Walk",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Walk to Idle from a left heel strike (Walk f8): mirror of Walk_Stop_R. Starts on Walk f8.",
+   "variant_of": null,
+   "root_speed_m_s": [
+    0.49609,
+    0.43919,
+    0.38373,
+    0.32983,
+    0.27764,
+    0.22736,
+    0.17922,
+    0.13357,
+    0.09089,
+    0.052,
+    0.01865,
+    0.00057,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "root_speed_note": "N+1 entries, m/s per interval; first entry about the Walk speed on entry, last 0 (Idle).",
+   "start_frame_in_walk": 8,
+   "source": "P1"
+  },
+  {
+   "name": "Blink",
+   "duration_s": 0.3,
+   "frames": 9,
+   "fps": 30,
+   "loop": false,
+   "kind": "lids",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "open": {
+     "frame": 0,
+     "s": 0.0
+    },
+    "closed": {
+     "frame": 2,
+     "s": 0.0667
+    },
+    "hold": {
+     "frame": 3,
+     "s": 0.1
+    },
+    "open_again": {
+     "frame": 9,
+     "s": 0.3
+    }
+   },
+   "meaning": "Eyelids only (eyelid_L, eyelid_R); layer it over any clip.",
+   "variant_of": null,
+   "channels": 2,
+   "bones_animated": 2,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 0,
+   "peak_head_neck_deg_s": 0,
+   "peak_root_m_s": 0,
+   "scope": "eyelid_L and eyelid_R only",
+   "source": "R2",
+   "audit": {
+    "closure_value": 3.42e-06,
+    "closure_velocity_deg_s": 848.72,
+    "peak_speed_deg_s": 1410.8,
+    "peak_speed_who": "eyelid_L t=0.03",
+    "peak_acc_deg_s2": 42324
+   }
+  },
+  {
+   "name": "Listen",
+   "duration_s": 6,
+   "frames": 180,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Listen",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Attentive: I'm listening to you.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 3.6,
+   "peak_head_neck_deg_s": 22.2,
+   "peak_root_m_s": 0.004,
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 1.38,
+    "peak_speed_deg_s": 44.7,
+    "peak_speed_who": "ear_L t=4.53",
+    "peak_acc_deg_s2": 852
+   }
+  },
+  {
+   "name": "Listen_Curious",
+   "duration_s": 5,
+   "frames": 150,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Listen_Curious",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Curious: ooh, what's your question?",
+   "variant_of": "Listen",
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 4.3,
+   "peak_head_neck_deg_s": 100.7,
+   "peak_root_m_s": 0.003,
+   "entry_mode": "reset",
+   "entry_note": "set the clock to entry_s when this loop becomes the base (SPEC 5.3)",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 11.57,
+    "peak_speed_deg_s": 114,
+    "peak_speed_who": "ear_L t=3.20",
+    "peak_acc_deg_s2": 2386
+   }
+  },
+  {
+   "name": "Listen_Empathy",
+   "duration_s": 8,
+   "frames": 240,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Listen_Empathy",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Empathetic: I'm with you, it's OK.",
+   "variant_of": "Listen",
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 1.1,
+   "peak_head_neck_deg_s": 5,
+   "peak_root_m_s": 0.001,
+   "entry_mode": "reset",
+   "entry_note": "set the clock to entry_s when this loop becomes the base (SPEC 5.3)",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 0.99,
+    "peak_speed_deg_s": 7.5,
+    "peak_speed_who": "ear_R t=2.47",
+    "peak_acc_deg_s2": 81
+   }
+  },
+  {
+   "name": "Listen_Excited",
+   "duration_s": 4,
+   "frames": 120,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Listen_Excited",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Excited: wow, really?!",
+   "variant_of": null,
+   "note": "R2 Listen_Excited: knee fork (shin_R / shin_L keyed, hip IK keeps the planted ankle on the R2 path, foot world orientation kept), see p2_fork_knees.py",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 50.75,
+    "peak_speed_deg_s": 286.2,
+    "peak_speed_who": "Bone.013 t=0.93",
+    "peak_acc_deg_s2": 5346
+   }
+  },
+  {
+   "name": "Nod",
+   "duration_s": 0.8,
+   "frames": 24,
+   "fps": 30,
+   "loop": false,
+   "kind": "additive",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Mm-hm (backchannel)",
+   "variant_of": null,
+   "channels": 4,
+   "bones_animated": 4,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 0,
+   "peak_head_neck_deg_s": 56.3,
+   "peak_root_m_s": 0,
+   "additive": true,
+   "scope": "neck, head, ear_L, ear_R only",
+   "source": "R2",
+   "audit": {
+    "closure_value": 1.71e-06,
+    "closure_velocity_deg_s": 22.08,
+    "peak_speed_deg_s": 171.6,
+    "peak_speed_who": "ear_R t=0.40",
+    "peak_acc_deg_s2": 2962
+   }
+  },
+  {
+   "name": "Think",
+   "duration_s": 6,
+   "frames": 180,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Think",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Pondering: hand to chin, eyes up and away.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 83.4,
+   "peak_head_neck_deg_s": 1.9,
+   "peak_root_m_s": 0.003,
+   "entry_mode": "reset",
+   "entry_note": "set the clock to entry_s when this loop becomes the base (SPEC 5.3)",
+   "source": "R2",
+   "audit": {
+    "closure_value": 3.42e-06,
+    "closure_velocity_deg_s": 0.97,
+    "peak_speed_deg_s": 83.4,
+    "peak_speed_who": "hand.r t=2.10",
+    "peak_acc_deg_s2": 2491
+   }
+  },
+  {
+   "name": "SearchStart",
+   "duration_s": 0.9,
+   "frames": 27,
+   "fps": 30,
+   "loop": false,
+   "kind": "transition",
+   "home": "SearchHold",
+   "entry_s": 0.0,
+   "markers": {
+    "bloom": {
+     "frame": 10,
+     "s": 0.3333
+    },
+    "look": {
+     "frame": 14,
+     "s": 0.4667
+    }
+   },
+   "meaning": "Let me look it up! (summons the panel)",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0.7317677438259125,
+   "peak_arm_deg_s": 312,
+   "peak_head_neck_deg_s": 78.8,
+   "peak_root_m_s": 0.006,
+   "source": "R2",
+   "audit": {
+    "closure_value": 91.9,
+    "closure_velocity_deg_s": 49.81,
+    "peak_speed_deg_s": 312,
+    "peak_speed_who": "hand.l t=0.40",
+    "peak_acc_deg_s2": 6266
+   }
+  },
+  {
+   "name": "SearchHold",
+   "duration_s": 4,
+   "frames": 120,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "SearchHold",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Searching: holds and reads the panel.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 6.2,
+   "peak_head_neck_deg_s": 10.4,
+   "peak_root_m_s": 0.006,
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 3.06,
+    "peak_speed_deg_s": 80.5,
+    "peak_speed_who": "ear_L t=1.17",
+    "peak_acc_deg_s2": 1745
+   }
+  },
+  {
+   "name": "SearchSwipe",
+   "duration_s": 1,
+   "frames": 30,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "SearchHold",
+   "entry_s": 0.0,
+   "markers": {
+    "contact": {
+     "frame": 8,
+     "s": 0.2667
+    },
+    "advance": {
+     "frame": 11,
+     "s": 0.3667
+    },
+    "release": {
+     "frame": 16,
+     "s": 0.5333
+    }
+   },
+   "meaning": "Next page.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 384.3,
+   "peak_head_neck_deg_s": 18.2,
+   "peak_root_m_s": 0.009,
+   "one_shot_returns_to": "SearchHold frame 0",
+   "starts_on": "SearchHold frame 0",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 158.41,
+    "peak_speed_deg_s": 384.3,
+    "peak_speed_who": "hand.r t=0.13",
+    "peak_acc_deg_s2": 4415
+   }
+  },
+  {
+   "name": "Found",
+   "duration_s": 1.6,
+   "frames": 48,
+   "fps": 30,
+   "loop": false,
+   "kind": "transition",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "pop": {
+     "frame": 3,
+     "s": 0.1
+    },
+    "glow": {
+     "frame": 6,
+     "s": 0.2
+    },
+    "collapse": {
+     "frame": 16,
+     "s": 0.5333
+    },
+    "sparkle": {
+     "frame": 24,
+     "s": 0.8
+    }
+   },
+   "meaning": "Eureka: found it!",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0.7317677438259125,
+   "peak_arm_deg_s": 255.4,
+   "peak_head_neck_deg_s": 76.2,
+   "peak_root_m_s": 0.285,
+   "starts_on": "SearchHold frame 0",
+   "source": "R2",
+   "audit": {
+    "closure_value": 91.9,
+    "closure_velocity_deg_s": 256.09,
+    "peak_speed_deg_s": 311,
+    "peak_speed_who": "ear_R t=0.60",
+    "peak_acc_deg_s2": 7979
+   }
+  },
+  {
+   "name": "TalkGesture",
+   "duration_s": 8,
+   "frames": 240,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "TalkGesture",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Explain: here is how it is. Open palms, four irregular beats, steady.",
+   "variant_of": null,
+   "note": "R2 talk TalkGesture: life layer (micro-motion on root,pec.l,pec.l.001,chest,neutral_bone), seam velocity fix, breath envelope (see p2_fork_life.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 25.45,
+    "peak_speed_deg_s": 564.3,
+    "peak_speed_who": "forearm_R t=0.10",
+    "peak_acc_deg_s2": 4991
+   }
+  },
+  {
+   "name": "Talk_Story",
+   "duration_s": 10,
+   "frames": 300,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Talk_Story",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Story: once upon a time. Wide imagine, high hand, palms together, a sweep.",
+   "variant_of": null,
+   "note": "R2 talk Talk_Story: life layer (micro-motion on root,pec.l,forearm_L,chest,neutral_bone), seam velocity fix, breath envelope (see p2_fork_life.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 3.79,
+    "peak_speed_deg_s": 596,
+    "peak_speed_who": "hand.l t=0.47",
+    "peak_acc_deg_s2": 6792
+   }
+  },
+  {
+   "name": "Talk_Praise",
+   "duration_s": 6,
+   "frames": 180,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Talk_Praise",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Praise: well done! Hand on heart, offer, two silent claps. Code adds squint 0.22 and a smile.",
+   "variant_of": null,
+   "note": "R2 talk Talk_Praise: life layer (micro-motion on root,forearm_L,forearm_R,chest,neutral_bone), seam velocity fix, breath envelope (see p2_fork_life.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 7.41,
+    "peak_speed_deg_s": 541.2,
+    "peak_speed_who": "hand.r t=1.67",
+    "peak_acc_deg_s2": 6968
+   }
+  },
+  {
+   "name": "Talk_Ask",
+   "duration_s": 6,
+   "frames": 180,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Talk_Ask",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Ask: and you? Offered palm held, two small you-lifts, head tilt, ears forward, tail tip curled.",
+   "variant_of": null,
+   "note": "R2 talk Talk_Ask: life layer (micro-motion on root,pec.l,forearm_L,pec.l.001,chest,neutral_bone), seam velocity fix, breath envelope (see p2_fork_life.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 3.82e-06,
+    "closure_velocity_deg_s": 2.17,
+    "peak_speed_deg_s": 185.8,
+    "peak_speed_who": "ear_R t=1.20",
+    "peak_acc_deg_s2": 4142
+   }
+  },
+  {
+   "name": "Talk_Gentle",
+   "duration_s": 8,
+   "frames": 240,
+   "fps": 30,
+   "loop": true,
+   "kind": "loop",
+   "home": "Talk_Gentle",
+   "entry_s": 0.0,
+   "markers": {},
+   "meaning": "Gentle: it is okay. Folded hands, slow nods, hand on the heart. Code adds squint 0.15.",
+   "variant_of": null,
+   "note": "R2 talk Talk_Gentle: life layer (micro-motion on root,pec.l,forearm_L,pec.l.001,forearm_R,hand.r,chest,neutral_bone), seam velocity fix, breath envelope (see p2_fork_life.py)",
+   "entry_mode": "running",
+   "entry_note": "SPEC 4 'running': keep the clock when this loop becomes the base; entry_s is not used",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.96e-06,
+    "closure_velocity_deg_s": 1.14,
+    "peak_speed_deg_s": 157.9,
+    "peak_speed_who": "hand.r t=3.67",
+    "peak_acc_deg_s2": 691
+   }
+  },
+  {
+   "name": "Greet",
+   "duration_s": 2.8,
+   "frames": 84,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0,
+   "markers": {
+    "heart": {
+     "frame": 22,
+     "s": 0.7333
+    },
+    "bow": {
+     "frame": 30,
+     "s": 1.0
+    },
+    "offer": {
+     "frame": 48,
+     "s": 1.6
+    }
+   },
+   "meaning": "Greet: hello, I am glad you are here. Hand to heart, small bow, open hand.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 338.3,
+   "peak_head_neck_deg_s": 36.2,
+   "peak_root_m_s": 0.031,
+   "one_shot_returns_to": "Idle frame 0",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 23.51,
+    "peak_speed_deg_s": 338.3,
+    "peak_speed_who": "arm.r t=1.50",
+    "peak_acc_deg_s2": 3884
+   }
+  },
+  {
+   "name": "Goodbye",
+   "duration_s": 3,
+   "frames": 90,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0,
+   "markers": {
+    "heart": {
+     "frame": 60,
+     "s": 2.0
+    }
+   },
+   "meaning": "Goodbye: see you soon. Three wags from the elbow, then the hand to the heart.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 535.9,
+   "peak_head_neck_deg_s": 29.3,
+   "peak_root_m_s": 0.036,
+   "one_shot_returns_to": "Idle frame 0",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 44.86,
+    "peak_speed_deg_s": 535.9,
+    "peak_speed_who": "hand.r t=2.13",
+    "peak_acc_deg_s2": 5584
+   }
+  },
+  {
+   "name": "Wave",
+   "duration_s": 2.8,
+   "frames": 84,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0,
+   "markers": {},
+   "meaning": "Wave: hi! Raised hand, wag from the forearm.",
+   "variant_of": null,
+   "channels": 29,
+   "bones_animated": 25,
+   "first_last_max_diff": 0,
+   "peak_arm_deg_s": 470,
+   "peak_head_neck_deg_s": 14.1,
+   "peak_root_m_s": 0.053,
+   "one_shot_returns_to": "Idle frame 0",
+   "source": "R2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 24.66,
+    "peak_speed_deg_s": 470,
+    "peak_speed_who": "hand.r t=0.47",
+    "peak_acc_deg_s2": 7093
+   }
+  },
+  {
+   "name": "Happy",
+   "duration_s": 1.6,
+   "frames": 48,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "takeoff": {
+     "frame": 8,
+     "s": 0.2667
+    },
+    "apex": {
+     "frame": 15,
+     "s": 0.5
+    },
+    "land": {
+     "frame": 21,
+     "s": 0.7
+    }
+   },
+   "meaning": "Happy: yay! A small hop, hands to the chest at the top.",
+   "variant_of": null,
+   "note": "R2 Happy: knee fork (shin_R / shin_L keyed, hip IK keeps the planted ankle on the R2 path, foot world orientation kept), see p2_fork_knees.py",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 205.56,
+    "peak_speed_deg_s": 599.7,
+    "peak_speed_who": "hand.r t=0.37",
+    "peak_acc_deg_s2": 15727
+   }
+  },
+  {
+   "name": "Celebrate",
+   "duration_s": 2.4,
+   "frames": 72,
+   "fps": 30,
+   "loop": false,
+   "kind": "oneshot",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "takeoff": {
+     "frame": 8,
+     "s": 0.2667
+    },
+    "apex": {
+     "frame": 19,
+     "s": 0.6333
+    },
+    "land": {
+     "frame": 26,
+     "s": 0.8667
+    }
+   },
+   "meaning": "Celebrate: we did it! Jump with arms up, landing, head bob and shimmy.",
+   "variant_of": null,
+   "note": "R2 Celebrate: knee fork (shin_R / shin_L keyed, hip IK keeps the planted ankle on the R2 path, foot world orientation kept), see p2_fork_knees.py",
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 92.61,
+    "peak_speed_deg_s": 596.7,
+    "peak_speed_who": "arm.l t=0.43",
+    "peak_acc_deg_s2": 9888
+   }
+  },
+  {
+   "name": "Beat_R",
+   "duration_s": 0.6,
+   "frames": 18,
+   "fps": 30,
+   "loop": false,
+   "kind": "additive",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "apex": {
+     "frame": 5,
+     "s": 0.1667
+    }
+   },
+   "meaning": "Beat accent, right hand (stressed syllable)",
+   "variant_of": null,
+   "additive": true,
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 77.86,
+    "peak_speed_deg_s": 438.7,
+    "peak_speed_who": "forearm_R t=0.13",
+    "peak_acc_deg_s2": 11283
+   }
+  },
+  {
+   "name": "Beat_L",
+   "duration_s": 0.6,
+   "frames": 18,
+   "fps": 30,
+   "loop": false,
+   "kind": "additive",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "apex": {
+     "frame": 6,
+     "s": 0.2
+    }
+   },
+   "meaning": "Beat accent, left hand, 15% smaller, 1 frame later",
+   "variant_of": null,
+   "additive": true,
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 4.21,
+    "peak_speed_deg_s": 372.8,
+    "peak_speed_who": "forearm_L t=0.17",
+    "peak_acc_deg_s2": 9584
+   }
+  },
+  {
+   "name": "Beat_Both",
+   "duration_s": 0.7,
+   "frames": 21,
+   "fps": 30,
+   "loop": false,
+   "kind": "additive",
+   "home": "Idle",
+   "entry_s": 0.0,
+   "markers": {
+    "apex": {
+     "frame": 6,
+     "s": 0.2
+    }
+   },
+   "meaning": "Beat accent, both palms open outward (left 12% smaller, 1 frame later)",
+   "variant_of": null,
+   "additive": true,
+   "source": "P2",
+   "audit": {
+    "closure_value": 2.41e-06,
+    "closure_velocity_deg_s": 48.61,
+    "peak_speed_deg_s": 269.3,
+    "peak_speed_who": "arm.r t=0.13",
+    "peak_acc_deg_s2": 5801
+   }
+  }
+ ],
+ "clip_rules": {
+  "bones_only": true,
+  "jaw_keyed_in_any_clip": false,
+  "eyelids_only_in": "Blink",
+  "prop_L_keyed": false,
+  "nod_scope": "neck, head, ear_L, ear_R",
+  "weights_channels": 0,
+  "loop_first_equals_last_tolerance": 0.0001,
+  "channels_kept_total": null,
+  "note": "A channel is dropped only if it sits at the node rest value in every clip; channels at rest in one clip but animated in another are kept so crossfades return to rest. Beat_R, Beat_L, Beat_Both are additive and own arms, chest, head and neck only. Walk, Walk_Start and Walk_Stop_* also key shin_L and shin_R.",
+  "knee_bones": {
+   "joints": [
+    "shin_L",
+    "shin_R"
+   ],
+   "axis": "rx on the shin node, positive = the shin folds backward (knee flexion), 0 to about 75 degrees"
+  }
+ },
+ "home_policy": {
+  "idle_home_version": "r2-studio-1",
+  "rule": "Every one-shot ends on Idle frame 0 (SearchStart and SearchSwipe on SearchHold frame 0); SearchSwipe and Found start on SearchHold frame 0. Verified at 1e-4 by the audit.",
+  "audit_end_diffs": {
+   "SearchStart": 0,
+   "SearchSwipe": 0,
+   "Found": 1.8334723531077124e-09,
+   "Greet": 0,
+   "Goodbye": 0,
+   "Wave": 0,
+   "Happy": 3.498903805576603e-10,
+   "Celebrate": 0,
+   "LookAround": 0,
+   "Walk_Start": 0,
+   "Walk_Stop_R": 0,
+   "Walk_Stop_L": 0
+  },
+  "walk_transitions": "Walk_Start starts on Idle f0 and ends on Walk f0. Walk_Stop_R starts on Walk f0 (or f16) and ends on Idle f0. Walk_Stop_L starts on Walk f8 and ends on Idle f0."
+ },
+ "walk": {
+  "in_place": true,
+  "version": "p1-studio-2",
+  "frames": 16,
+  "cycle_s": 0.533333,
+  "stride_m_per_cycle": 0.28,
+  "step_note": "stride_m_per_cycle is the travel per 16 f cycle (two steps, so 0.14 m per step): 0.525 m/s x 0.5333 s = 0.28 m",
+  "speed_m_per_s": 0.525,
+  "cruise_scale": 1.0,
+  "rush_scale": 1.35,
+  "gait": "rolling no-slip sole contact on the probed sole profile, knees (shin_L / shin_R), 16 f cycle, heel strike R at f0 and L at f8, compass-gait hip bob",
+  "stop_rules": {
+   "stop_R": "start Walk_Stop_R at a right heel strike (Walk phase 0 or 16)",
+   "stop_L": "start Walk_Stop_L at a left heel strike (Walk phase 8)",
+   "phase_window_frames": 1,
+   "root_speed_source": "clips[].root_speed_m_s",
+   "note": "Pick the stop whose start phase is the nearest following contact (at most 8 frames, 0.27 s, away), keep playing Walk until then, then crossfade-free switch (the clips start on the exact Walk pose)."
+  },
+  "root_bob_mm": 38.0,
+  "horizontal_foot_skate_mm": "measured on the mesh: see HANDOFF-P1.md W2",
+  "mesh_penetration_max_mm": 1.32,
+  "known_limits": [
+   "knee chart (R 15,22,28,20,12,7,5,12,22,32,40,52,60,45,28,14, L shifted 8 f) steps up to 15 deg per frame in Walk; the Start and Stop toe-offs step 18 deg (shin_R f5)",
+   "W6 knee targets: contact 16.4 / 12.4, down 28.6 / 27.0, swing max 57.4 / 56.7 (all inside the Bible 8.1 windows)",
+   "W7 seam: the strict 60 deg/s reading is infeasible at 16 f for knees and feet, see HANDOFF-P1.md; every junction is inside 1.05x the bone's own interior second difference (Walk_Start to Walk: shin_R 313 deg/s, worst bone ratio 0.91)",
+   "Idle f0 and every non-walk clip that starts or ends on Idle carry a soft knee layer (R 4.5 / L 4.0 deg, hips 0.16 mm lower); Blink, Nod and the Beat clips are partial or additive and own no leg bones",
+   "WP2 knees: Idle unloads the right knee (8 deg over the soft 4.5, f20-50) and the left (10 over 4.0, f125-160), so the shin peaks are 12.5 / 14.0 deg; Happy, Celebrate and Listen_Excited have knee forks (peaks 38.6 / 41 / about 18 deg before the soft layer). The layer moves the planted feet by at most 1.5 mm."
+  ],
+  "note": "Clip is in place. To travel, move the avatar along +Z (its facing direction in glTF) at 0.525 m/s while Walk plays."
+ },
+ "pose_notes": "Bind pose is a T-pose. The relaxed arm pose is carried inside every clip, so play a clip (Idle by default) before showing the avatar.",
+ "budgets": {
+  "max_bytes": 3000000,
+  "triangles": "85000-100000",
+  "joints": 32,
+  "morph_targets": 20,
+  "animations": 30
+ },
+ "audit": {
+  "passed": 172,
+  "failed": 0,
+  "file": "02-working/P1/merge/audit-final.json",
+  "failed_checks": []
+ },
+ "validator": {
+  "errors": 0,
+  "warnings": 1,
+  "note": "gltf-validator; the one warning is NODE_SKINNED_MESH_NON_ROOT (head mesh under the Armature node), harmless in three.js. No MouthBag since WP5 round 1."
+ },
+ "round1_backup": {
+  "glb": "avatar-animated-r1.glb",
+  "json": "avatar-animated-r1.json"
+ },
+ "morph_targets_note": "Avatar_lowpoly carries 20 targets (14 visemes sil PP FF DD kk CH SS nn RR aa E I O U, then browUp browInnerUp browDown cheekPuff mouthSmile PP_jaw). There is NO MouthBag mesh any more (WP5 fix round 1 removed it: its tongue showed as a pink line over the painted mouth interior).",
+ "viseme_set_version": 2,
+ "mouth_bag": {
+  "present": false,
+  "mesh": null,
+  "triangles": 0,
+  "morph_targets": [],
+  "runtime_rule": "No MouthBag in this GLB. lipsync/morphTargets.js binds every mesh that has the morph names, so nothing has to change; a runtime that still expects a second mesh with 14 targets must treat it as optional."
+ },
+ "pp_jaw": {
+  "morph": "PP_jaw",
+  "rule": "PP_jaw weight = PP weight * min(jaw, 0.2) / 0.2 (jaw in rad, the jaw bone's unit). It keeps the lip seal closed while the jaw opens up to 0.2 (HANDOFF-P5 / P5-READY.json). Fallback when the runtime cannot drive it: ppJawV2 = 0.0."
+ },
+ "seam_weld": {
+  "done": true,
+  "tolerance": 1e-05,
+  "rule": "vertices whose Basis positions match within 1e-5 share the averaged vertex-group weights (top 4, normalised); m_chin.py ran afterwards, the chin vertices keep no Bone.014 weight",
+  "proof": "node tools/R2/review/seam_weights.mjs on this GLB: 0 mismatched pairs on every bone (the previous studio GLB had 580, 73 of them on leg bones); details in 02-working/P1/merge/weld-report.json"
+ },
+ "round2_backup": {
+  "glb": "avatar-animated-R2.glb",
+  "json": "avatar-animated-R2.json",
+  "note": "the R2 publish (24 clips, 30 joints, 24 f walk, V1 mesh)"
+ }
+}

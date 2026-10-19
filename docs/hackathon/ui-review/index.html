@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task 05 — UI review</title>
+<style>
+  :root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #27331f; background: #fff8ec; }
+  body { max-width: 1600px; margin: auto; padding: 24px; }
+  h1 { margin: 0; font-size: 32px; }
+  p { max-width: 90ch; }
+  .status { background: #e9f8e3; padding: 12px 16px; border-radius: 12px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+  label { display: grid; gap: 4px; font-weight: 600; }
+  select { min-height: 48px; font: inherit; color: inherit; border: 1px solid #9aa78e; border-radius: 12px; background: white; padding: 8px 12px; }
+  main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  main.single { grid-template-columns: 1fr; }
+  figure { min-width: 0; margin: 0; padding: 16px; background: #fff; border: 1px solid #d3dccb; border-radius: 16px; }
+  figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+  img { display: block; width: 100%; height: auto; border-radius: 8px; }
+  .phone img { max-width: 390px; margin: auto; }
+  a { color: #15803d; }
+  [hidden] { display: none !important; }
+  .note { padding: 16px; border-radius: 12px; background: #fff2d5; }
+  @media (max-width: 700px) { body { padding: 16px; } main { grid-template-columns: 1fr; } h1 { font-size: 24px; } }
+</style>
+<h1>Task 05 — UI review</h1>
+<p class="status">Review before opening a PR. The work is on <strong>hk/05-web-ui</strong>. Majd owns the avatar animation.</p>
+<p>Compare the original web UI with the warm mobile-inspired design. Captures use synthetic local accounts, at 1440 × 1000 or 390 × 844 CSS pixels. Images show the viewport; longer pages continue below it.</p>
+<div class="controls">
+  <label>Page <select id="page">
+    <optgroup label="Child">
+      <option value="child-home">Home</option><option value="child-quests">Quests</option><option value="child-badges">Achievements</option><option value="child-settings">Child settings</option>
+    </optgroup>
+    <optgroup label="Parent">
+      <option value="parent-children">Children</option><option value="parent-insights">Insights</option><option value="parent-alerts">Alerts</option><option value="parent-summary">Child summary</option><option value="parent-settings">Parent settings</option><option value="parent-add-child">Add child dialog</option>
+    </optgroup>
+    <optgroup label="Sign in and account setup">
+      <option value="login">Login</option><option value="register">Register</option><option value="forgot-password">Forgot password</option><option value="reset-password">Reset password</option>
+    </optgroup>
+    <optgroup label="Session preview (mocked)">
+      <option value="session-voice">Avatar stage and sources</option><option value="session-sources">Chat and sources</option><option value="session-audio-error">Audio error</option><option value="session-exit-dialog">Exit dialog</option>
+    </optgroup>
+  </select></label>
+  <label>Viewport <select id="size"><option value="desktop">Desktop · 1440 × 1000</option><option value="phone">Phone · 390 × 844</option></select></label>
+  <label>Theme <select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select></label>
+</div>
+<p id="context" class="note" hidden></p>
+<main id="comparison">
+  <figure id="before"><figcaption><strong id="before-title">Before</strong><a id="before-link" target="_blank" rel="noopener">Open full size</a></figcaption><img id="before-image" alt="Original web UI"></figure>
+  <figure id="after"><figcaption><strong>After</strong><a id="after-link" target="_blank" rel="noopener">Open full size</a></figcaption><img id="after-image" alt="Updated web UI"></figure>
+</main>
+<p>The palette, typography, spacing and 56 px child targets follow <code>mobile/src/theme/tokens.js</code>. These are web screenshots. Native Expo rendering and a real LiveKit agent remain separate integration checks. Arabic UI translation is an optional stretch item.</p>
+<p><a href="README.md">Validation notes</a></p>
+<script>
+  const page = document.querySelector('#page');
+  const size = document.querySelector('#size');
+  const theme = document.querySelector('#theme');
+  function update() {
+    const name = page.value;
+    const session = name.startsWith('session-');
+    const child = name.startsWith('child-');
+    const parent = name.startsWith('parent-');
+    const dialog = name === 'parent-add-child';
+    const supportsDark = child || (parent && !dialog);
+    theme.disabled = !supportsDark;
+    if (!supportsDark) theme.value = 'light';
+    const beforeTheme = child ? theme.value : 'light';
+    document.querySelector('#before').hidden = session || dialog;
+    document.querySelector('#before-title').textContent = beforeTheme !== theme.value ? 'Before · light theme' : 'Before';
+    document.querySelector('#comparison').className = [size.value === 'phone' ? 'phone' : '', session || dialog ? 'single' : ''].join(' ');
+    for (const kind of ['before', 'after']) {
+      if (kind === 'before' && (session || dialog)) {
+        document.querySelector('#before-image').removeAttribute('src');
+        continue;
+      }
+      const filename = `screenshots/${kind}-${name}-${size.value}-${kind === 'before' ? beforeTheme : theme.value}.jpg`;
+      document.querySelector(`#${kind}-image`).src = filename;
+      document.querySelector(`#${kind}-link`).href = filename;
+    }
+    const context = document.querySelector('#context');
+    context.hidden = !session;
+    context.textContent = 'Local QA preview: LiveKit transport is mocked, source text is an obvious placeholder, and playback uses a neutral test tone. No Quran or hadith text is generated here. Real retrieved content and recitation audio await task 03 integration.';
+  }
+  for (const control of [page, size, theme]) control.addEventListener('change', update);
+  update();
+</script>
+</html>

@@ -1,0 +1,24 @@
+[
+  {
+    "type": "verse",
+    "surah": 2,
+    "ayah": 262,
+    "arabic_text": "ٱلَّذِينَ يُنفِقُونَ أَمۡوَٰلَهُمۡ فِي سَبِيلِ ٱللَّهِ ثُمَّ لَا يُتۡبِعُونَ مَآ أَنفَقُواْ مَنّٗا وَلَآ أَذٗى لَّهُمۡ أَجۡرُهُمۡ عِندَ رَبِّهِمۡ وَلَا خَوۡفٌ عَلَيۡهِمۡ وَلَا هُمۡ يَحۡزَنُونَ",
+    "arabic_text_search": "الذين ينفقون أموالهم في سبيل الله ثم لا يتبعون ما أنفقوا منا ولا أذى لهم أجرهم عند ربهم ولا خوف عليهم ولا هم يحزنون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "Those who spend their wealth in the way of Allāh and then do not follow up what they have spent with reminders [of it] or [other] injury will have their reward with their Lord, and there will be no fear concerning them, nor will they grieve.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-baqara/262",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/002262.mp3",
+    "values": [
+      "charity"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نعطي بلا أذى، ولا نذكّر من أعطيناه بما أعطيناه. مثلا: إذا شاركت لعبتك أو طعامك مع زميلك، لا تقل له «أنا أعطيتك» ولا تحرجه.",
+    "child_explanation_en": "This verse teaches us to give without hurting anyone and without reminding them of what we gave. For example, if you share a toy or a snack with a classmate, do not keep saying \"I gave you that\" and do not embarrass them.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

@@ -1,0 +1,42 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [production]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USER }}
+          key: ${{ secrets.DO_SSH_KEY }}
+          script: |
+            set -e
+            cd /opt/alsadiq
+            git pull origin production
+            docker compose -f docker-compose.prod.yml build
+            # A bad Caddyfile or ADMIN_ALLOWED_IPS would otherwise give a green deploy with Caddy restart-looping; set -e stops here, before migrate.
+            docker compose -f docker-compose.prod.yml run --rm --no-deps caddy caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile
+            # Migrate before the new containers start, so new code never runs on the old schema.
+            # No collectstatic here: static files are baked into the backend image at build time.
+            docker compose -f docker-compose.prod.yml run --rm backend python manage.py migrate
+            docker compose -f docker-compose.prod.yml run --rm backend python manage.py migrate --check
+            docker compose -f docker-compose.prod.yml up -d
+            # The Caddyfile is a bind mount: up -d alone does not reload a changed one.
+            docker compose -f docker-compose.prod.yml up -d --force-recreate caddy
+            # Idempotent seeds: re-running changes nothing that is already in place.
+            # seed_content loads the knowledge bank (the source cards come from it).
+            docker compose -f docker-compose.prod.yml run --rm backend python manage.py seed_content
+            # seed_demo --ensure creates only the missing demo families, only adds missing sources to the others, and never wipes one in use.
+            # It runs only when DEMO_MODE is on in the server's .env (the quotes keep the check inside the container).
+            docker compose -f docker-compose.prod.yml run --rm backend sh -c 'case "$(printf "%s" "${DEMO_MODE:-}" | tr "[:upper:]" "[:lower:]")" in 1|true|yes|on) python manage.py seed_demo --ensure ;; *) echo "DEMO_MODE is off: demo seed skipped" ;; esac'
+            # Health gate: 200 only if Django, the DB and Redis answer through Caddy (bad DJANGO_ALLOWED_HOSTS gives 400, DB or Redis down gives 503), so a broken deploy turns the run red.
+            # Retries cover the few seconds the backend needs to boot. --retry-all-errors needs curl 7.71+ (Ubuntu 22.04 ships 7.81).
+            # --resolve pins the name to this box, so Caddy, the certificate (SNI) and the backend are tested without DNS or hairpin NAT. The hostname must equal DOMAIN in the server .env.
+            curl -fsS --connect-timeout 5 --max-time 15 --resolve alsadiqai.com:443:127.0.0.1 --retry 10 --retry-delay 3 --retry-all-errors -o /dev/null https://alsadiqai.com/api/health/
+            echo "Deployment complete."

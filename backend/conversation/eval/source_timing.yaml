@@ -1,0 +1,532 @@
+# Source-timing set (hk/13): short multi-turn child conversations, every child turn labelled with what Sadiq
+# should do about a source on THAT turn. Children's messages only: no scripture, no du'a wording.
+#
+#   due           the child shares a value moment, a moral dilemma or a family situation: Sadiq should offer
+#                 a source unprompted (a card, or at least an offer in words)
+#   not_due       small talk, games, jokes, school news, plain feelings, a sad / scared / hurt / grieving
+#                 child: comfort and company first, no source
+#   ask           the child explicitly asks for a verse or hadith on a topic the bank covers: a card is expected
+#   not_in_bank   the child explicitly asks for something the bank does not hold (a prophet's story detail,
+#                 a specific du'a, a number, a person from the sirah): "not found in my library",
+#                 and NO referral to a parent, teacher or scholar
+#
+# Format: each turn is a one-key mapping, label: child text. ``age`` 6-13 (band 6-9 / 10-13), lang en | ar.
+# The not_in_bank topics were checked against the shipped bank (no item mentions them): Yunus and the whale,
+# Dawud, Pharaoh, Bilal, Khadija, Badr, Maryam, the angels' number, the du'a for exams / travel / lost things.
+# Arabic is a mix of Gulf and Levantine.
+
+# ------------------------------------------------------------------ English
+- id: e01-broken-window
+  lang: en
+  age: 8
+  turns:
+    - not_due: "hi sadiq!! guess what"
+    - due: "I told my teacher the truth about the broken window, it was me who broke it"
+    - not_due: "ok now can we play a guessing game"
+
+- id: e02-copy-homework
+  lang: en
+  age: 11
+  turns:
+    - not_due: "hey, I got 18 out of 20 on my science test"
+    - due: "my friend wants to copy my homework tomorrow, what should I do?"
+
+- id: e03-brother-toys
+  lang: en
+  age: 7
+  turns:
+    - due: "my little brother keeps taking my toys and I want to yell at him"
+    - not_due: "he's 4"
+
+- id: e04-found-money
+  lang: en
+  age: 9
+  turns:
+    - not_due: "hi, I'm bored"
+    - due: "I found 20 riyals on the floor at school and nobody saw me pick it up. I gave it to the teacher"
+
+- id: e05-hadith-honesty-then-cousin
+  lang: en
+  age: 9
+  turns:
+    - ask: "can you tell me a hadith about honesty?"
+    - not_due: "cool thanks"
+    - due: "my cousin lied to his mom and told me not to say anything, what should I do?"
+
+- id: e06-cat-died
+  lang: en
+  age: 9
+  turns:
+    - not_due: "I'm so sad, my cat died this morning"
+    - not_due: "I don't want to talk about it much"
+
+- id: e07-verse-parents-dua-exam
+  lang: en
+  age: 13
+  turns:
+    - ask: "can you give me a verse about being kind to parents?"
+    - not_in_bank: "what's the du'a I should say before my exams?"
+
+- id: e08-thunder
+  lang: en
+  age: 8
+  turns:
+    - not_due: "I'm scared of the thunder tonight"
+    - not_due: "it's really loud and my mom is out"
+
+- id: e09-helping-sick-mom
+  lang: en
+  age: 9
+  turns:
+    - due: "my mom is sick and my dad is cooking dinner and doing all the cleaning, I helped him wash the plates"
+    - not_due: "he said thank you"
+    - ask: "is there a hadith about helping at home?"
+
+- id: e10-yunus-whale
+  lang: en
+  age: 9
+  turns:
+    - not_in_bank: "how long was Prophet Yunus inside the whale?"
+    - not_due: "ok never mind"
+
+- id: e11-jealous-captain
+  lang: en
+  age: 12
+  turns:
+    - not_due: "hi sadiq, I just got back from football practice"
+    - due: "this boy on my team keeps getting picked as captain and I'm jealous. I said something mean about him behind his back"
+
+- id: e13-patience-sister-bathroom
+  lang: en
+  age: 10
+  turns:
+    - ask: "do you know a hadith about patience?"
+    - due: "I get so mad when my sister takes forever in the bathroom"
+    - not_due: "haha ok"
+
+- id: e14-how-many-angels
+  lang: en
+  age: 13
+  turns:
+    - not_in_bank: "how many angels are there?"
+    - not_due: "ok. can we talk about football"
+
+- id: e15-new-kid-lunch
+  lang: en
+  age: 8
+  turns:
+    - due: "today at lunch a new kid had nobody to sit with so I sat with him"
+    - not_due: "he likes dinosaurs too"
+
+- id: e16-grandma-questions
+  lang: en
+  age: 8
+  turns:
+    - due: "my grandma lives with us and she asks me the same questions again and again and sometimes I get annoyed"
+    - not_due: "anyway, school was so long today"
+
+- id: e17-prophet-camel-then-animals
+  lang: en
+  age: 9
+  turns:
+    - not_in_bank: "what was the name of the Prophet's camel?"
+    - ask: "ok then can you tell me a hadith about being kind to animals?"
+
+- id: e19-bad-word-laugh
+  lang: en
+  age: 11
+  turns:
+    - due: "my friend said a bad word about another kid and I laughed. now I feel weird about it"
+    - not_due: "can I tell you what I'm going to build with lego?"
+
+- id: e20-bike-knee
+  lang: en
+  age: 7
+  turns:
+    - not_due: "I fell off my bike and my knee is bleeding, it hurts"
+    - not_due: "my dad is putting a bandage on it"
+
+- id: e21-forgiveness-fight-sorry-first
+  lang: en
+  age: 13
+  turns:
+    - ask: "is there a verse about forgiveness? my friend and I had a fight"
+    - due: "should I be the first one to say sorry even if it wasn't my fault?"
+
+- id: e22-bilal-adhan
+  lang: en
+  age: 11
+  turns:
+    - not_in_bank: "who was Bilal and why did he give the adhan?"
+    - not_due: "ok thanks, I have to go eat"
+
+- id: e23-shared-lunch
+  lang: en
+  age: 8
+  turns:
+    - due: "I shared my lunch with a kid who forgot his today"
+    - not_due: "do you like pizza?"
+
+- id: e24-parents-fighting
+  lang: en
+  age: 12
+  turns:
+    - not_due: "my parents are fighting a lot lately and I feel sad"
+    - not_due: "I don't know what to do"
+
+- id: e25-badr
+  lang: en
+  age: 9
+  turns:
+    - not_in_bank: "can you tell me what happened in the Battle of Badr?"
+    - not_due: "no it's ok, tell me a joke instead"
+
+- id: e26-gossip-girl
+  lang: en
+  age: 13
+  turns:
+    - due: "my friends are talking badly about a girl in our class and they want me to join in"
+    - not_due: "ok I'll think about it. anyways did you see the match yesterday"
+
+- id: e27-gratitude-presentation
+  lang: en
+  age: 9
+  turns:
+    - ask: "can you tell me a verse or a hadith about gratitude? we have to say thanks for something at school"
+    - not_due: "I'm thankful for my dog"
+
+- id: e28-sister-doll
+  lang: en
+  age: 7
+  turns:
+    - not_due: "good morning sadiq"
+    - due: "my sister cried because I broke her doll and I said sorry and gave her a hug"
+    - not_due: "can I draw something now"
+
+- id: e29-travel-dua
+  lang: en
+  age: 11
+  turns:
+    - not_in_bank: "what is the du'a for travelling? we're going to grandma's tomorrow"
+    - not_due: "it's a 5 hour drive lol"
+
+- id: e30-loud-neighbour
+  lang: en
+  age: 12
+  turns:
+    - due: "my neighbour is really loud at night and I want to bang on his wall to be annoying back"
+    - ask: "do you have a hadith about neighbours?"
+
+- id: e31-lost-things-dua
+  lang: en
+  age: 9
+  turns:
+    - not_due: "hi sadiq, what's up"
+    - not_in_bank: "what's the du'a to say when I lose something?"
+    - not_due: "hehe ok I'll look under my bed"
+
+- id: e32-how-many-prophets-blamed
+  lang: en
+  age: 12
+  turns:
+    - not_in_bank: "how many prophets are there?"
+    - due: "my friend got blamed for something I did and I didn't say anything"
+
+- id: e33-khadija
+  lang: en
+  age: 8
+  turns:
+    - not_in_bank: "who was Khadija?"
+    - not_due: "ok. what's your favourite colour?"
+
+- id: e34-kind-words-sister
+  lang: en
+  age: 9
+  turns:
+    - ask: "can you tell me a hadith about kind words?"
+    - not_due: "thanks!"
+
+- id: e35-not-wasting-presentation
+  lang: en
+  age: 11
+  turns:
+    - ask: "I need a verse about not wasting food for my school presentation"
+    - not_due: "thanks! I'll make the slides tonight"
+
+- id: e36-lent-pen
+  lang: en
+  age: 12
+  turns:
+    - due: "my friend lost the best pen I lent him. I was upset but I told him it's ok"
+    - not_due: "can we play word games"
+
+- id: e37-phone-sneak
+  lang: en
+  age: 13
+  turns:
+    - due: "my mom took my phone as a punishment and I'm thinking about sneaking it back. what should I do?"
+    - not_due: "ugh fine"
+
+- id: e38-dawud-pharaoh
+  lang: en
+  age: 10
+  turns:
+    - not_in_bank: "how many plagues did Pharaoh get?"
+    - not_in_bank: "and what was Prophet Dawud's job before he was a king?"
+
+- id: e39-groceries-juice
+  lang: en
+  age: 9
+  turns:
+    - due: "I helped my mom carry the groceries today without being asked"
+    - due: "then my little brother spilled juice everywhere and I didn't get angry, I just helped clean it"
+
+# ------------------------------------------------------------------ Arabic (Gulf and Levantine)
+- id: a01-broken-cup-gulf
+  lang: ar
+  age: 8
+  turns:
+    - not_due: "هلا صديق، شلونك؟"
+    - due: "كسرت كاسة أمي وقلت لها الصدق إني أنا اللي كسرتها"
+
+- id: a02-found-wallet-levant
+  lang: ar
+  age: 11
+  turns:
+    - not_due: "مرحبا صديق شو أخبارك؟"
+    - due: "رجعت المحفظة اللي لقيتها بالشارع لصاحبها"
+
+- id: a03-brother-toys-gulf
+  lang: ar
+  age: 9
+  turns:
+    - due: "أخوي الصغير ياخذ ألعابي وابي أصارخ عليه"
+    - not_due: "عمره ثلاث سنين"
+
+- id: a04-copy-homework-levant
+  lang: ar
+  age: 12
+  turns:
+    - due: "صاحبي بدو ينقل مني الوظيفة، شو أعمل؟"
+    - not_due: "طيب شكرا، شو رأيك نحكي عن كرة القدم؟"
+
+- id: a05-grandma-died-levant
+  lang: ar
+  age: 8
+  turns:
+    - not_due: "ستي ماتت وأنا مشتاقلها كتير"
+    - not_due: "بدي ضل احكي معك شوي"
+
+- id: a06-hadith-honesty-cheating-gulf
+  lang: ar
+  age: 10
+  turns:
+    - ask: "ممكن حديث عن الصدق؟"
+    - not_due: "حلو، شكرا"
+    - due: "زميلي في الفصل غش في الاختبار وأنا شفته، أقول للمعلمة؟"
+
+- id: a07-verse-parents-exam-dua-gulf
+  lang: ar
+  age: 13
+  turns:
+    - ask: "ابي آية عن بر الوالدين لو سمحت"
+    - not_in_bank: "شو الدعاء اللي أقوله قبل الاختبار؟"
+
+- id: a08-thunder-levant
+  lang: ar
+  age: 7
+  turns:
+    - not_due: "خفت كتير من الرعد الليلة"
+    - not_due: "ماما مش بالبيت"
+
+- id: a09-helping-sick-mom-gulf
+  lang: ar
+  age: 9
+  turns:
+    - due: "أمي تعبانة وأبوي ساعدها في البيت وأنا ساعدته بغسل الصحون"
+    - not_due: "قال لي شكرا"
+    - ask: "في حديث عن مساعدة الأهل؟"
+
+- id: a10-yunus-whale-levant
+  lang: ar
+  age: 9
+  turns:
+    - not_in_bank: "كم سنة قعد النبي يونس بطن الحوت؟"
+    - not_due: "طيب خلص مش مهم"
+
+- id: a11-backbiting-teammate-gulf
+  lang: ar
+  age: 12
+  turns:
+    - not_due: "هلا، توني راجع من التمرين"
+    - due: "قلت كلام مب زين عن واحد من الفريق من ورا ظهره والحين أحس بالذنب"
+
+- id: a13-patience-bathroom-levant
+  lang: ar
+  age: 10
+  turns:
+    - ask: "بدي حديث عن الصبر"
+    - due: "بنفعل كتير لما أختي بتتأخر بالحمام"
+    - not_due: "هههه تمام"
+
+- id: a14-how-many-angels-gulf
+  lang: ar
+  age: 13
+  turns:
+    - not_in_bank: "كم عدد الملائكة؟"
+    - not_due: "طيب، شو رايك بالمباراة أمس؟"
+
+- id: a15-new-kid-levant
+  lang: ar
+  age: 9
+  turns:
+    - due: "اليوم بالمدرسة في ولد جديد ما حدا قعد معه وأنا قعدت معه"
+    - not_due: "بيحب الديناصورات متلي"
+
+- id: a16-grandma-repeats-gulf
+  lang: ar
+  age: 8
+  turns:
+    - due: "جدتي عايشة معنا وتعيد نفس الأسئلة وأحيانا أنزعج منها"
+    - not_due: "المهم، اليوم المدرسة كانت طويلة"
+
+- id: a17-prophet-camel-then-animals-levant
+  lang: ar
+  age: 9
+  turns:
+    - not_in_bank: "شو اسم ناقة النبي؟"
+    - ask: "طيب بدي حديث عن الرفق بالحيوان"
+
+- id: a19-bad-word-laugh-levant
+  lang: ar
+  age: 10
+  turns:
+    - due: "صاحبي حكى كلمة سيئة عن ولد وأنا ضحكت وهلأ حاسس شي مش منيح"
+    - not_due: "بدي ابني شي بالليغو، بتحب تسمع؟"
+
+- id: a21-forgiveness-fight-levant
+  lang: ar
+  age: 13
+  turns:
+    - ask: "في آية عن المسامحة؟ أنا وصاحبي تخانقنا"
+    - due: "لازم أنا أعتذر أول واحد حتى لو الغلط مش مني؟"
+
+- id: a22-bilal-gulf
+  lang: ar
+  age: 11
+  turns:
+    - not_in_bank: "من هو بلال وليش كان يأذن؟"
+    - not_due: "زين، لازم أروح آكل"
+
+- id: a23-shared-sandwich-levant
+  lang: ar
+  age: 8
+  turns:
+    - due: "شاركت سندويشتي مع ولد نسي الأكل"
+    - not_due: "بتحب البيتزا؟"
+
+- id: a24-parents-fighting-gulf
+  lang: ar
+  age: 12
+  turns:
+    - not_due: "أبوي وأمي يتهاوشون وايد هالأيام وأنا حزين"
+    - not_due: "ما أدري شسوي"
+
+- id: a25-badr-levant
+  lang: ar
+  age: 9
+  turns:
+    - not_in_bank: "احكيلي شو صار بغزوة بدر"
+    - not_due: "لا خلص، احكيلي نكتة"
+
+- id: a26-gossip-girl-gulf
+  lang: ar
+  age: 13
+  turns:
+    - due: "ربعي يتكلمون عن بنت في الفصل بالسوء وياخذوني معهم"
+    - not_due: "زين بفكر. المهم، شفت المباراة؟"
+
+- id: a27-gratitude-school-levant
+  lang: ar
+  age: 9
+  turns:
+    - ask: "بدي آية أو حديث عن الشكر، لازم نحكي شكر بالمدرسة"
+    - not_due: "أنا شاكر على كلبي"
+
+- id: a28-sister-doll-gulf
+  lang: ar
+  age: 7
+  turns:
+    - not_due: "صباح الخير صديق"
+    - due: "أختي بكت لأني كسرت دميتها وقلت لها آسف وعانقتها"
+    - not_due: "ابي أرسم الحين"
+
+- id: a29-travel-dua-levant
+  lang: ar
+  age: 11
+  turns:
+    - not_in_bank: "شو دعاء السفر؟ بكرة رايحين عند ستي"
+    - not_due: "طريقها خمس ساعات"
+
+- id: a30-loud-neighbour-gulf
+  lang: ar
+  age: 12
+  turns:
+    - due: "جارنا صوته عالي بالليل وابي أخبط على الجدار أزعجه"
+    - ask: "عندك حديث عن الجيران؟"
+
+- id: a31-lost-things-dua-gulf
+  lang: ar
+  age: 9
+  turns:
+    - not_in_bank: "شو الدعاء إذا ضيعت شي؟"
+    - not_due: "هههه زين بدور تحت السرير"
+
+- id: a32-how-many-prophets-blamed-levant
+  lang: ar
+  age: 12
+  turns:
+    - not_in_bank: "كم عدد الأنبياء؟"
+    - due: "صاحبي أخد اللوم على شي أنا عملته وأنا ما حكيت شي"
+
+- id: a34-amanah-gulf
+  lang: ar
+  age: 11
+  turns:
+    - ask: "ابي حديث عن الأمانة"
+    - not_due: "شكرا"
+
+- id: a35-charity-levant
+  lang: ar
+  age: 10
+  turns:
+    - ask: "بدي آية عن الصدقة"
+    - not_due: "بحب أرسم، بتحب الرسم؟"
+
+- id: a36-helped-old-neighbour-gulf
+  lang: ar
+  age: 12
+  turns:
+    - due: "اليوم ساعدت جارتنا العجوز تشيل أغراضها"
+    - not_due: "ابي ألعب بلايستيشن الحين"
+
+- id: a37-brother-window-levant
+  lang: ar
+  age: 10
+  turns:
+    - due: "أخي الكبير قلي ما تقول لماما إنو كسر الشباك، شو أعمل؟"
+    - not_due: "طيب خلص، بفكر"
+
+- id: a38-dawud-pharaoh-gulf
+  lang: ar
+  age: 11
+  turns:
+    - not_in_bank: "كم عدد الضربات اللي جت على فرعون؟"
+    - not_in_bank: "وش كان شغل النبي داود قبل ما يصير ملك؟"
+
+- id: a39-groceries-juice-levant
+  lang: ar
+  age: 9
+  turns:
+    - due: "ساعدت ماما تحمل الأغراض بدون ما تطلب"
+    - due: "وبعدين أخوي الصغير سكب العصير وما زعلت، ساعدته ينظف"

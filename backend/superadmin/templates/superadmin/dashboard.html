@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al-Sadiq SuperAdmin</title>
+<style>
+/* ============================================
+   CSS Reset + Variables
+   ============================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#121212;--surface:#1E1E1E;--surface2:#2A2A2A;--surface3:#333;
+  --border:#3A3A3A;--text:#E0E0E0;--text2:#999;--text3:#666;
+  --accent:#4F8EF7;--accent2:#F7834F;
+  --gradient:linear-gradient(135deg,#F7834F,#4F8EF7);
+  --danger:#E74C3C;--danger-bg:rgba(231,76,60,.15);
+  --success:#2ECC71;--success-bg:rgba(46,204,113,.15);
+  --warn:#F1C40F;
+  --radius:7px;--radius-sm:5px;
+  --sidebar-w:240px;--header-h:56px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:"SF Mono","Cascadia Code","Fira Code",monospace;
+}
+html{font-size:14px}
+body{font-family:var(--font);background:var(--bg);color:var(--text);overflow:hidden;height:100vh}
+a{color:var(--accent);text-decoration:none}
+button{cursor:pointer;font-family:var(--font);border:none;outline:none}
+input,select,textarea{font-family:var(--font);background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 10px;outline:none;font-size:.875rem}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:60px}
+
+/* ============================================
+   Layout: Sidebar + Header + Main
+   ============================================ */
+.layout{display:flex;height:100vh}
+
+/* Sidebar */
+.sidebar{
+  width:var(--sidebar-w);min-width:var(--sidebar-w);
+  background:var(--surface);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;overflow-y:auto;
+  position:fixed;top:0;left:0;bottom:0;z-index:20;
+}
+.sidebar-logo{
+  padding:16px 20px;font-size:1.1rem;font-weight:700;
+  background:var(--gradient);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+.sidebar-section{padding:12px 14px 4px;font-size:.65rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--text3);font-weight:600}
+.sidebar-item{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 20px;font-size:.85rem;color:var(--text2);
+  border-left:3px solid transparent;transition:.15s;cursor:pointer;
+}
+.sidebar-item:hover{background:var(--surface2);color:var(--text)}
+.sidebar-item.active{background:var(--surface2);color:var(--accent);border-left-color:var(--accent);font-weight:600}
+.sidebar-item .icon{font-size:1rem;width:20px;text-align:center}
+.sidebar-bottom{margin-top:auto;padding:12px 20px;border-top:1px solid var(--border);font-size:.75rem;color:var(--text3)}
+
+/* Header */
+.header{
+  position:fixed;top:0;left:var(--sidebar-w);right:0;height:var(--header-h);
+  background:var(--surface);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 24px;z-index:15;
+}
+.header-left{display:flex;align-items:center;gap:14px}
+.header-title{font-size:1rem;font-weight:600}
+.header-search{
+  width:280px;padding:7px 12px 7px 32px;border-radius:var(--radius);
+  background:var(--surface2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23999' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E") 10px center no-repeat;
+}
+.header-right{display:flex;align-items:center;gap:12px}
+.env-badge{
+  padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.5px;
+  background:var(--success-bg);color:var(--success);
+}
+.header-avatar{
+  width:32px;height:32px;border-radius:50%;background:var(--gradient);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.8rem;color:#fff;
+}
+
+/* Main content */
+.main{
+  margin-left:var(--sidebar-w);margin-top:var(--header-h);
+  padding:20px 24px;flex:1;overflow-y:auto;
+  height:calc(100vh - var(--header-h));
+}
+
+/* ============================================
+   Dashboard Overview
+   ============================================ */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:24px}
+.stat-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px 20px;
+}
+.stat-card .label{font-size:.75rem;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.stat-card .value{font-size:1.8rem;font-weight:700;font-family:var(--mono)}
+
+/* ============================================
+   Table Toolbar
+   ============================================ */
+.toolbar{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;gap:12px;flex-wrap:wrap;
+}
+.toolbar-left{display:flex;align-items:center;gap:10px}
+.toolbar-right{display:flex;align-items:center;gap:10px}
+.btn{
+  padding:8px 16px;border-radius:var(--radius-sm);font-size:.82rem;
+  font-weight:500;transition:.15s;display:inline-flex;align-items:center;gap:6px;
+}
+.btn-primary{background:var(--gradient);color:#fff}
+.btn-primary:hover{opacity:.9}
+.btn-secondary{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
+.btn-secondary:hover{background:var(--surface3)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-danger:hover{background:#c0392b}
+.btn-sm{padding:5px 10px;font-size:.75rem}
+.table-search{width:200px}
+
+/* ============================================
+   Data Table
+   ============================================ */
+.table-wrap{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);overflow:auto;max-height:calc(100vh - var(--header-h) - 140px);
+}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+thead{position:sticky;top:0;z-index:5}
+thead th{
+  background:var(--surface2);padding:10px 14px;text-align:left;
+  font-weight:600;font-size:.73rem;text-transform:uppercase;
+  letter-spacing:.6px;color:var(--text2);border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+tbody td{
+  padding:9px 14px;border-bottom:1px solid var(--border);
+  font-variant-numeric:tabular-nums;font-family:var(--mono);
+  font-size:.8rem;white-space:nowrap;max-width:280px;overflow:hidden;text-overflow:ellipsis;
+}
+tbody tr:hover{background:var(--surface2)}
+tbody tr:last-child td{border-bottom:none}
+td.actions{text-align:right;position:relative}
+
+/* Kebab menu */
+.kebab{
+  background:none;color:var(--text2);font-size:1.2rem;padding:4px 8px;
+  border-radius:var(--radius-sm);
+}
+.kebab:hover{background:var(--surface3);color:var(--text)}
+.dropdown{
+  display:none;position:absolute;right:14px;top:32px;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:var(--radius-sm);min-width:120px;z-index:10;
+  box-shadow:0 8px 24px rgba(0,0,0,.4);
+}
+.dropdown.open{display:block}
+.dropdown-item{
+  display:block;width:100%;text-align:left;padding:8px 14px;
+  font-size:.8rem;color:var(--text);background:none;
+}
+.dropdown-item:hover{background:var(--surface3)}
+.dropdown-item.danger{color:var(--danger)}
+
+/* ============================================
+   Modal
+   ============================================ */
+.modal-overlay{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);
+  z-index:100;align-items:center;justify-content:center;
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  width:520px;max-width:92vw;max-height:85vh;overflow-y:auto;
+}
+.modal-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 20px;border-bottom:1px solid var(--border);
+}
+.modal-header h3{font-size:.95rem;font-weight:600}
+.modal-close{background:none;color:var(--text2);font-size:1.3rem;padding:4px}
+.modal-close:hover{color:var(--text)}
+.modal-body{padding:20px}
+.modal-footer{
+  display:flex;justify-content:flex-end;gap:10px;
+  padding:14px 20px;border-top:1px solid var(--border);
+}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;margin-bottom:5px;font-size:.78rem;font-weight:500;color:var(--text2)}
+.form-group input,.form-group select,.form-group textarea{width:100%}
+
+/* Delete confirm */
+.delete-warning{
+  background:var(--danger-bg);border:1px solid var(--danger);
+  border-radius:var(--radius-sm);padding:14px;margin-bottom:14px;
+  font-size:.83rem;color:var(--danger);
+}
+.delete-confirm-input{margin-top:10px}
+.delete-confirm-input label{color:var(--danger)}
+
+/* ============================================
+   Empty / Loading States
+   ============================================ */
+.empty-state{
+  padding:48px 20px;text-align:center;color:var(--text3);font-size:.9rem;
+}
+.loading{
+  display:flex;align-items:center;justify-content:center;padding:40px;
+  color:var(--text3);font-size:.85rem;gap:8px;
+}
+.spinner{
+  width:18px;height:18px;border:2px solid var(--border);
+  border-top-color:var(--accent);border-radius:50%;
+  animation:spin .6s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Pagination */
+.pagination{
+  display:flex;align-items:center;justify-content:center;
+  gap:6px;padding:12px;border-top:1px solid var(--border);
+}
+.pagination button{
+  padding:5px 10px;border-radius:var(--radius-sm);font-size:.78rem;
+  background:var(--surface2);color:var(--text2);border:1px solid var(--border);
+}
+.pagination button:hover{background:var(--surface3);color:var(--text)}
+.pagination button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pagination button:disabled{opacity:.4;cursor:not-allowed}
+.page-info{font-size:.75rem;color:var(--text3);margin:0 8px}
+</style>
+</head>
+<body>
+<div class="layout">
+  <!-- ===== Sidebar ===== -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-logo">🔷 Al-Sadiq Admin</div>
+
+    <div class="sidebar-section">Overview</div>
+    <div class="sidebar-item active" data-view="dashboard">
+      <span class="icon">📊</span> Dashboard
+    </div>
+
+    <div class="sidebar-section">Authentication</div>
+    <div class="sidebar-item" data-table="users"><span class="icon">👤</span> Users</div>
+    <div class="sidebar-item" data-table="parent-profiles"><span class="icon">👨‍👩‍👧</span> Parent Profiles</div>
+    <div class="sidebar-item" data-table="child-profiles"><span class="icon">🧒</span> Child Profiles</div>
+    <div class="sidebar-item" data-table="parent-child-links"><span class="icon">🔗</span> Parent-Child Links</div>
+    <div class="sidebar-item" data-table="avatars"><span class="icon">🎭</span> Avatars</div>
+
+    <div class="sidebar-section">Conversation</div>
+    <div class="sidebar-item" data-table="sessions"><span class="icon">💬</span> Sessions</div>
+    <div class="sidebar-item" data-table="messages"><span class="icon">✉️</span> Messages</div>
+
+    <div class="sidebar-section">Moral Context</div>
+    <div class="sidebar-item" data-table="moral-themes"><span class="icon">📖</span> Moral Themes</div>
+    <div class="sidebar-item" data-table="islamic-references"><span class="icon">🕌</span> Islamic References</div>
+    <div class="sidebar-item" data-table="moral-contexts"><span class="icon">🧭</span> Moral Contexts</div>
+
+    <div class="sidebar-section">Content Safety</div>
+    <div class="sidebar-item" data-table="safety-flags"><span class="icon">🚩</span> Safety Flags</div>
+    <div class="sidebar-item" data-table="alerts"><span class="icon">🔔</span> Alerts</div>
+
+    <div class="sidebar-section">Reporting</div>
+    <div class="sidebar-item" data-table="session-reports"><span class="icon">📋</span> Session Reports</div>
+    <div class="sidebar-item" data-table="child-session-memories"><span class="icon">🧠</span> Child Session Memory</div>
+    <div class="sidebar-item" data-table="weekly-summaries"><span class="icon">📅</span> Weekly Summaries</div>
+
+    <div class="sidebar-section">Gamification</div>
+    <div class="sidebar-item" data-table="levels"><span class="icon">⭐</span> Levels</div>
+    <div class="sidebar-item" data-table="points"><span class="icon">🏆</span> Points</div>
+    <div class="sidebar-item" data-table="badges"><span class="icon">🎖️</span> Badges</div>
+    <div class="sidebar-item" data-table="child-badges"><span class="icon">🏅</span> Child Badges</div>
+    <div class="sidebar-item" data-table="quests"><span class="icon">⚔️</span> Quests</div>
+    <div class="sidebar-item" data-table="quest-progress"><span class="icon">📈</span> Quest Progress</div>
+
+    <div class="sidebar-bottom">v1.0 &middot; SuperAdmin</div>
+  </nav>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-left">
+      <h2 class="header-title" id="pageTitle">Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <input type="text" class="header-search" id="globalSearch" placeholder="Search across all tables...">
+      <span class="env-badge">DEV</span>
+      <div class="header-avatar" title="Admin">A</div>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <div class="main" id="mainContent">
+    <!-- Dashboard view (default) -->
+    <div id="dashboardView">
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+
+    <!-- Table view -->
+    <div id="tableView" style="display:none">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <input type="text" class="table-search" id="tableSearch" placeholder="Search this table...">
+        </div>
+        <div class="toolbar-right">
+          <span id="rowCount" style="font-size:.78rem;color:var(--text3)"></span>
+        </div>
+      </div>
+      <div class="table-wrap" id="tableWrap">
+        <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================
+   Table Schema Definitions
+   ============================================ */
+const TABLE_CONFIG = {
+  'users': {
+    label: 'Users',
+    columns: ['id','username','email','is_parent','is_child','is_staff','is_superuser','is_active','date_joined'],
+  },
+  'parent-profiles': {
+    label: 'Parent Profiles',
+    columns: ['id','user','user_username','name','phone','birth_year','created_at'],
+  },
+  'child-profiles': {
+    label: 'Child Profiles',
+    columns: ['id','user','user_username','nickname','gender','birth_year','avatar_visible','created_at'],
+  },
+  'parent-child-links': {
+    label: 'Parent-Child Links',
+    columns: ['id','parent','parent_name','child','child_nickname','consent_status','date_linked'],
+  },
+  'avatars': {
+    label: 'Avatars',
+    columns: ['id','child','child_nickname','emotion_state','lip_sync_status'],
+  },
+  'sessions': {
+    label: 'Sessions',
+    columns: ['id','child','child_nickname','mood_state','started_at','ended_at','duration'],
+  },
+  'messages': {
+    label: 'Messages',
+    columns: ['id','session','sender','content','input_type','language','created_at'],
+  },
+  'moral-themes': {
+    label: 'Moral Themes',
+    columns: ['id','name','description'],
+  },
+  'islamic-references': {
+    label: 'Islamic References',
+    columns: ['id','reference_type','text','source'],
+  },
+  'moral-contexts': {
+    label: 'Moral Contexts',
+    columns: ['id','message','themes','references','story_source'],
+  },
+  'safety-flags': {
+    label: 'Safety Flags',
+    columns: ['id','message','flag_type','description','is_blocked','flagged_at'],
+  },
+  'alerts': {
+    label: 'Alerts',
+    columns: ['id','session','parent','parent_name','alert_type','description','is_read','created_at'],
+  },
+  'session-reports': {
+    label: 'Session Reports',
+    columns: ['id','session','values_to_revisit','insight_summary','recommendations','raw_llm_output','created_at'],
+  },
+  'child-session-memories': {
+    label: 'Child Session Memories',
+    columns: ['id','child','child_nickname','rolling_summary','updated_at'],
+  },
+  'weekly-summaries': {
+    label: 'Weekly Summaries',
+    columns: ['id','child','child_nickname','parent','parent_name','week_start','summary','created_at'],
+  },
+  'levels': {
+    label: 'Levels',
+    columns: ['id','number','name','required_points'],
+  },
+  'points': {
+    label: 'Points',
+    columns: ['id','child','child_nickname','total','current_level'],
+  },
+  'badges': {
+    label: 'Badges',
+    columns: ['id','name','description','icon'],
+  },
+  'child-badges': {
+    label: 'Child Badges',
+    columns: ['id','child','child_nickname','badge','badge_name','earned_at'],
+  },
+  'quests': {
+    label: 'Quests',
+    columns: ['id','title','description','reward_points','moral_theme','moral_theme_name','session_report','is_ai_generated'],
+  },
+  'quest-progress': {
+    label: 'Quest Progress',
+    columns: ['id','child','child_nickname','quest','quest_title','status','started_at','completed_at'],
+  },
+};
+
+/* ============================================
+   State
+   ============================================ */
+const API_BASE = '/superadmin/api';
+let currentTable = null;
+let currentData = [];
+let currentPage = 1;
+const PAGE_SIZE = 50;
+let accessToken = null;
+
+/* ============================================
+   Auth — get JWT token
+   ============================================ */
+async function ensureAuth() {
+  if (accessToken) return;
+  const stored = sessionStorage.getItem('sa_token');
+  if (stored) { accessToken = stored; return; }
+
+  const user = prompt('SuperAdmin Username:');
+  const pass = prompt('Password:');
+  if (!user || !pass) { alert('Login required'); return location.reload(); }
+
+  const res = await fetch('/api/auth/login/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({username: user, password: pass}),
+  });
+  if (!res.ok) { alert('Login failed'); return location.reload(); }
+  const data = await res.json();
+  accessToken = data.access;
+  sessionStorage.setItem('sa_token', accessToken);
+}
+
+function authHeaders() {
+  return {
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${accessToken}`,
+  };
+}
+
+/* ============================================
+   API Helpers
+   ============================================ */
+// Everything that comes from the API goes through esc() before innerHTML.
+function esc(v) {
+  return String(v ?? '').replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[c]));
+}
+async function api(method, path, body = null) {
+  await ensureAuth();
+  const opts = { method, headers: authHeaders() };
+  if (body) opts.body = JSON.stringify(body);
+  const res = await fetch(`${API_BASE}/${path}`, opts);
+  if (res.status === 401 || res.status === 403) {
+    sessionStorage.removeItem('sa_token');
+    accessToken = null;
+    alert('Session expired. Please log in again.');
+    return location.reload();
+  }
+  if (res.status === 204) return null;
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(JSON.stringify(err));
+  }
+  return res.json();
+}
+
+/* ============================================
+   Dashboard
+   ============================================ */
+async function loadDashboard() {
+  const stats = await api('GET', 'stats/');
+  const grid = document.getElementById('statsGrid');
+  grid.innerHTML = Object.entries(stats).map(([k, v]) => `
+    <div class="stat-card">
+      <div class="label">${esc(k.replace(/_/g, ' '))}</div>
+      <div class="value">${esc(Number(v).toLocaleString())}</div>
+    </div>
+  `).join('');
+}
+
+/* ============================================
+   Table Rendering
+   ============================================ */
+async function loadTable(name, page = 1) {
+  currentTable = name;
+  currentPage = page;
+  const config = TABLE_CONFIG[name];
+
+  document.getElementById('pageTitle').textContent = config.label;
+  document.getElementById('dashboardView').style.display = 'none';
+  document.getElementById('tableView').style.display = '';
+
+  // Update sidebar active
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.table === name);
+  });
+
+  const wrap = document.getElementById('tableWrap');
+  wrap.innerHTML = '<div class="loading"><div class="spinner"></div>Loading...</div>';
+
+  try {
+    const data = await api('GET', `${name}/?limit=${PAGE_SIZE}&offset=${(page - 1) * PAGE_SIZE}`);
+
+    // Handle DRF paginated response or plain array
+    if (Array.isArray(data)) {
+      currentData = data;
+      renderTable(config, data, data.length);
+    } else {
+      currentData = data.results || [];
+      renderTable(config, currentData, data.count || currentData.length);
+    }
+  } catch (e) {
+    wrap.innerHTML = `<div class="empty-state">Error loading data: ${esc(e.message)}</div>`;
+  }
+}
+
+function renderTable(config, rows, totalCount) {
+  const thead = document.getElementById('tableHead');
+  const tbody = document.getElementById('tableBody');
+  const wrap = document.getElementById('tableWrap');
+
+  // Restore table structure
+  wrap.innerHTML = '<table><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table>';
+  const th = document.getElementById('tableHead');
+  const tb = document.getElementById('tableBody');
+
+  // Head
+  th.innerHTML = '<tr>' +
+    config.columns.map(c => `<th>${c.replace(/_/g, ' ')}</th>`).join('') +
+    '</tr>';
+
+  // Body
+  if (!rows.length) {
+    tb.innerHTML = `<tr><td colspan="${config.columns.length}" class="empty-state">No records found</td></tr>`;
+  } else {
+    tb.innerHTML = rows.map(row => `<tr>` +
+      config.columns.map(c => {
+        const raw = row[c];
+        let val = raw;
+        let titleStr;
+        if (raw === null || raw === undefined) {
+          val = '—';
+          titleStr = '';
+        } else if (typeof raw === 'boolean') {
+          val = raw ? '✓' : '✗';
+          titleStr = String(raw);
+        } else if (Array.isArray(raw)) {
+          val = raw.join(', ');
+          titleStr = val;
+        } else if (typeof raw === 'object') {
+          titleStr = JSON.stringify(raw);
+          val = titleStr.length > 60 ? titleStr.slice(0, 60) + '…' : titleStr;
+        } else if (typeof raw === 'string' && raw.length > 50) {
+          val = raw.slice(0, 50) + '…';
+          titleStr = raw;
+        } else {
+          titleStr = String(raw);
+        }
+        if (titleStr.length > 800) titleStr = titleStr.slice(0, 800) + '…';
+        return `<td title="${esc(titleStr)}">${esc(val)}</td>`;
+      }).join('') +
+      `</tr>`
+    ).join('');
+  }
+
+  // Row count
+  document.getElementById('rowCount').textContent = `${totalCount} record${totalCount !== 1 ? 's' : ''}`;
+
+  // Pagination
+  renderPagination(totalCount);
+}
+
+function renderPagination(total) {
+  const pages = Math.ceil(total / PAGE_SIZE);
+  const el = document.getElementById('pagination');
+  if (pages <= 1) { el.innerHTML = ''; return; }
+
+  let html = `<button ${currentPage <= 1 ? 'disabled' : ''} onclick="loadTable('${currentTable}',${currentPage - 1})">← Prev</button>`;
+  const start = Math.max(1, currentPage - 2);
+  const end = Math.min(pages, currentPage + 2);
+  for (let i = start; i <= end; i++) {
+    html += `<button class="${i === currentPage ? 'active' : ''}" onclick="loadTable('${currentTable}',${i})">${i}</button>`;
+  }
+  html += `<span class="page-info">${currentPage} / ${pages}</span>`;
+  html += `<button ${currentPage >= pages ? 'disabled' : ''} onclick="loadTable('${currentTable}',${currentPage + 1})">Next →</button>`;
+  el.innerHTML = html;
+}
+
+/* ============================================
+   Search
+   ============================================ */
+let searchTimeout;
+document.getElementById('tableSearch').addEventListener('input', e => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = e.target.value.toLowerCase();
+    const config = TABLE_CONFIG[currentTable];
+    if (!q) {
+      renderTable(config, currentData, currentData.length);
+      return;
+    }
+    const filtered = currentData.filter(row =>
+      config.columns.some(c => {
+        const v = row[c];
+        const s = (v !== null && typeof v === 'object' && !Array.isArray(v))
+          ? JSON.stringify(v)
+          : String(v ?? '');
+        return s.toLowerCase().includes(q);
+      })
+    );
+    renderTable(config, filtered, filtered.length);
+  }, 200);
+});
+
+/* ============================================
+   Navigation
+   ============================================ */
+document.querySelectorAll('.sidebar-item[data-view="dashboard"]').forEach(el => {
+  el.addEventListener('click', () => {
+    document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('pageTitle').textContent = 'Dashboard';
+    document.getElementById('dashboardView').style.display = '';
+    document.getElementById('tableView').style.display = 'none';
+    currentTable = null;
+    loadDashboard();
+  });
+});
+
+document.querySelectorAll('.sidebar-item[data-table]').forEach(el => {
+  el.addEventListener('click', () => loadTable(el.dataset.table));
+});
+
+
+/* ============================================
+   Init
+   ============================================ */
+(async () => {
+  await ensureAuth();
+  loadDashboard();
+})();
+</script>
+</body>
+</html>

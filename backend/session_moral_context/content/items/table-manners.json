@@ -1,0 +1,47 @@
+[
+  {
+    "type": "verse",
+    "surah": 7,
+    "ayah": 31,
+    "arabic_text": "۞ يَٰبَنِيٓ ءَادَمَ خُذُواْ زِينَتَكُمۡ عِندَ كُلِّ مَسۡجِدٖ وَكُلُواْ وَٱشۡرَبُواْ وَلَا تُسۡرِفُوٓاْۚ إِنَّهُۥ لَا يُحِبُّ ٱلۡمُسۡرِفِينَ",
+    "arabic_text_search": "يابني آدم خذوا زينتكم عند كل مسجد وكلوا واشربوا ولا تسرفوا إنه لا يحب المسرفين",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O children of Adam, take your adornment [i.e., wear your clothing] at every masjid, and eat and drink, but be not excessive. Indeed, He likes not those who commit excess.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-araf/31",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/007031.mp3",
+    "values": [
+      "table-manners",
+      "not-wasting"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية ألّا نسرف في الأكل والشرب. خذ قدر حاجتك من الطعام والماء.",
+    "child_explanation_en": "This verse teaches us not to be wasteful in eating and drinking. Take only the food and water you need.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 2,
+    "ayah": 172,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ كُلُواْ مِن طَيِّبَٰتِ مَا رَزَقۡنَٰكُمۡ وَٱشۡكُرُواْ لِلَّهِ إِن كُنتُمۡ إِيَّاهُ تَعۡبُدُونَ",
+    "arabic_text_search": "ياأيها الذين آمنوا كلوا من طيبات ما رزقناكم واشكروا لله إن كنتم إياه تعبدون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, eat from the good [i.e., lawful] things which We have provided for you and be grateful to Allāh if it is [indeed] Him that you worship.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-baqara/172",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/002172.mp3",
+    "values": [
+      "table-manners"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نأكل من الطعام الطيب ونشكر الله. عندما تأكل، تذكّر نعمة الطعام وقل «الحمد لله».",
+    "child_explanation_en": "This verse teaches us to eat good food and thank Allah. When you eat, remember the gift of food and say \"Alhamdulillah\".",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

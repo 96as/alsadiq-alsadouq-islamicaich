@@ -1,0 +1,46 @@
+[
+  {
+    "type": "verse",
+    "surah": 9,
+    "ayah": 71,
+    "arabic_text": "وَٱلۡمُؤۡمِنُونَ وَٱلۡمُؤۡمِنَٰتُ بَعۡضُهُمۡ أَوۡلِيَآءُ بَعۡضٖۚ يَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَيَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَيُؤۡتُونَ ٱلزَّكَوٰةَ وَيُطِيعُونَ ٱللَّهَ وَرَسُولَهُۥٓۚ أُوْلَٰٓئِكَ سَيَرۡحَمُهُمُ ٱللَّهُۗ إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٞ",
+    "arabic_text_search": "والمؤمنون والمؤمنات بعضهم أولياء بعض يأمرون بالمعروف وينهون عن المنكر ويقيمون الصلاة ويؤتون الزكاة ويطيعون الله ورسوله أولئك سيرحمهم الله إن الله عزيز حكيم",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "The believing men and believing women are allies of one another. They enjoin what is right and forbid what is wrong and establish prayer and give zakāh and obey Allāh and His Messenger. Those - Allāh will have mercy upon them. Indeed, Allāh is Exalted in Might and Wise.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/at-tawba/71",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/009071.mp3",
+    "values": [
+      "cooperation"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا هذه الآية أن المؤمنين يكونون أصدقاء ومعاونين لبعضهم. مثلا: حين يرتّب الأصدقاء الصف أو الملعب معا يصبح العمل أسهل وأجمل.",
+    "child_explanation_en": "This verse teaches that believers are friends and helpers to one another. For example, when friends tidy the classroom or playground together, the job becomes easier and nicer.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 18,
+    "ayah": 95,
+    "arabic_text": "قَالَ مَا مَكَّنِّي فِيهِ رَبِّي خَيۡرٞ فَأَعِينُونِي بِقُوَّةٍ أَجۡعَلۡ بَيۡنَكُمۡ وَبَيۡنَهُمۡ رَدۡمًا",
+    "arabic_text_search": "قال ما مكني فيه ربي خير فأعينوني بقوة أجعل بينكم وبينهم ردما",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "He said, \"That in which my Lord has established me is better [than what you offer], but assist me with strength [i.e., manpower]; I will make between you and them a dam.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-kahf/95",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/018095.mp3",
+    "values": [
+      "cooperation"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "في هذه الآية طلب ذو القرنين من الناس أن يعينوه بقوتهم ليبني لهم سدا. العمل معا يجعل الأمر الكبير سهلا. مثلا: عندما نرتّب الغرفة كلنا معا، ينتهي العمل أسرع.",
+    "child_explanation_en": "In this verse Dhul-Qarnayn asked the people to help him with their strength so he could build a barrier for them. Working together makes a big job easier. For example, when we all tidy a room together, the job is finished faster.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

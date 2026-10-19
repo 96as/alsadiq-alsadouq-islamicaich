@@ -1,0 +1,1 @@
+Scholars explain this in more than one way. Say it is a big question, share only what the card says everyone agrees on, and never list, describe or compare views, pick a side or say who is right. Suggest asking a parent or a trusted scholar, and say something kind about the people in the question.

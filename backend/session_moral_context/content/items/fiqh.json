@@ -1,0 +1,183 @@
+[
+  {
+    "type": "fiqh",
+    "values": [
+      "prayer"
+    ],
+    "title_ar": "حكم الصلوات الخمس",
+    "title_en": "The five daily prayers are obligatory",
+    "arabic_text": "الصلواتُ الخمسُ فرضُ عينٍ على كلِّ مُسلمٍ مكلَّفٍ.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "677",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/677/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9",
+    "content_level": "B",
+    "child_explanation_ar": "الصلوات الخمس واجبة على كل مسلم بالغ عاقل. تعلم الصلاة مع والديك أو معلمك حتى تؤديها بالطريقة الصحيحة.",
+    "child_explanation_en": "The five daily prayers are a duty on every adult Muslim who is of sound mind. Learn to pray with your parents or your teacher so they can help you do it the right way.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن الصلوات الخمس فرض عين على كل مسلم مكلف، أي واجبة على كل مسلم بالغ عاقل بنفسه. وهذا مما اتفق عليه العلماء. وتفاصيل كيفية الصلاة وأوقاتها اسأل عنها والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that the five daily prayers are an individual obligation on every Muslim who is adult and of sound mind. Scholars agree on this. For the details of how and when to pray, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "prayer"
+    ],
+    "title_ar": "استقبال القبلة في الصلاة",
+    "title_en": "Facing the qibla in prayer",
+    "arabic_text": "استقبالُ القِبلةِ شرطٌ في صحَّةِ الصَّلاةِ.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "857",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/857/%D8%A7%D9%84%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AD%D9%83%D9%85-%D8%A7%D8%B3%D8%AA%D9%82%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%82%D8%A8%D9%84%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9",
+    "content_level": "B",
+    "child_explanation_ar": "عندما نصلي نتجه إلى الكعبة في مكة، وهذا اسمه استقبال القبلة. اطلب من والديك أن يعلماك اتجاه القبلة في بيتكم.",
+    "child_explanation_en": "When we pray we face the Kaaba in Makkah; this is called facing the qibla. Ask your parents to show you the direction of the qibla in your home.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن استقبال القبلة شرط في صحة الصلاة، أي أن الصلاة لا تصح بدونه في الحال المعتاد. وهذا مما اتفق عليه العلماء. ولمعرفة اتجاه القبلة والحالات الخاصة اسأل والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that facing the qibla is a condition for the prayer to be valid, meaning that normally prayer is not valid without it. Scholars agree on this. To find the qibla direction and learn about special cases, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "cleanliness",
+      "prayer"
+    ],
+    "title_ar": "غسل الوجه في الوضوء",
+    "title_en": "Washing the face in wudu",
+    "arabic_text": "غَسلُ الوجهِ فرضٌ من فروضِ الوضوء.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "258",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/258/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%BA%D8%B3%D9%84-%D8%A7%D9%84%D9%88%D8%AC%D9%87",
+    "content_level": "B",
+    "child_explanation_ar": "في الوضوء نغسل وجهنا، وهذا جزء واجب من الوضوء. اطلب من والديك أن يعلماك كيف تتوضأ.",
+    "child_explanation_en": "In wudu we wash our face, and this is a required part of wudu. Ask your parents to teach you how to do wudu.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن غسل الوجه فرض من فروض الوضوء، أي من أجزائه الواجبة التي لا يصح الوضوء بدونها. وهذا مما اتفق عليه العلماء. ولتعلم صفة الوضوء كاملة اسأل والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that washing the face is one of the obligatory parts of wudu, without which wudu is not valid. Scholars agree on this. To learn the full way of doing wudu, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "cleanliness",
+      "prayer"
+    ],
+    "title_ar": "غسل اليدين إلى المرفقين في الوضوء",
+    "title_en": "Washing the arms to the elbows in wudu",
+    "arabic_text": "غَسْل اليدين إلى المِرفقَينِ، فرضٌ من فروضِ الوضوء.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "260",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/260/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D8%BA%D8%B3%D9%84-%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%D9%8A%D9%86",
+    "content_level": "B",
+    "child_explanation_ar": "في الوضوء نغسل يدينا من أطراف الأصابع إلى المرفقين، وهذا جزء واجب من الوضوء. اطلب من والديك أن يعلماك كيف تتوضأ.",
+    "child_explanation_en": "In wudu we wash our arms from the fingertips up to the elbows, and this is a required part of wudu. Ask your parents to teach you how to do wudu.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن غسل اليدين إلى المرفقين فرض من فروض الوضوء. وهذا مما اتفق عليه العلماء. ولتعلم صفة الوضوء كاملة اسأل والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that washing the arms up to the elbows is one of the obligatory parts of wudu. Scholars agree on this. To learn the full way of doing wudu, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "patience"
+    ],
+    "title_ar": "حكم صوم رمضان",
+    "title_en": "Fasting Ramadan is obligatory",
+    "arabic_text": "صَومُ شَهرِ رمضانَ فريضةٌ، وركنٌ مِن أركانِ الإسلامِ.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "2666",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/2666/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AD%D9%83%D9%85-%D8%B5%D9%88%D9%85-%D8%B4%D9%87%D8%B1-%D8%B1%D9%85%D8%B6%D8%A7%D9%86",
+    "content_level": "B",
+    "child_explanation_ar": "صوم شهر رمضان واجب على المسلمين، وهو ركن من أركان الإسلام. اسأل والديك متى تبدأ الصوم وكيف.",
+    "child_explanation_en": "Fasting the month of Ramadan is a duty for Muslims and one of the pillars of Islam. Ask your parents when and how you should start fasting.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن صوم شهر رمضان فريضة وركن من أركان الإسلام. وهذا مما اتفق عليه العلماء. ومن يجب عليه الصوم ومن يعذر وتفاصيل الصيام اسأل عنها والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that fasting Ramadan is an obligation and one of the pillars of Islam. Scholars agree on this. For who must fast, who is excused and the details of fasting, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "charity",
+      "generosity"
+    ],
+    "title_ar": "حكم الزكاة",
+    "title_en": "Zakah is obligatory",
+    "arabic_text": "الزَّكاة فريضةٌ مِنْ فرائض الدِّينِ، وهي الرُّكنُ الثَّالثُ مِن أركانِ الإسلامِ الخمسةِ.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "2094",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/2094/%D8%A7%D9%84%D9%85%D8%B7%D9%84%D8%A8-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D8%B2%D9%83%D8%A7%D8%A9",
+    "content_level": "B",
+    "child_explanation_ar": "الزكاة هي جزء من المال يعطيه المسلم الذي يملك مالا كثيرا للفقراء كل سنة، وهي ركن من أركان الإسلام. والداك يعرفان تفاصيلها فاسألهما.",
+    "child_explanation_en": "Zakah is a share of money that a Muslim who owns enough wealth gives to the poor every year, and it is one of the pillars of Islam. Your parents know its details, so ask them.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن الزكاة فريضة من فرائض الدين، وهي الركن الثالث من أركان الإسلام الخمسة. وهذا مما اتفق عليه العلماء. وتفاصيل من تجب عليه وكم يخرج اسأل عنها والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that zakah is one of the religion's obligations and the third of the five pillars of Islam. Scholars agree on this. For the details of who must pay it and how much, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "charity",
+      "generosity"
+    ],
+    "title_ar": "حكم صدقة التطوع",
+    "title_en": "Voluntary charity is recommended",
+    "arabic_text": "صدقة التطوُّع مُستحبَّةٌ.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "2607",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/2607/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AD%D9%83%D9%85-%D8%B5%D8%AF%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B7%D9%88%D8%B9",
+    "content_level": "B",
+    "child_explanation_ar": "الصدقة هي أن تعطي من مالك للمحتاج من غير أن يكون واجبا عليك، وهي عمل يحبه الله ويستحب فعله. تحدث مع والديك عن كيف تتصدق.",
+    "child_explanation_en": "Sadaqah is giving from what you have to someone in need, even when it is not required of you; it is something Allah loves and encourages. Talk with your parents about how you can give.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن صدقة التطوع مستحبة، أي أنها عمل مرغوب فيه يثاب عليه المسلم وليس واجبا. وهذا مما اتفق عليه العلماء. ولمعرفة أفضل طرق الصدقة اسأل والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that voluntary charity is recommended: a praiseworthy deed a Muslim is rewarded for, though not obligatory. Scholars agree on this. To learn the best ways to give, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  },
+  {
+    "type": "fiqh",
+    "values": [
+      "honouring-parents",
+      "family-ties"
+    ],
+    "title_ar": "بر الوالدين من حقوقهما",
+    "title_en": "Kindness to parents is their right",
+    "arabic_text": "من حُقوقِ الوالِدَينِ على الأولاد: بِرُّهما.",
+    "book": "الموسوعة الفقهية - الدرر السنية",
+    "number": "5390",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/feqhia/5390/%D8%A7%D9%84%D9%85%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%85%D9%86-%D8%AD%D9%82%D9%88%D9%82-%D8%A7%D9%84%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D8%A7%D8%AF-%D8%A8%D8%B1-%D8%A7%D9%84%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%86",
+    "content_level": "B",
+    "child_explanation_ar": "من حق والديك عليك أن تبرهما: تطيعهما في الخير وتتكلم معهما بأدب وتساعدهما. اسأل والديك كيف تكون بارا بهما أكثر.",
+    "child_explanation_en": "Your parents have a right over you: to treat them well, obey them in what is good, speak to them politely and help them. Ask your parents how you can be even kinder to them.",
+    "child_explanation_older_ar": "تذكر الموسوعة أن من حقوق الوالدين على الأولاد برهما، أي الإحسان إليهما بالقول والفعل. ولمعرفة كيف تبر والديك في المواقف المختلفة اسأل والديك أو معلمك.",
+    "child_explanation_older_en": "The encyclopedia states that among the rights parents have over their children is kindness to them, meaning goodness in word and deed. To learn how to honour your parents in different situations, ask your parents or a teacher.",
+    "age_band": "all",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Mahmalji",
+    "reviewed_at": "2026-10-05"
+  }
+]

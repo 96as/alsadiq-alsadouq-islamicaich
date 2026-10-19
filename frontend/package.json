@@ -1,0 +1,65 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "check:cards": "node scripts/check-source-cards.mjs",
+    "test:session": "node --test tests/sessionCards.test.mjs",
+    "test:lipsync": "node --test tests/lipsync.test.mjs tests/lipsync-ar.test.mjs tests/lipsync-timeline.test.mjs",
+    "test:avatar": "node --test tests/avatarDirector.test.mjs tests/hologramEnvelope.test.mjs",
+    "test:webpage": "node --test tests/webPage.test.mjs",
+    "test:hotfix2": "node --test tests/showcase-voice-order.test.mjs tests/conversation-shot.test.mjs tests/lookdev-shot.test.mjs",
+    "test:acting": "node --test tests/acting.test.mjs",
+    "test:walk": "node --test tests/walkStudio.test.mjs",
+    "test:nature": "node --test tests/windField.test.mjs",
+    "test:lookdev": "node --test tests/stageFraming.test.mjs",
+    "test:meadowstage": "node --test tests/meadowStage.test.mjs tests/meadowNarrow.test.mjs",
+    "test:i18n": "node --test tests/i18n.test.mjs",
+    "test:nickname": "node --test tests/nickname.test.mjs",
+    "meadow:narrow": "node scripts/make-narrow-meadow.mjs",
+    "avatar:optimize": "node scripts/optimize-avatar-web.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.0",
+    "axios": "^1.20.0",
+    "gsap": "^3.15.0",
+    "jwt-decode": "^4.0.0",
+    "livekit-client": "^2.18.0",
+    "lucide-react": "^1.6.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.18.2",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@gltf-transform/core": "4.3.0",
+    "@gltf-transform/extensions": "4.3.0",
+    "@gltf-transform/functions": "4.3.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "meshoptimizer": "1.1.1",
+    "sharp": "0.35.1",
+    "tailwindcss": "^4.2.1",
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

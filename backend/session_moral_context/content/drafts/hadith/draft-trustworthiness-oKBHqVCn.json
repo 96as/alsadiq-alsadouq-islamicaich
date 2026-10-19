@@ -1,0 +1,17 @@
+[
+  {
+    "type": "hadith",
+    "values": [
+      "trustworthiness"
+    ],
+    "arabic_text": "آيةُ المُنافِقِ ثَلاثٌ: إذا حَدَّثَ كَذَبَ، وإذا وعَدَ أخلَفَ، وإذا اؤتُمِنَ خانَ.",
+    "book": "Sahih al-Bukhari",
+    "number": "33",
+    "narrator": "أبو هريرة",
+    "grade": "صحيح",
+    "grader": "البخاري",
+    "source_site": "dorar.net",
+    "source_url": "https://dorar.net/h/oKBHqVCn",
+    "verification_status": "unverified"
+  }
+]

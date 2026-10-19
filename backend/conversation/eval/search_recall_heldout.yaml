@@ -1,0 +1,119 @@
+# search_recall_heldout.yaml (task 13): a second, smaller set of child phrasings (2 per value: one English, one
+# Arabic) written AFTER the keyword additions were chosen from search_recall_phrasings.yaml, so it shows whether
+# the new words generalise or only fit the first set. Children's questions only: no scripture.
+# Each entry is [shape, text]; shapes as in search_recall_phrasings.yaml.
+
+prayer:
+  en: [[sit, "my dad wakes me up for fajr and I am so sleepy, do I really have to?"]]
+  ar: [[verse, "في آية تقول متى نصلي؟"]]
+honesty:
+  en: [[say, "is it ever okay to tell a small lie?"]]
+  ar: [[sit, "قلت لأمي إني خلصت واجبي وما خلصته، شو أسوي؟"]]
+trustworthiness:
+  en: [[sit, "my friend lent me his pen and I lost it, what should I do?"]]
+  ar: [[hadith, "في حديث عن حفظ الأمانة؟"]]
+honouring-parents:
+  en: [[sit, "my mum is always telling me what to do and it makes me cross, is it bad to feel that?"]]
+  ar: [[sit, "رديت على أبوي بصوت عالي، هذا عقوق؟"]]
+mercy:
+  en: [[verse, "is there a verse about Allah being merciful?"]]
+  ar: [[sit, "شفت ولد يضرب قطة وحسيت بالقهر، شو أسوي؟"]]
+patience:
+  en: [[sit, "I have been practicing the piano for ages and I still cannot play, should I quit?"]]
+  ar: [[say, "كيف أتحمل لما أبي شي وما أحصل عليه؟"]]
+gratitude:
+  en: [[say, "why do we say alhamdulillah after eating?"]]
+  ar: [[sit, "ما عجبني الأكل اليوم وقلت إنه سيء، هذا ما يصير؟"]]
+cooperation:
+  en: [[sit, "my group at school argues all the time and nothing gets done, what does Islam say?"]]
+  ar: [[hadith, "في حديث عن العمل الجماعي؟"]]
+kindness-to-animals:
+  en: [[sit, "I found a bird with a hurt wing in the garden, what should I do?"]]
+  ar: [[say, "شو يقول الإسلام عن الحيوانات الأليفة؟"]]
+cleanliness:
+  en: [[sit, "I forgot to wash my hands before dinner, does Allah mind?"]]
+  ar: [[hadith, "في حديث عن الطهارة؟"]]
+modesty:
+  en: [[sit, "I do not like it when people stare at me, is feeling shy a good thing?"]]
+  ar: [[say, "ليش لازم نلبس ملابس محتشمة؟"]]
+good-character:
+  en: [[sit, "my teacher said I have to behave better in class, how does Islam teach good behaviour?"]]
+  ar: [[hadith, "في حديث عن الأخلاق؟"]]
+good-neighbour:
+  en: [[sit, "the family next door just moved in, how can we welcome them?"]]
+  ar: [[verse, "في آية عن حق الجار؟"]]
+seeking-knowledge:
+  en: [[verse, "is there a verse that tells us to read and learn?"]]
+  ar: [[sit, "أبي أصير دكتور، الإسلام يشجع على التعلم؟"]]
+humility:
+  en: [[sit, "I won the race and I feel like I am better than the others, is that wrong?"]]
+  ar: [[hadith, "في حديث عن الغرور؟"]]
+justice:
+  en: [[sit, "my brother always gets blamed even when it is not his fault, what does Islam say?"]]
+  ar: [[say, "كيف أكون عادل مع كل أصحابي؟"]]
+keeping-promises:
+  en: [[sit, "I said I would help my friend move his things and then I did not show up, was that wrong?"]]
+  ar: [[verse, "في آية عن الوعد؟"]]
+generosity:
+  en: [[sit, "my cousin never lets anyone play with his new toys, is that okay?"]]
+  ar: [[hadith, "في حديث عن الكريم؟"]]
+forgiveness:
+  en: [[say, "what does Islam say about pardoning someone who hurt you?"]]
+  ar: [[sit, "أختي كسرت جوالي وتعتذر، لازم أرضى عنها؟"]]
+kind-words:
+  en: [[sit, "I said something mean to my friend and now she is crying, what should I do?"]]
+  ar: [[hadith, "في حديث عن الكلام الحلو؟"]]
+charity:
+  en: [[sit, "I want to give some of my savings to people who need it, is that good?"]]
+  ar: [[say, "ليش نطلع زكاة من فلوسنا؟"]]
+respecting-elders:
+  en: [[hadith, "is there a hadith about being polite to old people?"]]
+  ar: [[sit, "قمت لجدتي من مكاني في المجلس، هذا حلو؟"]]
+caring-for-orphans:
+  en: [[verse, "is there a verse about looking after kids who lost their parents?"]]
+  ar: [[sit, "أبي أتبرع لدار أيتام، شو أسوي؟"]]
+brotherhood:
+  en: [[sit, "a boy from another school is being left out and I think we should include him, what does Islam say?"]]
+  ar: [[hadith, "في حديث عن إننا إخوان؟"]]
+controlling-anger:
+  en: [[sit, "I lose my temper when I lose at games, how can I stop?"]]
+  ar: [[hadith, "في حديث عن الغضب؟"]]
+remembering-allah:
+  en: [[say, "what are some things I can say to remember Allah during the day?"]]
+  ar: [[sit, "أبي أحفظ أذكار الصباح، من وين أبدأ؟"]]
+trust-in-allah:
+  en: [[sit, "I did everything I could for my test, now what do I do about the result?"]]
+  ar: [[verse, "في آية عن الاعتماد على ربنا؟"]]
+visiting-the-sick:
+  en: [[hadith, "is there a hadith about going to see a person who is not well?"]]
+  ar: [[sit, "جاري عنده حمى، أروح أسلم عليه؟"]]
+spreading-salam:
+  en: [[sit, "should I greet people I do not know on the street?"]]
+  ar: [[say, "ليش نقول السلام عليكم لما ندخل البيت؟"]]
+table-manners:
+  en: [[sit, "I was talking with food in my mouth at dinner, is that rude?"]]
+  ar: [[hadith, "في حديث عن آداب الجلوس على السفرة؟"]]
+helping-others:
+  en: [[sit, "my neighbour could not carry her bags upstairs and I carried them, did Allah like that?"]]
+  ar: [[verse, "في آية عن مساعدة الآخرين؟"]]
+avoiding-backbiting:
+  en: [[sit, "my classmates were speaking badly about our teacher when she was out of the room, what should I do?"]]
+  ar: [[hadith, "في حديث عن الحكي عن الناس؟"]]
+courage:
+  en: [[say, "what does Islam say about standing up for what is right even when it is scary?"]]
+  ar: [[sit, "أخاف أقول رأيي قدام الكل بالصف، شو أسوي؟"]]
+not-wasting:
+  en: [[sit, "I always take too much food and then I cannot finish it, is that a problem?"]]
+  ar: [[say, "هل ينفع أسيب الماي مفتوح وأنا أتوضأ؟"]]
+family-ties:
+  en: [[sit, "I have not talked to my grandma's sister for months, should I call her?"]]
+  ar: [[hadith, "في حديث عن زيارة الأهل؟"]]
+love-of-the-prophet:
+  en: [[say, "how did the Prophet treat children?"]]
+  ar: [[sit, "أحب النبي كثير، كيف أتعلم عن حياته؟"]]
+sincerity:
+  en: [[sit, "I helped someone only because I wanted a reward from my parents, is that okay?"]]
+  ar: [[verse, "في آية عن النية الصافية؟"]]
+contentment:
+  en: [[sit, "my sister has a nicer room than me and I keep thinking about it, what can I do?"]]
+  ar: [[say, "كيف أكون راضي بالشي اللي عندي؟"]]

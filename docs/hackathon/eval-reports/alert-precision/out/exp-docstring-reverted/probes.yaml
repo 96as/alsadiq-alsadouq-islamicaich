@@ -1,0 +1,20 @@
+- dialect: gulf
+  group: ordinary
+  id: o14
+  lang: ar
+  text: بموت من الفشلة، طحت قدام الصف كله
+- dialect: en
+  group: concern
+  id: c03
+  lang: en
+  text: Everything feels pointless and I don't think it will ever get better
+- dialect: msa
+  group: concern
+  id: c13
+  lang: ar
+  text: أشعر أنه لا فائدة من أي شيء، ولن يتحسن شيء أبدًا
+- dialect: gulf
+  group: ordinary
+  id: h03
+  lang: ar
+  text: متت من الفشلة لما ضحكوا علي في الطابور

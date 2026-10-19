@@ -1,0 +1,54 @@
+[
+  {
+    "type": "verse",
+    "surah": 98,
+    "ayah": 5,
+    "arabic_text": "وَمَآ أُمِرُوٓاْ إِلَّا لِيَعۡبُدُواْ ٱللَّهَ مُخۡلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُواْ ٱلصَّلَوٰةَ وَيُؤۡتُواْ ٱلزَّكَوٰةَۚ وَذَٰلِكَ دِينُ ٱلۡقَيِّمَةِ",
+    "arabic_text_search": "وما أمروا إلا ليعبدوا الله مخلصين له الدين حنفاء ويقيموا الصلاة ويؤتوا الزكاة وذلك دين القيمة",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And they were not commanded except to worship Allāh, [being] sincere to Him in religion, inclining to truth, and to establish prayer and to give zakāh. And that is the correct religion.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-bayyina/5",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/098005.mp3",
+    "values": [
+      "sincerity",
+      "prayer",
+      "charity"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تذكر الآية أنهم أُمروا بعبادة الله مخلصين له، وبإقامة الصلاة وإعطاء الزكاة. فنصلّي ونعطي لأجل الله، لا لأجل مدح الناس.",
+    "child_explanation_en": "This verse says they were commanded to worship Allah sincerely, to establish prayer and to give zakah. We pray and give for Allah's sake, not to be praised by people.",
+    "child_explanation_older_ar": "الإخلاص في الآية أن تكون عبادتنا لله وحده، ومنها الصلاة والزكاة. و«حنفاء» أي مائلين عن الشرك إلى التوحيد. فنسأل أنفسنا: هل أصلّي وأعطي لله، أم لكي يراني الناس؟",
+    "child_explanation_older_en": "Sincerity in this verse means our worship is for Allah alone, including prayer and zakah. 'Inclining to truth' means turning away from shirk to worshipping Allah alone. So we ask ourselves: am I praying and giving for Allah, or so that people see me?",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 76,
+    "ayah": 9,
+    "arabic_text": "إِنَّمَا نُطۡعِمُكُمۡ لِوَجۡهِ ٱللَّهِ لَا نُرِيدُ مِنكُمۡ جَزَآءٗ وَلَا شُكُورًا",
+    "arabic_text_search": "إنما نطعمكم لوجه الله لا نريد منكم جزاء ولا شكورا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "[Saying], \"We feed you only for the face [i.e., approval] of Allāh. We wish not from you reward or gratitude.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-insan/9",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/076009.mp3",
+    "values": [
+      "sincerity",
+      "generosity",
+      "charity"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تصف الآية ناسا يعطون الطعام لأجل الله فقط، ولا ينتظرون من أحد شكرا ولا جزاء. إذا ساعدت أحدا، لا تنتظر منه مدحا ولا هدية.",
+    "child_explanation_en": "This verse describes people who give food only for Allah's sake and do not expect thanks or payment from anyone. When you help someone, do not wait for praise or a gift in return.",
+    "child_explanation_older_ar": "تحكي الآية قول قوم أطعموا غيرهم لوجه الله، وقالوا إنهم لا يريدون جزاء ولا شكورا. فالإخلاص أن يتجه قلبنا إلى الله حين نعطي، حتى لو لم يشكرنا أحد.",
+    "child_explanation_older_en": "The verse tells us what some people said when they fed others for Allah's sake: they wanted neither reward nor thanks. Sincerity means our heart is turned to Allah when we give, even if nobody thanks us.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "verse",
+    "surah": 4,
+    "ayah": 86,
+    "arabic_text": "وَإِذَا حُيِّيتُم بِتَحِيَّةٖ فَحَيُّواْ بِأَحۡسَنَ مِنۡهَآ أَوۡ رُدُّوهَآۗ إِنَّ ٱللَّهَ كَانَ عَلَىٰ كُلِّ شَيۡءٍ حَسِيبًا",
+    "arabic_text_search": "وإذا حييتم بتحية فحيوا بأحسن منها أو ردوها إن الله كان على كل شيء حسيبا",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And when you are greeted with a greeting, greet [in return] with one better than it or [at least] return it [in a like manner]. Indeed Allāh is ever, over all things, an Accountant.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-nisa/86",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/004086.mp3",
+    "values": [
+      "spreading-salam"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نرد التحية بمثلها أو بأحسن منها. فإذا قال لك أحد «السلام عليكم» فقل «وعليكم السلام»، والأجمل أن تقول «وعليكم السلام ورحمة الله وبركاته».",
+    "child_explanation_en": "This verse teaches us to answer a greeting with the same greeting or a better one. If someone says \"assalamu alaikum\" to you, you answer \"wa alaikum assalam\", and it is lovely to answer with the fuller \"wa alaikum assalam wa rahmatullahi wa barakatuh\".",
+    "child_explanation_older_ar": "تتحدث الآية عن التحية عموما، وتحية المسلمين هي «السلام عليكم»، وصيغتها الكاملة «السلام عليكم ورحمة الله وبركاته». نبدأ بها بلطف، ونرد على من حيّانا بمثلها أو بأحسن منها، والله يحاسب على كل شيء.",
+    "child_explanation_older_en": "The verse speaks about greetings in general. The Muslim greeting is \"assalamu alaikum\", and its complete form is \"assalamu alaikum wa rahmatullahi wa barakatuh\". We offer it kindly, and we answer anyone who greets us with the same or a better one, and Allah keeps account of everything.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  },
+  {
+    "type": "verse",
+    "surah": 24,
+    "ayah": 27,
+    "arabic_text": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَدۡخُلُواْ بُيُوتًا غَيۡرَ بُيُوتِكُمۡ حَتَّىٰ تَسۡتَأۡنِسُواْ وَتُسَلِّمُواْ عَلَىٰٓ أَهۡلِهَاۚ ذَٰلِكُمۡ خَيۡرٞ لَّكُمۡ لَعَلَّكُمۡ تَذَكَّرُونَ",
+    "arabic_text_search": "ياأيها الذين آمنوا لا تدخلوا بيوتا غير بيوتكم حتى تستأنسوا وتسلموا على أهلها ذلكم خير لكم لعلكم تذكرون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "O you who have believed, do not enter houses other than your own houses until you ascertain welcome and greet their inhabitants. That is best for you; perhaps you will be reminded [i.e., advised].",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/an-nur/27",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/024027.mp3",
+    "values": [
+      "spreading-salam"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية ألّا ندخل بيت غيرنا حتى نستأذن ونسلّم على أهله. مثلا: عندما تزور صديقك، اطرق الباب وقل «السلام عليكم» (أو «السلام عليكم ورحمة الله وبركاته») وانتظر.",
+    "child_explanation_en": "This verse teaches us not to enter someone else's house until we ask permission and greet the people inside. For example, when you visit a friend, knock on the door, say \"assalamu alaikum\" (or the fuller \"assalamu alaikum wa rahmatullahi wa barakatuh\") and wait.",
+    "child_explanation_older_ar": "تجمع الآية بين الاستئذان والسلام عند دخول بيوت الناس، فنراعي حرمة البيت ونحيّي أهله بتحية الإسلام. وتقول الآية إن ذلك خير لنا.",
+    "child_explanation_older_en": "The verse joins asking permission with greeting when we go to other people's homes, so we respect the home and greet its people with the Islamic greeting. The verse says this is best for us.",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

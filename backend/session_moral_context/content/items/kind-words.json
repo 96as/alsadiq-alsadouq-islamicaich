@@ -1,0 +1,24 @@
+[
+  {
+    "type": "verse",
+    "surah": 2,
+    "ayah": 83,
+    "arabic_text": "وَإِذۡ أَخَذۡنَا مِيثَٰقَ بَنِيٓ إِسۡرَٰٓءِيلَ لَا تَعۡبُدُونَ إِلَّا ٱللَّهَ وَبِٱلۡوَٰلِدَيۡنِ إِحۡسَانٗا وَذِي ٱلۡقُرۡبَىٰ وَٱلۡيَتَٰمَىٰ وَٱلۡمَسَٰكِينِ وَقُولُواْ لِلنَّاسِ حُسۡنٗا وَأَقِيمُواْ ٱلصَّلَوٰةَ وَءَاتُواْ ٱلزَّكَوٰةَ ثُمَّ تَوَلَّيۡتُمۡ إِلَّا قَلِيلٗا مِّنكُمۡ وَأَنتُم مُّعۡرِضُونَ",
+    "arabic_text_search": "وإذ أخذنا ميثاق بني إسرائيل لا تعبدون إلا الله وبالوالدين إحسانا وذي القربى واليتامى والمساكين وقولوا للناس حسنا وأقيموا الصلاة وآتوا الزكاة ثم توليتم إلا قليلا منكم وأنتم معرضون",
+    "text_edition": "KFGQPC Hafs v2-0 sha256:d2960b321796",
+    "english_text": "And [recall] when We took the covenant from the Children of Israel, [enjoining upon them], \"Do not worship except Allāh; and to parents do good and to relatives, orphans, and the needy. And speak to people good [words] and establish prayer and give zakāh.\" Then you turned away, except a few of you, and you were refusing.",
+    "translation_name": "Saheeh International",
+    "source_site": "quranpedia.net",
+    "source_url": "https://quranpedia.net/tafsir/al-baqara/83",
+    "audio_url": "https://everyayah.com/data/Husary_128kbps/002083.mp3",
+    "values": [
+      "kind-words"
+    ],
+    "age_band": "all",
+    "child_explanation_ar": "تعلّمنا الآية أن نتكلم مع الناس بكلام حسن. مثلا: عندما تطلب شيئا من زميلك، قل «من فضلك» و«شكرا».",
+    "child_explanation_en": "This verse teaches us to speak to people with good words. For example, when you ask a classmate for something, say \"please\" and \"thank you\".",
+    "verification_status": "reviewed",
+    "reviewed_by": "Abdulrahman Salamah",
+    "reviewed_at": "2026-10-06"
+  }
+]

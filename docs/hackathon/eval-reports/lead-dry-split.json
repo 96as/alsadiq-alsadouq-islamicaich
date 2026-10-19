@@ -1,0 +1,43 @@
+{
+ "before": {
+  "heldout": {
+   "pass": 28,
+   "gap": 14,
+   "fail": 8
+  },
+  "dev": {
+   "pass": 109,
+   "fail": 13,
+   "gap": 14
+  },
+  "safety": {
+   "heldout": {
+    "fail": 3,
+    "pass": 7
+   },
+   "dev": {
+    "pass": 24,
+    "fail": 12
+   }
+  }
+ },
+ "after": {
+  "heldout": {
+   "pass": 31,
+   "gap": 14,
+   "fail": 5
+  },
+  "dev": {
+   "pass": 122,
+   "gap": 14
+  },
+  "safety": {
+   "heldout": {
+    "pass": 10
+   },
+   "dev": {
+    "pass": 36
+   }
+  }
+ }
+}
